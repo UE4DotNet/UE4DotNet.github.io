@@ -1,0 +1,1027 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class TriggerBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class TriggerBase
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.TriggerBase">
+  
+  
+  <h1 id="UE4_Engine_TriggerBase" data-uid="UE4.Engine.TriggerBase" class="text-break">Class TriggerBase
+  </h1>
+  <div class="markdown level0 summary"><p>An actor used to generate collision events (begin/end overlap) in the level.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.Engine.Actor.html">Actor</a></div>
+    <div class="level3"><span class="xref">TriggerBase</span></div>
+      <div class="level4"><a class="xref" href="UE4.Engine.TriggerBox.html">TriggerBox</a></div>
+      <div class="level4"><a class="xref" href="UE4.Engine.TriggerCapsule.html">TriggerCapsule</a></div>
+      <div class="level4"><a class="xref" href="UE4.Engine.TriggerSphere.html">TriggerSphere</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnBecomeViewTarget">Actor.K2_OnBecomeViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnEndViewTarget">Actor.K2_OnEndViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnReset">Actor.K2_OnReset</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorBeginCursorOver">Actor.ReceiveActorBeginCursorOver</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorBeginOverlap">Actor.ReceiveActorBeginOverlap</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorEndCursorOver">Actor.ReceiveActorEndCursorOver</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorEndOverlap">Actor.ReceiveActorEndOverlap</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnClicked">Actor.ReceiveActorOnClicked</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchBegin">Actor.ReceiveActorOnInputTouchBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchEnd">Actor.ReceiveActorOnInputTouchEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchEnter">Actor.ReceiveActorOnInputTouchEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchLeave">Actor.ReceiveActorOnInputTouchLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnReleased">Actor.ReceiveActorOnReleased</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveAnyDamage">Actor.ReceiveAnyDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveBeginPlay">Actor.ReceiveBeginPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveDestroyed">Actor.ReceiveDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveEndPlay">Actor.ReceiveEndPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveHit">Actor.ReceiveHit</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceivePointDamage">Actor.ReceivePointDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveRadialDamage">Actor.ReceiveRadialDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveTick">Actor.ReceiveTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_UserConstructionScript">Actor.UserConstructionScript</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ActorHasTag_UE4_Core_Name_">Actor.ActorHasTag(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddComponent_UE4_Core_Name_System_Boolean_UE4_CoreUObject_Transform_UE4_CoreUObject_UObject_">Actor.AddComponent(Name, Boolean, Transform, UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddTickPrerequisiteActor_UE4_Engine_Actor_">Actor.AddTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddTickPrerequisiteComponent_UE4_Engine_ActorComponent_">Actor.AddTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_DetachRootComponentFromParent_System_Boolean_">Actor.DetachRootComponentFromParent(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_DisableInput_UE4_Engine_PlayerController_">Actor.DisableInput(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_EnableInput_UE4_Engine_PlayerController_">Actor.EnableInput(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_FlushNetDormancy">Actor.FlushNetDormancy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ForceNetUpdate">Actor.ForceNetUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorBounds_System_Boolean_">Actor.GetActorBounds(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorEnableCollision">Actor.GetActorEnableCollision()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorEyesViewPoint">Actor.GetActorEyesViewPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorForwardVector">Actor.GetActorForwardVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorLabel">Actor.GetActorLabel()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorRelativeScale3D">Actor.GetActorRelativeScale3D()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorRightVector">Actor.GetActorRightVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorScale3D">Actor.GetActorScale3D()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorTickInterval">Actor.GetActorTickInterval()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorTimeDilation">Actor.GetActorTimeDilation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorUpVector">Actor.GetActorUpVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAllChildActors_System_Boolean_">Actor.GetAllChildActors(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachedActors">Actor.GetAttachedActors()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachParentActor">Actor.GetAttachParentActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachParentSocketName">Actor.GetAttachParentSocketName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__">Actor.GetComponentByClass(SubclassOf&lt;ActorComponent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentsByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__">Actor.GetComponentsByClass(SubclassOf&lt;ActorComponent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentsByTag_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__UE4_Core_Name_">Actor.GetComponentsByTag(SubclassOf&lt;ActorComponent&gt;, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetDistanceTo_UE4_Engine_Actor_">Actor.GetDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetDotProductTo_UE4_Engine_Actor_">Actor.GetDotProductTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetFolderPath_UE4_Core_Name_">Actor.GetFolderPath(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetGameTimeSinceCreation">Actor.GetGameTimeSinceCreation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetHorizontalDistanceTo_UE4_Engine_Actor_">Actor.GetHorizontalDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetHorizontalDotProductTo_UE4_Engine_Actor_">Actor.GetHorizontalDotProductTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputAxisKeyValue_UE4_InputCore_Key_">Actor.GetInputAxisKeyValue(Key)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputAxisValue_UE4_Core_Name_">Actor.GetInputAxisValue(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputVectorAxisValue_UE4_InputCore_Key_">Actor.GetInputVectorAxisValue(Key)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInstigator">Actor.GetInstigator()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInstigatorController">Actor.GetInstigatorController()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetLifeSpan">Actor.GetLifeSpan()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetLocalRole">Actor.GetLocalRole()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOverlappingActors_UE4_CoreUObject_SubclassOf_UE4_Engine_Actor__">Actor.GetOverlappingActors(SubclassOf&lt;Actor&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOverlappingComponents">Actor.GetOverlappingComponents()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOwner">Actor.GetOwner()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetParentActor">Actor.GetParentActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetParentComponent">Actor.GetParentComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetRemoteRole">Actor.GetRemoteRole()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetSquaredDistanceTo_UE4_Engine_Actor_">Actor.GetSquaredDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetTickableWhenPaused">Actor.GetTickableWhenPaused()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetTransform">Actor.GetTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetVelocity">Actor.GetVelocity()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetVerticalDistanceTo_UE4_Engine_Actor_">Actor.GetVerticalDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_HasAuthority">Actor.HasAuthority()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsActorBeingDestroyed">Actor.IsActorBeingDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsActorTickEnabled">Actor.IsActorTickEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsChildActor">Actor.IsChildActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsEditable">Actor.IsEditable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsHiddenEd">Actor.IsHiddenEd()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsHiddenEdAtStartup">Actor.IsHiddenEdAtStartup()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsOverlappingActor_UE4_Engine_Actor_">Actor.IsOverlappingActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsSelectable">Actor.IsSelectable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsTemporarilyHiddenInEditor_System_Boolean_">Actor.IsTemporarilyHiddenInEditor(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachRootComponentTo_UE4_Engine_SceneComponent_UE4_Core_Name_System_Byte_System_Boolean_">Actor.K2_AttachRootComponentTo(SceneComponent, Name, Byte, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachRootComponentToActor_UE4_Engine_Actor_UE4_Core_Name_System_Byte_System_Boolean_">Actor.K2_AttachRootComponentToActor(Actor, Name, Byte, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachToActor_UE4_Engine_Actor_UE4_Core_Name_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_System_Boolean_">Actor.K2_AttachToActor(Actor, Name, EAttachmentRule, EAttachmentRule, EAttachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachToComponent_UE4_Engine_SceneComponent_UE4_Core_Name_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_System_Boolean_">Actor.K2_AttachToComponent(SceneComponent, Name, EAttachmentRule, EAttachmentRule, EAttachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DestroyActor">Actor.K2_DestroyActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DestroyComponent_UE4_Engine_ActorComponent_">Actor.K2_DestroyComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DetachFromActor_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_">Actor.K2_DetachFromActor(EDetachmentRule, EDetachmentRule, EDetachmentRule)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetActorLocation">Actor.K2_GetActorLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetActorRotation">Actor.K2_GetActorRotation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetRootComponent">Actor.K2_GetRootComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_SetActorLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorLocationAndRotation_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_SetActorLocationAndRotation(Vector, Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRotation_UE4_CoreUObject_Rotator_System_Boolean_">Actor.K2_SetActorRotation(Rotator, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_SetActorTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_TeleportTo_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_">Actor.K2_TeleportTo(Vector, Rotator)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MakeMIDForMaterial_UE4_Engine_MaterialInterface_">Actor.MakeMIDForMaterial(MaterialInterface)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MakeNoise_System_Single_UE4_Engine_Pawn_UE4_CoreUObject_Vector_System_Single_UE4_Core_Name_">Actor.MakeNoise(Single, Pawn, Vector, Single, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PrestreamTextures_System_Single_System_Boolean_System_Int32_">Actor.PrestreamTextures(Single, Boolean, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoveTickPrerequisiteActor_UE4_Engine_Actor_">Actor.RemoveTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoveTickPrerequisiteComponent_UE4_Engine_ActorComponent_">Actor.RemoveTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorEnableCollision_System_Boolean_">Actor.SetActorEnableCollision(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorHiddenInGame_System_Boolean_">Actor.SetActorHiddenInGame(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorLabel_System_String_System_Boolean_">Actor.SetActorLabel(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorRelativeScale3D_UE4_CoreUObject_Vector_">Actor.SetActorRelativeScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorScale3D_UE4_CoreUObject_Vector_">Actor.SetActorScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorTickEnabled_System_Boolean_">Actor.SetActorTickEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorTickInterval_System_Single_">Actor.SetActorTickInterval(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetFolderPath_UE4_Core_Name_">Actor.SetFolderPath(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetIsTemporarilyHiddenInEditor_System_Boolean_">Actor.SetIsTemporarilyHiddenInEditor(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetLifeSpan_System_Single_">Actor.SetLifeSpan(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetNetDormancy_System_Byte_">Actor.SetNetDormancy(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetOwner_UE4_Engine_Actor_">Actor.SetOwner(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetReplicateMovement_System_Boolean_">Actor.SetReplicateMovement(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetReplicates_System_Boolean_">Actor.SetReplicates(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetTickableWhenPaused_System_Boolean_">Actor.SetTickableWhenPaused(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetTickGroup_System_Byte_">Actor.SetTickGroup(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SnapRootComponentTo_UE4_Engine_Actor_UE4_Core_Name_">Actor.SnapRootComponentTo(Actor, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_TearOff">Actor.TearOff()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_WasRecentlyRendered_System_Single_">Actor.WasRecentlyRendered(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PrimaryActorTick">Actor.PrimaryActorTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHidden">Actor.bHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetTemporary">Actor.bNetTemporary</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetStartup">Actor.bNetStartup</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bOnlyRelevantToOwner">Actor.bOnlyRelevantToOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAlwaysRelevant">Actor.bAlwaysRelevant</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplicateMovement">Actor.bReplicateMovement</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bTearOff">Actor.bTearOff</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bExchangedRoles">Actor.bExchangedRoles</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetLoadOnClient">Actor.bNetLoadOnClient</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetUseOwnerRelevancy">Actor.bNetUseOwnerRelevancy</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bRelevantForNetworkReplays">Actor.bRelevantForNetworkReplays</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplayRewindable">Actor.bReplayRewindable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAllowTickBeforeBeginPlay">Actor.bAllowTickBeforeBeginPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAutoDestroyWhenFinished">Actor.bAutoDestroyWhenFinished</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bBlockInput">Actor.bBlockInput</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCanBeDamaged">Actor.bCanBeDamaged</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCollideWhenPlacing">Actor.bCollideWhenPlacing</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bFindCameraComponentWhenViewTarget">Actor.bFindCameraComponentWhenViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bGenerateOverlapEventsDuringLevelStreaming">Actor.bGenerateOverlapEventsDuringLevelStreaming</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIgnoresOriginShifting">Actor.bIgnoresOriginShifting</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bEnableAutoLODGeneration">Actor.bEnableAutoLODGeneration</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIsEditorOnlyActor">Actor.bIsEditorOnlyActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorSeamlessTraveled">Actor.bActorSeamlessTraveled</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplicates">Actor.bReplicates</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCanBeInCluster">Actor.bCanBeInCluster</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAllowReceiveTickEventOnDedicatedServer">Actor.bAllowReceiveTickEventOnDedicatedServer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorEnableCollision">Actor.bActorEnableCollision</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorIsBeingDestroyed">Actor.bActorIsBeingDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoteRole">Actor.RemoteRole</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReplicatedMovement">Actor.ReplicatedMovement</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InitialLifeSpan">Actor.InitialLifeSpan</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_CustomTimeDilation">Actor.CustomTimeDilation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AttachmentReplication">Actor.AttachmentReplication</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Owner">Actor.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetDriverName">Actor.NetDriverName</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Role">Actor.Role</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetDormancy">Actor.NetDormancy</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AutoReceiveInput">Actor.AutoReceiveInput</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InputPriority">Actor.InputPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InputComponent">Actor.InputComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetCullDistanceSquared">Actor.NetCullDistanceSquared</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetTag">Actor.NetTag</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetUpdateFrequency">Actor.NetUpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MinNetUpdateFrequency">Actor.MinNetUpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetPriority">Actor.NetPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Instigator">Actor.Instigator</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Children">Actor.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RootComponent">Actor.RootComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PivotOffset">Actor.PivotOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ControllingMatineeActors">Actor.ControllingMatineeActors</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GroupActor">Actor.GroupActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SpriteScale">Actor.SpriteScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_FolderPath">Actor.FolderPath</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEd">Actor.bHiddenEd</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIsEditorPreviewActor">Actor.bIsEditorPreviewActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdLayer">Actor.bHiddenEdLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdLevel">Actor.bHiddenEdLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bLockLocation">Actor.bLockLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorLabelEditable">Actor.bActorLabelEditable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bEditable">Actor.bEditable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bListedInSceneOutliner">Actor.bListedInSceneOutliner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdTemporary">Actor.bHiddenEdTemporary</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InstanceComponents">Actor.InstanceComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_BlueprintCreatedComponents">Actor.BlueprintCreatedComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_TriggerBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class TriggerBase : Actor</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_TriggerBase_CollisionComponent.md&amp;value=---%0Auid%3A%20UE4.Engine.TriggerBase.CollisionComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/TriggerBase.cs/#L19">View Source</a>
+  </span>
+  <a id="UE4_Engine_TriggerBase_CollisionComponent_" data-uid="UE4.Engine.TriggerBase.CollisionComponent*"></a>
+  <h4 id="UE4_Engine_TriggerBase_CollisionComponent" data-uid="UE4.Engine.TriggerBase.CollisionComponent">CollisionComponent</h4>
+  <div class="markdown level1 summary"><p>Shape component used for collision</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ShapeComponent CollisionComponent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ShapeComponent.html">ShapeComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_TriggerBase_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.TriggerBase.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/TriggerBase.cs/#L37">View Source</a>
+  </span>
+  <a id="UE4_Engine_TriggerBase_DefaultObject_" data-uid="UE4.Engine.TriggerBase.DefaultObject*"></a>
+  <h4 id="UE4_Engine_TriggerBase_DefaultObject" data-uid="UE4.Engine.TriggerBase.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TriggerBase DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.TriggerBase.html">TriggerBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_TriggerBase_SpriteComponent.md&amp;value=---%0Auid%3A%20UE4.Engine.TriggerBase.SpriteComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/TriggerBase.cs/#L23">View Source</a>
+  </span>
+  <a id="UE4_Engine_TriggerBase_SpriteComponent_" data-uid="UE4.Engine.TriggerBase.SpriteComponent*"></a>
+  <h4 id="UE4_Engine_TriggerBase_SpriteComponent" data-uid="UE4.Engine.TriggerBase.SpriteComponent">SpriteComponent</h4>
+  <div class="markdown level1 summary"><p>Billboard used to see the trigger in the editor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BillboardComponent SpriteComponent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.BillboardComponent.html">BillboardComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_TriggerBase_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.TriggerBase.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/TriggerBase.cs/#L35">View Source</a>
+  </span>
+  <a id="UE4_Engine_TriggerBase_StaticClass_" data-uid="UE4.Engine.TriggerBase.StaticClass*"></a>
+  <h4 id="UE4_Engine_TriggerBase_StaticClass" data-uid="UE4.Engine.TriggerBase.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_TriggerBase_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.TriggerBase.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/TriggerBase.cs/#L39">View Source</a>
+  </span>
+  <a id="UE4_Engine_TriggerBase_New_" data-uid="UE4.Engine.TriggerBase.New*"></a>
+  <h4 id="UE4_Engine_TriggerBase_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.TriggerBase.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TriggerBase New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.TriggerBase.html">TriggerBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_TriggerBase_op_Implicit_System_IntPtr__UE4_Engine_TriggerBase.md&amp;value=---%0Auid%3A%20UE4.Engine.TriggerBase.op_Implicit(System.IntPtr)~UE4.Engine.TriggerBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/TriggerBase.cs/#L33">View Source</a>
+  </span>
+  <a id="UE4_Engine_TriggerBase_op_Implicit_" data-uid="UE4.Engine.TriggerBase.op_Implicit*"></a>
+  <h4 id="UE4_Engine_TriggerBase_op_Implicit_System_IntPtr__UE4_Engine_TriggerBase" data-uid="UE4.Engine.TriggerBase.op_Implicit(System.IntPtr)~UE4.Engine.TriggerBase">Implicit(IntPtr to TriggerBase)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator TriggerBase(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.TriggerBase.html">TriggerBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_TriggerBase.md&amp;value=---%0Auid%3A%20UE4.Engine.TriggerBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/TriggerBase.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

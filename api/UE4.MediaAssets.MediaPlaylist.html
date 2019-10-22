@@ -1,0 +1,966 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MediaPlaylist
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MediaPlaylist
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.MediaAssets.MediaPlaylist">
+  
+  
+  <h1 id="UE4_MediaAssets_MediaPlaylist" data-uid="UE4.MediaAssets.MediaPlaylist" class="text-break">Class MediaPlaylist
+  </h1>
+  <div class="markdown level0 summary"><p>Implements a media play list.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><span class="xref">MediaPlaylist</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.MediaAssets.html">UE4.MediaAssets</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MediaPlaylist : UObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L142">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_DefaultObject_" data-uid="UE4.MediaAssets.MediaPlaylist.DefaultObject*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_DefaultObject" data-uid="UE4.MediaAssets.MediaPlaylist.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MediaPlaylist DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaPlaylist.html">MediaPlaylist</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_Items.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.Items%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L126">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_Items_" data-uid="UE4.MediaAssets.MediaPlaylist.Items*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_Items" data-uid="UE4.MediaAssets.MediaPlaylist.Items">Items</h4>
+  <div class="markdown level1 summary"><p>List of media sources to play.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;MediaSource&gt; Items { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_StaticClass.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L140">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_StaticClass_" data-uid="UE4.MediaAssets.MediaPlaylist.StaticClass*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_StaticClass" data-uid="UE4.MediaAssets.MediaPlaylist.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_Add_UE4_MediaAssets_MediaSource_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.Add(UE4.MediaAssets.MediaSource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L25">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_Add_" data-uid="UE4.MediaAssets.MediaPlaylist.Add*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_Add_UE4_MediaAssets_MediaSource_" data-uid="UE4.MediaAssets.MediaPlaylist.Add(UE4.MediaAssets.MediaSource)">Add(MediaSource)</h4>
+  <div class="markdown level1 summary"><p>Add a media source to the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(MediaSource MediaSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a></td>
+        <td><span class="parametername">MediaSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_Add_UE4_MediaAssets_MediaSource__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param MediaSource The media source to append.
+@return true if the media source was added, false otherwise.
+@see AddFile, AddUrl, Insert, RemoveAll, Remove, Replace</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_AddFile_System_String_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.AddFile(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L34">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_AddFile_" data-uid="UE4.MediaAssets.MediaPlaylist.AddFile*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_AddFile_System_String_" data-uid="UE4.MediaAssets.MediaPlaylist.AddFile(System.String)">AddFile(String)</h4>
+  <div class="markdown level1 summary"><p>Add a media file path to the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddFile(string FilePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">FilePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_AddFile_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param FilePath The file path to add.
+@return true if the file was added, false otherwise.
+@see Add, AddUrl, Insert, RemoveAll, Remove, Replace</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_AddUrl_System_String_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.AddUrl(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L43">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_AddUrl_" data-uid="UE4.MediaAssets.MediaPlaylist.AddUrl*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_AddUrl_System_String_" data-uid="UE4.MediaAssets.MediaPlaylist.AddUrl(System.String)">AddUrl(String)</h4>
+  <div class="markdown level1 summary"><p>Add a media URL to the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddUrl(string Url)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Url</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_AddUrl_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Url The URL to add.
+@return true if the URL was added, false otherwise.
+@see Add, AddFile, Insert, RemoveAll, Remove, Replace</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_Get_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.Get(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L52">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_Get_" data-uid="UE4.MediaAssets.MediaPlaylist.Get*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_Get_System_Int32_" data-uid="UE4.MediaAssets.MediaPlaylist.Get(System.Int32)">Get(Int32)</h4>
+  <div class="markdown level1 summary"><p>Get the media source at the specified index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MediaSource Get(int Index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_Get_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Index The index of the media source to get.
+@return The media source, or nullptr if the index doesn't exist.
+@see GetNext, GetRandom</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_GetNext.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.GetNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L61">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_GetNext_" data-uid="UE4.MediaAssets.MediaPlaylist.GetNext*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_GetNext" data-uid="UE4.MediaAssets.MediaPlaylist.GetNext">GetNext()</h4>
+  <div class="markdown level1 summary"><p>Get the next media source in the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int, MediaSource) GetNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_GetNext_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param InOutIndex Index of the current media source (will contain the new index).
+@return The media source after the current one, or nullptr if the list is empty.
+@see , GetPrevious, GetRandom</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_GetPrevious.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.GetPrevious%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L70">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_GetPrevious_" data-uid="UE4.MediaAssets.MediaPlaylist.GetPrevious*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_GetPrevious" data-uid="UE4.MediaAssets.MediaPlaylist.GetPrevious">GetPrevious()</h4>
+  <div class="markdown level1 summary"><p>Get the previous media source in the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int, MediaSource) GetPrevious()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_GetPrevious_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param InOutIndex Index of the current media source (will contain the new index).
+@return The media source before the current one, or nullptr if the list is empty.
+@see , GetNext, GetRandom</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_GetRandom.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.GetRandom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L79">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_GetRandom_" data-uid="UE4.MediaAssets.MediaPlaylist.GetRandom*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_GetRandom" data-uid="UE4.MediaAssets.MediaPlaylist.GetRandom">GetRandom()</h4>
+  <div class="markdown level1 summary"><p>Get a random media source in the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int, MediaSource) GetRandom()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_GetRandom_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param OutIndex Will contain the index of the returned media source.
+@return The random media source, or nullptr if the list is empty.
+@see Get, GetNext, GetPrevious</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_Insert_UE4_MediaAssets_MediaSource_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.Insert(UE4.MediaAssets.MediaSource%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L88">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_Insert_" data-uid="UE4.MediaAssets.MediaPlaylist.Insert*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_Insert_UE4_MediaAssets_MediaSource_System_Int32_" data-uid="UE4.MediaAssets.MediaPlaylist.Insert(UE4.MediaAssets.MediaSource,System.Int32)">Insert(MediaSource, Int32)</h4>
+  <div class="markdown level1 summary"><p>Insert a media source into the play list at the given position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(MediaSource MediaSource, int Index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a></td>
+        <td><span class="parametername">MediaSource</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_Insert_UE4_MediaAssets_MediaSource_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param MediaSource The media source to insert.
+@param Index The index to insert into.
+@see Add, Remove, RemoveAll, Replace</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L144">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_New_" data-uid="UE4.MediaAssets.MediaPlaylist.New*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.MediaAssets.MediaPlaylist.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MediaPlaylist New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaPlaylist.html">MediaPlaylist</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_Num.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.Num%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L95">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_Num_" data-uid="UE4.MediaAssets.MediaPlaylist.Num*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_Num" data-uid="UE4.MediaAssets.MediaPlaylist.Num">Num()</h4>
+  <div class="markdown level1 summary"><p>Get the number of media sources in the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Num()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_Num_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@return Number of media sources.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_Remove_UE4_MediaAssets_MediaSource_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.Remove(UE4.MediaAssets.MediaSource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L104">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_Remove_" data-uid="UE4.MediaAssets.MediaPlaylist.Remove*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_Remove_UE4_MediaAssets_MediaSource_" data-uid="UE4.MediaAssets.MediaPlaylist.Remove(UE4.MediaAssets.MediaSource)">Remove(MediaSource)</h4>
+  <div class="markdown level1 summary"><p>Remove all occurrences of the given media source in the play list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(MediaSource MediaSource)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a></td>
+        <td><span class="parametername">MediaSource</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_Remove_UE4_MediaAssets_MediaSource__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param MediaSource The media source to remove.
+@return true if the media source was removed, false otherwise.
+@see Add, Insert, Remove, Replace</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_RemoveAt_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.RemoveAt(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L113">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_RemoveAt_" data-uid="UE4.MediaAssets.MediaPlaylist.RemoveAt*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_RemoveAt_System_Int32_" data-uid="UE4.MediaAssets.MediaPlaylist.RemoveAt(System.Int32)">RemoveAt(Int32)</h4>
+  <div class="markdown level1 summary"><p>Remove the media source at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveAt(int Index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_RemoveAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Index The index of the media source to remove.
+@return true if the media source was removed, false otherwise.
+@see Add, Insert, RemoveAll, Replace</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_Replace_System_Int32_UE4_MediaAssets_MediaSource_.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.Replace(System.Int32%2CUE4.MediaAssets.MediaSource)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L123">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_Replace_" data-uid="UE4.MediaAssets.MediaPlaylist.Replace*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_Replace_System_Int32_UE4_MediaAssets_MediaSource_" data-uid="UE4.MediaAssets.MediaPlaylist.Replace(System.Int32,UE4.MediaAssets.MediaSource)">Replace(Int32, MediaSource)</h4>
+  <div class="markdown level1 summary"><p>Replace the media source at the specified position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Replace(int Index, MediaSource Replacement)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a></td>
+        <td><span class="parametername">Replacement</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MediaAssets_MediaPlaylist_Replace_System_Int32_UE4_MediaAssets_MediaSource__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Index The index of the media source to replace.
+@param Replacement The replacement media source.
+@return true if the media source was replaced, false otherwise.
+@see Add, Insert, RemoveAll, RemoveAt</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist_op_Implicit_System_IntPtr__UE4_MediaAssets_MediaPlaylist.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist.op_Implicit(System.IntPtr)~UE4.MediaAssets.MediaPlaylist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L138">View Source</a>
+  </span>
+  <a id="UE4_MediaAssets_MediaPlaylist_op_Implicit_" data-uid="UE4.MediaAssets.MediaPlaylist.op_Implicit*"></a>
+  <h4 id="UE4_MediaAssets_MediaPlaylist_op_Implicit_System_IntPtr__UE4_MediaAssets_MediaPlaylist" data-uid="UE4.MediaAssets.MediaPlaylist.op_Implicit(System.IntPtr)~UE4.MediaAssets.MediaPlaylist">Implicit(IntPtr to MediaPlaylist)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator MediaPlaylist(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MediaAssets.MediaPlaylist.html">MediaPlaylist</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MediaAssets_MediaPlaylist.md&amp;value=---%0Auid%3A%20UE4.MediaAssets.MediaPlaylist%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MediaAssets/MediaPlaylist.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

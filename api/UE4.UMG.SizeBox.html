@@ -1,0 +1,1365 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SizeBox
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SizeBox
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.UMG.SizeBox">
+  
+  
+  <h1 id="UE4_UMG_SizeBox" data-uid="UE4.UMG.SizeBox" class="text-break">Class SizeBox
+  </h1>
+  <div class="markdown level0 summary"><p>A widget that allows you to specify the size it reports to have and desire.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.UMG.Visual.html">Visual</a></div>
+    <div class="level3"><a class="xref" href="UE4.UMG.Widget.html">Widget</a></div>
+    <div class="level4"><a class="xref" href="UE4.UMG.PanelWidget.html">PanelWidget</a></div>
+    <div class="level5"><a class="xref" href="UE4.UMG.ContentWidget.html">ContentWidget</a></div>
+    <div class="level6"><span class="xref">SizeBox</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.UMG.ContentWidget.html#UE4_UMG_ContentWidget_GetContent">ContentWidget.GetContent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.ContentWidget.html#UE4_UMG_ContentWidget_GetContentSlot">ContentWidget.GetContentSlot()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.ContentWidget.html#UE4_UMG_ContentWidget_SetContent_UE4_UMG_Widget_">ContentWidget.SetContent(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_AddChild_UE4_UMG_Widget_">PanelWidget.AddChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_ClearChildren">PanelWidget.ClearChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_GetChildAt_System_Int32_">PanelWidget.GetChildAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_GetChildIndex_UE4_UMG_Widget_">PanelWidget.GetChildIndex(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_GetChildrenCount">PanelWidget.GetChildrenCount()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_HasAnyChildren">PanelWidget.HasAnyChildren()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_HasChild_UE4_UMG_Widget_">PanelWidget.HasChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_RemoveChild_UE4_UMG_Widget_">PanelWidget.RemoveChild(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_RemoveChildAt_System_Int32_">PanelWidget.RemoveChildAt(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.PanelWidget.html#UE4_UMG_PanelWidget_Slots">PanelWidget.Slots</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_ForceLayoutPrepass">Widget.ForceLayoutPrepass()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_ForceVolatile_System_Boolean_">Widget.ForceVolatile(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetCachedGeometry_UE4_SlateCore_Geometry_">Widget.GetCachedGeometry(Geometry)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetClipping">Widget.GetClipping()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetDesiredSize">Widget.GetDesiredSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetIsEnabled">Widget.GetIsEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetOwningLocalPlayer">Widget.GetOwningLocalPlayer()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetOwningPlayer">Widget.GetOwningPlayer()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetParent">Widget.GetParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetRenderOpacity">Widget.GetRenderOpacity()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_GetVisibility">Widget.GetVisibility()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_HasAnyUserFocus">Widget.HasAnyUserFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_HasFocusedDescendants">Widget.HasFocusedDescendants()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_HasKeyboardFocus">Widget.HasKeyboardFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_HasMouseCapture">Widget.HasMouseCapture()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_HasMouseCaptureByUser_System_Int32_System_Int32_">Widget.HasMouseCaptureByUser(Int32, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_HasUserFocus_UE4_Engine_PlayerController_">Widget.HasUserFocus(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_HasUserFocusedDescendants_UE4_Engine_PlayerController_">Widget.HasUserFocusedDescendants(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_InvalidateLayoutAndVolatility">Widget.InvalidateLayoutAndVolatility()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_IsHovered">Widget.IsHovered()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_IsVisible">Widget.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_RemoveFromParent">Widget.RemoveFromParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_ResetCursor">Widget.ResetCursor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetAllNavigationRules_UE4_SlateCore_EUINavigationRule_UE4_Core_Name_">Widget.SetAllNavigationRules(EUINavigationRule, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetClipping_UE4_SlateCore_EWidgetClipping_">Widget.SetClipping(EWidgetClipping)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetCursor_System_Byte_">Widget.SetCursor(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetIsEnabled_System_Boolean_">Widget.SetIsEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetKeyboardFocus">Widget.SetKeyboardFocus()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetNavigationRule_UE4_SlateCore_EUINavigation_UE4_SlateCore_EUINavigationRule_UE4_Core_Name_">Widget.SetNavigationRule(EUINavigation, EUINavigationRule, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetRenderAngle_System_Single_">Widget.SetRenderAngle(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetRenderOpacity_System_Single_">Widget.SetRenderOpacity(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetRenderScale_UE4_CoreUObject_Vector2D_">Widget.SetRenderScale(Vector2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetRenderShear_UE4_CoreUObject_Vector2D_">Widget.SetRenderShear(Vector2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetRenderTransform_UE4_UMG_WidgetTransform_">Widget.SetRenderTransform(WidgetTransform)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetRenderTransformPivot_UE4_CoreUObject_Vector2D_">Widget.SetRenderTransformPivot(Vector2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetRenderTranslation_UE4_CoreUObject_Vector2D_">Widget.SetRenderTranslation(Vector2D)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetToolTip_UE4_UMG_Widget_">Widget.SetToolTip(Widget)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetToolTipText_System_Byte_">Widget.SetToolTipText(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetUserFocus_UE4_Engine_PlayerController_">Widget.SetUserFocus(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_SetVisibility_UE4_UMG_ESlateVisibility_">Widget.SetVisibility(ESlateVisibility)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_Slot">Widget.Slot</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_ToolTipWidget">Widget.ToolTipWidget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_RenderTransform">Widget.RenderTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_RenderTransformPivot">Widget.RenderTransformPivot</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bIsVariable">Widget.bIsVariable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bCreatedByConstructionScript">Widget.bCreatedByConstructionScript</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bIsEnabled">Widget.bIsEnabled</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bOverride_Cursor">Widget.bOverride_Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bIsVolatile">Widget.bIsVolatile</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bHiddenInDesigner">Widget.bHiddenInDesigner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bExpandedInDesigner">Widget.bExpandedInDesigner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_bLockedInDesigner">Widget.bLockedInDesigner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_Cursor">Widget.Cursor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_RenderOpacity">Widget.RenderOpacity</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_Navigation">Widget.Navigation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_NativeBindings">Widget.NativeBindings</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.UMG.Widget.html#UE4_UMG_Widget_DesignerFlags">Widget.DesignerFlags</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.UMG.html">UE4.UMG</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_UMG_SizeBox_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SizeBox : ContentWidget</code></pre>
+  </div>
+  <h5 id="UE4_UMG_SizeBox_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Not all widgets report a desired size
+that you actually desire.  Wrapping them in a SizeBox lets you have the Size Box force them to be a particular size.</p>
+<ul>
+<li>Single Child</li>
+<li>Fixed Size</li>
+</ul>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_bOverride_HeightOverride.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.bOverride_HeightOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L85">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_bOverride_HeightOverride_" data-uid="UE4.UMG.SizeBox.bOverride_HeightOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_bOverride_HeightOverride" data-uid="UE4.UMG.SizeBox.bOverride_HeightOverride">bOverride_HeightOverride</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_HeightOverride { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_bOverride_MaxAspectRatio.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.bOverride_MaxAspectRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L105">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_bOverride_MaxAspectRatio_" data-uid="UE4.UMG.SizeBox.bOverride_MaxAspectRatio*"></a>
+  <h4 id="UE4_UMG_SizeBox_bOverride_MaxAspectRatio" data-uid="UE4.UMG.SizeBox.bOverride_MaxAspectRatio">bOverride_MaxAspectRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_MaxAspectRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_bOverride_MaxDesiredHeight.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.bOverride_MaxDesiredHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L101">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_bOverride_MaxDesiredHeight_" data-uid="UE4.UMG.SizeBox.bOverride_MaxDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_bOverride_MaxDesiredHeight" data-uid="UE4.UMG.SizeBox.bOverride_MaxDesiredHeight">bOverride_MaxDesiredHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_MaxDesiredHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_bOverride_MaxDesiredWidth.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.bOverride_MaxDesiredWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L97">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_bOverride_MaxDesiredWidth_" data-uid="UE4.UMG.SizeBox.bOverride_MaxDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_bOverride_MaxDesiredWidth" data-uid="UE4.UMG.SizeBox.bOverride_MaxDesiredWidth">bOverride_MaxDesiredWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_MaxDesiredWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_bOverride_MinDesiredHeight.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.bOverride_MinDesiredHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L93">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_bOverride_MinDesiredHeight_" data-uid="UE4.UMG.SizeBox.bOverride_MinDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_bOverride_MinDesiredHeight" data-uid="UE4.UMG.SizeBox.bOverride_MinDesiredHeight">bOverride_MinDesiredHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_MinDesiredHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_bOverride_MinDesiredWidth.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.bOverride_MinDesiredWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L89">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_bOverride_MinDesiredWidth_" data-uid="UE4.UMG.SizeBox.bOverride_MinDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_bOverride_MinDesiredWidth" data-uid="UE4.UMG.SizeBox.bOverride_MinDesiredWidth">bOverride_MinDesiredWidth</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_MinDesiredWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_bOverride_WidthOverride.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.bOverride_WidthOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L81">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_bOverride_WidthOverride_" data-uid="UE4.UMG.SizeBox.bOverride_WidthOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_bOverride_WidthOverride" data-uid="UE4.UMG.SizeBox.bOverride_WidthOverride">bOverride_WidthOverride</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_WidthOverride { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L147">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_DefaultObject_" data-uid="UE4.UMG.SizeBox.DefaultObject*"></a>
+  <h4 id="UE4_UMG_SizeBox_DefaultObject" data-uid="UE4.UMG.SizeBox.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SizeBox DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.SizeBox.html">SizeBox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_HeightOverride.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.HeightOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L114">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_HeightOverride_" data-uid="UE4.UMG.SizeBox.HeightOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_HeightOverride" data-uid="UE4.UMG.SizeBox.HeightOverride">HeightOverride</h4>
+  <div class="markdown level1 summary"><p>When specified, ignore the content's desired size and report the HeightOverride as the Box's desired height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HeightOverride { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_MaxAspectRatio.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.MaxAspectRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L134">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_MaxAspectRatio_" data-uid="UE4.UMG.SizeBox.MaxAspectRatio*"></a>
+  <h4 id="UE4_UMG_SizeBox_MaxAspectRatio" data-uid="UE4.UMG.SizeBox.MaxAspectRatio">MaxAspectRatio</h4>
+  <div class="markdown level1 summary"><p>Max Aspect Ratio</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxAspectRatio { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_MaxDesiredHeight.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.MaxDesiredHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L130">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_MaxDesiredHeight_" data-uid="UE4.UMG.SizeBox.MaxDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_MaxDesiredHeight" data-uid="UE4.UMG.SizeBox.MaxDesiredHeight">MaxDesiredHeight</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MaxDesiredHeight if smaller than the content's desired height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxDesiredHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_MaxDesiredWidth.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.MaxDesiredWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L126">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_MaxDesiredWidth_" data-uid="UE4.UMG.SizeBox.MaxDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_MaxDesiredWidth" data-uid="UE4.UMG.SizeBox.MaxDesiredWidth">MaxDesiredWidth</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MaxDesiredWidth if smaller than the content's desired width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxDesiredWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_MinDesiredHeight.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.MinDesiredHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L122">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_MinDesiredHeight_" data-uid="UE4.UMG.SizeBox.MinDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_MinDesiredHeight" data-uid="UE4.UMG.SizeBox.MinDesiredHeight">MinDesiredHeight</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MinDesiredHeight if larger than the content's desired height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinDesiredHeight { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_MinDesiredWidth.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.MinDesiredWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L118">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_MinDesiredWidth_" data-uid="UE4.UMG.SizeBox.MinDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_MinDesiredWidth" data-uid="UE4.UMG.SizeBox.MinDesiredWidth">MinDesiredWidth</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MinDesiredWidth if larger than the content's desired width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinDesiredWidth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_StaticClass.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L145">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_StaticClass_" data-uid="UE4.UMG.SizeBox.StaticClass*"></a>
+  <h4 id="UE4_UMG_SizeBox_StaticClass" data-uid="UE4.UMG.SizeBox.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_WidthOverride.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.WidthOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L110">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_WidthOverride_" data-uid="UE4.UMG.SizeBox.WidthOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_WidthOverride" data-uid="UE4.UMG.SizeBox.WidthOverride">WidthOverride</h4>
+  <div class="markdown level1 summary"><p>When specified, ignore the content's desired size and report the WidthOverride as the Box's desired width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WidthOverride { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_ClearHeightOverride.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.ClearHeightOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L27">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_ClearHeightOverride_" data-uid="UE4.UMG.SizeBox.ClearHeightOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_ClearHeightOverride" data-uid="UE4.UMG.SizeBox.ClearHeightOverride">ClearHeightOverride()</h4>
+  <div class="markdown level1 summary"><p>Clear Height Override</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearHeightOverride()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_ClearMaxAspectRatio.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.ClearMaxAspectRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L31">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_ClearMaxAspectRatio_" data-uid="UE4.UMG.SizeBox.ClearMaxAspectRatio*"></a>
+  <h4 id="UE4_UMG_SizeBox_ClearMaxAspectRatio" data-uid="UE4.UMG.SizeBox.ClearMaxAspectRatio">ClearMaxAspectRatio()</h4>
+  <div class="markdown level1 summary"><p>Clear Max Aspect Ratio</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMaxAspectRatio()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_ClearMaxDesiredHeight.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.ClearMaxDesiredHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L35">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_ClearMaxDesiredHeight_" data-uid="UE4.UMG.SizeBox.ClearMaxDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_ClearMaxDesiredHeight" data-uid="UE4.UMG.SizeBox.ClearMaxDesiredHeight">ClearMaxDesiredHeight()</h4>
+  <div class="markdown level1 summary"><p>Clear Max Desired Height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMaxDesiredHeight()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_ClearMaxDesiredWidth.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.ClearMaxDesiredWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L39">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_ClearMaxDesiredWidth_" data-uid="UE4.UMG.SizeBox.ClearMaxDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_ClearMaxDesiredWidth" data-uid="UE4.UMG.SizeBox.ClearMaxDesiredWidth">ClearMaxDesiredWidth()</h4>
+  <div class="markdown level1 summary"><p>Clear Max Desired Width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMaxDesiredWidth()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_ClearMinDesiredHeight.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.ClearMinDesiredHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L43">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_ClearMinDesiredHeight_" data-uid="UE4.UMG.SizeBox.ClearMinDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_ClearMinDesiredHeight" data-uid="UE4.UMG.SizeBox.ClearMinDesiredHeight">ClearMinDesiredHeight()</h4>
+  <div class="markdown level1 summary"><p>Clear Min Desired Height</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMinDesiredHeight()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_ClearMinDesiredWidth.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.ClearMinDesiredWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L47">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_ClearMinDesiredWidth_" data-uid="UE4.UMG.SizeBox.ClearMinDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_ClearMinDesiredWidth" data-uid="UE4.UMG.SizeBox.ClearMinDesiredWidth">ClearMinDesiredWidth()</h4>
+  <div class="markdown level1 summary"><p>Clear Min Desired Width</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearMinDesiredWidth()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_ClearWidthOverride.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.ClearWidthOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L51">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_ClearWidthOverride_" data-uid="UE4.UMG.SizeBox.ClearWidthOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_ClearWidthOverride" data-uid="UE4.UMG.SizeBox.ClearWidthOverride">ClearWidthOverride()</h4>
+  <div class="markdown level1 summary"><p>Clear Width Override</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearWidthOverride()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L149">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_New_" data-uid="UE4.UMG.SizeBox.New*"></a>
+  <h4 id="UE4_UMG_SizeBox_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.UMG.SizeBox.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SizeBox New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.SizeBox.html">SizeBox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_SetHeightOverride_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.SetHeightOverride(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L55">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_SetHeightOverride_" data-uid="UE4.UMG.SizeBox.SetHeightOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_SetHeightOverride_System_Single_" data-uid="UE4.UMG.SizeBox.SetHeightOverride(System.Single)">SetHeightOverride(Single)</h4>
+  <div class="markdown level1 summary"><p>When specified, ignore the content's desired size and report the HeightOverride as the Box's desired height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetHeightOverride(float InHeightOverride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InHeightOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_SetMaxAspectRatio_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.SetMaxAspectRatio(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L59">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_SetMaxAspectRatio_" data-uid="UE4.UMG.SizeBox.SetMaxAspectRatio*"></a>
+  <h4 id="UE4_UMG_SizeBox_SetMaxAspectRatio_System_Single_" data-uid="UE4.UMG.SizeBox.SetMaxAspectRatio(System.Single)">SetMaxAspectRatio(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Max Aspect Ratio</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaxAspectRatio(float InMaxAspectRatio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InMaxAspectRatio</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_SetMaxDesiredHeight_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.SetMaxDesiredHeight(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L63">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_SetMaxDesiredHeight_" data-uid="UE4.UMG.SizeBox.SetMaxDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_SetMaxDesiredHeight_System_Single_" data-uid="UE4.UMG.SizeBox.SetMaxDesiredHeight(System.Single)">SetMaxDesiredHeight(Single)</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MaxDesiredHeight if smaller than the content's desired height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaxDesiredHeight(float InMaxDesiredHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InMaxDesiredHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_SetMaxDesiredWidth_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.SetMaxDesiredWidth(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L67">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_SetMaxDesiredWidth_" data-uid="UE4.UMG.SizeBox.SetMaxDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_SetMaxDesiredWidth_System_Single_" data-uid="UE4.UMG.SizeBox.SetMaxDesiredWidth(System.Single)">SetMaxDesiredWidth(Single)</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MaxDesiredWidth if smaller than the content's desired width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMaxDesiredWidth(float InMaxDesiredWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InMaxDesiredWidth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_SetMinDesiredHeight_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.SetMinDesiredHeight(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L71">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_SetMinDesiredHeight_" data-uid="UE4.UMG.SizeBox.SetMinDesiredHeight*"></a>
+  <h4 id="UE4_UMG_SizeBox_SetMinDesiredHeight_System_Single_" data-uid="UE4.UMG.SizeBox.SetMinDesiredHeight(System.Single)">SetMinDesiredHeight(Single)</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MinDesiredHeight if larger than the content's desired height.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinDesiredHeight(float InMinDesiredHeight)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InMinDesiredHeight</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_SetMinDesiredWidth_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.SetMinDesiredWidth(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L75">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_SetMinDesiredWidth_" data-uid="UE4.UMG.SizeBox.SetMinDesiredWidth*"></a>
+  <h4 id="UE4_UMG_SizeBox_SetMinDesiredWidth_System_Single_" data-uid="UE4.UMG.SizeBox.SetMinDesiredWidth(System.Single)">SetMinDesiredWidth(Single)</h4>
+  <div class="markdown level1 summary"><p>When specified, will report the MinDesiredWidth if larger than the content's desired width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetMinDesiredWidth(float InMinDesiredWidth)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InMinDesiredWidth</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_SetWidthOverride_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.SetWidthOverride(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L79">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_SetWidthOverride_" data-uid="UE4.UMG.SizeBox.SetWidthOverride*"></a>
+  <h4 id="UE4_UMG_SizeBox_SetWidthOverride_System_Single_" data-uid="UE4.UMG.SizeBox.SetWidthOverride(System.Single)">SetWidthOverride(Single)</h4>
+  <div class="markdown level1 summary"><p>When specified, ignore the content's desired size and report the WidthOverride as the Box's desired width.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetWidthOverride(float InWidthOverride)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InWidthOverride</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox_op_Implicit_System_IntPtr__UE4_UMG_SizeBox.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox.op_Implicit(System.IntPtr)~UE4.UMG.SizeBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L143">View Source</a>
+  </span>
+  <a id="UE4_UMG_SizeBox_op_Implicit_" data-uid="UE4.UMG.SizeBox.op_Implicit*"></a>
+  <h4 id="UE4_UMG_SizeBox_op_Implicit_System_IntPtr__UE4_UMG_SizeBox" data-uid="UE4.UMG.SizeBox.op_Implicit(System.IntPtr)~UE4.UMG.SizeBox">Implicit(IntPtr to SizeBox)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator SizeBox(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.SizeBox.html">SizeBox</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_SizeBox.md&amp;value=---%0Auid%3A%20UE4.UMG.SizeBox%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/SizeBox.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

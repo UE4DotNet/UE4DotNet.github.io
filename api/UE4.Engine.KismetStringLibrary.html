@@ -1,0 +1,3991 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class KismetStringLibrary
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class KismetStringLibrary
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.KismetStringLibrary">
+  
+  
+  <h1 id="UE4_Engine_KismetStringLibrary" data-uid="UE4.Engine.KismetStringLibrary" class="text-break">Class KismetStringLibrary
+  </h1>
+  <div class="markdown level0 summary"><p>Kismet String Library</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.Engine.BlueprintFunctionLibrary.html">BlueprintFunctionLibrary</a></div>
+    <div class="level3"><span class="xref">KismetStringLibrary</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_KismetStringLibrary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class KismetStringLibrary : BlueprintFunctionLibrary</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L563">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_DefaultObject_" data-uid="UE4.Engine.KismetStringLibrary.DefaultObject*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_DefaultObject" data-uid="UE4.Engine.KismetStringLibrary.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KismetStringLibrary DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.KismetStringLibrary.html">KismetStringLibrary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L561">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_StaticClass_" data-uid="UE4.Engine.KismetStringLibrary.StaticClass*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_StaticClass" data-uid="UE4.Engine.KismetStringLibrary.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Bool_System_String_System_String_System_Boolean_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Bool(System.String%2CSystem.String%2CSystem.Boolean%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L30">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Bool_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Bool*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Bool_System_String_System_String_System_Boolean_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Bool(System.String,System.String,System.Boolean,System.String)">BuildString_Bool(String, String, Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a boolean-&gt;string, creating a new string in the form AppendTo+Prefix+InBool+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Bool(string AppendTo, string Prefix, bool InBool, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">InBool</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Bool_System_String_System_String_System_Boolean_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InBool - The bool value to convert. Will add &quot;true&quot; or &quot;false&quot; to the conversion string
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Color_System_String_System_String_UE4_CoreUObject_LinearColor_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Color(System.String%2CSystem.String%2CUE4.CoreUObject.LinearColor%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Color_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Color*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Color_System_String_System_String_UE4_CoreUObject_LinearColor_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Color(System.String,System.String,UE4.CoreUObject.LinearColor,System.String)">BuildString_Color(String, String, LinearColor, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color-&gt;string, creating a new string in the form AppendTo+Prefix+InColor+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Color(string AppendTo, string Prefix, LinearColor InColor, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td><span class="parametername">InColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Color_System_String_System_String_UE4_CoreUObject_LinearColor_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InColor - The linear color value to convert. Uses the standard ToString conversion
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Float_System_String_System_String_System_Single_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Float(System.String%2CSystem.String%2CSystem.Single%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L58">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Float_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Float*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Float_System_String_System_String_System_Single_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Float(System.String,System.String,System.Single,System.String)">BuildString_Float(String, String, Single, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a float-&gt;string, create a new string in the form AppendTo+Prefix+InFloat+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Float(string AppendTo, string Prefix, float InFloat, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InFloat</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Float_System_String_System_String_System_Single_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InFloat - The float value to convert
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Int_System_String_System_String_System_Int32_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Int(System.String%2CSystem.String%2CSystem.Int32%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L72">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Int_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Int*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Int_System_String_System_String_System_Int32_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Int(System.String,System.String,System.Int32,System.String)">BuildString_Int(String, String, Int32, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a int-&gt;string, creating a new string in the form AppendTo+Prefix+InInt+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Int(string AppendTo, string Prefix, int InInt, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">InInt</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Int_System_String_System_String_System_Int32_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InInt - The int value to convert
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_IntVector_System_String_System_String_UE4_CoreUObject_IntVector_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_IntVector(System.String%2CSystem.String%2CUE4.CoreUObject.IntVector%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L86">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_IntVector_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_IntVector*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_IntVector_System_String_System_String_UE4_CoreUObject_IntVector_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_IntVector(System.String,System.String,UE4.CoreUObject.IntVector,System.String)">BuildString_IntVector(String, String, IntVector, String)</h4>
+  <div class="markdown level1 summary"><p>Converts an IntVector-&gt;string, creating a new string in the form AppendTo+Prefix+InIntVector+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_IntVector(string AppendTo, string Prefix, IntVector InIntVector, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntVector.html">IntVector</a></td>
+        <td><span class="parametername">InIntVector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_IntVector_System_String_System_String_UE4_CoreUObject_IntVector_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InIntVector - The intVector value to convert. Uses the standard FVector::ToString conversion
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Name_System_String_System_String_UE4_Core_Name_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Name(System.String%2CSystem.String%2CUE4.Core.Name%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L100">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Name_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Name*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Name_System_String_System_String_UE4_Core_Name_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Name(System.String,System.String,UE4.Core.Name,System.String)">BuildString_Name(String, String, Name, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a color-&gt;string, creating a new string in the form AppendTo+Prefix+InName+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Name(string AppendTo, string Prefix, Name InName, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">InName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Name_System_String_System_String_UE4_Core_Name_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InName - The name value to convert
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Object_System_String_System_String_UE4_CoreUObject_UObject_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Object(System.String%2CSystem.String%2CUE4.CoreUObject.UObject%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L114">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Object_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Object*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Object_System_String_System_String_UE4_CoreUObject_UObject_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Object(System.String,System.String,UE4.CoreUObject.UObject,System.String)">BuildString_Object(String, String, UObject, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a object-&gt;string, creating a new string in the form AppendTo+Prefix+object name+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Object(string AppendTo, string Prefix, UObject InObj, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">InObj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Object_System_String_System_String_UE4_CoreUObject_UObject_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InObj - The object to convert. Will insert the name of the object into the conversion string
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Rotator_System_String_System_String_UE4_CoreUObject_Rotator_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Rotator(System.String%2CSystem.String%2CUE4.CoreUObject.Rotator%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L128">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Rotator_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Rotator*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Rotator_System_String_System_String_UE4_CoreUObject_Rotator_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Rotator(System.String,System.String,UE4.CoreUObject.Rotator,System.String)">BuildString_Rotator(String, String, Rotator, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a rotator-&gt;string, creating a new string in the form AppendTo+Prefix+InRot+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Rotator(string AppendTo, string Prefix, Rotator InRot, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Rotator.html">Rotator</a></td>
+        <td><span class="parametername">InRot</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Rotator_System_String_System_String_UE4_CoreUObject_Rotator_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InRot - The rotator value to convert. Uses the standard ToString conversion
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Vector_System_String_System_String_UE4_CoreUObject_Vector_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Vector(System.String%2CSystem.String%2CUE4.CoreUObject.Vector%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L142">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Vector_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Vector*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Vector_System_String_System_String_UE4_CoreUObject_Vector_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Vector(System.String,System.String,UE4.CoreUObject.Vector,System.String)">BuildString_Vector(String, String, Vector, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a vector-&gt;string, creating a new string in the form AppendTo+Prefix+InVector+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Vector(string AppendTo, string Prefix, Vector InVector, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td><span class="parametername">InVector</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Vector_System_String_System_String_UE4_CoreUObject_Vector_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InVector - The vector value to convert. Uses the standard FVector::ToString conversion
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_BuildString_Vector2d_System_String_System_String_UE4_CoreUObject_Vector2D_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.BuildString_Vector2d(System.String%2CSystem.String%2CUE4.CoreUObject.Vector2D%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L156">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_BuildString_Vector2d_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Vector2d*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_BuildString_Vector2d_System_String_System_String_UE4_CoreUObject_Vector2D_System_String_" data-uid="UE4.Engine.KismetStringLibrary.BuildString_Vector2d(System.String,System.String,UE4.CoreUObject.Vector2D,System.String)">BuildString_Vector2d(String, String, Vector2D, String)</h4>
+  <div class="markdown level1 summary"><p>Converts a vector2d-&gt;string, creating a new string in the form AppendTo+Prefix+InVector2d+Suffix
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildString_Vector2d(string AppendTo, string Prefix, Vector2D InVector2d, string Suffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AppendTo</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Prefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">InVector2d</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Suffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_BuildString_Vector2d_System_String_System_String_UE4_CoreUObject_Vector2D_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AppendTo - An existing string to use as the start of the conversion string
+@param Prefix - A string to use as a prefix, after the AppendTo string
+@param InVector2d - The vector2d value to convert. Uses the standard FVector2D::ToString conversion
+@param Suffix - A suffix to append to the end of the conversion string
+@return A new string built from the passed parameters</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Concat_StrStr_System_String_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Concat_StrStr(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L168">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Concat_StrStr_" data-uid="UE4.Engine.KismetStringLibrary.Concat_StrStr*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Concat_StrStr_System_String_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Concat_StrStr(System.String,System.String)">Concat_StrStr(String, String)</h4>
+  <div class="markdown level1 summary"><p>Concatenates two strings together to make a new string
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Concat_StrStr(string A, string B)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">A</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">B</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_Concat_StrStr_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param A - The original string
+@param B - The string to append to A
+@returns A new string which is the concatenation of A+B</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Contains_System_String_System_String_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Contains(System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L178">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Contains_" data-uid="UE4.Engine.KismetStringLibrary.Contains*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Contains_System_String_System_String_System_Boolean_System_Boolean_" data-uid="UE4.Engine.KismetStringLibrary.Contains(System.String,System.String,System.Boolean,System.Boolean)">Contains(String, String, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Returns whether this string contains the specified substring.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool Contains(string SearchIn, string Substring, bool bUseCase, bool bSearchFromEnd)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SearchIn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Substring</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bUseCase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bSearchFromEnd</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_Contains_System_String_System_String_System_Boolean_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param SubStr                 Find to search for
+@param SearchCase             Indicates whether the search is case sensitive or not ( defaults to ESearchCase::IgnoreCase )
+@param SearchDir                      Indicates whether the search starts at the begining or at the end ( defaults to ESearchDir::FromStart )
+@return                                       Returns whether the string contains the substring</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_BoolToString_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_BoolToString(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L182">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_BoolToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_BoolToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_BoolToString_System_Boolean_" data-uid="UE4.Engine.KismetStringLibrary.Conv_BoolToString(System.Boolean)">Conv_BoolToString(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Converts a boolean value to a string, either 'true' or 'false'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_BoolToString(bool InBool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">InBool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_ByteToString_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_ByteToString(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L186">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_ByteToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_ByteToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_ByteToString_System_Byte_" data-uid="UE4.Engine.KismetStringLibrary.Conv_ByteToString(System.Byte)">Conv_ByteToString(Byte)</h4>
+  <div class="markdown level1 summary"><p>Converts a byte value to a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_ByteToString(byte InByte)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">InByte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_ColorToString_UE4_CoreUObject_LinearColor_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_ColorToString(UE4.CoreUObject.LinearColor)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L190">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_ColorToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_ColorToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_ColorToString_UE4_CoreUObject_LinearColor_" data-uid="UE4.Engine.KismetStringLibrary.Conv_ColorToString(UE4.CoreUObject.LinearColor)">Conv_ColorToString(LinearColor)</h4>
+  <div class="markdown level1 summary"><p>Converts a linear color value to a string, in the form '(R=,G=,B=,A=)'</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_ColorToString(LinearColor InColor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td><span class="parametername">InColor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_FloatToString_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_FloatToString(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L194">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_FloatToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_FloatToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_FloatToString_System_Single_" data-uid="UE4.Engine.KismetStringLibrary.Conv_FloatToString(System.Single)">Conv_FloatToString(Single)</h4>
+  <div class="markdown level1 summary"><p>Converts a float value to a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_FloatToString(float InFloat)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InFloat</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_IntToString_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_IntToString(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L198">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_IntToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_IntToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_IntToString_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.Conv_IntToString(System.Int32)">Conv_IntToString(Int32)</h4>
+  <div class="markdown level1 summary"><p>Converts an integer value to a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_IntToString(int InInt)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">InInt</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_IntVectorToString_UE4_CoreUObject_IntVector_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_IntVectorToString(UE4.CoreUObject.IntVector)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L202">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_IntVectorToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_IntVectorToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_IntVectorToString_UE4_CoreUObject_IntVector_" data-uid="UE4.Engine.KismetStringLibrary.Conv_IntVectorToString(UE4.CoreUObject.IntVector)">Conv_IntVectorToString(IntVector)</h4>
+  <div class="markdown level1 summary"><p>Converts an IntVector value to a string, in the form 'X= Y= Z='</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_IntVectorToString(IntVector InIntVec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntVector.html">IntVector</a></td>
+        <td><span class="parametername">InIntVec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_NameToString_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_NameToString(UE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L206">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_NameToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_NameToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_NameToString_UE4_Core_Name_" data-uid="UE4.Engine.KismetStringLibrary.Conv_NameToString(UE4.Core.Name)">Conv_NameToString(Name)</h4>
+  <div class="markdown level1 summary"><p>Converts a name value to a string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_NameToString(Name InName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">InName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_ObjectToString_UE4_CoreUObject_UObject_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_ObjectToString(UE4.CoreUObject.UObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L210">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_ObjectToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_ObjectToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_ObjectToString_UE4_CoreUObject_UObject_" data-uid="UE4.Engine.KismetStringLibrary.Conv_ObjectToString(UE4.CoreUObject.UObject)">Conv_ObjectToString(UObject)</h4>
+  <div class="markdown level1 summary"><p>Converts a UObject value to a string by calling the object's GetName method</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_ObjectToString(UObject InObj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">InObj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_RotatorToString_UE4_CoreUObject_Rotator_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_RotatorToString(UE4.CoreUObject.Rotator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L214">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_RotatorToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_RotatorToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_RotatorToString_UE4_CoreUObject_Rotator_" data-uid="UE4.Engine.KismetStringLibrary.Conv_RotatorToString(UE4.CoreUObject.Rotator)">Conv_RotatorToString(Rotator)</h4>
+  <div class="markdown level1 summary"><p>Converts a rotator value to a string, in the form 'P= Y= R='</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_RotatorToString(Rotator InRot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Rotator.html">Rotator</a></td>
+        <td><span class="parametername">InRot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_StringToColor_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_StringToColor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L218">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_StringToColor_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToColor*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_StringToColor_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToColor(System.String)">Conv_StringToColor(String)</h4>
+  <div class="markdown level1 summary"><p>Convert String Back To Color. IsValid indicates whether or not the string could be successfully converted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (LinearColor, bool) Conv_StringToColor(string InString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_StringToFloat_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_StringToFloat(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L222">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_StringToFloat_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToFloat*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_StringToFloat_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToFloat(System.String)">Conv_StringToFloat(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a string to a float value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float Conv_StringToFloat(string InString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_StringToInt_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_StringToInt(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L226">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_StringToInt_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToInt*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_StringToInt_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToInt(System.String)">Conv_StringToInt(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a string to a int value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Conv_StringToInt(string InString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_StringToName_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_StringToName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L230">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_StringToName_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToName*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_StringToName_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToName(System.String)">Conv_StringToName(String)</h4>
+  <div class="markdown level1 summary"><p>Converts a string to a name value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Name Conv_StringToName(string InString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_StringToRotator_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_StringToRotator(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L234">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_StringToRotator_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToRotator*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_StringToRotator_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToRotator(System.String)">Conv_StringToRotator(String)</h4>
+  <div class="markdown level1 summary"><p>Convert String Back To Rotator. IsValid indicates whether or not the string could be successfully converted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Rotator, bool) Conv_StringToRotator(string InString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="UE4.CoreUObject.Rotator.html">Rotator</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_StringToVector_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_StringToVector(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L238">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_StringToVector_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToVector*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_StringToVector_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToVector(System.String)">Conv_StringToVector(String)</h4>
+  <div class="markdown level1 summary"><p>Convert String Back To Vector. IsValid indicates whether or not the string could be successfully converted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Vector, bool) Conv_StringToVector(string InString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_StringToVector2D_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_StringToVector2D(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L242">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_StringToVector2D_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToVector2D*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_StringToVector2D_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Conv_StringToVector2D(System.String)">Conv_StringToVector2D(String)</h4>
+  <div class="markdown level1 summary"><p>Convert String Back To Vector2D. IsValid indicates whether or not the string could be successfully converted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Vector2D, bool) Conv_StringToVector2D(string InString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_TransformToString_UE4_CoreUObject_Transform_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_TransformToString(UE4.CoreUObject.Transform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L246">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_TransformToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_TransformToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_TransformToString_UE4_CoreUObject_Transform_" data-uid="UE4.Engine.KismetStringLibrary.Conv_TransformToString(UE4.CoreUObject.Transform)">Conv_TransformToString(Transform)</h4>
+  <div class="markdown level1 summary"><p>Converts a transform value to a string, in the form 'Translation: X= Y= Z= Rotation: P= Y= R= Scale: X= Y= Z='</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_TransformToString(Transform InTrans)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Transform.html">Transform</a></td>
+        <td><span class="parametername">InTrans</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_Vector2dToString_UE4_CoreUObject_Vector2D_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_Vector2dToString(UE4.CoreUObject.Vector2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L250">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_Vector2dToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_Vector2dToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_Vector2dToString_UE4_CoreUObject_Vector2D_" data-uid="UE4.Engine.KismetStringLibrary.Conv_Vector2dToString(UE4.CoreUObject.Vector2D)">Conv_Vector2dToString(Vector2D)</h4>
+  <div class="markdown level1 summary"><p>Converts a vector2d value to a string, in the form 'X= Y='</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_Vector2dToString(Vector2D InVec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">InVec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Conv_VectorToString_UE4_CoreUObject_Vector_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Conv_VectorToString(UE4.CoreUObject.Vector)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L254">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Conv_VectorToString_" data-uid="UE4.Engine.KismetStringLibrary.Conv_VectorToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Conv_VectorToString_UE4_CoreUObject_Vector_" data-uid="UE4.Engine.KismetStringLibrary.Conv_VectorToString(UE4.CoreUObject.Vector)">Conv_VectorToString(Vector)</h4>
+  <div class="markdown level1 summary"><p>Converts a vector value to a string, in the form 'X= Y= Z='</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Conv_VectorToString(Vector InVec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td><span class="parametername">InVec</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_CullArray_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.CullArray(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L263">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_CullArray_" data-uid="UE4.Engine.KismetStringLibrary.CullArray*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_CullArray_System_String_" data-uid="UE4.Engine.KismetStringLibrary.CullArray(System.String)">CullArray(String)</h4>
+  <div class="markdown level1 summary"><p>Takes an array of strings and removes any zero length entries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (IReadOnlyCollection&lt;string&gt;, int) CullArray(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;, <span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_CullArray_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param       InArray The array to cull</p>
+<p>@return      The number of elements left in InArray</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_EndsWith_System_String_System_String_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.EndsWith(System.String%2CSystem.String%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L271">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_EndsWith_" data-uid="UE4.Engine.KismetStringLibrary.EndsWith*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_EndsWith_System_String_System_String_System_Byte_" data-uid="UE4.Engine.KismetStringLibrary.EndsWith(System.String,System.String,System.Byte)">EndsWith(String, String, Byte)</h4>
+  <div class="markdown level1 summary"><p>Test whether this string ends with given string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EndsWith(string SourceString, string InSuffix, byte SearchCase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InSuffix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SearchCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_EndsWith_System_String_System_String_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param SearchCase            Indicates whether the search is case sensitive or not ( defaults to ESearchCase::IgnoreCase )
+@return true if this string ends with specified text, false otherwise</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_EqualEqual_StriStri_System_String_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.EqualEqual_StriStri(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L283">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_EqualEqual_StriStri_" data-uid="UE4.Engine.KismetStringLibrary.EqualEqual_StriStri*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_EqualEqual_StriStri_System_String_System_String_" data-uid="UE4.Engine.KismetStringLibrary.EqualEqual_StriStri(System.String,System.String)">EqualEqual_StriStri(String, String)</h4>
+  <div class="markdown level1 summary"><p>Test if the input strings are equal (A == B), ignoring case
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualEqual_StriStri(string A, string B)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">A</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">B</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_EqualEqual_StriStri_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param A - The string to compare against
+@param B - The string to compare
+@returns True if the strings are equal, false otherwise</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_EqualEqual_StrStr_System_String_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.EqualEqual_StrStr(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L295">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_EqualEqual_StrStr_" data-uid="UE4.Engine.KismetStringLibrary.EqualEqual_StrStr*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_EqualEqual_StrStr_System_String_System_String_" data-uid="UE4.Engine.KismetStringLibrary.EqualEqual_StrStr(System.String,System.String)">EqualEqual_StrStr(String, String)</h4>
+  <div class="markdown level1 summary"><p>Test if the input strings are equal (A == B)
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualEqual_StrStr(string A, string B)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">A</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">B</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_EqualEqual_StrStr_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param A - The string to compare against
+@param B - The string to compare
+@returns True if the strings are equal, false otherwise</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_FindSubstring_System_String_System_String_System_Boolean_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.FindSubstring(System.String%2CSystem.String%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L310">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_FindSubstring_" data-uid="UE4.Engine.KismetStringLibrary.FindSubstring*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_FindSubstring_System_String_System_String_System_Boolean_System_Boolean_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.FindSubstring(System.String,System.String,System.Boolean,System.Boolean,System.Int32)">FindSubstring(String, String, Boolean, Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Finds the starting index of a substring in the a specified string
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int FindSubstring(string SearchIn, string Substring, bool bUseCase, bool bSearchFromEnd, int StartPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SearchIn</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Substring</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bUseCase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bSearchFromEnd</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">StartPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_FindSubstring_System_String_System_String_System_Boolean_System_Boolean_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param SearchIn The string to search within
+@param Substring The string to look for in the SearchIn string
+@param bUseCase Whether or not to be case-sensitive
+@param bSearchFromEnd Whether or not to start the search from the end of the string instead of the beginning
+@param StartPosition The position to start the search from
+@return The index (starting from 0 if bSearchFromEnd is false) of the first occurence of the substring</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_GetCharacterArrayFromString_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.GetCharacterArrayFromString(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L321">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_GetCharacterArrayFromString_" data-uid="UE4.Engine.KismetStringLibrary.GetCharacterArrayFromString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_GetCharacterArrayFromString_System_String_" data-uid="UE4.Engine.KismetStringLibrary.GetCharacterArrayFromString(System.String)">GetCharacterArrayFromString(String)</h4>
+  <div class="markdown level1 summary"><p>Returns an array that contains one entry for each character in SourceString
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;string&gt; GetCharacterArrayFromString(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_GetCharacterArrayFromString_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param        SourceString    The string to break apart into characters
+@return       An array containing one entry for each character in SourceString</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_GetCharacterAsNumber_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.GetCharacterAsNumber(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L333">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_GetCharacterAsNumber_" data-uid="UE4.Engine.KismetStringLibrary.GetCharacterAsNumber*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_GetCharacterAsNumber_System_String_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.GetCharacterAsNumber(System.String,System.Int32)">GetCharacterAsNumber(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Gets a single character from the string (as an integer)
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int GetCharacterAsNumber(string SourceString, int Index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_GetCharacterAsNumber_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param SourceString - The string to convert
+@param Index - Location of the character whose value is required
+@return The integer value of the character or 0 if index is out of range</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_GetSubstring_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.GetSubstring(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L347">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_GetSubstring_" data-uid="UE4.Engine.KismetStringLibrary.GetSubstring*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_GetSubstring_System_String_System_Int32_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.GetSubstring(System.String,System.Int32,System.Int32)">GetSubstring(String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a substring from the string starting at the specified position
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetSubstring(string SourceString, int StartIndex, int Length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">StartIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Length</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_GetSubstring_System_String_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param SourceString - The string to get the substring from
+@param StartIndex - The location in SourceString to use as the start of the substring
+@param Length The length of the requested substring</p>
+<p>@return The requested substring</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_IsNumeric_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.IsNumeric(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L358">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_IsNumeric_" data-uid="UE4.Engine.KismetStringLibrary.IsNumeric*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_IsNumeric_System_String_" data-uid="UE4.Engine.KismetStringLibrary.IsNumeric(System.String)">IsNumeric(String)</h4>
+  <div class="markdown level1 summary"><ul>
+<li>Checks if a string contains only numeric characters</li>
+<li>@</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNumeric(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_IsNumeric_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param       SourceString    The string to check</p>
+<ul>
+<li>@return true if the string only contains numeric characters</li>
+</ul>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_JoinStringArray_System_Byte_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.JoinStringArray(System.Byte%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L367">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_JoinStringArray_" data-uid="UE4.Engine.KismetStringLibrary.JoinStringArray*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_JoinStringArray_System_Byte_System_String_" data-uid="UE4.Engine.KismetStringLibrary.JoinStringArray(System.Byte,System.String)">JoinStringArray(Byte, String)</h4>
+  <div class="markdown level1 summary"><p>Concatenates an array of strings into a single string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string JoinStringArray(byte SourceArray, string Separator)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SourceArray</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Separator</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_JoinStringArray_System_Byte_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param SourceArray - The array of strings to concatenate.
+@param Separator - The string used to separate each element.
+@return The final, joined, separated string.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Left_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Left(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L371">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Left_" data-uid="UE4.Engine.KismetStringLibrary.Left*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Left_System_String_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.Left(System.String,System.Int32)">Left(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>@return the left most given number of characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Left(string SourceString, int Count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_LeftChop_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.LeftChop(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L375">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_LeftChop_" data-uid="UE4.Engine.KismetStringLibrary.LeftChop*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_LeftChop_System_String_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.LeftChop(System.String,System.Int32)">LeftChop(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>@return the left most characters from the string chopping the given number of characters from the end</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LeftChop(string SourceString, int Count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_LeftPad_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.LeftPad(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L387">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_LeftPad_" data-uid="UE4.Engine.KismetStringLibrary.LeftPad*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_LeftPad_System_String_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.LeftPad(System.String,System.Int32)">LeftPad(String, Int32)</h4>
+  <div class="markdown level1 summary"><ul>
+<li>Pad the left of this string for a specified number of characters</li>
+<li>@</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string LeftPad(string SourceString, int ChCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ChCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_LeftPad_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param       SourceString    The string to pad</p>
+<ul>
+<li>@param       ChCount                 Amount of padding required</li>
+<li>@return      The padded string</li>
+</ul>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Len_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Len(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L398">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Len_" data-uid="UE4.Engine.KismetStringLibrary.Len*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Len_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Len(System.String)">Len(String)</h4>
+  <div class="markdown level1 summary"><p>Returns the number of characters in the string
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Len(string S)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">S</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_Len_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param SourceString - The string to measure
+@return The number of chars in the string</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_MatchesWildcard_System_String_System_String_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.MatchesWildcard(System.String%2CSystem.String%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L411">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_MatchesWildcard_" data-uid="UE4.Engine.KismetStringLibrary.MatchesWildcard*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_MatchesWildcard_System_String_System_String_System_Byte_" data-uid="UE4.Engine.KismetStringLibrary.MatchesWildcard(System.String,System.String,System.Byte)">MatchesWildcard(String, String, Byte)</h4>
+  <div class="markdown level1 summary"><p>Searches this string for a given wild card
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MatchesWildcard(string SourceString, string Wildcard, byte SearchCase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Wildcard</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SearchCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_MatchesWildcard_System_String_System_String_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Wildcard              *?-type wildcard
+@param SearchCase    Indicates whether the search is case sensitive or not ( defaults to ESearchCase::IgnoreCase )
+@return true if this string matches the *?-type wildcard given.
+@warning This is a simple, SLOW routine. Use with caution</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Mid_System_String_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Mid(System.String%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L415">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Mid_" data-uid="UE4.Engine.KismetStringLibrary.Mid*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Mid_System_String_System_Int32_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.Mid(System.String,System.Int32,System.Int32)">Mid(String, Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>@return the substring from Start position for Count characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Mid(string SourceString, int Start, int Count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L565">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_New_" data-uid="UE4.Engine.KismetStringLibrary.New*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.KismetStringLibrary.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static KismetStringLibrary New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.KismetStringLibrary.html">KismetStringLibrary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_NotEqual_StriStri_System_String_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.NotEqual_StriStri(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L427">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_NotEqual_StriStri_" data-uid="UE4.Engine.KismetStringLibrary.NotEqual_StriStri*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_NotEqual_StriStri_System_String_System_String_" data-uid="UE4.Engine.KismetStringLibrary.NotEqual_StriStri(System.String,System.String)">NotEqual_StriStri(String, String)</h4>
+  <div class="markdown level1 summary"><p>Test if the input string are not equal (A != B), ignoring case differences
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NotEqual_StriStri(string A, string B)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">A</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">B</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_NotEqual_StriStri_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param A - The string to compare against
+@param B - The string to compare
+@return Returns true if the input strings are not equal, false if they are equal</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_NotEqual_StrStr_System_String_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.NotEqual_StrStr(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L439">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_NotEqual_StrStr_" data-uid="UE4.Engine.KismetStringLibrary.NotEqual_StrStr*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_NotEqual_StrStr_System_String_System_String_" data-uid="UE4.Engine.KismetStringLibrary.NotEqual_StrStr(System.String,System.String)">NotEqual_StrStr(String, String)</h4>
+  <div class="markdown level1 summary"><p>Test if the input string are not equal (A != B)
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool NotEqual_StrStr(string A, string B)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">A</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">B</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_NotEqual_StrStr_System_String_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param A - The string to compare against
+@param B - The string to compare
+@return Returns true if the input strings are not equal, false if they are equal</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_ParseIntoArray_System_String_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.ParseIntoArray(System.String%2CSystem.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L449">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_ParseIntoArray_" data-uid="UE4.Engine.KismetStringLibrary.ParseIntoArray*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_ParseIntoArray_System_String_System_String_System_Boolean_" data-uid="UE4.Engine.KismetStringLibrary.ParseIntoArray(System.String,System.String,System.Boolean)">ParseIntoArray(String, String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Gets an array of strings from a source string divided up by a separator and empty strings can optionally be culled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IReadOnlyCollection&lt;string&gt; ParseIntoArray(string SourceString, string Delimiter, bool CullEmptyStrings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">Delimiter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">CullEmptyStrings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_ParseIntoArray_System_String_System_String_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param SourceString - The string to chop up
+@param Delimiter - The string to delimit on
+@param CullEmptyStrings = true - Cull (true) empty strings or add them to the array (false)
+@return The array of string that have been separated</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Replace_System_String_System_String_System_String_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Replace(System.String%2CSystem.String%2CSystem.String%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L462">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Replace_" data-uid="UE4.Engine.KismetStringLibrary.Replace*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Replace_System_String_System_String_System_String_System_Byte_" data-uid="UE4.Engine.KismetStringLibrary.Replace(System.String,System.String,System.String,System.Byte)">Replace(String, String, String, Byte)</h4>
+  <div class="markdown level1 summary"><p>Replace all occurrences of a substring in this string
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Replace(string SourceString, string From, string To, byte SearchCase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">From</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">To</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SearchCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_Replace_System_String_System_String_System_String_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param From substring to replace
+@param To substring to replace From with
+@param SearchCase    Indicates whether the search is case sensitive or not ( defaults to ESearchCase::IgnoreCase )
+@return a copy of this string with the replacement made</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_ReplaceInline_System_String_System_String_System_String_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.ReplaceInline(System.String%2CSystem.String%2CSystem.String%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L473">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_ReplaceInline_" data-uid="UE4.Engine.KismetStringLibrary.ReplaceInline*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_ReplaceInline_System_String_System_String_System_String_System_Byte_" data-uid="UE4.Engine.KismetStringLibrary.ReplaceInline(System.String,System.String,System.String,System.Byte)">ReplaceInline(String, String, String, Byte)</h4>
+  <div class="markdown level1 summary"><p>Replace all occurrences of SearchText with ReplacementText in this string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int ReplaceInline(string SourceString, string SearchText, string ReplacementText, byte SearchCase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SearchText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ReplacementText</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SearchCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_ReplaceInline_System_String_System_String_System_String_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param       SearchText      the text that should be removed from this string
+@param       ReplacementText         the text to insert in its place
+@param SearchCase    Indicates whether the search is case sensitive or not ( defaults to ESearchCase::IgnoreCase )</p>
+<p>@return      the number of occurrences of SearchText that were replaced.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Reverse_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Reverse(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L477">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Reverse_" data-uid="UE4.Engine.KismetStringLibrary.Reverse*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Reverse_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Reverse(System.String)">Reverse(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a copy of this string, with the characters in reverse order</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Reverse(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Right_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Right(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L481">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Right_" data-uid="UE4.Engine.KismetStringLibrary.Right*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Right_System_String_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.Right(System.String,System.Int32)">Right(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>@return the string to the right of the specified location, counting back from the right (end of the word).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Right(string SourceString, int Count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_RightChop_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.RightChop(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L485">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_RightChop_" data-uid="UE4.Engine.KismetStringLibrary.RightChop*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_RightChop_System_String_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.RightChop(System.String,System.Int32)">RightChop(String, Int32)</h4>
+  <div class="markdown level1 summary"><p>@return the string to the right of the specified location, counting forward from the left (from the beginning of the word).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RightChop(string SourceString, int Count)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Count</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_RightPad_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.RightPad(System.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L497">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_RightPad_" data-uid="UE4.Engine.KismetStringLibrary.RightPad*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_RightPad_System_String_System_Int32_" data-uid="UE4.Engine.KismetStringLibrary.RightPad(System.String,System.Int32)">RightPad(String, Int32)</h4>
+  <div class="markdown level1 summary"><ul>
+<li>Pad the right of this string for a specified number of characters</li>
+<li>@</li>
+</ul>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RightPad(string SourceString, int ChCount)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">ChCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_RightPad_System_String_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param       SourceString    The string to pad</p>
+<ul>
+<li>@param       ChCount                 Amount of padding required</li>
+<li>@return      The padded string</li>
+</ul>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Split_System_String_System_String_System_Byte_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Split(System.String%2CSystem.String%2CSystem.Byte%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L509">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Split_" data-uid="UE4.Engine.KismetStringLibrary.Split*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Split_System_String_System_String_System_Byte_System_Byte_" data-uid="UE4.Engine.KismetStringLibrary.Split(System.String,System.String,System.Byte,System.Byte)">Split(String, String, Byte, Byte)</h4>
+  <div class="markdown level1 summary"><p>Splits this string at given string position case sensitive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (string, string, bool) Split(string SourceString, string InStr, byte SearchCase, byte SearchDir)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InStr</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SearchCase</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SearchDir</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>, <span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_Split_System_String_System_String_System_Byte_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param InStr The string to search and split at
+@param LeftS out the string to the left of InStr, not updated if return is false
+@param RightS out the string to the right of InStr, not updated if return is false
+@param SearchCase             Indicates whether the search is case sensitive or not ( defaults to ESearchCase::IgnoreCase )
+@param SearchDir                      Indicates whether the search starts at the begining or at the end ( defaults to ESearchDir::FromStart )
+@return true if string is split, otherwise false</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_StartsWith_System_String_System_String_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.StartsWith(System.String%2CSystem.String%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L517">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_StartsWith_" data-uid="UE4.Engine.KismetStringLibrary.StartsWith*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_StartsWith_System_String_System_String_System_Byte_" data-uid="UE4.Engine.KismetStringLibrary.StartsWith(System.String,System.String,System.Byte)">StartsWith(String, String, Byte)</h4>
+  <div class="markdown level1 summary"><p>Test whether this string starts with given string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool StartsWith(string SourceString, string InPrefix, byte SearchCase)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InPrefix</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">SearchCase</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_StartsWith_System_String_System_String_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param SearchCase            Indicates whether the search is case sensitive or not ( defaults to ESearchCase::IgnoreCase )
+@return true if this string begins with specified text, false otherwise</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_TimeSecondsToString_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.TimeSecondsToString(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L521">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_TimeSecondsToString_" data-uid="UE4.Engine.KismetStringLibrary.TimeSecondsToString*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_TimeSecondsToString_System_Single_" data-uid="UE4.Engine.KismetStringLibrary.TimeSecondsToString(System.Single)">TimeSecondsToString(Single)</h4>
+  <div class="markdown level1 summary"><p>Convert a number of seconds into minutes:seconds.milliseconds format string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TimeSecondsToString(float InSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_ToLower_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.ToLower(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L532">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_ToLower_" data-uid="UE4.Engine.KismetStringLibrary.ToLower*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_ToLower_System_String_" data-uid="UE4.Engine.KismetStringLibrary.ToLower(System.String)">ToLower(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a string converted to Lower case
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToLower(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_ToLower_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param        SourceString    The string to convert
+@return       The string in lower case</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_ToUpper_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.ToUpper(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L543">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_ToUpper_" data-uid="UE4.Engine.KismetStringLibrary.ToUpper*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_ToUpper_System_String_" data-uid="UE4.Engine.KismetStringLibrary.ToUpper(System.String)">ToUpper(String)</h4>
+  <div class="markdown level1 summary"><p>Returns a string converted to Upper case
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ToUpper(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_KismetStringLibrary_ToUpper_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param       SourceString    The string to convert
+@return      The string in upper case</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_Trim_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.Trim(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L547">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_Trim_" data-uid="UE4.Engine.KismetStringLibrary.Trim*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_Trim_System_String_" data-uid="UE4.Engine.KismetStringLibrary.Trim(System.String)">Trim(String)</h4>
+  <div class="markdown level1 summary"><p>Removes whitespace characters from the front of this string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Trim(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_TrimTrailing_System_String_.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.TrimTrailing(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L551">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_TrimTrailing_" data-uid="UE4.Engine.KismetStringLibrary.TrimTrailing*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_TrimTrailing_System_String_" data-uid="UE4.Engine.KismetStringLibrary.TrimTrailing(System.String)">TrimTrailing(String)</h4>
+  <div class="markdown level1 summary"><p>Removes trailing whitespace characters</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TrimTrailing(string SourceString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">SourceString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary_op_Implicit_System_IntPtr__UE4_Engine_KismetStringLibrary.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary.op_Implicit(System.IntPtr)~UE4.Engine.KismetStringLibrary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L559">View Source</a>
+  </span>
+  <a id="UE4_Engine_KismetStringLibrary_op_Implicit_" data-uid="UE4.Engine.KismetStringLibrary.op_Implicit*"></a>
+  <h4 id="UE4_Engine_KismetStringLibrary_op_Implicit_System_IntPtr__UE4_Engine_KismetStringLibrary" data-uid="UE4.Engine.KismetStringLibrary.op_Implicit(System.IntPtr)~UE4.Engine.KismetStringLibrary">Implicit(IntPtr to KismetStringLibrary)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator KismetStringLibrary(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.KismetStringLibrary.html">KismetStringLibrary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_KismetStringLibrary.md&amp;value=---%0Auid%3A%20UE4.Engine.KismetStringLibrary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/KismetStringLibrary.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

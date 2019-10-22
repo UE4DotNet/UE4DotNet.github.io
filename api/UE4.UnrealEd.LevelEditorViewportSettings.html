@@ -1,0 +1,1956 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LevelEditorViewportSettings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LevelEditorViewportSettings
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.UnrealEd.LevelEditorViewportSettings">
+  
+  
+  <h1 id="UE4_UnrealEd_LevelEditorViewportSettings" data-uid="UE4.UnrealEd.LevelEditorViewportSettings" class="text-break">Class LevelEditorViewportSettings
+  </h1>
+  <div class="markdown level0 summary"><p>Implements the Level Editor's view port settings.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><span class="xref">LevelEditorViewportSettings</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.UnrealEd.html">UE4.UnrealEd</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_UnrealEd_LevelEditorViewportSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LevelEditorViewportSettings : UObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_ActiveSnapLayerIndex.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.ActiveSnapLayerIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L128">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_ActiveSnapLayerIndex_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.ActiveSnapLayerIndex*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_ActiveSnapLayerIndex" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.ActiveSnapLayerIndex">ActiveSnapLayerIndex</h4>
+  <div class="markdown level1 summary"><p>The index of the snap plane to use when bEnableLayerSnap is true (from the project SnapLayers array)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ActiveSnapLayerIndex { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_ActorSnapDistance.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.ActorSnapDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L142">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_ActorSnapDistance_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.ActorSnapDistance*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_ActorSnapDistance" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.ActorSnapDistance">ActorSnapDistance</h4>
+  <div class="markdown level1 summary"><p>Global actor snap distance setting for the editor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ActorSnapDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_ActorSnapScale.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.ActorSnapScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L137">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_ActorSnapScale_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.ActorSnapScale*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_ActorSnapScale" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.ActorSnapScale">ActorSnapScale</h4>
+  <div class="markdown level1 summary"><p>Global actor snap scale for the editor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ActorSnapScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_AspectRatioAxisConstraint.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.AspectRatioAxisConstraint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L180">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_AspectRatioAxisConstraint_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.AspectRatioAxisConstraint*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_AspectRatioAxisConstraint" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.AspectRatioAxisConstraint">AspectRatioAxisConstraint</h4>
+  <div class="markdown level1 summary"><p>How to constrain perspective view port FOV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte AspectRatioAxisConstraint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_BackgroundDropDistance.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.BackgroundDropDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L237">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_BackgroundDropDistance_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.BackgroundDropDistance*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_BackgroundDropDistance" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.BackgroundDropDistance">BackgroundDropDistance</h4>
+  <div class="markdown level1 summary"><p>Distance from the camera to place actors which are dropped on nothing in the view port.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BackgroundDropDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bAllowTranslateRotateZWidget.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bAllowTranslateRotateZWidget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L33">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bAllowTranslateRotateZWidget_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bAllowTranslateRotateZWidget*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bAllowTranslateRotateZWidget" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bAllowTranslateRotateZWidget">bAllowTranslateRotateZWidget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bAllowTranslateRotateZWidget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bCenterZoomAroundCursor.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bCenterZoomAroundCursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L29">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bCenterZoomAroundCursor_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bCenterZoomAroundCursor*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bCenterZoomAroundCursor" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bCenterZoomAroundCursor">bCenterZoomAroundCursor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bCenterZoomAroundCursor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bClickBSPSelectsBrush.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bClickBSPSelectsBrush%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L37">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bClickBSPSelectsBrush_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bClickBSPSelectsBrush*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bClickBSPSelectsBrush" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bClickBSPSelectsBrush">bClickBSPSelectsBrush</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bClickBSPSelectsBrush { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bEnableActorSnap.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bEnableActorSnap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L132">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableActorSnap_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableActorSnap*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableActorSnap" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableActorSnap">bEnableActorSnap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableActorSnap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bEnableLayerSnap.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bEnableLayerSnap%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L123">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableLayerSnap_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableLayerSnap*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableLayerSnap" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableLayerSnap">bEnableLayerSnap</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableLayerSnap { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bEnableViewportCameraToUpdateFromPIV.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bEnableViewportCameraToUpdateFromPIV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L223">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableViewportCameraToUpdateFromPIV_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableViewportCameraToUpdateFromPIV*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableViewportCameraToUpdateFromPIV" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableViewportCameraToUpdateFromPIV">bEnableViewportCameraToUpdateFromPIV</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableViewportCameraToUpdateFromPIV { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bEnableViewportHoverFeedback.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bEnableViewportHoverFeedback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L184">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableViewportHoverFeedback_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableViewportHoverFeedback*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bEnableViewportHoverFeedback" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bEnableViewportHoverFeedback">bEnableViewportHoverFeedback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableViewportHoverFeedback { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bHighlightWithBrackets.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bHighlightWithBrackets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L188">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bHighlightWithBrackets_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bHighlightWithBrackets*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bHighlightWithBrackets" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bHighlightWithBrackets">bHighlightWithBrackets</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bHighlightWithBrackets { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_BillboardScale.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.BillboardScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L243">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_BillboardScale_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.BillboardScale*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_BillboardScale" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.BillboardScale">BillboardScale</h4>
+  <div class="markdown level1 summary"><p>Billboard Scale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BillboardScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bInvertMiddleMousePan.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bInvertMiddleMousePan%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L69">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bInvertMiddleMousePan_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bInvertMiddleMousePan*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bInvertMiddleMousePan" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bInvertMiddleMousePan">bInvertMiddleMousePan</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bInvertMiddleMousePan { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bInvertMouseLookYAxis.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bInvertMouseLookYAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L61">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bInvertMouseLookYAxis_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bInvertMouseLookYAxis*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bInvertMouseLookYAxis" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bInvertMouseLookYAxis">bInvertMouseLookYAxis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bInvertMouseLookYAxis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bInvertOrbitYAxis.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bInvertOrbitYAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L65">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bInvertOrbitYAxis_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bInvertOrbitYAxis*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bInvertOrbitYAxis" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bInvertOrbitYAxis">bInvertOrbitYAxis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bInvertOrbitYAxis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bLevelEditorJoystickControls.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bLevelEditorJoystickControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L87">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bLevelEditorJoystickControls_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bLevelEditorJoystickControls*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bLevelEditorJoystickControls" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bLevelEditorJoystickControls">bLevelEditorJoystickControls</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bLevelEditorJoystickControls { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bLevelStreamingVolumePrevis.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bLevelStreamingVolumePrevis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L77">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bLevelStreamingVolumePrevis_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bLevelStreamingVolumePrevis*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bLevelStreamingVolumePrevis" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bLevelStreamingVolumePrevis">bLevelStreamingVolumePrevis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bLevelStreamingVolumePrevis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bPanMovesCanvas.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bPanMovesCanvas%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L25">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bPanMovesCanvas_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bPanMovesCanvas*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bPanMovesCanvas" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bPanMovesCanvas">bPanMovesCanvas</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bPanMovesCanvas { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bPreviewSelectedCameras.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bPreviewSelectedCameras%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L227">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bPreviewSelectedCameras_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bPreviewSelectedCameras*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bPreviewSelectedCameras" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bPreviewSelectedCameras">bPreviewSelectedCameras</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bPreviewSelectedCameras { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bSaveEngineStats.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bSaveEngineStats%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L252">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bSaveEngineStats_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bSaveEngineStats*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bSaveEngineStats" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bSaveEngineStats">bSaveEngineStats</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bSaveEngineStats { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bSnapVertices.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bSnapVertices%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L146">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bSnapVertices_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bSnapVertices*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bSnapVertices" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bSnapVertices">bSnapVertices</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bSnapVertices { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_BSPSelectionHighlightIntensity.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.BSPSelectionHighlightIntensity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L214">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_BSPSelectionHighlightIntensity_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.BSPSelectionHighlightIntensity*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_BSPSelectionHighlightIntensity" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.BSPSelectionHighlightIntensity">BSPSelectionHighlightIntensity</h4>
+  <div class="markdown level1 summary"><p>Sets the intensity of the overlay displayed when an object is selected</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BSPSelectionHighlightIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bStrictBoxSelection.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bStrictBoxSelection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L196">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bStrictBoxSelection_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bStrictBoxSelection*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bStrictBoxSelection" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bStrictBoxSelection">bStrictBoxSelection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bStrictBoxSelection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bTransparentBoxSelection.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bTransparentBoxSelection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L200">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bTransparentBoxSelection_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bTransparentBoxSelection*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bTransparentBoxSelection" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bTransparentBoxSelection">bTransparentBoxSelection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bTransparentBoxSelection { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bUseAbsoluteTranslation.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bUseAbsoluteTranslation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L73">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bUseAbsoluteTranslation_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseAbsoluteTranslation*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bUseAbsoluteTranslation" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseAbsoluteTranslation">bUseAbsoluteTranslation</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseAbsoluteTranslation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bUseLinkedOrthographicViewports.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bUseLinkedOrthographicViewports%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L192">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bUseLinkedOrthographicViewports_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseLinkedOrthographicViewports*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bUseLinkedOrthographicViewports" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseLinkedOrthographicViewports">bUseLinkedOrthographicViewports</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseLinkedOrthographicViewports { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bUsePercentageBasedScaling.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bUsePercentageBasedScaling%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L119">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bUsePercentageBasedScaling_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUsePercentageBasedScaling*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bUsePercentageBasedScaling" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUsePercentageBasedScaling">bUsePercentageBasedScaling</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUsePercentageBasedScaling { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bUsePowerOf2SnapSize.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bUsePowerOf2SnapSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L91">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bUsePowerOf2SnapSize_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUsePowerOf2SnapSize*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bUsePowerOf2SnapSize" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUsePowerOf2SnapSize">bUsePowerOf2SnapSize</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUsePowerOf2SnapSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bUseSelectionOutline.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bUseSelectionOutline%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L204">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bUseSelectionOutline_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseSelectionOutline*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bUseSelectionOutline" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseSelectionOutline">bUseSelectionOutline</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseSelectionOutline { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_bUseUE3OrbitControls.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.bUseUE3OrbitControls%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L81">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_bUseUE3OrbitControls_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseUE3OrbitControls*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_bUseUE3OrbitControls" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.bUseUE3OrbitControls">bUseUE3OrbitControls</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseUE3OrbitControls { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_CameraPreviewSize.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.CameraPreviewSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L232">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_CameraPreviewSize_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CameraPreviewSize*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_CameraPreviewSize" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CameraPreviewSize">CameraPreviewSize</h4>
+  <div class="markdown level1 summary"><p>Affects the size of 'picture in picture' previews if they are enabled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CameraPreviewSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_CameraSpeed.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.CameraSpeed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L42">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_CameraSpeed_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CameraSpeed*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_CameraSpeed" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CameraSpeed">CameraSpeed</h4>
+  <div class="markdown level1 summary"><p>How fast the perspective camera moves when flying through the world.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CameraSpeed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_CameraSpeedScalar.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.CameraSpeedScalar%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L47">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_CameraSpeedScalar_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CameraSpeedScalar*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_CameraSpeedScalar" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CameraSpeedScalar">CameraSpeedScalar</h4>
+  <div class="markdown level1 summary"><p>Scalar applied to perspective camera movement to increase movement range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float CameraSpeedScalar { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_CurrentPosGridSize.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.CurrentPosGridSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L156">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentPosGridSize_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentPosGridSize*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentPosGridSize" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentPosGridSize">CurrentPosGridSize</h4>
+  <div class="markdown level1 summary"><p>Current Pos Grid Size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentPosGridSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_CurrentRotGridMode.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.CurrentRotGridMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L175">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentRotGridMode_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentRotGridMode*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentRotGridMode" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentRotGridMode">CurrentRotGridMode</h4>
+  <div class="markdown level1 summary"><p>Controls which array of rotation grid values we are using</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte CurrentRotGridMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_CurrentRotGridSize.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.CurrentRotGridSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L161">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentRotGridSize_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentRotGridSize*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentRotGridSize" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentRotGridSize">CurrentRotGridSize</h4>
+  <div class="markdown level1 summary"><p>Current Rot Grid Size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentRotGridSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_CurrentScalingGridSize.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.CurrentScalingGridSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L166">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentScalingGridSize_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentScalingGridSize*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_CurrentScalingGridSize" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.CurrentScalingGridSize">CurrentScalingGridSize</h4>
+  <div class="markdown level1 summary"><p>Current Scaling Grid Size</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentScalingGridSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L272">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_DefaultObject_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.DefaultObject*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_DefaultObject" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LevelEditorViewportSettings DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.LevelEditorViewportSettings.html">LevelEditorViewportSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_FlightCameraControlType.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.FlightCameraControlType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L19">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_FlightCameraControlType_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.FlightCameraControlType*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_FlightCameraControlType" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.FlightCameraControlType">FlightCameraControlType</h4>
+  <div class="markdown level1 summary"><p>Enable the use of flight camera controls under various circumstances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte FlightCameraControlType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_GridEnabled.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.GridEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L102">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_GridEnabled_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.GridEnabled*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_GridEnabled" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.GridEnabled">GridEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GridEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_HoverHighlightIntensity.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.HoverHighlightIntensity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L219">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_HoverHighlightIntensity_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.HoverHighlightIntensity*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_HoverHighlightIntensity" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.HoverHighlightIntensity">HoverHighlightIntensity</h4>
+  <div class="markdown level1 summary"><p>Sets the intensity of the overlay displayed when an object is hovered</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float HoverHighlightIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_MeasuringToolUnits.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.MeasuringToolUnits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L257">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_MeasuringToolUnits_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.MeasuringToolUnits*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_MeasuringToolUnits" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.MeasuringToolUnits">MeasuringToolUnits</h4>
+  <div class="markdown level1 summary"><p>Specify the units used by the measuring tool</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte MeasuringToolUnits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_MouseScrollCameraSpeed.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.MouseScrollCameraSpeed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L52">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_MouseScrollCameraSpeed_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.MouseScrollCameraSpeed*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_MouseScrollCameraSpeed" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.MouseScrollCameraSpeed">MouseScrollCameraSpeed</h4>
+  <div class="markdown level1 summary"><p>How fast the perspective camera moves through the world when using mouse scroll.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MouseScrollCameraSpeed { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_MouseSensitivty.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.MouseSensitivty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L57">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_MouseSensitivty_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.MouseSensitivty*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_MouseSensitivty" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.MouseSensitivty">MouseSensitivty</h4>
+  <div class="markdown level1 summary"><p>The sensitivity of mouse movement when rotating the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MouseSensitivty { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_PreserveNonUniformScale.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.PreserveNonUniformScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L170">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_PreserveNonUniformScale_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.PreserveNonUniformScale*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_PreserveNonUniformScale" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.PreserveNonUniformScale">PreserveNonUniformScale</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PreserveNonUniformScale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_RotGridEnabled.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.RotGridEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L106">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_RotGridEnabled_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.RotGridEnabled*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_RotGridEnabled" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.RotGridEnabled">RotGridEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RotGridEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_SelectionHighlightIntensity.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.SelectionHighlightIntensity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L209">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_SelectionHighlightIntensity_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SelectionHighlightIntensity*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_SelectionHighlightIntensity" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SelectionHighlightIntensity">SelectionHighlightIntensity</h4>
+  <div class="markdown level1 summary"><p>Sets the intensity of the overlay displayed when an object is selected</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SelectionHighlightIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_SnapDistance.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.SnapDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L151">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_SnapDistance_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SnapDistance*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_SnapDistance" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SnapDistance">SnapDistance</h4>
+  <div class="markdown level1 summary"><p>Snap Distance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SnapDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_SnapScaleEnabled.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.SnapScaleEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L110">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_SnapScaleEnabled_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SnapScaleEnabled*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_SnapScaleEnabled" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SnapScaleEnabled">SnapScaleEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SnapScaleEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_SnapToSurface.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.SnapToSurface%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L115">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_SnapToSurface_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SnapToSurface*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_SnapToSurface" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.SnapToSurface">SnapToSurface</h4>
+  <div class="markdown level1 summary"><p>If enabled, actors will snap to surfaces in the viewport when dragged around</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SnapToSurfaceSettings SnapToSurface { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.SnapToSurfaceSettings.html">SnapToSurfaceSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_StaticClass.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L270">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_StaticClass_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.StaticClass*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_StaticClass" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_TransformWidgetSizeAdjustment.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.TransformWidgetSizeAdjustment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L248">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_TransformWidgetSizeAdjustment_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.TransformWidgetSizeAdjustment*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_TransformWidgetSizeAdjustment" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.TransformWidgetSizeAdjustment">TransformWidgetSizeAdjustment</h4>
+  <div class="markdown level1 summary"><p>The size adjustment to apply to the translate/rotate/scale widgets (in Unreal units).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int TransformWidgetSizeAdjustment { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L274">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_New_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.New*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LevelEditorViewportSettings New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.LevelEditorViewportSettings.html">LevelEditorViewportSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings_op_Implicit_System_IntPtr__UE4_UnrealEd_LevelEditorViewportSettings.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings.op_Implicit(System.IntPtr)~UE4.UnrealEd.LevelEditorViewportSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L268">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_LevelEditorViewportSettings_op_Implicit_" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.op_Implicit*"></a>
+  <h4 id="UE4_UnrealEd_LevelEditorViewportSettings_op_Implicit_System_IntPtr__UE4_UnrealEd_LevelEditorViewportSettings" data-uid="UE4.UnrealEd.LevelEditorViewportSettings.op_Implicit(System.IntPtr)~UE4.UnrealEd.LevelEditorViewportSettings">Implicit(IntPtr to LevelEditorViewportSettings)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator LevelEditorViewportSettings(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.LevelEditorViewportSettings.html">LevelEditorViewportSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_LevelEditorViewportSettings.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.LevelEditorViewportSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/LevelEditorViewportSettings.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

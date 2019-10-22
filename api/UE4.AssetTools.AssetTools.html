@@ -1,0 +1,1082 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AssetTools
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AssetTools
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.AssetTools.AssetTools">
+  
+  
+  <h1 id="UE4_AssetTools_AssetTools" data-uid="UE4.AssetTools.AssetTools" class="text-break">Class AssetTools
+  </h1>
+  <div class="markdown level0 summary"><p>Asset Tools</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.CoreUObject.Interface.html">Interface</a></div>
+    <div class="level3"><span class="xref">AssetTools</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.AssetTools.html">UE4.AssetTools</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_AssetTools_AssetTools_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AssetTools : Interface</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L120">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_DefaultObject_" data-uid="UE4.AssetTools.AssetTools.DefaultObject*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_DefaultObject" data-uid="UE4.AssetTools.AssetTools.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetTools DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.AssetTools.AssetTools.html">AssetTools</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_StaticClass.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L118">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_StaticClass_" data-uid="UE4.AssetTools.AssetTools.StaticClass*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_StaticClass" data-uid="UE4.AssetTools.AssetTools.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_CreateAsset_System_String_System_String_UE4_CoreUObject_SubclassOf_UE4_CoreUObject_UObject__UE4_UnrealEd_Factory_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.CreateAsset(System.String%2CSystem.String%2CUE4.CoreUObject.SubclassOf%7BUE4.CoreUObject.UObject%7D%2CUE4.UnrealEd.Factory%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L32">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_CreateAsset_" data-uid="UE4.AssetTools.AssetTools.CreateAsset*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_CreateAsset_System_String_System_String_UE4_CoreUObject_SubclassOf_UE4_CoreUObject_UObject__UE4_UnrealEd_Factory_UE4_Core_Name_" data-uid="UE4.AssetTools.AssetTools.CreateAsset(System.String,System.String,UE4.CoreUObject.SubclassOf{UE4.CoreUObject.UObject},UE4.UnrealEd.Factory,UE4.Core.Name)">CreateAsset(String, String, SubclassOf&lt;UObject&gt;, Factory, Name)</h4>
+  <div class="markdown level1 summary"><p>Creates an asset with the specified name, path, and factory
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UObject CreateAsset(string AssetName, string PackagePath, SubclassOf&lt;UObject&gt; AssetClass, Factory Factory, Name CallingContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AssetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">PackagePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td><span class="parametername">AssetClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.Factory.html">Factory</a></td>
+        <td><span class="parametername">Factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">CallingContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_AssetTools_AssetTools_CreateAsset_System_String_System_String_UE4_CoreUObject_SubclassOf_UE4_CoreUObject_UObject__UE4_UnrealEd_Factory_UE4_Core_Name__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param AssetName the name of the new asset
+@param PackagePath the package that will contain the new asset
+@param AssetClass the class of the new asset
+@param Factory the factory that will build the new asset
+@param CallingContext optional name of the module or method calling CreateAsset() - this is passed to the factory
+@return the new asset or NULL if it fails</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_CreateAssetWithDialog_System_String_System_String_UE4_CoreUObject_SubclassOf_UE4_CoreUObject_UObject__UE4_UnrealEd_Factory_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.CreateAssetWithDialog(System.String%2CSystem.String%2CUE4.CoreUObject.SubclassOf%7BUE4.CoreUObject.UObject%7D%2CUE4.UnrealEd.Factory%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L36">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_CreateAssetWithDialog_" data-uid="UE4.AssetTools.AssetTools.CreateAssetWithDialog*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_CreateAssetWithDialog_System_String_System_String_UE4_CoreUObject_SubclassOf_UE4_CoreUObject_UObject__UE4_UnrealEd_Factory_UE4_Core_Name_" data-uid="UE4.AssetTools.AssetTools.CreateAssetWithDialog(System.String,System.String,UE4.CoreUObject.SubclassOf{UE4.CoreUObject.UObject},UE4.UnrealEd.Factory,UE4.Core.Name)">CreateAssetWithDialog(String, String, SubclassOf&lt;UObject&gt;, Factory, Name)</h4>
+  <div class="markdown level1 summary"><p>Opens an asset picker dialog and creates an asset with the specified name and path</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UObject CreateAssetWithDialog(string AssetName, string PackagePath, SubclassOf&lt;UObject&gt; AssetClass, Factory Factory, Name CallingContext)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AssetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">PackagePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td><span class="parametername">AssetClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.Factory.html">Factory</a></td>
+        <td><span class="parametername">Factory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">CallingContext</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_CreateUniqueAssetName_System_String_System_String_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.CreateUniqueAssetName(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_CreateUniqueAssetName_" data-uid="UE4.AssetTools.AssetTools.CreateUniqueAssetName*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_CreateUniqueAssetName_System_String_System_String_" data-uid="UE4.AssetTools.AssetTools.CreateUniqueAssetName(System.String,System.String)">CreateUniqueAssetName(String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a unique package and asset name taking the form InBasePackageName+InSuffix</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (string, string) CreateUniqueAssetName(string InBasePackageName, string InSuffix)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InBasePackageName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">InSuffix</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_DuplicateAsset_System_String_System_String_UE4_CoreUObject_UObject_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.DuplicateAsset(System.String%2CSystem.String%2CUE4.CoreUObject.UObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_DuplicateAsset_" data-uid="UE4.AssetTools.AssetTools.DuplicateAsset*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_DuplicateAsset_System_String_System_String_UE4_CoreUObject_UObject_" data-uid="UE4.AssetTools.AssetTools.DuplicateAsset(System.String,System.String,UE4.CoreUObject.UObject)">DuplicateAsset(String, String, UObject)</h4>
+  <div class="markdown level1 summary"><p>Creates an asset with the specified name and path. Uses OriginalObject as the duplication source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UObject DuplicateAsset(string AssetName, string PackagePath, UObject OriginalObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AssetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">PackagePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">OriginalObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_DuplicateAssetWithDialog_System_String_System_String_UE4_CoreUObject_UObject_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.DuplicateAssetWithDialog(System.String%2CSystem.String%2CUE4.CoreUObject.UObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L48">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_DuplicateAssetWithDialog_" data-uid="UE4.AssetTools.AssetTools.DuplicateAssetWithDialog*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_DuplicateAssetWithDialog_System_String_System_String_UE4_CoreUObject_UObject_" data-uid="UE4.AssetTools.AssetTools.DuplicateAssetWithDialog(System.String,System.String,UE4.CoreUObject.UObject)">DuplicateAssetWithDialog(String, String, UObject)</h4>
+  <div class="markdown level1 summary"><p>Opens an asset picker dialog and creates an asset with the specified name and path. Uses OriginalObject as the duplication source.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UObject DuplicateAssetWithDialog(string AssetName, string PackagePath, UObject OriginalObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">AssetName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">PackagePath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">OriginalObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_ExportAssets_System_Byte_System_String_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.ExportAssets(System.Byte%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L56">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_ExportAssets_" data-uid="UE4.AssetTools.AssetTools.ExportAssets*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_ExportAssets_System_Byte_System_String_" data-uid="UE4.AssetTools.AssetTools.ExportAssets(System.Byte,System.String)">ExportAssets(Byte, String)</h4>
+  <div class="markdown level1 summary"><p>Exports the specified objects to file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExportAssets(byte AssetsToExport, string ExportPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">AssetsToExport</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ExportPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_AssetTools_AssetTools_ExportAssets_System_Byte_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param       AssetsToExport                                  List of full asset names (e.g /Game/Path/Asset) to export
+@param       ExportPath                                              The directory path to export to.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_ExportAssetsWithDialog_System_Byte_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.ExportAssetsWithDialog(System.Byte%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L66">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_ExportAssetsWithDialog_" data-uid="UE4.AssetTools.AssetTools.ExportAssetsWithDialog*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_ExportAssetsWithDialog_System_Byte_System_Boolean_" data-uid="UE4.AssetTools.AssetTools.ExportAssetsWithDialog(System.Byte,System.Boolean)">ExportAssetsWithDialog(Byte, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Exports the specified objects to file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ExportAssetsWithDialog(byte AssetsToExport, bool bPromptForIndividualFilenames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">AssetsToExport</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bPromptForIndividualFilenames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_AssetTools_AssetTools_ExportAssetsWithDialog_System_Byte_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>First prompting the user to pick an export directory and optionally prompting the user to pick a unique directory per file</p>
+<p>@param       AssetsToExport                                  List of assets to export
+@param       ExportPath                                              The directory path to export to.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_FindSoftReferencesToObject_UE4_CoreUObject_SoftObjectPath_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.FindSoftReferencesToObject(UE4.CoreUObject.SoftObjectPath)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L70">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_FindSoftReferencesToObject_" data-uid="UE4.AssetTools.AssetTools.FindSoftReferencesToObject*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_FindSoftReferencesToObject_UE4_CoreUObject_SoftObjectPath_" data-uid="UE4.AssetTools.AssetTools.FindSoftReferencesToObject(UE4.CoreUObject.SoftObjectPath)">FindSoftReferencesToObject(SoftObjectPath)</h4>
+  <div class="markdown level1 summary"><p>Returns list of objects that soft reference the given soft object path. This will load assets into memory to verify</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;UObject&gt; FindSoftReferencesToObject(SoftObjectPath TargetObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SoftObjectPath.html">SoftObjectPath</a></td>
+        <td><span class="parametername">TargetObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_ImportAssetsAutomated_UE4_UnrealEd_AutomatedAssetImportData_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.ImportAssetsAutomated(UE4.UnrealEd.AutomatedAssetImportData)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L80">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_ImportAssetsAutomated_" data-uid="UE4.AssetTools.AssetTools.ImportAssetsAutomated*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_ImportAssetsAutomated_UE4_UnrealEd_AutomatedAssetImportData_" data-uid="UE4.AssetTools.AssetTools.ImportAssetsAutomated(UE4.UnrealEd.AutomatedAssetImportData)">ImportAssetsAutomated(AutomatedAssetImportData)</h4>
+  <div class="markdown level1 summary"><p>Imports assets using data specified completely up front.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;UObject&gt; ImportAssetsAutomated(AutomatedAssetImportData ImportData)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.AutomatedAssetImportData.html">AutomatedAssetImportData</a></td>
+        <td><span class="parametername">ImportData</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_AssetTools_AssetTools_ImportAssetsAutomated_UE4_UnrealEd_AutomatedAssetImportData__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Does not ever ask any questions of the user or show any modal error messages</p>
+<p>@param AutomatedImportData   Data that specifies how to import each file
+@return list of successfully imported assets</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_ImportAssetsWithDialog_System_String_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.ImportAssetsWithDialog(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L88">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_ImportAssetsWithDialog_" data-uid="UE4.AssetTools.AssetTools.ImportAssetsWithDialog*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_ImportAssetsWithDialog_System_String_" data-uid="UE4.AssetTools.AssetTools.ImportAssetsWithDialog(System.String)">ImportAssetsWithDialog(String)</h4>
+  <div class="markdown level1 summary"><p>Opens a file open dialog to choose files to import to the destination path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;UObject&gt; ImportAssetsWithDialog(string DestinationPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">DestinationPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_AssetTools_AssetTools_ImportAssetsWithDialog_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param DestinationPath       Path to import files to
+@return list of successfully imported assets</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_ImportAssetTasks_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.ImportAssetTasks(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L96">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_ImportAssetTasks_" data-uid="UE4.AssetTools.AssetTools.ImportAssetTasks*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_ImportAssetTasks_System_Byte_" data-uid="UE4.AssetTools.AssetTools.ImportAssetTasks(System.Byte)">ImportAssetTasks(Byte)</h4>
+  <div class="markdown level1 summary"><p>Imports assets using tasks specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ImportAssetTasks(byte ImportTasks)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">ImportTasks</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_AssetTools_AssetTools_ImportAssetTasks_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param ImportTasks    Tasks that specify how to import each file
+@return list of successfully imported assets</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L122">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_New_" data-uid="UE4.AssetTools.AssetTools.New*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.AssetTools.AssetTools.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssetTools New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.AssetTools.AssetTools.html">AssetTools</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_OpenEditorForAssets_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.OpenEditorForAssets(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L100">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_OpenEditorForAssets_" data-uid="UE4.AssetTools.AssetTools.OpenEditorForAssets*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_OpenEditorForAssets_System_Byte_" data-uid="UE4.AssetTools.AssetTools.OpenEditorForAssets(System.Byte)">OpenEditorForAssets(Byte)</h4>
+  <div class="markdown level1 summary"><p>Opens editor for assets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void OpenEditorForAssets(byte Assets)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">Assets</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_RenameAssets_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.RenameAssets(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L104">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_RenameAssets_" data-uid="UE4.AssetTools.AssetTools.RenameAssets*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_RenameAssets_System_Byte_" data-uid="UE4.AssetTools.AssetTools.RenameAssets(System.Byte)">RenameAssets(Byte)</h4>
+  <div class="markdown level1 summary"><p>Renames assets using the specified names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RenameAssets(byte AssetsAndNames)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">AssetsAndNames</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_RenameAssetsWithDialog_System_Byte_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.RenameAssetsWithDialog(System.Byte%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L108">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_RenameAssetsWithDialog_" data-uid="UE4.AssetTools.AssetTools.RenameAssetsWithDialog*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_RenameAssetsWithDialog_System_Byte_System_Boolean_" data-uid="UE4.AssetTools.AssetTools.RenameAssetsWithDialog(System.Byte,System.Boolean)">RenameAssetsWithDialog(Byte, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Renames assets using the specified names.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RenameAssetsWithDialog(byte AssetsAndNames, bool bAutoCheckout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">AssetsAndNames</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bAutoCheckout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools_op_Implicit_System_IntPtr__UE4_AssetTools_AssetTools.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools.op_Implicit(System.IntPtr)~UE4.AssetTools.AssetTools%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L116">View Source</a>
+  </span>
+  <a id="UE4_AssetTools_AssetTools_op_Implicit_" data-uid="UE4.AssetTools.AssetTools.op_Implicit*"></a>
+  <h4 id="UE4_AssetTools_AssetTools_op_Implicit_System_IntPtr__UE4_AssetTools_AssetTools" data-uid="UE4.AssetTools.AssetTools.op_Implicit(System.IntPtr)~UE4.AssetTools.AssetTools">Implicit(IntPtr to AssetTools)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator AssetTools(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.AssetTools.AssetTools.html">AssetTools</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_AssetTools_AssetTools.md&amp;value=---%0Auid%3A%20UE4.AssetTools.AssetTools%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/AssetTools/AssetTools.cs/#L18" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1850 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MovieSceneSequencePlayer
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MovieSceneSequencePlayer
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.MovieScene.MovieSceneSequencePlayer">
+  
+  
+  <h1 id="UE4_MovieScene_MovieSceneSequencePlayer" data-uid="UE4.MovieScene.MovieSceneSequencePlayer" class="text-break">Class MovieSceneSequencePlayer
+  </h1>
+  <div class="markdown level0 summary"><p>Abstract class that provides consistent player behaviour for various animation players</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><span class="xref">MovieSceneSequencePlayer</span></div>
+      <div class="level3"><a class="xref" href="UE4.ActorSequence.ActorSequencePlayer.html">ActorSequencePlayer</a></div>
+      <div class="level3"><a class="xref" href="UE4.LevelSequence.LevelSequencePlayer.html">LevelSequencePlayer</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.MovieScene.html">UE4.MovieScene</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MovieSceneSequencePlayer : UObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_bReversePlayback.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.bReversePlayback%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L233">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_bReversePlayback_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.bReversePlayback*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_bReversePlayback" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.bReversePlayback">bReversePlayback</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bReversePlayback { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_CurrentNumLoops.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.CurrentNumLoops%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L253">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_CurrentNumLoops_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.CurrentNumLoops*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_CurrentNumLoops" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.CurrentNumLoops">CurrentNumLoops</h4>
+  <div class="markdown level1 summary"><p>The number of times we have looped in the current playback</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentNumLoops { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L277">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_DefaultObject_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.DefaultObject*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_DefaultObject" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MovieSceneSequencePlayer DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MovieScene.MovieSceneSequencePlayer.html">MovieSceneSequencePlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_DurationFrames.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.DurationFrames%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L248">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_DurationFrames_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.DurationFrames*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_DurationFrames" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.DurationFrames">DurationFrames</h4>
+  <div class="markdown level1 summary"><p>Time (in playback frames) at which to stop playing the sequence (defaults to the upper bound of the sequence's play range)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DurationFrames { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_PlaybackSettings.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.PlaybackSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L258">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_PlaybackSettings_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlaybackSettings*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_PlaybackSettings" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlaybackSettings">PlaybackSettings</h4>
+  <div class="markdown level1 summary"><p>Specific playback settings for the animation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovieSceneSequencePlaybackSettings PlaybackSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MovieScene.MovieSceneSequencePlaybackSettings.html">MovieSceneSequencePlaybackSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_RootTemplateInstance.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.RootTemplateInstance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L263">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_RootTemplateInstance_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.RootTemplateInstance*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_RootTemplateInstance" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.RootTemplateInstance">RootTemplateInstance</h4>
+  <div class="markdown level1 summary"><p>The root template instance we're evaluating</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovieSceneRootEvaluationTemplateInstance RootTemplateInstance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MovieScene.MovieSceneRootEvaluationTemplateInstance.html">MovieSceneRootEvaluationTemplateInstance</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_Sequence.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.Sequence%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L238">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_Sequence_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Sequence*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_Sequence" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Sequence">Sequence</h4>
+  <div class="markdown level1 summary"><p>The sequence to play back</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MovieSceneSequence Sequence { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MovieScene.MovieSceneSequence.html">MovieSceneSequence</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_StartTime.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.StartTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L243">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_StartTime_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.StartTime*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_StartTime" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.StartTime">StartTime</h4>
+  <div class="markdown level1 summary"><p>Time (in playback frames) at which to start playing the sequence (defaults to the lower bound of the sequence's play range)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameNumber StartTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.FrameNumber.html">FrameNumber</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_StaticClass.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L275">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_StaticClass_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.StaticClass*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_StaticClass" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_Status.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.Status%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L229">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_Status_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Status*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_Status" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Status">Status</h4>
+  <div class="markdown level1 summary"><p>Movie player status.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_ChangePlaybackDirection.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L20">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_ChangePlaybackDirection_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_ChangePlaybackDirection" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.ChangePlaybackDirection">ChangePlaybackDirection()</h4>
+  <div class="markdown level1 summary"><p>Changes the direction of playback (go in reverse if it was going forward, or vice versa)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangePlaybackDirection()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetBoundObjects_UE4_MovieScene_MovieSceneObjectBindingID_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetBoundObjects(UE4.MovieScene.MovieSceneObjectBindingID)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L24">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetBoundObjects_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetBoundObjects*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetBoundObjects_UE4_MovieScene_MovieSceneObjectBindingID_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetBoundObjects(UE4.MovieScene.MovieSceneObjectBindingID)">GetBoundObjects(MovieSceneObjectBindingID)</h4>
+  <div class="markdown level1 summary"><p>Retrieve all objects currently bound to the specified binding identifier</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;UObject&gt; GetBoundObjects(MovieSceneObjectBindingID ObjectBinding)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MovieScene.MovieSceneObjectBindingID.html">MovieSceneObjectBindingID</a></td>
+        <td><span class="parametername">ObjectBinding</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetCurrentTime.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetCurrentTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L32">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetCurrentTime_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetCurrentTime*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetCurrentTime" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetCurrentTime">GetCurrentTime()</h4>
+  <div class="markdown level1 summary"><p>Get the current playback position
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QualifiedFrameTime GetCurrentTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.QualifiedFrameTime.html">QualifiedFrameTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_GetCurrentTime_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>return The current playback position</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetDisableCameraCuts.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L36">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetDisableCameraCuts_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetDisableCameraCuts" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetDisableCameraCuts">GetDisableCameraCuts()</h4>
+  <div class="markdown level1 summary"><p>Set whether to disable camera cuts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetDisableCameraCuts()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetDuration.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetDuration_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetDuration*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetDuration" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetDuration">GetDuration()</h4>
+  <div class="markdown level1 summary"><p>Get the total duration of the sequence</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QualifiedFrameTime GetDuration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.QualifiedFrameTime.html">QualifiedFrameTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetEndTime.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetEndTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetEndTime_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetEndTime*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetEndTime" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetEndTime">GetEndTime()</h4>
+  <div class="markdown level1 summary"><p>Get the offset within the level sequence to finish playing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QualifiedFrameTime GetEndTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.QualifiedFrameTime.html">QualifiedFrameTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetFrameDuration.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetFrameDuration%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L48">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetFrameDuration_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetFrameDuration*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetFrameDuration" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetFrameDuration">GetFrameDuration()</h4>
+  <div class="markdown level1 summary"><p>Get this sequence's duration in frames</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFrameDuration()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetFrameRate.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetFrameRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L52">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetFrameRate_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetFrameRate*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetFrameRate" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetFrameRate">GetFrameRate()</h4>
+  <div class="markdown level1 summary"><p>Get this sequence's display rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FrameRate GetFrameRate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.FrameRate.html">FrameRate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetLength.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L56">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetLength_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetLength*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetLength" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetLength">GetLength()</h4>
+  <div class="markdown level1 summary"><p>Get Length</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetLength()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetObjectBindings_UE4_CoreUObject_UObject_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetObjectBindings(UE4.CoreUObject.UObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L60">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetObjectBindings_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetObjectBindings*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetObjectBindings_UE4_CoreUObject_UObject_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetObjectBindings(UE4.CoreUObject.UObject)">GetObjectBindings(UObject)</h4>
+  <div class="markdown level1 summary"><p>Get the object bindings for the requested object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyCollection&lt;MovieSceneObjectBindingID&gt; GetObjectBindings(UObject InObject)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">InObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IReadOnlyCollection</span>&lt;<a class="xref" href="UE4.MovieScene.MovieSceneObjectBindingID.html">MovieSceneObjectBindingID</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackEnd.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L64">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackEnd_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackEnd" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackEnd">GetPlaybackEnd()</h4>
+  <div class="markdown level1 summary"><p>Get Playback End</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetPlaybackEnd()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackPosition.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L68">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackPosition_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackPosition" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackPosition">GetPlaybackPosition()</h4>
+  <div class="markdown level1 summary"><p>Get Playback Position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetPlaybackPosition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackStart.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L72">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackStart_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackStart*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlaybackStart" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlaybackStart">GetPlaybackStart()</h4>
+  <div class="markdown level1 summary"><p>Get Playback Start</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetPlaybackStart()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetPlayRate.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetPlayRate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L76">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlayRate_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlayRate*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetPlayRate" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetPlayRate">GetPlayRate()</h4>
+  <div class="markdown level1 summary"><p>Get the playback rate of this player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetPlayRate()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GetStartTime.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GetStartTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L80">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GetStartTime_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetStartTime*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GetStartTime" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GetStartTime">GetStartTime()</h4>
+  <div class="markdown level1 summary"><p>Get the offset within the level sequence to start playing</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public QualifiedFrameTime GetStartTime()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.QualifiedFrameTime.html">QualifiedFrameTime</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_GoToEndAndStop.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.GoToEndAndStop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_GoToEndAndStop_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GoToEndAndStop*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_GoToEndAndStop" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.GoToEndAndStop">GoToEndAndStop()</h4>
+  <div class="markdown level1 summary"><p>Go to end of the sequence and stop. Adheres to 'When Finished' section rules.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GoToEndAndStop()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_IsPaused.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.IsPaused%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L88">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_IsPaused_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.IsPaused*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_IsPaused" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.IsPaused">IsPaused()</h4>
+  <div class="markdown level1 summary"><p>Check whether the sequence is paused.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPaused()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_IsPlaying.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.IsPlaying%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L92">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_IsPlaying_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.IsPlaying*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_IsPlaying" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.IsPlaying">IsPlaying()</h4>
+  <div class="markdown level1 summary"><p>Check whether the sequence is actively playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPlaying()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_IsReversed.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.IsReversed%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L96">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_IsReversed_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.IsReversed*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_IsReversed" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.IsReversed">IsReversed()</h4>
+  <div class="markdown level1 summary"><p>Check whether playback is reversed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReversed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_JumpToFrame_UE4_CoreUObject_FrameTime_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.JumpToFrame(UE4.CoreUObject.FrameTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L104">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToFrame_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.JumpToFrame*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToFrame_UE4_CoreUObject_FrameTime_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.JumpToFrame(UE4.CoreUObject.FrameTime)">JumpToFrame(FrameTime)</h4>
+  <div class="markdown level1 summary"><p>Jump to the specified frame position, without evaluating the sequence in between the current and desired time (as if in a paused state)
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JumpToFrame(FrameTime NewPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.FrameTime.html">FrameTime</a></td>
+        <td><span class="parametername">NewPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToFrame_UE4_CoreUObject_FrameTime__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param NewPosition     The new frame time to jump to</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_JumpToPosition_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.JumpToPosition(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L108">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToPosition_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.JumpToPosition*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToPosition_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.JumpToPosition(System.Single)">JumpToPosition(Single)</h4>
+  <div class="markdown level1 summary"><p>Jump to Position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JumpToPosition(float NewPlaybackPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewPlaybackPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_JumpToSeconds_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.JumpToSeconds(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L116">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToSeconds_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.JumpToSeconds*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToSeconds_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.JumpToSeconds(System.Single)">JumpToSeconds(Single)</h4>
+  <div class="markdown level1 summary"><p>Jump to the specified time in seconds, without evaluating the sequence in between the current and desired time (as if in a paused state)
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void JumpToSeconds(float TimeInSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">TimeInSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_JumpToSeconds_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param TimeInSeconds   The desired time in seconds</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L279">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_New_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.New*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MovieSceneSequencePlayer New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MovieScene.MovieSceneSequencePlayer.html">MovieSceneSequencePlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_Pause.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.Pause%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L120">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_Pause_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Pause*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_Pause" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Pause">Pause()</h4>
+  <div class="markdown level1 summary"><p>Pause playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Pause()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_Play.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.Play%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L124">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_Play_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Play*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_Play" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Play">Play()</h4>
+  <div class="markdown level1 summary"><p>Start playback forwards from the current time cursor position, using the current play rate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Play()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_PlayLooping_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.PlayLooping(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L131">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_PlayLooping_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayLooping*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_PlayLooping_System_Int32_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayLooping(System.Int32)">PlayLooping(Int32)</h4>
+  <div class="markdown level1 summary"><p>Start playback from the current time cursor position, looping the specified number of times.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayLooping(int NumLoops)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NumLoops</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_PlayLooping_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param NumLoops - The number of loops to play. -1 indicates infinite looping.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_PlayReverse.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.PlayReverse%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L135">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_PlayReverse_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayReverse*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_PlayReverse" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayReverse">PlayReverse()</h4>
+  <div class="markdown level1 summary"><p>Reverse playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayReverse()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_PlayToFrame_UE4_CoreUObject_FrameTime_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.PlayToFrame(UE4.CoreUObject.FrameTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L143">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_PlayToFrame_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayToFrame*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_PlayToFrame_UE4_CoreUObject_FrameTime_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayToFrame(UE4.CoreUObject.FrameTime)">PlayToFrame(FrameTime)</h4>
+  <div class="markdown level1 summary"><p>Play the sequence from the current time, to the specified frame position
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayToFrame(FrameTime NewPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.FrameTime.html">FrameTime</a></td>
+        <td><span class="parametername">NewPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_PlayToFrame_UE4_CoreUObject_FrameTime__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param NewPosition     The new frame time to play to</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_PlayToSeconds_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.PlayToSeconds(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L151">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_PlayToSeconds_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayToSeconds*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_PlayToSeconds_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.PlayToSeconds(System.Single)">PlayToSeconds(Single)</h4>
+  <div class="markdown level1 summary"><p>Play the sequence from the current time, to the specified time in seconds
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PlayToSeconds(float TimeInSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">TimeInSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_PlayToSeconds_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param TimeInSeconds   The desired time in seconds</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_Scrub.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.Scrub%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L155">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_Scrub_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Scrub*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_Scrub" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Scrub">Scrub()</h4>
+  <div class="markdown level1 summary"><p>Scrub playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Scrub()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_ScrubToFrame_UE4_CoreUObject_FrameTime_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.ScrubToFrame(UE4.CoreUObject.FrameTime)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L163">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_ScrubToFrame_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.ScrubToFrame*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_ScrubToFrame_UE4_CoreUObject_FrameTime_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.ScrubToFrame(UE4.CoreUObject.FrameTime)">ScrubToFrame(FrameTime)</h4>
+  <div class="markdown level1 summary"><p>Scrub the sequence from the current time, to the specified frame position
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrubToFrame(FrameTime NewPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.FrameTime.html">FrameTime</a></td>
+        <td><span class="parametername">NewPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_ScrubToFrame_UE4_CoreUObject_FrameTime__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param NewPosition     The new frame time to scrub to</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_ScrubToSeconds_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.ScrubToSeconds(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L171">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_ScrubToSeconds_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.ScrubToSeconds*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_ScrubToSeconds_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.ScrubToSeconds(System.Single)">ScrubToSeconds(Single)</h4>
+  <div class="markdown level1 summary"><p>Scrub the sequence from the current time, to the specified time in seconds
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ScrubToSeconds(float TimeInSeconds)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">TimeInSeconds</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_ScrubToSeconds_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param TimeInSeconds   The desired time in seconds</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_SetDisableCameraCuts_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L175">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_SetDisableCameraCuts_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_SetDisableCameraCuts_System_Boolean_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetDisableCameraCuts(System.Boolean)">SetDisableCameraCuts(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set whether to disable camera cuts</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDisableCameraCuts(bool bInDisableCameraCuts)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bInDisableCameraCuts</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_SetFrameRange_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.SetFrameRange(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L186">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_SetFrameRange_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetFrameRange*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_SetFrameRange_System_Int32_System_Int32_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetFrameRange(System.Int32,System.Int32)">SetFrameRange(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Set the valid play range for this sequence, determined by a starting frame number (in this sequence player's plaback frame), and a number of frames duration
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameRange(int StartFrame, int Duration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">StartFrame</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Duration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_SetFrameRange_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param StartFrame      The frame number to start playing back the sequence
+@param Duration        The number of frames to play</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_SetFrameRate_UE4_CoreUObject_FrameRate_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.SetFrameRate(UE4.CoreUObject.FrameRate)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L190">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_SetFrameRate_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetFrameRate*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_SetFrameRate_UE4_CoreUObject_FrameRate_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetFrameRate(UE4.CoreUObject.FrameRate)">SetFrameRate(FrameRate)</h4>
+  <div class="markdown level1 summary"><p>Set the frame-rate that this player should play with, making all frame numbers in the specified time-space</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameRate(FrameRate FrameRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.FrameRate.html">FrameRate</a></td>
+        <td><span class="parametername">FrameRate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_SetPlaybackPosition_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L194">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_SetPlaybackPosition_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_SetPlaybackPosition_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetPlaybackPosition(System.Single)">SetPlaybackPosition(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Playback Position</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlaybackPosition(float NewPlaybackPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewPlaybackPosition</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_SetPlaybackRange_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.SetPlaybackRange(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L198">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_SetPlaybackRange_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetPlaybackRange*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_SetPlaybackRange_System_Single_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetPlaybackRange(System.Single,System.Single)">SetPlaybackRange(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set Playback Range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlaybackRange(float NewStartTime, float NewEndTime)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewStartTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewEndTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_SetPlayRate_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.SetPlayRate(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L206">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_SetPlayRate_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetPlayRate*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_SetPlayRate_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetPlayRate(System.Single)">SetPlayRate(Single)</h4>
+  <div class="markdown level1 summary"><p>Set the playback rate of this player.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPlayRate(float PlayRate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">PlayRate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_SetPlayRate_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Negative values will play the animation in reverse.
+@param PlayRate - The new rate of playback for the animation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_SetTimeRange_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.SetTimeRange(System.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L217">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_SetTimeRange_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetTimeRange*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_SetTimeRange_System_Single_System_Single_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.SetTimeRange(System.Single,System.Single)">SetTimeRange(Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Set the valid play range for this sequence, determined by a starting time  and a duration (in seconds)
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTimeRange(float StartTime, float Duration)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">StartTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Duration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_MovieScene_MovieSceneSequencePlayer_SetTimeRange_System_Single_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param StartTime       The time to start playing back the sequence in seconds
+@param Duration        The length to play for</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_Stop.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.Stop%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L221">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_Stop_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Stop*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_Stop" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.Stop">Stop()</h4>
+  <div class="markdown level1 summary"><p>Stop playback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Stop()</code></pre>
+  </div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer_op_Implicit_System_IntPtr__UE4_MovieScene_MovieSceneSequencePlayer.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer.op_Implicit(System.IntPtr)~UE4.MovieScene.MovieSceneSequencePlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L273">View Source</a>
+  </span>
+  <a id="UE4_MovieScene_MovieSceneSequencePlayer_op_Implicit_" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.op_Implicit*"></a>
+  <h4 id="UE4_MovieScene_MovieSceneSequencePlayer_op_Implicit_System_IntPtr__UE4_MovieScene_MovieSceneSequencePlayer" data-uid="UE4.MovieScene.MovieSceneSequencePlayer.op_Implicit(System.IntPtr)~UE4.MovieScene.MovieSceneSequencePlayer">Implicit(IntPtr to MovieSceneSequencePlayer)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator MovieSceneSequencePlayer(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.MovieScene.MovieSceneSequencePlayer.html">MovieSceneSequencePlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_MovieScene_MovieSceneSequencePlayer.md&amp;value=---%0Auid%3A%20UE4.MovieScene.MovieSceneSequencePlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/MovieScene/MovieSceneSequencePlayer.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,3126 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PlayerCameraManager
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PlayerCameraManager
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.PlayerCameraManager">
+  
+  
+  <h1 id="UE4_Engine_PlayerCameraManager" data-uid="UE4.Engine.PlayerCameraManager" class="text-break">Class PlayerCameraManager
+  </h1>
+  <div class="markdown level0 summary"><p>A PlayerCameraManager is responsible for managing the camera for a particular
+player.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.Engine.Actor.html">Actor</a></div>
+    <div class="level3"><span class="xref">PlayerCameraManager</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnBecomeViewTarget">Actor.K2_OnBecomeViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnEndViewTarget">Actor.K2_OnEndViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnReset">Actor.K2_OnReset</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorBeginCursorOver">Actor.ReceiveActorBeginCursorOver</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorBeginOverlap">Actor.ReceiveActorBeginOverlap</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorEndCursorOver">Actor.ReceiveActorEndCursorOver</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorEndOverlap">Actor.ReceiveActorEndOverlap</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnClicked">Actor.ReceiveActorOnClicked</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchBegin">Actor.ReceiveActorOnInputTouchBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchEnd">Actor.ReceiveActorOnInputTouchEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchEnter">Actor.ReceiveActorOnInputTouchEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchLeave">Actor.ReceiveActorOnInputTouchLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnReleased">Actor.ReceiveActorOnReleased</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveAnyDamage">Actor.ReceiveAnyDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveBeginPlay">Actor.ReceiveBeginPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveDestroyed">Actor.ReceiveDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveEndPlay">Actor.ReceiveEndPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveHit">Actor.ReceiveHit</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceivePointDamage">Actor.ReceivePointDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveRadialDamage">Actor.ReceiveRadialDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveTick">Actor.ReceiveTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_UserConstructionScript">Actor.UserConstructionScript</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ActorHasTag_UE4_Core_Name_">Actor.ActorHasTag(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddComponent_UE4_Core_Name_System_Boolean_UE4_CoreUObject_Transform_UE4_CoreUObject_UObject_">Actor.AddComponent(Name, Boolean, Transform, UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddTickPrerequisiteActor_UE4_Engine_Actor_">Actor.AddTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddTickPrerequisiteComponent_UE4_Engine_ActorComponent_">Actor.AddTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_DetachRootComponentFromParent_System_Boolean_">Actor.DetachRootComponentFromParent(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_DisableInput_UE4_Engine_PlayerController_">Actor.DisableInput(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_EnableInput_UE4_Engine_PlayerController_">Actor.EnableInput(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_FlushNetDormancy">Actor.FlushNetDormancy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ForceNetUpdate">Actor.ForceNetUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorBounds_System_Boolean_">Actor.GetActorBounds(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorEnableCollision">Actor.GetActorEnableCollision()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorEyesViewPoint">Actor.GetActorEyesViewPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorForwardVector">Actor.GetActorForwardVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorLabel">Actor.GetActorLabel()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorRelativeScale3D">Actor.GetActorRelativeScale3D()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorRightVector">Actor.GetActorRightVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorScale3D">Actor.GetActorScale3D()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorTickInterval">Actor.GetActorTickInterval()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorTimeDilation">Actor.GetActorTimeDilation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorUpVector">Actor.GetActorUpVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAllChildActors_System_Boolean_">Actor.GetAllChildActors(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachedActors">Actor.GetAttachedActors()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachParentActor">Actor.GetAttachParentActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachParentSocketName">Actor.GetAttachParentSocketName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__">Actor.GetComponentByClass(SubclassOf&lt;ActorComponent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentsByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__">Actor.GetComponentsByClass(SubclassOf&lt;ActorComponent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentsByTag_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__UE4_Core_Name_">Actor.GetComponentsByTag(SubclassOf&lt;ActorComponent&gt;, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetDistanceTo_UE4_Engine_Actor_">Actor.GetDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetDotProductTo_UE4_Engine_Actor_">Actor.GetDotProductTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetFolderPath_UE4_Core_Name_">Actor.GetFolderPath(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetGameTimeSinceCreation">Actor.GetGameTimeSinceCreation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetHorizontalDistanceTo_UE4_Engine_Actor_">Actor.GetHorizontalDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetHorizontalDotProductTo_UE4_Engine_Actor_">Actor.GetHorizontalDotProductTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputAxisKeyValue_UE4_InputCore_Key_">Actor.GetInputAxisKeyValue(Key)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputAxisValue_UE4_Core_Name_">Actor.GetInputAxisValue(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputVectorAxisValue_UE4_InputCore_Key_">Actor.GetInputVectorAxisValue(Key)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInstigator">Actor.GetInstigator()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInstigatorController">Actor.GetInstigatorController()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetLifeSpan">Actor.GetLifeSpan()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetLocalRole">Actor.GetLocalRole()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOverlappingActors_UE4_CoreUObject_SubclassOf_UE4_Engine_Actor__">Actor.GetOverlappingActors(SubclassOf&lt;Actor&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOverlappingComponents">Actor.GetOverlappingComponents()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOwner">Actor.GetOwner()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetParentActor">Actor.GetParentActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetParentComponent">Actor.GetParentComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetRemoteRole">Actor.GetRemoteRole()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetSquaredDistanceTo_UE4_Engine_Actor_">Actor.GetSquaredDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetTickableWhenPaused">Actor.GetTickableWhenPaused()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetTransform">Actor.GetTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetVelocity">Actor.GetVelocity()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetVerticalDistanceTo_UE4_Engine_Actor_">Actor.GetVerticalDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_HasAuthority">Actor.HasAuthority()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsActorBeingDestroyed">Actor.IsActorBeingDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsActorTickEnabled">Actor.IsActorTickEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsChildActor">Actor.IsChildActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsEditable">Actor.IsEditable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsHiddenEd">Actor.IsHiddenEd()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsHiddenEdAtStartup">Actor.IsHiddenEdAtStartup()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsOverlappingActor_UE4_Engine_Actor_">Actor.IsOverlappingActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsSelectable">Actor.IsSelectable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsTemporarilyHiddenInEditor_System_Boolean_">Actor.IsTemporarilyHiddenInEditor(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachRootComponentTo_UE4_Engine_SceneComponent_UE4_Core_Name_System_Byte_System_Boolean_">Actor.K2_AttachRootComponentTo(SceneComponent, Name, Byte, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachRootComponentToActor_UE4_Engine_Actor_UE4_Core_Name_System_Byte_System_Boolean_">Actor.K2_AttachRootComponentToActor(Actor, Name, Byte, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachToActor_UE4_Engine_Actor_UE4_Core_Name_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_System_Boolean_">Actor.K2_AttachToActor(Actor, Name, EAttachmentRule, EAttachmentRule, EAttachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachToComponent_UE4_Engine_SceneComponent_UE4_Core_Name_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_System_Boolean_">Actor.K2_AttachToComponent(SceneComponent, Name, EAttachmentRule, EAttachmentRule, EAttachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DestroyActor">Actor.K2_DestroyActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DestroyComponent_UE4_Engine_ActorComponent_">Actor.K2_DestroyComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DetachFromActor_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_">Actor.K2_DetachFromActor(EDetachmentRule, EDetachmentRule, EDetachmentRule)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetActorLocation">Actor.K2_GetActorLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetActorRotation">Actor.K2_GetActorRotation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetRootComponent">Actor.K2_GetRootComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_SetActorLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorLocationAndRotation_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_SetActorLocationAndRotation(Vector, Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRotation_UE4_CoreUObject_Rotator_System_Boolean_">Actor.K2_SetActorRotation(Rotator, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_SetActorTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_TeleportTo_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_">Actor.K2_TeleportTo(Vector, Rotator)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MakeMIDForMaterial_UE4_Engine_MaterialInterface_">Actor.MakeMIDForMaterial(MaterialInterface)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MakeNoise_System_Single_UE4_Engine_Pawn_UE4_CoreUObject_Vector_System_Single_UE4_Core_Name_">Actor.MakeNoise(Single, Pawn, Vector, Single, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PrestreamTextures_System_Single_System_Boolean_System_Int32_">Actor.PrestreamTextures(Single, Boolean, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoveTickPrerequisiteActor_UE4_Engine_Actor_">Actor.RemoveTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoveTickPrerequisiteComponent_UE4_Engine_ActorComponent_">Actor.RemoveTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorEnableCollision_System_Boolean_">Actor.SetActorEnableCollision(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorHiddenInGame_System_Boolean_">Actor.SetActorHiddenInGame(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorLabel_System_String_System_Boolean_">Actor.SetActorLabel(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorRelativeScale3D_UE4_CoreUObject_Vector_">Actor.SetActorRelativeScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorScale3D_UE4_CoreUObject_Vector_">Actor.SetActorScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorTickEnabled_System_Boolean_">Actor.SetActorTickEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorTickInterval_System_Single_">Actor.SetActorTickInterval(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetFolderPath_UE4_Core_Name_">Actor.SetFolderPath(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetIsTemporarilyHiddenInEditor_System_Boolean_">Actor.SetIsTemporarilyHiddenInEditor(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetLifeSpan_System_Single_">Actor.SetLifeSpan(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetNetDormancy_System_Byte_">Actor.SetNetDormancy(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetOwner_UE4_Engine_Actor_">Actor.SetOwner(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetReplicateMovement_System_Boolean_">Actor.SetReplicateMovement(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetReplicates_System_Boolean_">Actor.SetReplicates(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetTickableWhenPaused_System_Boolean_">Actor.SetTickableWhenPaused(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetTickGroup_System_Byte_">Actor.SetTickGroup(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SnapRootComponentTo_UE4_Engine_Actor_UE4_Core_Name_">Actor.SnapRootComponentTo(Actor, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_TearOff">Actor.TearOff()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_WasRecentlyRendered_System_Single_">Actor.WasRecentlyRendered(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PrimaryActorTick">Actor.PrimaryActorTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHidden">Actor.bHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetTemporary">Actor.bNetTemporary</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetStartup">Actor.bNetStartup</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bOnlyRelevantToOwner">Actor.bOnlyRelevantToOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAlwaysRelevant">Actor.bAlwaysRelevant</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplicateMovement">Actor.bReplicateMovement</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bTearOff">Actor.bTearOff</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bExchangedRoles">Actor.bExchangedRoles</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetLoadOnClient">Actor.bNetLoadOnClient</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetUseOwnerRelevancy">Actor.bNetUseOwnerRelevancy</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bRelevantForNetworkReplays">Actor.bRelevantForNetworkReplays</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplayRewindable">Actor.bReplayRewindable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAllowTickBeforeBeginPlay">Actor.bAllowTickBeforeBeginPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAutoDestroyWhenFinished">Actor.bAutoDestroyWhenFinished</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bBlockInput">Actor.bBlockInput</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCanBeDamaged">Actor.bCanBeDamaged</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCollideWhenPlacing">Actor.bCollideWhenPlacing</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bFindCameraComponentWhenViewTarget">Actor.bFindCameraComponentWhenViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bGenerateOverlapEventsDuringLevelStreaming">Actor.bGenerateOverlapEventsDuringLevelStreaming</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIgnoresOriginShifting">Actor.bIgnoresOriginShifting</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bEnableAutoLODGeneration">Actor.bEnableAutoLODGeneration</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIsEditorOnlyActor">Actor.bIsEditorOnlyActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorSeamlessTraveled">Actor.bActorSeamlessTraveled</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplicates">Actor.bReplicates</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCanBeInCluster">Actor.bCanBeInCluster</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAllowReceiveTickEventOnDedicatedServer">Actor.bAllowReceiveTickEventOnDedicatedServer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorEnableCollision">Actor.bActorEnableCollision</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorIsBeingDestroyed">Actor.bActorIsBeingDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoteRole">Actor.RemoteRole</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReplicatedMovement">Actor.ReplicatedMovement</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InitialLifeSpan">Actor.InitialLifeSpan</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_CustomTimeDilation">Actor.CustomTimeDilation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AttachmentReplication">Actor.AttachmentReplication</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Owner">Actor.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetDriverName">Actor.NetDriverName</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Role">Actor.Role</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetDormancy">Actor.NetDormancy</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AutoReceiveInput">Actor.AutoReceiveInput</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InputPriority">Actor.InputPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InputComponent">Actor.InputComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetCullDistanceSquared">Actor.NetCullDistanceSquared</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetTag">Actor.NetTag</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetUpdateFrequency">Actor.NetUpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MinNetUpdateFrequency">Actor.MinNetUpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetPriority">Actor.NetPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Instigator">Actor.Instigator</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Children">Actor.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RootComponent">Actor.RootComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PivotOffset">Actor.PivotOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ControllingMatineeActors">Actor.ControllingMatineeActors</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GroupActor">Actor.GroupActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SpriteScale">Actor.SpriteScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_FolderPath">Actor.FolderPath</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEd">Actor.bHiddenEd</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIsEditorPreviewActor">Actor.bIsEditorPreviewActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdLayer">Actor.bHiddenEdLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdLevel">Actor.bHiddenEdLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bLockLocation">Actor.bLockLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorLabelEditable">Actor.bActorLabelEditable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bEditable">Actor.bEditable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bListedInSceneOutliner">Actor.bListedInSceneOutliner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdTemporary">Actor.bHiddenEdTemporary</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InstanceComponents">Actor.InstanceComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_BlueprintCreatedComponents">Actor.BlueprintCreatedComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_PlayerCameraManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PlayerCameraManager : Actor</code></pre>
+  </div>
+  <h5 id="UE4_Engine_PlayerCameraManager_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>It defines the final view properties used by other systems (e.g. the renderer),
+meaning you can think of it as your virtual eyeball in the world. It can compute the
+final camera properties directly, or it can arbitrate/blend between other objects or
+actors that influence the camera (e.g. blending from one CameraActor to another).</p>
+<p>The PlayerCameraManagers primary external responsibility is to reliably respond to
+various Get*() functions, such as GetCameraViewPoint. Most everything else is
+implementation detail and overrideable by user projects.</p>
+<p>By default, a PlayerCameraManager maintains a &quot;view target&quot;, which is the primary actor
+the camera is associated with. It can also apply various &quot;post&quot; effects to the final
+view state, such as camera animations, shakes, post-process effects or special
+effects such as dirt on the lens.</p>
+<p>@see <a href="https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Camera/">https://docs.unrealengine.com/latest/INT/Gameplay/Framework/Camera/</a></p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ActiveAnims.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ActiveAnims%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L361">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ActiveAnims_" data-uid="UE4.Engine.PlayerCameraManager.ActiveAnims*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ActiveAnims" data-uid="UE4.Engine.PlayerCameraManager.ActiveAnims">ActiveAnims</h4>
+  <div class="markdown level1 summary"><p>Array of camera anim instances that are currently playing and in-use</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;CameraAnimInst&gt; ActiveAnims { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.CameraAnimInst.html">CameraAnimInst</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_AnimCameraActor.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.AnimCameraActor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L375">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_AnimCameraActor_" data-uid="UE4.Engine.PlayerCameraManager.AnimCameraActor*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_AnimCameraActor" data-uid="UE4.Engine.PlayerCameraManager.AnimCameraActor">AnimCameraActor</h4>
+  <div class="markdown level1 summary"><p>Internal. Receives the output of individual camera animations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraActor AnimCameraActor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraActor.html">CameraActor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_AnimInstPool.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.AnimInstPool%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L355">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_AnimInstPool_" data-uid="UE4.Engine.PlayerCameraManager.AnimInstPool*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_AnimInstPool" data-uid="UE4.Engine.PlayerCameraManager.AnimInstPool">AnimInstPool</h4>
+  <div class="markdown level1 summary"><p>Internal pool of camera anim instance objects available for playing camera animations. Defines the max number of camera anims that can play simultaneously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraAnimInst AnimInstPool { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraAnimInst.html">CameraAnimInst</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_bClientSimulatingViewTarget.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.bClientSimulatingViewTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L387">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_bClientSimulatingViewTarget_" data-uid="UE4.Engine.PlayerCameraManager.bClientSimulatingViewTarget*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_bClientSimulatingViewTarget" data-uid="UE4.Engine.PlayerCameraManager.bClientSimulatingViewTarget">bClientSimulatingViewTarget</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bClientSimulatingViewTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_bDefaultConstrainAspectRatio.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.bDefaultConstrainAspectRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L383">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_bDefaultConstrainAspectRatio_" data-uid="UE4.Engine.PlayerCameraManager.bDefaultConstrainAspectRatio*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_bDefaultConstrainAspectRatio" data-uid="UE4.Engine.PlayerCameraManager.bDefaultConstrainAspectRatio">bDefaultConstrainAspectRatio</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bDefaultConstrainAspectRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_bGameCameraCutThisFrame.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.bGameCameraCutThisFrame%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L394">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_bGameCameraCutThisFrame_" data-uid="UE4.Engine.PlayerCameraManager.bGameCameraCutThisFrame*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_bGameCameraCutThisFrame" data-uid="UE4.Engine.PlayerCameraManager.bGameCameraCutThisFrame">bGameCameraCutThisFrame</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bGameCameraCutThisFrame { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_bIsOrthographic.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.bIsOrthographic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L379">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_bIsOrthographic_" data-uid="UE4.Engine.PlayerCameraManager.bIsOrthographic*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_bIsOrthographic" data-uid="UE4.Engine.PlayerCameraManager.bIsOrthographic">bIsOrthographic</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bIsOrthographic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_bUseClientSideCameraUpdates.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.bUseClientSideCameraUpdates%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L391">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_bUseClientSideCameraUpdates_" data-uid="UE4.Engine.PlayerCameraManager.bUseClientSideCameraUpdates*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_bUseClientSideCameraUpdates" data-uid="UE4.Engine.PlayerCameraManager.bUseClientSideCameraUpdates">bUseClientSideCameraUpdates</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseClientSideCameraUpdates { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_CachedCameraShakeMod.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.CachedCameraShakeMod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L350">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_CachedCameraShakeMod_" data-uid="UE4.Engine.PlayerCameraManager.CachedCameraShakeMod*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_CachedCameraShakeMod" data-uid="UE4.Engine.PlayerCameraManager.CachedCameraShakeMod">CachedCameraShakeMod</h4>
+  <div class="markdown level1 summary"><p>Cached ref to modifier for code-driven screen shakes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraModifier_CameraShake CachedCameraShakeMod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraModifier_CameraShake.html">CameraModifier_CameraShake</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_CameraCache.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.CameraCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L284">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_CameraCache_" data-uid="UE4.Engine.PlayerCameraManager.CameraCache*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_CameraCache" data-uid="UE4.Engine.PlayerCameraManager.CameraCache">CameraCache</h4>
+  <div class="markdown level1 summary"><p>Camera Cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraCacheEntry CameraCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraCacheEntry.html">CameraCacheEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_CameraCachePrivate.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.CameraCachePrivate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L304">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_CameraCachePrivate_" data-uid="UE4.Engine.PlayerCameraManager.CameraCachePrivate*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_CameraCachePrivate" data-uid="UE4.Engine.PlayerCameraManager.CameraCachePrivate">CameraCachePrivate</h4>
+  <div class="markdown level1 summary"><p>Cached camera properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraCacheEntry CameraCachePrivate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraCacheEntry.html">CameraCacheEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_CameraLensEffects.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.CameraLensEffects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L343">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_CameraLensEffects_" data-uid="UE4.Engine.PlayerCameraManager.CameraLensEffects*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_CameraLensEffects" data-uid="UE4.Engine.PlayerCameraManager.CameraLensEffects">CameraLensEffects</h4>
+  <div class="markdown level1 summary"><p>CameraBlood emitter attached to this camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;EmitterCameraLensEffectBase&gt; CameraLensEffects { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.EmitterCameraLensEffectBase.html">EmitterCameraLensEffectBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_DefaultAspectRatio.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.DefaultAspectRatio%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L279">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_DefaultAspectRatio_" data-uid="UE4.Engine.PlayerCameraManager.DefaultAspectRatio*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_DefaultAspectRatio" data-uid="UE4.Engine.PlayerCameraManager.DefaultAspectRatio">DefaultAspectRatio</h4>
+  <div class="markdown level1 summary"><p>Default aspect ratio (used when a view target override the aspect ratio and bConstrainAspectRatio is set; most of the time the value from a camera component will be used instead)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultAspectRatio { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_DefaultFOV.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.DefaultFOV%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L269">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_DefaultFOV_" data-uid="UE4.Engine.PlayerCameraManager.DefaultFOV*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_DefaultFOV" data-uid="UE4.Engine.PlayerCameraManager.DefaultFOV">DefaultFOV</h4>
+  <div class="markdown level1 summary"><p>FOV to use by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultFOV { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_DefaultModifiers.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.DefaultModifiers%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L321">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_DefaultModifiers_" data-uid="UE4.Engine.PlayerCameraManager.DefaultModifiers*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_DefaultModifiers" data-uid="UE4.Engine.PlayerCameraManager.DefaultModifiers">DefaultModifiers</h4>
+  <div class="markdown level1 summary"><p>List of modifiers to create by default for this camera</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;Class&gt; DefaultModifiers { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.CoreUObject.Class.html">Class</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L443">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_DefaultObject_" data-uid="UE4.Engine.PlayerCameraManager.DefaultObject*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_DefaultObject" data-uid="UE4.Engine.PlayerCameraManager.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlayerCameraManager DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.html">PlayerCameraManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_DefaultOrthoWidth.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.DefaultOrthoWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L274">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_DefaultOrthoWidth_" data-uid="UE4.Engine.PlayerCameraManager.DefaultOrthoWidth*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_DefaultOrthoWidth" data-uid="UE4.Engine.PlayerCameraManager.DefaultOrthoWidth">DefaultOrthoWidth</h4>
+  <div class="markdown level1 summary"><p>The default desired width (in world units) of the orthographic view (ignored in Perspective mode)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultOrthoWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_FreeAnims.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.FreeAnims%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L368">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_FreeAnims_" data-uid="UE4.Engine.PlayerCameraManager.FreeAnims*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_FreeAnims" data-uid="UE4.Engine.PlayerCameraManager.FreeAnims">FreeAnims</h4>
+  <div class="markdown level1 summary"><p>Array of camera anim instances that are not playing and available to be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;CameraAnimInst&gt; FreeAnims { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.CameraAnimInst.html">CameraAnimInst</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_FreeCamDistance.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.FreeCamDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L328">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_FreeCamDistance_" data-uid="UE4.Engine.PlayerCameraManager.FreeCamDistance*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_FreeCamDistance" data-uid="UE4.Engine.PlayerCameraManager.FreeCamDistance">FreeCamDistance</h4>
+  <div class="markdown level1 summary"><p>Distance to place free camera from view target (used in certain CameraStyles)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FreeCamDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_FreeCamOffset.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.FreeCamOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L333">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_FreeCamOffset_" data-uid="UE4.Engine.PlayerCameraManager.FreeCamOffset*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_FreeCamOffset" data-uid="UE4.Engine.PlayerCameraManager.FreeCamOffset">FreeCamOffset</h4>
+  <div class="markdown level1 summary"><p>Offset to Z free camera position (used in certain CameraStyles)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector FreeCamOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_LastFrameCameraCache.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.LastFrameCameraCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L289">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_LastFrameCameraCache_" data-uid="UE4.Engine.PlayerCameraManager.LastFrameCameraCache*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_LastFrameCameraCache" data-uid="UE4.Engine.PlayerCameraManager.LastFrameCameraCache">LastFrameCameraCache</h4>
+  <div class="markdown level1 summary"><p>Last Frame Camera Cache</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraCacheEntry LastFrameCameraCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraCacheEntry.html">CameraCacheEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_LastFrameCameraCachePrivate.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.LastFrameCameraCachePrivate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L309">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_LastFrameCameraCachePrivate_" data-uid="UE4.Engine.PlayerCameraManager.LastFrameCameraCachePrivate*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_LastFrameCameraCachePrivate" data-uid="UE4.Engine.PlayerCameraManager.LastFrameCameraCachePrivate">LastFrameCameraCachePrivate</h4>
+  <div class="markdown level1 summary"><p>Cached camera properties, one frame old.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraCacheEntry LastFrameCameraCachePrivate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraCacheEntry.html">CameraCacheEntry</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ModifierList.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ModifierList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L314">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ModifierList_" data-uid="UE4.Engine.PlayerCameraManager.ModifierList*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ModifierList" data-uid="UE4.Engine.PlayerCameraManager.ModifierList">ModifierList</h4>
+  <div class="markdown level1 summary"><p>List of active camera modifier instances that have a chance to update the final camera POV</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;CameraModifier&gt; ModifierList { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.CameraModifier.html">CameraModifier</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_PCOwner.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.PCOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L260">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_PCOwner_" data-uid="UE4.Engine.PlayerCameraManager.PCOwner*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_PCOwner" data-uid="UE4.Engine.PlayerCameraManager.PCOwner">PCOwner</h4>
+  <div class="markdown level1 summary"><p>PlayerController that owns this Camera actor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerController PCOwner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerController.html">PlayerController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_PendingViewTarget.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.PendingViewTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L299">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_PendingViewTarget_" data-uid="UE4.Engine.PlayerCameraManager.PendingViewTarget*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_PendingViewTarget" data-uid="UE4.Engine.PlayerCameraManager.PendingViewTarget">PendingViewTarget</h4>
+  <div class="markdown level1 summary"><p>Pending view target for blending</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TViewTarget PendingViewTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.TViewTarget.html">TViewTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L441">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StaticClass_" data-uid="UE4.Engine.PlayerCameraManager.StaticClass*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StaticClass" data-uid="UE4.Engine.PlayerCameraManager.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_TransformComponent.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.TransformComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L265">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_TransformComponent_" data-uid="UE4.Engine.PlayerCameraManager.TransformComponent*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_TransformComponent" data-uid="UE4.Engine.PlayerCameraManager.TransformComponent">TransformComponent</h4>
+  <div class="markdown level1 summary"><p>Dummy component we can use to attach things to the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SceneComponent TransformComponent { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SceneComponent.html">SceneComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewPitchMax.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewPitchMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L403">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewPitchMax_" data-uid="UE4.Engine.PlayerCameraManager.ViewPitchMax*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewPitchMax" data-uid="UE4.Engine.PlayerCameraManager.ViewPitchMax">ViewPitchMax</h4>
+  <div class="markdown level1 summary"><p>Maximum view pitch, in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ViewPitchMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewPitchMin.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewPitchMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L398">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewPitchMin_" data-uid="UE4.Engine.PlayerCameraManager.ViewPitchMin*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewPitchMin" data-uid="UE4.Engine.PlayerCameraManager.ViewPitchMin">ViewPitchMin</h4>
+  <div class="markdown level1 summary"><p>Minimum view pitch, in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ViewPitchMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewRollMax.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewRollMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L423">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewRollMax_" data-uid="UE4.Engine.PlayerCameraManager.ViewRollMax*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewRollMax" data-uid="UE4.Engine.PlayerCameraManager.ViewRollMax">ViewRollMax</h4>
+  <div class="markdown level1 summary"><p>Maximum view roll, in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ViewRollMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewRollMin.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewRollMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L418">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewRollMin_" data-uid="UE4.Engine.PlayerCameraManager.ViewRollMin*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewRollMin" data-uid="UE4.Engine.PlayerCameraManager.ViewRollMin">ViewRollMin</h4>
+  <div class="markdown level1 summary"><p>Minimum view roll, in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ViewRollMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewTarget.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewTarget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L294">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewTarget_" data-uid="UE4.Engine.PlayerCameraManager.ViewTarget*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewTarget" data-uid="UE4.Engine.PlayerCameraManager.ViewTarget">ViewTarget</h4>
+  <div class="markdown level1 summary"><p>Current ViewTarget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TViewTarget ViewTarget { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.TViewTarget.html">TViewTarget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewTargetOffset.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewTargetOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L338">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewTargetOffset_" data-uid="UE4.Engine.PlayerCameraManager.ViewTargetOffset*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewTargetOffset" data-uid="UE4.Engine.PlayerCameraManager.ViewTargetOffset">ViewTargetOffset</h4>
+  <div class="markdown level1 summary"><p>Offset to view target (used in certain CameraStyles)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector ViewTargetOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewYawMax.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewYawMax%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L413">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewYawMax_" data-uid="UE4.Engine.PlayerCameraManager.ViewYawMax*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewYawMax" data-uid="UE4.Engine.PlayerCameraManager.ViewYawMax">ViewYawMax</h4>
+  <div class="markdown level1 summary"><p>Maximum view yaw, in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ViewYawMax { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ViewYawMin.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ViewYawMin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L408">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ViewYawMin_" data-uid="UE4.Engine.PlayerCameraManager.ViewYawMin*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ViewYawMin" data-uid="UE4.Engine.PlayerCameraManager.ViewYawMin">ViewYawMin</h4>
+  <div class="markdown level1 summary"><p>Minimum view yaw, in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ViewYawMin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_AddCameraLensEffect_UE4_CoreUObject_SubclassOf_UE4_Engine_EmitterCameraLensEffectBase__.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.AddCameraLensEffect(UE4.CoreUObject.SubclassOf%7BUE4.Engine.EmitterCameraLensEffectBase%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L124">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_AddCameraLensEffect_" data-uid="UE4.Engine.PlayerCameraManager.AddCameraLensEffect*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_AddCameraLensEffect_UE4_CoreUObject_SubclassOf_UE4_Engine_EmitterCameraLensEffectBase__" data-uid="UE4.Engine.PlayerCameraManager.AddCameraLensEffect(UE4.CoreUObject.SubclassOf{UE4.Engine.EmitterCameraLensEffectBase})">AddCameraLensEffect(SubclassOf&lt;EmitterCameraLensEffectBase&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a camera lens effect of the given class on this camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmitterCameraLensEffectBase AddCameraLensEffect(SubclassOf&lt;EmitterCameraLensEffectBase&gt; LensEffectEmitterClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.EmitterCameraLensEffectBase.html">EmitterCameraLensEffectBase</a>&gt;</td>
+        <td><span class="parametername">LensEffectEmitterClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.EmitterCameraLensEffectBase.html">EmitterCameraLensEffectBase</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_AddCameraLensEffect_UE4_CoreUObject_SubclassOf_UE4_Engine_EmitterCameraLensEffectBase___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param LensEffectEmitterClass - Class of lens effect emitter to create.
+@return Returns the new emitter actor.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_AddNewCameraModifier_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraModifier__.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.AddNewCameraModifier(UE4.CoreUObject.SubclassOf%7BUE4.Engine.CameraModifier%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L132">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_AddNewCameraModifier_" data-uid="UE4.Engine.PlayerCameraManager.AddNewCameraModifier*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_AddNewCameraModifier_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraModifier__" data-uid="UE4.Engine.PlayerCameraManager.AddNewCameraModifier(UE4.CoreUObject.SubclassOf{UE4.Engine.CameraModifier})">AddNewCameraModifier(SubclassOf&lt;CameraModifier&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates and initializes a new camera modifier of the specified class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraModifier AddNewCameraModifier(SubclassOf&lt;CameraModifier&gt; ModifierClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.CameraModifier.html">CameraModifier</a>&gt;</td>
+        <td><span class="parametername">ModifierClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraModifier.html">CameraModifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_AddNewCameraModifier_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraModifier___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param ModifierClass - The class of camera modifier to create.
+@return Returns the newly created camera modifier.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_ClearCameraLensEffects.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.ClearCameraLensEffects%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L136">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_ClearCameraLensEffects_" data-uid="UE4.Engine.PlayerCameraManager.ClearCameraLensEffects*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_ClearCameraLensEffects" data-uid="UE4.Engine.PlayerCameraManager.ClearCameraLensEffects">ClearCameraLensEffects()</h4>
+  <div class="markdown level1 summary"><p>Removes all camera lens effects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearCameraLensEffects()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_FindCameraModifierByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraModifier__.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.FindCameraModifierByClass(UE4.CoreUObject.SubclassOf%7BUE4.Engine.CameraModifier%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L141">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_FindCameraModifierByClass_" data-uid="UE4.Engine.PlayerCameraManager.FindCameraModifierByClass*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_FindCameraModifierByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraModifier__" data-uid="UE4.Engine.PlayerCameraManager.FindCameraModifierByClass(UE4.CoreUObject.SubclassOf{UE4.Engine.CameraModifier})">FindCameraModifierByClass(SubclassOf&lt;CameraModifier&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns camera modifier for this camera of the given class, if it exists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraModifier FindCameraModifierByClass(SubclassOf&lt;CameraModifier&gt; ModifierClass)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.CameraModifier.html">CameraModifier</a>&gt;</td>
+        <td><span class="parametername">ModifierClass</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraModifier.html">CameraModifier</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_FindCameraModifierByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraModifier___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Exact class match only. If there are multiple modifiers of the same class, the first one is returned.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_GetCameraLocation.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.GetCameraLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L145">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_GetCameraLocation_" data-uid="UE4.Engine.PlayerCameraManager.GetCameraLocation*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_GetCameraLocation" data-uid="UE4.Engine.PlayerCameraManager.GetCameraLocation">GetCameraLocation()</h4>
+  <div class="markdown level1 summary"><p>@return Returns camera's current location.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector GetCameraLocation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_GetCameraRotation.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.GetCameraRotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L149">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_GetCameraRotation_" data-uid="UE4.Engine.PlayerCameraManager.GetCameraRotation*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_GetCameraRotation" data-uid="UE4.Engine.PlayerCameraManager.GetCameraRotation">GetCameraRotation()</h4>
+  <div class="markdown level1 summary"><p>@return Returns camera's current rotation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rotator GetCameraRotation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Rotator.html">Rotator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_GetFOVAngle.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.GetFOVAngle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L153">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_GetFOVAngle_" data-uid="UE4.Engine.PlayerCameraManager.GetFOVAngle*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_GetFOVAngle" data-uid="UE4.Engine.PlayerCameraManager.GetFOVAngle">GetFOVAngle()</h4>
+  <div class="markdown level1 summary"><p>@return Returns the camera's current full FOV angle, in degrees.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFOVAngle()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_GetOwningPlayerController.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.GetOwningPlayerController%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L157">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_GetOwningPlayerController_" data-uid="UE4.Engine.PlayerCameraManager.GetOwningPlayerController*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_GetOwningPlayerController" data-uid="UE4.Engine.PlayerCameraManager.GetOwningPlayerController">GetOwningPlayerController()</h4>
+  <div class="markdown level1 summary"><p>Returns the PlayerController that owns this camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerController GetOwningPlayerController()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerController.html">PlayerController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L445">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_New_" data-uid="UE4.Engine.PlayerCameraManager.New*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.PlayerCameraManager.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static PlayerCameraManager New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.html">PlayerCameraManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_PlayCameraAnim_UE4_Engine_CameraAnim_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Single_System_Byte_UE4_CoreUObject_Rotator_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.PlayCameraAnim(UE4.Engine.CameraAnim%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Single%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Single%2CSystem.Byte%2CUE4.CoreUObject.Rotator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L174">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_PlayCameraAnim_" data-uid="UE4.Engine.PlayerCameraManager.PlayCameraAnim*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_PlayCameraAnim_UE4_Engine_CameraAnim_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Single_System_Byte_UE4_CoreUObject_Rotator_" data-uid="UE4.Engine.PlayerCameraManager.PlayCameraAnim(UE4.Engine.CameraAnim,System.Single,System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Single,System.Byte,UE4.CoreUObject.Rotator)">PlayCameraAnim(CameraAnim, Single, Single, Single, Single, Boolean, Boolean, Single, Byte, Rotator)</h4>
+  <div class="markdown level1 summary"><p>Play the indicated CameraAnim on this camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraAnimInst PlayCameraAnim(CameraAnim Anim, float Rate, float Scale, float BlendInTime, float BlendOutTime, bool bLoop, bool bRandomStartTime, float Duration, byte PlaySpace, Rotator UserPlaySpaceRot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraAnim.html">CameraAnim</a></td>
+        <td><span class="parametername">Anim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Rate</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">BlendInTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">BlendOutTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bLoop</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bRandomStartTime</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">PlaySpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Rotator.html">Rotator</a></td>
+        <td><span class="parametername">UserPlaySpaceRot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraAnimInst.html">CameraAnimInst</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_PlayCameraAnim_UE4_Engine_CameraAnim_System_Single_System_Single_System_Single_System_Single_System_Boolean_System_Boolean_System_Single_System_Byte_UE4_CoreUObject_Rotator__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Anim The animation that should play on this instance.
+@param Rate                          How fast to play the animation. 1.0 is normal.
+@param Scale                         How &quot;intense&quot; to play the animation. 1.0 is normal.
+@param BlendInTime           Time to linearly ramp in.
+@param BlendOutTime          Time to linearly ramp out.
+@param bLoop                         True to loop the animation if it hits the end.
+@param bRandomStartTime      Whether or not to choose a random time to start playing. Useful with bLoop=true and a duration to randomize things like shakes.
+@param Duration                      Optional total playtime for this animation, including blends. 0 means to use animations natural duration, or infinite if looping.
+@param PlaySpace                     Which space to play the animation in.
+@param UserPlaySpaceRot  Custom play space, used when PlaySpace is UserDefined.
+@return The CameraAnim instance, which can be stored to manipulate/stop the anim after the fact.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_PlayCameraShake_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraShake__System_Single_System_Byte_UE4_CoreUObject_Rotator_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.PlayCameraShake(UE4.CoreUObject.SubclassOf%7BUE4.Engine.CameraShake%7D%2CSystem.Single%2CSystem.Byte%2CUE4.CoreUObject.Rotator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L184">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_PlayCameraShake_" data-uid="UE4.Engine.PlayerCameraManager.PlayCameraShake*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_PlayCameraShake_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraShake__System_Single_System_Byte_UE4_CoreUObject_Rotator_" data-uid="UE4.Engine.PlayerCameraManager.PlayCameraShake(UE4.CoreUObject.SubclassOf{UE4.Engine.CameraShake},System.Single,System.Byte,UE4.CoreUObject.Rotator)">PlayCameraShake(SubclassOf&lt;CameraShake&gt;, Single, Byte, Rotator)</h4>
+  <div class="markdown level1 summary"><p>Plays a camera shake on this camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CameraShake PlayCameraShake(SubclassOf&lt;CameraShake&gt; ShakeClass, float Scale, byte PlaySpace, Rotator UserPlaySpaceRot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.CameraShake.html">CameraShake</a>&gt;</td>
+        <td><span class="parametername">ShakeClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Scale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">PlaySpace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Rotator.html">Rotator</a></td>
+        <td><span class="parametername">UserPlaySpaceRot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraShake.html">CameraShake</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_PlayCameraShake_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraShake__System_Single_System_Byte_UE4_CoreUObject_Rotator__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Shake - The class of camera shake to play.
+@param Scale - Scalar defining how &quot;intense&quot; to play the shake. 1.0 is normal (as authored).
+@param PlaySpace - Which coordinate system to play the shake in (affects oscillations and camera anims)
+@param UserPlaySpaceRot - Coordinate system to play shake when PlaySpace == CAPS_UserDefined.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_RemoveCameraLensEffect_UE4_Engine_EmitterCameraLensEffectBase_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.RemoveCameraLensEffect(UE4.Engine.EmitterCameraLensEffectBase)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L191">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_RemoveCameraLensEffect_" data-uid="UE4.Engine.PlayerCameraManager.RemoveCameraLensEffect*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_RemoveCameraLensEffect_UE4_Engine_EmitterCameraLensEffectBase_" data-uid="UE4.Engine.PlayerCameraManager.RemoveCameraLensEffect(UE4.Engine.EmitterCameraLensEffectBase)">RemoveCameraLensEffect(EmitterCameraLensEffectBase)</h4>
+  <div class="markdown level1 summary"><p>Removes the given lens effect from the camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveCameraLensEffect(EmitterCameraLensEffectBase Emitter)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.EmitterCameraLensEffectBase.html">EmitterCameraLensEffectBase</a></td>
+        <td><span class="parametername">Emitter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_RemoveCameraLensEffect_UE4_Engine_EmitterCameraLensEffectBase__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Emitter - the emitter actor to remove from the camera</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_RemoveCameraModifier_UE4_Engine_CameraModifier_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.RemoveCameraModifier(UE4.Engine.CameraModifier)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L198">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_RemoveCameraModifier_" data-uid="UE4.Engine.PlayerCameraManager.RemoveCameraModifier*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_RemoveCameraModifier_UE4_Engine_CameraModifier_" data-uid="UE4.Engine.PlayerCameraManager.RemoveCameraModifier(UE4.Engine.CameraModifier)">RemoveCameraModifier(CameraModifier)</h4>
+  <div class="markdown level1 summary"><p>Removes the given camera modifier from this camera (if it's on the camera in the first place) and discards it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveCameraModifier(CameraModifier ModifierToRemove)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraModifier.html">CameraModifier</a></td>
+        <td><span class="parametername">ModifierToRemove</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_RemoveCameraModifier_UE4_Engine_CameraModifier__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@return True if successfully removed, false otherwise.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_SetManualCameraFade_System_Single_UE4_CoreUObject_LinearColor_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.SetManualCameraFade(System.Single%2CUE4.CoreUObject.LinearColor%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L206">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_SetManualCameraFade_" data-uid="UE4.Engine.PlayerCameraManager.SetManualCameraFade*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_SetManualCameraFade_System_Single_UE4_CoreUObject_LinearColor_System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.SetManualCameraFade(System.Single,UE4.CoreUObject.LinearColor,System.Boolean)">SetManualCameraFade(Single, LinearColor, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Turns on camera fading at the given opacity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetManualCameraFade(float InFadeAmount, LinearColor Color, bool bInFadeAudio)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InFadeAmount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td><span class="parametername">Color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bInFadeAudio</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_SetManualCameraFade_System_Single_UE4_CoreUObject_LinearColor_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Does not auto-animate, allowing user to animate themselves.
+Call StopCameraFade to turn fading back off.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StartCameraFade_System_Single_System_Single_System_Single_UE4_CoreUObject_LinearColor_System_Boolean_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StartCameraFade(System.Single%2CSystem.Single%2CSystem.Single%2CUE4.CoreUObject.LinearColor%2CSystem.Boolean%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L219">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StartCameraFade_" data-uid="UE4.Engine.PlayerCameraManager.StartCameraFade*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StartCameraFade_System_Single_System_Single_System_Single_UE4_CoreUObject_LinearColor_System_Boolean_System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.StartCameraFade(System.Single,System.Single,System.Single,UE4.CoreUObject.LinearColor,System.Boolean,System.Boolean)">StartCameraFade(Single, Single, Single, LinearColor, Boolean, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Does a camera fade to/from a solid color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StartCameraFade(float FromAlpha, float ToAlpha, float Duration, LinearColor Color, bool bShouldFadeAudio, bool bHoldWhenFinished)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">FromAlpha</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">ToAlpha</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Duration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td><span class="parametername">Color</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bShouldFadeAudio</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bHoldWhenFinished</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_StartCameraFade_System_Single_System_Single_System_Single_UE4_CoreUObject_LinearColor_System_Boolean_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Animates automatically.
+@param FromAlpha - Alpha at which to begin the fade. Range [0..1], where 0 is fully transparent and 1 is fully opaque solid color.
+@param ToAlpha - Alpha at which to finish the fade.
+@param Duration - How long the fade should take, in seconds.
+@param Color - Color to fade to/from.
+@param bShouldFadeAudio - True to fade audio volume along with the alpha of the solid color.
+@param bHoldWhenFinished - True for fade to hold at the ToAlpha until explicitly stopped (e.g. with StopCameraFade)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StopAllCameraAnims_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StopAllCameraAnims(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L226">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StopAllCameraAnims_" data-uid="UE4.Engine.PlayerCameraManager.StopAllCameraAnims*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StopAllCameraAnims_System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.StopAllCameraAnims(System.Boolean)">StopAllCameraAnims(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stop playing all CameraAnims on this CameraManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAllCameraAnims(bool bImmediate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bImmediate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_StopAllCameraAnims_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param bImmediate    True to stop it right now and ignore blend out, false to let it blend out as indicated.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StopAllCameraShakes_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StopAllCameraShakes(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L230">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StopAllCameraShakes_" data-uid="UE4.Engine.PlayerCameraManager.StopAllCameraShakes*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StopAllCameraShakes_System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.StopAllCameraShakes(System.Boolean)">StopAllCameraShakes(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stops all active camera shakes on this camera.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAllCameraShakes(bool bImmediately)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bImmediately</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StopAllInstancesOfCameraAnim_UE4_Engine_CameraAnim_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StopAllInstancesOfCameraAnim(UE4.Engine.CameraAnim%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L237">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StopAllInstancesOfCameraAnim_" data-uid="UE4.Engine.PlayerCameraManager.StopAllInstancesOfCameraAnim*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StopAllInstancesOfCameraAnim_UE4_Engine_CameraAnim_System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.StopAllInstancesOfCameraAnim(UE4.Engine.CameraAnim,System.Boolean)">StopAllInstancesOfCameraAnim(CameraAnim, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stop playing all instances of the indicated CameraAnim.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAllInstancesOfCameraAnim(CameraAnim Anim, bool bImmediate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraAnim.html">CameraAnim</a></td>
+        <td><span class="parametername">Anim</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bImmediate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_StopAllInstancesOfCameraAnim_UE4_Engine_CameraAnim_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param bImmediate    True to stop it right now and ignore blend out, false to let it blend out as indicated.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StopAllInstancesOfCameraShake_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraShake__System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StopAllInstancesOfCameraShake(UE4.CoreUObject.SubclassOf%7BUE4.Engine.CameraShake%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L241">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StopAllInstancesOfCameraShake_" data-uid="UE4.Engine.PlayerCameraManager.StopAllInstancesOfCameraShake*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StopAllInstancesOfCameraShake_UE4_CoreUObject_SubclassOf_UE4_Engine_CameraShake__System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.StopAllInstancesOfCameraShake(UE4.CoreUObject.SubclassOf{UE4.Engine.CameraShake},System.Boolean)">StopAllInstancesOfCameraShake(SubclassOf&lt;CameraShake&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stops playing CameraShake of the given class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAllInstancesOfCameraShake(SubclassOf&lt;CameraShake&gt; Shake, bool bImmediately)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.CameraShake.html">CameraShake</a>&gt;</td>
+        <td><span class="parametername">Shake</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bImmediately</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StopCameraAnimInst_UE4_Engine_CameraAnimInst_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StopCameraAnimInst(UE4.Engine.CameraAnimInst%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L249">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StopCameraAnimInst_" data-uid="UE4.Engine.PlayerCameraManager.StopCameraAnimInst*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StopCameraAnimInst_UE4_Engine_CameraAnimInst_System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.StopCameraAnimInst(UE4.Engine.CameraAnimInst,System.Boolean)">StopCameraAnimInst(CameraAnimInst, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Stops the given CameraAnimInst from playing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopCameraAnimInst(CameraAnimInst AnimInst, bool bImmediate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraAnimInst.html">CameraAnimInst</a></td>
+        <td><span class="parametername">AnimInst</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bImmediate</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_StopCameraAnimInst_UE4_Engine_CameraAnimInst_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The given pointer should be considered invalid after this.
+@param bImmediate    True to stop it right now and ignore blend out, false to let it blend out as indicated.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StopCameraFade.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StopCameraFade%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L253">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StopCameraFade_" data-uid="UE4.Engine.PlayerCameraManager.StopCameraFade*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StopCameraFade" data-uid="UE4.Engine.PlayerCameraManager.StopCameraFade">StopCameraFade()</h4>
+  <div class="markdown level1 summary"><p>Stops camera fading.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopCameraFade()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_StopCameraShake_UE4_Engine_CameraShake_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.StopCameraShake(UE4.Engine.CameraShake%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L257">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_StopCameraShake_" data-uid="UE4.Engine.PlayerCameraManager.StopCameraShake*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_StopCameraShake_UE4_Engine_CameraShake_System_Boolean_" data-uid="UE4.Engine.PlayerCameraManager.StopCameraShake(UE4.Engine.CameraShake,System.Boolean)">StopCameraShake(CameraShake, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Immediately stops the given shake instance and invalidates it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopCameraShake(CameraShake ShakeInstance, bool bImmediately)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.CameraShake.html">CameraShake</a></td>
+        <td><span class="parametername">ShakeInstance</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bImmediately</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_BlueprintUpdateCamera.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.BlueprintUpdateCamera%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L44">View Source</a>
+  </span>
+  <h4 id="UE4_Engine_PlayerCameraManager_BlueprintUpdateCamera" data-uid="UE4.Engine.PlayerCameraManager.BlueprintUpdateCamera">BlueprintUpdateCamera</h4>
+  <div class="markdown level1 summary"><p>Blueprint hook to allow blueprints to override existing camera behavior or implement custom cameras.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerCameraManager.BlueprintUpdateCamera_delegate BlueprintUpdateCamera</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.BlueprintUpdateCamera_delegate.html">PlayerCameraManager.BlueprintUpdateCamera_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_BlueprintUpdateCamera_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this function returns true, we will use the given returned values and skip further calculations to determine
+final camera POV.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_OnPhotographyMultiPartCaptureEnd.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L58">View Source</a>
+  </span>
+  <h4 id="UE4_Engine_PlayerCameraManager_OnPhotographyMultiPartCaptureEnd" data-uid="UE4.Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureEnd">OnPhotographyMultiPartCaptureEnd</h4>
+  <div class="markdown level1 summary"><p>Event triggered upon the end of a multi-part photograph capture, when manual
+free-roaming photographic camera control is about to be returned to the user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerCameraManager.OnPhotographyMultiPartCaptureEnd_delegate OnPhotographyMultiPartCaptureEnd</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureEnd_delegate.html">PlayerCameraManager.OnPhotographyMultiPartCaptureEnd_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_OnPhotographyMultiPartCaptureEnd_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Here you may re-enable whatever was turned off within
+OnPhotographyMultiPartCaptureStart.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_OnPhotographyMultiPartCaptureStart.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L72">View Source</a>
+  </span>
+  <h4 id="UE4_Engine_PlayerCameraManager_OnPhotographyMultiPartCaptureStart" data-uid="UE4.Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureStart">OnPhotographyMultiPartCaptureStart</h4>
+  <div class="markdown level1 summary"><p>Event triggered upon the start of a multi-part photograph capture (i.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerCameraManager.OnPhotographyMultiPartCaptureStart_delegate OnPhotographyMultiPartCaptureStart</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.OnPhotographyMultiPartCaptureStart_delegate.html">PlayerCameraManager.OnPhotographyMultiPartCaptureStart_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_OnPhotographyMultiPartCaptureStart_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>e. a
+stereoscopic or 360-degree shot).  This is an ideal time to turn off
+rendering effects that tile badly (UI, subtitles, vignette, very aggressive
+bloom, etc; most of these are automatically disabled when
+r.Photography.AutoPostprocess is 1).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_OnPhotographySessionEnd.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.OnPhotographySessionEnd%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L83">View Source</a>
+  </span>
+  <h4 id="UE4_Engine_PlayerCameraManager_OnPhotographySessionEnd" data-uid="UE4.Engine.PlayerCameraManager.OnPhotographySessionEnd">OnPhotographySessionEnd</h4>
+  <div class="markdown level1 summary"><p>Event triggered upon leaving Photography mode (after unpausing, if
+r.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerCameraManager.OnPhotographySessionEnd_delegate OnPhotographySessionEnd</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.OnPhotographySessionEnd_delegate.html">PlayerCameraManager.OnPhotographySessionEnd_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_OnPhotographySessionEnd_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Photography.AutoPause is 1).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_OnPhotographySessionStart.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.OnPhotographySessionStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L94">View Source</a>
+  </span>
+  <h4 id="UE4_Engine_PlayerCameraManager_OnPhotographySessionStart" data-uid="UE4.Engine.PlayerCameraManager.OnPhotographySessionStart">OnPhotographySessionStart</h4>
+  <div class="markdown level1 summary"><p>Event triggered upon entering Photography mode (before pausing, if
+r.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerCameraManager.OnPhotographySessionStart_delegate OnPhotographySessionStart</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.OnPhotographySessionStart_delegate.html">PlayerCameraManager.OnPhotographySessionStart_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_OnPhotographySessionStart_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Photography.AutoPause is 1).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_PhotographyCameraModify.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.PhotographyCameraModify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L113">View Source</a>
+  </span>
+  <h4 id="UE4_Engine_PlayerCameraManager_PhotographyCameraModify" data-uid="UE4.Engine.PlayerCameraManager.PhotographyCameraModify">PhotographyCameraModify</h4>
+  <div class="markdown level1 summary"><p>Implementable blueprint hook to allow a PlayerCameraManager subclass to
+constrain or otherwise modify the camera during free-camera photography.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event PlayerCameraManager.PhotographyCameraModify_delegate PhotographyCameraModify</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.PhotographyCameraModify_delegate.html">PlayerCameraManager.PhotographyCameraModify_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_PlayerCameraManager_PhotographyCameraModify_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For example, a blueprint may wish to limit the distance from the camera's
+original point, or forbid the camera from passing through walls.
+NewCameraLocation contains the proposed new camera location.
+PreviousCameraLocation contains the camera location in the previous frame.
+OriginalCameraLocation contains the camera location before the game was put
+into photography mode.
+Return ResultCameraLocation as modified according to your constraints.</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager_op_Implicit_System_IntPtr__UE4_Engine_PlayerCameraManager.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager.op_Implicit(System.IntPtr)~UE4.Engine.PlayerCameraManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L439">View Source</a>
+  </span>
+  <a id="UE4_Engine_PlayerCameraManager_op_Implicit_" data-uid="UE4.Engine.PlayerCameraManager.op_Implicit*"></a>
+  <h4 id="UE4_Engine_PlayerCameraManager_op_Implicit_System_IntPtr__UE4_Engine_PlayerCameraManager" data-uid="UE4.Engine.PlayerCameraManager.op_Implicit(System.IntPtr)~UE4.Engine.PlayerCameraManager">Implicit(IntPtr to PlayerCameraManager)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator PlayerCameraManager(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerCameraManager.html">PlayerCameraManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_PlayerCameraManager.md&amp;value=---%0Auid%3A%20UE4.Engine.PlayerCameraManager%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/PlayerCameraManager.cs/#L37" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

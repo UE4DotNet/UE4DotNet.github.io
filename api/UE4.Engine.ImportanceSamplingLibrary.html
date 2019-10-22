@@ -1,0 +1,956 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ImportanceSamplingLibrary
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ImportanceSamplingLibrary
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.ImportanceSamplingLibrary">
+  
+  
+  <h1 id="UE4_Engine_ImportanceSamplingLibrary" data-uid="UE4.Engine.ImportanceSamplingLibrary" class="text-break">Class ImportanceSamplingLibrary
+  </h1>
+  <div class="markdown level0 summary"><p>Importance Sampling Library</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.Engine.BlueprintFunctionLibrary.html">BlueprintFunctionLibrary</a></div>
+    <div class="level3"><span class="xref">ImportanceSamplingLibrary</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ImportanceSamplingLibrary : BlueprintFunctionLibrary</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L128">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_DefaultObject_" data-uid="UE4.Engine.ImportanceSamplingLibrary.DefaultObject*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_DefaultObject" data-uid="UE4.Engine.ImportanceSamplingLibrary.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImportanceSamplingLibrary DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ImportanceSamplingLibrary.html">ImportanceSamplingLibrary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L126">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_StaticClass_" data-uid="UE4.Engine.ImportanceSamplingLibrary.StaticClass*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_StaticClass" data-uid="UE4.Engine.ImportanceSamplingLibrary.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_BreakImportanceTexture_UE4_Engine_ImportanceTexture_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.BreakImportanceTexture(UE4.Engine.ImportanceTexture)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L29">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_BreakImportanceTexture_" data-uid="UE4.Engine.ImportanceSamplingLibrary.BreakImportanceTexture*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_BreakImportanceTexture_UE4_Engine_ImportanceTexture_" data-uid="UE4.Engine.ImportanceSamplingLibrary.BreakImportanceTexture(UE4.Engine.ImportanceTexture)">BreakImportanceTexture(ImportanceTexture)</h4>
+  <div class="markdown level1 summary"><p>Get texture used to create an ImportanceTexture object
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Texture2D, byte) BreakImportanceTexture(ImportanceTexture ImportanceTexture)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ImportanceTexture.html">ImportanceTexture</a></td>
+        <td><span class="parametername">ImportanceTexture</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="UE4.Engine.Texture2D.html">Texture2D</a>, <span class="xref">System.Byte</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_BreakImportanceTexture_UE4_Engine_ImportanceTexture__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param ImportanceTexture - The source ImportanceTexture object
+@outparam Texture - Texture object for this ImportanceTexture.
+@param WeightingFunc - How to turn the texture data into probability weights
+@return new ImportanceTexture object for use with ImportanceSample</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_ImportanceSample_UE4_Engine_ImportanceTexture_UE4_CoreUObject_Vector2D_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.ImportanceSample(UE4.Engine.ImportanceTexture%2CUE4.CoreUObject.Vector2D%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L42">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_ImportanceSample_" data-uid="UE4.Engine.ImportanceSamplingLibrary.ImportanceSample*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_ImportanceSample_UE4_Engine_ImportanceTexture_UE4_CoreUObject_Vector2D_System_Int32_System_Single_" data-uid="UE4.Engine.ImportanceSamplingLibrary.ImportanceSample(UE4.Engine.ImportanceTexture,UE4.CoreUObject.Vector2D,System.Int32,System.Single)">ImportanceSample(ImportanceTexture, Vector2D, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>Distribute sample points proportional to Texture2D luminance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (Vector2D, LinearColor, float, float) ImportanceSample(ImportanceTexture Texture, Vector2D Rand, int Samples, float Intensity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ImportanceTexture.html">ImportanceTexture</a></td>
+        <td><span class="parametername">Texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">Rand</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Samples</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Intensity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a>, <a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_ImportanceSample_UE4_Engine_ImportanceTexture_UE4_CoreUObject_Vector2D_System_Int32_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param Rand - Random 2D point with components evenly distributed between 0 and 1
+@param Samples - Total number of samples that will be used
+@param Intensity - Total intensity for light
+@outparam SamplePosition - Importance sampled 2D output texture coordinate (0-1)
+@outparam SampleColor - Representative color near Position from MIP level for SampleSize
+@outparam SampleIntensity - Intensity of individual points, scaled by probability and number of samples
+@outparam SampleSize - Local density of points near Position (scaled for 1x1 texture space)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_MakeImportanceTexture_UE4_Engine_Texture2D_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.MakeImportanceTexture(UE4.Engine.Texture2D%2CSystem.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L54">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_MakeImportanceTexture_" data-uid="UE4.Engine.ImportanceSamplingLibrary.MakeImportanceTexture*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_MakeImportanceTexture_UE4_Engine_Texture2D_System_Byte_" data-uid="UE4.Engine.ImportanceSamplingLibrary.MakeImportanceTexture(UE4.Engine.Texture2D,System.Byte)">MakeImportanceTexture(Texture2D, Byte)</h4>
+  <div class="markdown level1 summary"><p>Create an FImportanceTexture object for texture-driven importance sampling from a 2D RGBA8 texture
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImportanceTexture MakeImportanceTexture(Texture2D Texture, byte WeightingFunc)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.Texture2D.html">Texture2D</a></td>
+        <td><span class="parametername">Texture</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">WeightingFunc</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ImportanceTexture.html">ImportanceTexture</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_MakeImportanceTexture_UE4_Engine_Texture2D_System_Byte__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Texture - Texture object to use. Must be RGBA8 format.
+@param WeightingFunc - How to turn the texture data into probability weights
+@return new ImportanceTexture object for use with ImportanceSample</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L130">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_New_" data-uid="UE4.Engine.ImportanceSamplingLibrary.New*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.ImportanceSamplingLibrary.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImportanceSamplingLibrary New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ImportanceSamplingLibrary.html">ImportanceSamplingLibrary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_NextSobolCell2D_System_Int32_System_Int32_UE4_CoreUObject_Vector2D_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.NextSobolCell2D(System.Int32%2CSystem.Int32%2CUE4.CoreUObject.Vector2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L64">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_NextSobolCell2D_" data-uid="UE4.Engine.ImportanceSamplingLibrary.NextSobolCell2D*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_NextSobolCell2D_System_Int32_System_Int32_UE4_CoreUObject_Vector2D_" data-uid="UE4.Engine.ImportanceSamplingLibrary.NextSobolCell2D(System.Int32,System.Int32,UE4.CoreUObject.Vector2D)">NextSobolCell2D(Int32, Int32, Vector2D)</h4>
+  <div class="markdown level1 summary"><p>@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2D NextSobolCell2D(int Index, int NumCells, Vector2D PreviousValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NumCells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">PreviousValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_NextSobolCell2D_System_Int32_System_Int32_UE4_CoreUObject_Vector2D__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Index - Which sequential point
+@param NumCells - Size of cell grid, 1 to 32768. Rounded up to the next power of two
+@param PreviousValue - The Sobol value for Index-1
+@return Sobol-distributed random 2D position in the same grid cell</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_NextSobolCell3D_System_Int32_System_Int32_UE4_CoreUObject_Vector_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.NextSobolCell3D(System.Int32%2CSystem.Int32%2CUE4.CoreUObject.Vector)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L74">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_NextSobolCell3D_" data-uid="UE4.Engine.ImportanceSamplingLibrary.NextSobolCell3D*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_NextSobolCell3D_System_Int32_System_Int32_UE4_CoreUObject_Vector_" data-uid="UE4.Engine.ImportanceSamplingLibrary.NextSobolCell3D(System.Int32,System.Int32,UE4.CoreUObject.Vector)">NextSobolCell3D(Int32, Int32, Vector)</h4>
+  <div class="markdown level1 summary"><p>@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector NextSobolCell3D(int Index, int NumCells, Vector PreviousValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NumCells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td><span class="parametername">PreviousValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_NextSobolCell3D_System_Int32_System_Int32_UE4_CoreUObject_Vector__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Index - Which sequential point
+@param NumCells - Size of cell grid, 1 to 1024. Rounded up to the next power of two
+@param PreviousValue - The Sobol value for Index-1
+@return Sobol-distributed random 3D position in the same grid cell</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_NextSobolFloat_System_Int32_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.NextSobolFloat(System.Int32%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_NextSobolFloat_" data-uid="UE4.Engine.ImportanceSamplingLibrary.NextSobolFloat*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_NextSobolFloat_System_Int32_System_Int32_System_Single_" data-uid="UE4.Engine.ImportanceSamplingLibrary.NextSobolFloat(System.Int32,System.Int32,System.Single)">NextSobolFloat(Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float NextSobolFloat(int Index, int Dimension, float PreviousValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Dimension</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">PreviousValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_NextSobolFloat_System_Int32_System_Int32_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Index - Which sequential point
+@param Dimension - Which Sobol dimension (0 to 15)
+@param PreviousValue - The Sobol value for Index-1
+@return Sobol-distributed random number between 0 and 1</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell2D_System_Int32_System_Int32_UE4_CoreUObject_Vector2D_UE4_CoreUObject_Vector2D_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.RandomSobolCell2D(System.Int32%2CSystem.Int32%2CUE4.CoreUObject.Vector2D%2CUE4.CoreUObject.Vector2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L95">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell2D_" data-uid="UE4.Engine.ImportanceSamplingLibrary.RandomSobolCell2D*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell2D_System_Int32_System_Int32_UE4_CoreUObject_Vector2D_UE4_CoreUObject_Vector2D_" data-uid="UE4.Engine.ImportanceSamplingLibrary.RandomSobolCell2D(System.Int32,System.Int32,UE4.CoreUObject.Vector2D,UE4.CoreUObject.Vector2D)">RandomSobolCell2D(Int32, Int32, Vector2D, Vector2D)</h4>
+  <div class="markdown level1 summary"><p>@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2D RandomSobolCell2D(int Index, int NumCells, Vector2D Cell, Vector2D Seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NumCells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">Cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">Seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell2D_System_Int32_System_Int32_UE4_CoreUObject_Vector2D_UE4_CoreUObject_Vector2D__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Index - Which sequential point in the cell (starting at 0)
+@param NumCells - Size of cell grid, 1 to 32768. Rounded up to the next power of two
+@param Cell - Give a point from this integer grid cell
+@param Seed - Random 2D seed (components in the range 0-1) to randomize across multiple sequences
+@return Sobol-distributed random 2D position in the given grid cell</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell3D_System_Int32_System_Int32_UE4_CoreUObject_Vector_UE4_CoreUObject_Vector_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.RandomSobolCell3D(System.Int32%2CSystem.Int32%2CUE4.CoreUObject.Vector%2CUE4.CoreUObject.Vector)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L106">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell3D_" data-uid="UE4.Engine.ImportanceSamplingLibrary.RandomSobolCell3D*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell3D_System_Int32_System_Int32_UE4_CoreUObject_Vector_UE4_CoreUObject_Vector_" data-uid="UE4.Engine.ImportanceSamplingLibrary.RandomSobolCell3D(System.Int32,System.Int32,UE4.CoreUObject.Vector,UE4.CoreUObject.Vector)">RandomSobolCell3D(Int32, Int32, Vector, Vector)</h4>
+  <div class="markdown level1 summary"><p>@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector RandomSobolCell3D(int Index, int NumCells, Vector Cell, Vector Seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NumCells</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td><span class="parametername">Cell</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td><span class="parametername">Seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolCell3D_System_Int32_System_Int32_UE4_CoreUObject_Vector_UE4_CoreUObject_Vector__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Index - Which sequential point in the cell (starting at 0)
+@param NumCells - Size of cell grid, 1 to 1024. Rounded up to the next power of two
+@param Cell - Give a point from this integer grid cell
+@param Seed - Random 3D seed (components in the range 0-1) to randomize across multiple sequences
+@return Sobol-distributed random 3D vector in the given grid cell</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_RandomSobolFloat_System_Int32_System_Int32_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.RandomSobolFloat(System.Int32%2CSystem.Int32%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L116">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolFloat_" data-uid="UE4.Engine.ImportanceSamplingLibrary.RandomSobolFloat*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolFloat_System_Int32_System_Int32_System_Single_" data-uid="UE4.Engine.ImportanceSamplingLibrary.RandomSobolFloat(System.Int32,System.Int32,System.Single)">RandomSobolFloat(Int32, Int32, Single)</h4>
+  <div class="markdown level1 summary"><p>@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static float RandomSobolFloat(int Index, int Dimension, float Seed)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Dimension</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Seed</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_ImportanceSamplingLibrary_RandomSobolFloat_System_Int32_System_Int32_System_Single__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Index - Which sequential point
+@param Dimension - Which Sobol dimension (0 to 15)
+@param Seed - Random seed (in the range 0-1) to randomize across multiple sequences
+@return Sobol-distributed random number between 0 and 1</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary_op_Implicit_System_IntPtr__UE4_Engine_ImportanceSamplingLibrary.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary.op_Implicit(System.IntPtr)~UE4.Engine.ImportanceSamplingLibrary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L124">View Source</a>
+  </span>
+  <a id="UE4_Engine_ImportanceSamplingLibrary_op_Implicit_" data-uid="UE4.Engine.ImportanceSamplingLibrary.op_Implicit*"></a>
+  <h4 id="UE4_Engine_ImportanceSamplingLibrary_op_Implicit_System_IntPtr__UE4_Engine_ImportanceSamplingLibrary" data-uid="UE4.Engine.ImportanceSamplingLibrary.op_Implicit(System.IntPtr)~UE4.Engine.ImportanceSamplingLibrary">Implicit(IntPtr to ImportanceSamplingLibrary)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator ImportanceSamplingLibrary(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ImportanceSamplingLibrary.html">ImportanceSamplingLibrary</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_ImportanceSamplingLibrary.md&amp;value=---%0Auid%3A%20UE4.Engine.ImportanceSamplingLibrary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/ImportanceSamplingLibrary.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

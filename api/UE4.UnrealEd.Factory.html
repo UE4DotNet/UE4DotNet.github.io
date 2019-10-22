@@ -1,0 +1,851 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Factory
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Factory
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.UnrealEd.Factory">
+  
+  
+  <h1 id="UE4_UnrealEd_Factory" data-uid="UE4.UnrealEd.Factory" class="text-break">Class Factory
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for all factories
+An object responsible for creating and importing new objects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><span class="xref">Factory</span></div>
+      <div class="level3"><a class="xref" href="UE4.AlembicImporter.AlembicImportFactory.html">AlembicImportFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.DialogueVoiceFactory.html">DialogueVoiceFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.DialogueWaveFactory.html">DialogueWaveFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.ReverbEffectFactory.html">ReverbEffectFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundAttenuationFactory.html">SoundAttenuationFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundClassFactory.html">SoundClassFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundConcurrencyFactory.html">SoundConcurrencyFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundCueFactoryNew.html">SoundCueFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundFactory.html">SoundFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundMixFactory.html">SoundMixFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundSourceBusFactory.html">SoundSourceBusFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundSourceEffectChainFactory.html">SoundSourceEffectChainFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundSourceEffectFactory.html">SoundSourceEffectFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundSubmixEffectFactory.html">SoundSubmixEffectFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundSubmixFactory.html">SoundSubmixFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.AudioEditor.SoundSurroundFactory.html">SoundSurroundFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.BehaviorTreeEditor.BehaviorTreeFactory.html">BehaviorTreeFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.BehaviorTreeEditor.BlackboardDataFactory.html">BlackboardDataFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.LightPropagationVolumeEditor.LightPropagationVolumeBlendableFactory.html">LightPropagationVolumeBlendableFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.OverlayEditor.BasicOverlaysFactory.html">BasicOverlaysFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.OverlayEditor.BasicOverlaysFactoryNew.html">BasicOverlaysFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.OverlayEditor.LocalizedOverlaysFactoryNew.html">LocalizedOverlaysFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.Paper2DEditor.PaperFlipbookFactory.html">PaperFlipbookFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.Paper2DEditor.PaperSpriteAtlasFactory.html">PaperSpriteAtlasFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.Paper2DEditor.PaperSpriteFactory.html">PaperSpriteFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.Paper2DEditor.PaperTileMapFactory.html">PaperTileMapFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.Paper2DEditor.PaperTileMapPromotionFactory.html">PaperTileMapPromotionFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.Paper2DEditor.PaperTileSetFactory.html">PaperTileSetFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.Paper2DEditor.TileSheetPaddingFactory.html">TileSheetPaddingFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.PaperSpriteSheetImporter.PaperSpriteSheetImportFactory.html">PaperSpriteSheetImportFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.PaperTiledImporter.PaperTiledImporterFactory.html">PaperTiledImporterFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.SpeedTreeImporter.SpeedTreeImportFactory.html">SpeedTreeImportFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UMGEditor.SlateVectorArtDataFactory.html">SlateVectorArtDataFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UMGEditor.WidgetBlueprintFactory.html">WidgetBlueprintFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.AnimBlueprintFactory.html">AnimBlueprintFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.AnimCompositeFactory.html">AnimCompositeFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.AnimMontageFactory.html">AnimMontageFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.AnimSequenceFactory.html">AnimSequenceFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.BlendSpaceFactory1D.html">BlendSpaceFactory1D</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.BlendSpaceFactoryNew.html">BlendSpaceFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.BlueprintFactory.html">BlueprintFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.BlueprintInterfaceFactory.html">BlueprintInterfaceFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.CameraAnimFactory.html">CameraAnimFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.CanvasRenderTarget2DFactoryNew.html">CanvasRenderTarget2DFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.CompositeCurveTableFactory.html">CompositeCurveTableFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.CSVImportFactory.html">CSVImportFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.CurveFactory.html">CurveFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.CurveImportFactory.html">CurveImportFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.CurveLinearColorAtlasFactory.html">CurveLinearColorAtlasFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.DataAssetFactory.html">DataAssetFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.DataTableFactory.html">DataTableFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.EnumFactory.html">EnumFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.FbxFactory.html">FbxFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.FontFactory.html">FontFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.FontFileImportFactory.html">FontFileImportFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.ForceFeedbackAttenuationFactory.html">ForceFeedbackAttenuationFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.ForceFeedbackEffectFactory.html">ForceFeedbackEffectFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.HapticFeedbackEffectBufferFactory.html">HapticFeedbackEffectBufferFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.HapticFeedbackEffectCurveFactory.html">HapticFeedbackEffectCurveFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.HapticFeedbackEffectSoundWaveFactory.html">HapticFeedbackEffectSoundWaveFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.InterpDataFactoryNew.html">InterpDataFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.LevelFactory.html">LevelFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.MaterialFactoryNew.html">MaterialFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.MaterialFunctionFactoryNew.html">MaterialFunctionFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.MaterialFunctionInstanceFactory.html">MaterialFunctionInstanceFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.MaterialFunctionMaterialLayerBlendFactory.html">MaterialFunctionMaterialLayerBlendFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.MaterialFunctionMaterialLayerFactory.html">MaterialFunctionMaterialLayerFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.MaterialInstanceConstantFactoryNew.html">MaterialInstanceConstantFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.MaterialParameterCollectionFactoryNew.html">MaterialParameterCollectionFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.ModelFactory.html">ModelFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.ObjectLibraryFactory.html">ObjectLibraryFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.PackageFactory.html">PackageFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.PackFactory.html">PackFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.ParticleSystemFactoryNew.html">ParticleSystemFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.PhysicalMaterialFactoryNew.html">PhysicalMaterialFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.PhysicsAssetFactory.html">PhysicsAssetFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.PolysFactory.html">PolysFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.PoseAssetFactory.html">PoseAssetFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.PreviewMeshCollectionFactory.html">PreviewMeshCollectionFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.SceneImportFactory.html">SceneImportFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.SkeletonFactory.html">SkeletonFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.SlateBrushAssetFactory.html">SlateBrushAssetFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.SlateWidgetStyleAssetFactory.html">SlateWidgetStyleAssetFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.StringTableFactory.html">StringTableFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.StructureFactory.html">StructureFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.SubsurfaceProfileFactory.html">SubsurfaceProfileFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.SubUVAnimationFactory.html">SubUVAnimationFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.Texture2DFactoryNew.html">Texture2DFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.TextureFactory.html">TextureFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.TextureRenderTargetCubeFactoryNew.html">TextureRenderTargetCubeFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.TextureRenderTargetFactoryNew.html">TextureRenderTargetFactoryNew</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.TouchInterfaceFactory.html">TouchInterfaceFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.VectorFieldStaticFactory.html">VectorFieldStaticFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.VolumeTextureFactory.html">VolumeTextureFactory</a></div>
+      <div class="level3"><a class="xref" href="UE4.UnrealEd.WorldFactory.html">WorldFactory</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.UnrealEd.html">UE4.UnrealEd</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_UnrealEd_Factory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Factory : UObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_AssetImportTask.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.AssetImportTask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L86">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_AssetImportTask_" data-uid="UE4.UnrealEd.Factory.AssetImportTask*"></a>
+  <h4 id="UE4_UnrealEd_Factory_AssetImportTask" data-uid="UE4.UnrealEd.Factory.AssetImportTask">AssetImportTask</h4>
+  <div class="markdown level1 summary"><p>Task for importing file via script interfaces</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetImportTask AssetImportTask { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.AssetImportTask.html">AssetImportTask</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_AutomatedImportData.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.AutomatedImportData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L81">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_AutomatedImportData_" data-uid="UE4.UnrealEd.Factory.AutomatedImportData*"></a>
+  <h4 id="UE4_UnrealEd_Factory_AutomatedImportData" data-uid="UE4.UnrealEd.Factory.AutomatedImportData">AutomatedImportData</h4>
+  <div class="markdown level1 summary"><p>Data for how to import files via the automated command line importing interface</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AutomatedAssetImportData AutomatedImportData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.AutomatedAssetImportData.html">AutomatedAssetImportData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_bCreateNew.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.bCreateNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L47">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_bCreateNew_" data-uid="UE4.UnrealEd.Factory.bCreateNew*"></a>
+  <h4 id="UE4_UnrealEd_Factory_bCreateNew" data-uid="UE4.UnrealEd.Factory.bCreateNew">bCreateNew</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bCreateNew { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_bEditAfterNew.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.bEditAfterNew%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L62">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_bEditAfterNew_" data-uid="UE4.UnrealEd.Factory.bEditAfterNew*"></a>
+  <h4 id="UE4_UnrealEd_Factory_bEditAfterNew" data-uid="UE4.UnrealEd.Factory.bEditAfterNew">bEditAfterNew</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEditAfterNew { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_bEditorImport.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.bEditorImport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L66">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_bEditorImport_" data-uid="UE4.UnrealEd.Factory.bEditorImport*"></a>
+  <h4 id="UE4_UnrealEd_Factory_bEditorImport" data-uid="UE4.UnrealEd.Factory.bEditorImport">bEditorImport</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEditorImport { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_bText.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.bText%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L70">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_bText_" data-uid="UE4.UnrealEd.Factory.bText*"></a>
+  <h4 id="UE4_UnrealEd_Factory_bText" data-uid="UE4.UnrealEd.Factory.bText">bText</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bText { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_ContextClass.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.ContextClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L57">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_ContextClass_" data-uid="UE4.UnrealEd.Factory.ContextClass*"></a>
+  <h4 id="UE4_UnrealEd_Factory_ContextClass" data-uid="UE4.UnrealEd.Factory.ContextClass">ContextClass</h4>
+  <div class="markdown level1 summary"><p>Class of the context object used to help create the object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;UObject&gt; ContextClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L111">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_DefaultObject_" data-uid="UE4.UnrealEd.Factory.DefaultObject*"></a>
+  <h4 id="UE4_UnrealEd_Factory_DefaultObject" data-uid="UE4.UnrealEd.Factory.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Factory DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.Factory.html">Factory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_ImportPriority.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.ImportPriority%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L76">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_ImportPriority_" data-uid="UE4.UnrealEd.Factory.ImportPriority*"></a>
+  <h4 id="UE4_UnrealEd_Factory_ImportPriority" data-uid="UE4.UnrealEd.Factory.ImportPriority">ImportPriority</h4>
+  <div class="markdown level1 summary"><p>Determines the order in which factories are tried when importing or reimporting an object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ImportPriority { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UnrealEd_Factory_ImportPriority_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Factories with higher priority values will go first. Factories with negative priorities will be excluded.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_OverwriteYesOrNoToAllState.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.OverwriteYesOrNoToAllState%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L95">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_OverwriteYesOrNoToAllState_" data-uid="UE4.UnrealEd.Factory.OverwriteYesOrNoToAllState*"></a>
+  <h4 id="UE4_UnrealEd_Factory_OverwriteYesOrNoToAllState" data-uid="UE4.UnrealEd.Factory.OverwriteYesOrNoToAllState">OverwriteYesOrNoToAllState</h4>
+  <div class="markdown level1 summary"><p>For interactive object imports, this value indicates whether the user wants
+objects to be automatically overwritten (See EAppReturnType), or -1 if the
+user should be prompted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int OverwriteYesOrNoToAllState { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_StaticClass.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L109">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_StaticClass_" data-uid="UE4.UnrealEd.Factory.StaticClass*"></a>
+  <h4 id="UE4_UnrealEd_Factory_StaticClass" data-uid="UE4.UnrealEd.Factory.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_SupportedClass.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.SupportedClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L52">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_SupportedClass_" data-uid="UE4.UnrealEd.Factory.SupportedClass*"></a>
+  <h4 id="UE4_UnrealEd_Factory_SupportedClass" data-uid="UE4.UnrealEd.Factory.SupportedClass">SupportedClass</h4>
+  <div class="markdown level1 summary"><p>The class manufactured by this factory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;UObject&gt; SupportedClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L113">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_New_" data-uid="UE4.UnrealEd.Factory.New*"></a>
+  <h4 id="UE4_UnrealEd_Factory_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.UnrealEd.Factory.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Factory New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.Factory.html">Factory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_ScriptFactoryCanImport.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.ScriptFactoryCanImport%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L28">View Source</a>
+  </span>
+  <h4 id="UE4_UnrealEd_Factory_ScriptFactoryCanImport" data-uid="UE4.UnrealEd.Factory.ScriptFactoryCanImport">ScriptFactoryCanImport</h4>
+  <div class="markdown level1 summary"><p>Whether the specified file can be imported by this factory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Factory.ScriptFactoryCanImport_delegate ScriptFactoryCanImport</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.Factory.ScriptFactoryCanImport_delegate.html">Factory.ScriptFactoryCanImport_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UnrealEd_Factory_ScriptFactoryCanImport_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>(Implemented in script)</p>
+<p>@return true if the file is supported, false otherwise.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_ScriptFactoryCreateFile.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.ScriptFactoryCreateFile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L42">View Source</a>
+  </span>
+  <h4 id="UE4_UnrealEd_Factory_ScriptFactoryCreateFile" data-uid="UE4.UnrealEd.Factory.ScriptFactoryCreateFile">ScriptFactoryCreateFile</h4>
+  <div class="markdown level1 summary"><p>Import object(s) using a task via script
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event Factory.ScriptFactoryCreateFile_delegate ScriptFactoryCreateFile</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.Factory.ScriptFactoryCreateFile_delegate.html">Factory.ScriptFactoryCreateFile_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UnrealEd_Factory_ScriptFactoryCreateFile_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param InTask
+@return True if script implements</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory_op_Implicit_System_IntPtr__UE4_UnrealEd_Factory.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory.op_Implicit(System.IntPtr)~UE4.UnrealEd.Factory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L107">View Source</a>
+  </span>
+  <a id="UE4_UnrealEd_Factory_op_Implicit_" data-uid="UE4.UnrealEd.Factory.op_Implicit*"></a>
+  <h4 id="UE4_UnrealEd_Factory_op_Implicit_System_IntPtr__UE4_UnrealEd_Factory" data-uid="UE4.UnrealEd.Factory.op_Implicit(System.IntPtr)~UE4.UnrealEd.Factory">Implicit(IntPtr to Factory)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Factory(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UnrealEd.Factory.html">Factory</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UnrealEd_Factory.md&amp;value=---%0Auid%3A%20UE4.UnrealEd.Factory%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UnrealEd/Factory.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

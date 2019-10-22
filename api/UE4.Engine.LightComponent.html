@@ -1,0 +1,2293 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LightComponent
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LightComponent
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.LightComponent">
+  
+  
+  <h1 id="UE4_Engine_LightComponent" data-uid="UE4.Engine.LightComponent" class="text-break">Class LightComponent
+  </h1>
+  <div class="markdown level0 summary"><p>Light Component</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.Engine.ActorComponent.html">ActorComponent</a></div>
+    <div class="level3"><a class="xref" href="UE4.Engine.SceneComponent.html">SceneComponent</a></div>
+    <div class="level4"><a class="xref" href="UE4.Engine.LightComponentBase.html">LightComponentBase</a></div>
+    <div class="level5"><span class="xref">LightComponent</span></div>
+      <div class="level6"><a class="xref" href="UE4.Engine.DirectionalLightComponent.html">DirectionalLightComponent</a></div>
+      <div class="level6"><a class="xref" href="UE4.Engine.LocalLightComponent.html">LocalLightComponent</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_GetLightColor">LightComponentBase.GetLightColor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_SetCastShadows_System_Boolean_">LightComponentBase.SetCastShadows(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_SetCastVolumetricShadow_System_Boolean_">LightComponentBase.SetCastVolumetricShadow(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_LightGuid">LightComponentBase.LightGuid</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_Intensity">LightComponentBase.Intensity</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_LightColor">LightComponentBase.LightColor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_bAffectsWorld">LightComponentBase.bAffectsWorld</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_CastShadows">LightComponentBase.CastShadows</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_CastStaticShadows">LightComponentBase.CastStaticShadows</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_CastDynamicShadows">LightComponentBase.CastDynamicShadows</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_bAffectTranslucentLighting">LightComponentBase.bAffectTranslucentLighting</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_bTransmission">LightComponentBase.bTransmission</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_bCastVolumetricShadow">LightComponentBase.bCastVolumetricShadow</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_IndirectLightingIntensity">LightComponentBase.IndirectLightingIntensity</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_VolumetricScatteringIntensity">LightComponentBase.VolumetricScatteringIntensity</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_StaticEditorTexture">LightComponentBase.StaticEditorTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_StaticEditorTextureScale">LightComponentBase.StaticEditorTextureScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_DynamicEditorTexture">LightComponentBase.DynamicEditorTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.LightComponentBase.html#UE4_Engine_LightComponentBase_DynamicEditorTextureScale">LightComponentBase.DynamicEditorTextureScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_DetachFromParent_System_Boolean_System_Boolean_">SceneComponent.DetachFromParent(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_DoesSocketExist_UE4_Core_Name_">SceneComponent.DoesSocketExist(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetAllSocketNames">SceneComponent.GetAllSocketNames()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetAttachParent">SceneComponent.GetAttachParent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetAttachSocketName">SceneComponent.GetAttachSocketName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetChildComponent_System_Int32_">SceneComponent.GetChildComponent(Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetChildrenComponents_System_Boolean_">SceneComponent.GetChildrenComponents(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetComponentVelocity">SceneComponent.GetComponentVelocity()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetForwardVector">SceneComponent.GetForwardVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetNumChildrenComponents">SceneComponent.GetNumChildrenComponents()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetParentComponents">SceneComponent.GetParentComponents()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetPhysicsVolume">SceneComponent.GetPhysicsVolume()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetRelativeTransform">SceneComponent.GetRelativeTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetRightVector">SceneComponent.GetRightVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetShouldUpdatePhysicsVolume">SceneComponent.GetShouldUpdatePhysicsVolume()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetSocketLocation_UE4_Core_Name_">SceneComponent.GetSocketLocation(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetSocketQuaternion_UE4_Core_Name_">SceneComponent.GetSocketQuaternion(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetSocketRotation_UE4_Core_Name_">SceneComponent.GetSocketRotation(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetSocketTransform_UE4_Core_Name_System_Byte_">SceneComponent.GetSocketTransform(Name, Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_GetUpVector">SceneComponent.GetUpVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_IsAnySimulatingPhysics">SceneComponent.IsAnySimulatingPhysics()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_IsSimulatingPhysics_UE4_Core_Name_">SceneComponent.IsSimulatingPhysics(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_IsVisible">SceneComponent.IsVisible()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddLocalOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">SceneComponent.K2_AddLocalOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddLocalRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">SceneComponent.K2_AddLocalRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddLocalTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">SceneComponent.K2_AddLocalTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddRelativeLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">SceneComponent.K2_AddRelativeLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddRelativeRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">SceneComponent.K2_AddRelativeRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddWorldOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">SceneComponent.K2_AddWorldOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddWorldRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">SceneComponent.K2_AddWorldRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AddWorldTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">SceneComponent.K2_AddWorldTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AttachTo_UE4_Engine_SceneComponent_UE4_Core_Name_System_Byte_System_Boolean_">SceneComponent.K2_AttachTo(SceneComponent, Name, Byte, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_AttachToComponent_UE4_Engine_SceneComponent_UE4_Core_Name_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_System_Boolean_">SceneComponent.K2_AttachToComponent(SceneComponent, Name, EAttachmentRule, EAttachmentRule, EAttachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_DetachFromComponent_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_System_Boolean_">SceneComponent.K2_DetachFromComponent(EDetachmentRule, EDetachmentRule, EDetachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_GetComponentLocation">SceneComponent.K2_GetComponentLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_GetComponentRotation">SceneComponent.K2_GetComponentRotation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_GetComponentScale">SceneComponent.K2_GetComponentScale()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_GetComponentToWorld">SceneComponent.K2_GetComponentToWorld()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetRelativeLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">SceneComponent.K2_SetRelativeLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetRelativeLocationAndRotation_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">SceneComponent.K2_SetRelativeLocationAndRotation(Vector, Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetRelativeRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">SceneComponent.K2_SetRelativeRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetRelativeTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">SceneComponent.K2_SetRelativeTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetWorldLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">SceneComponent.K2_SetWorldLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetWorldLocationAndRotation_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">SceneComponent.K2_SetWorldLocationAndRotation(Vector, Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetWorldRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">SceneComponent.K2_SetWorldRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_K2_SetWorldTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">SceneComponent.K2_SetWorldTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_ResetRelativeTransform">SceneComponent.ResetRelativeTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SetAbsolute_System_Boolean_System_Boolean_System_Boolean_">SceneComponent.SetAbsolute(Boolean, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SetHiddenInGame_System_Boolean_System_Boolean_">SceneComponent.SetHiddenInGame(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SetMobility_System_Byte_">SceneComponent.SetMobility(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SetRelativeScale3D_UE4_CoreUObject_Vector_">SceneComponent.SetRelativeScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SetShouldUpdatePhysicsVolume_System_Boolean_">SceneComponent.SetShouldUpdatePhysicsVolume(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SetVisibility_System_Boolean_System_Boolean_">SceneComponent.SetVisibility(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SetWorldScale3D_UE4_CoreUObject_Vector_">SceneComponent.SetWorldScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_SnapTo_UE4_Engine_SceneComponent_UE4_Core_Name_">SceneComponent.SnapTo(SceneComponent, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_ToggleVisibility_System_Boolean_">SceneComponent.ToggleVisibility(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_AttachParent">SceneComponent.AttachParent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_AttachSocketName">SceneComponent.AttachSocketName</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_AttachChildren">SceneComponent.AttachChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_ClientAttachedChildren">SceneComponent.ClientAttachedChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_RelativeLocation">SceneComponent.RelativeLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_RelativeRotation">SceneComponent.RelativeRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_RelativeScale3D">SceneComponent.RelativeScale3D</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_ComponentVelocity">SceneComponent.ComponentVelocity</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bComponentToWorldUpdated">SceneComponent.bComponentToWorldUpdated</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bAbsoluteLocation">SceneComponent.bAbsoluteLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bAbsoluteRotation">SceneComponent.bAbsoluteRotation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bAbsoluteScale">SceneComponent.bAbsoluteScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bVisible">SceneComponent.bVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bHiddenInGame">SceneComponent.bHiddenInGame</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bShouldUpdatePhysicsVolume">SceneComponent.bShouldUpdatePhysicsVolume</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bBoundsChangeTriggersStreamingDataRebuild">SceneComponent.bBoundsChangeTriggersStreamingDataRebuild</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bUseAttachParentBound">SceneComponent.bUseAttachParentBound</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_bVisualizeComponent">SceneComponent.bVisualizeComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_Mobility">SceneComponent.Mobility</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.SceneComponent.html#UE4_Engine_SceneComponent_DetailMode">SceneComponent.DetailMode</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_RegisterComponent">ActorComponent.RegisterComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_UnregisterComponent">ActorComponent.UnregisterComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_ReceiveBeginPlay">ActorComponent.ReceiveBeginPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_ReceiveEndPlay">ActorComponent.ReceiveEndPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_ReceiveTick">ActorComponent.ReceiveTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_Activate_System_Boolean_">ActorComponent.Activate(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_AddTickPrerequisiteActor_UE4_Engine_Actor_">ActorComponent.AddTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_AddTickPrerequisiteComponent_UE4_Engine_ActorComponent_">ActorComponent.AddTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_ComponentHasTag_UE4_Core_Name_">ActorComponent.ComponentHasTag(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_Deactivate">ActorComponent.Deactivate()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_GetComponentTickInterval">ActorComponent.GetComponentTickInterval()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_GetOwner">ActorComponent.GetOwner()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_IsActive">ActorComponent.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_IsBeingDestroyed">ActorComponent.IsBeingDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_IsComponentTickEnabled">ActorComponent.IsComponentTickEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_K2_DestroyComponent_UE4_CoreUObject_UObject_">ActorComponent.K2_DestroyComponent(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_RemoveTickPrerequisiteActor_UE4_Engine_Actor_">ActorComponent.RemoveTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_RemoveTickPrerequisiteComponent_UE4_Engine_ActorComponent_">ActorComponent.RemoveTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_SetActive_System_Boolean_System_Boolean_">ActorComponent.SetActive(Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_SetAutoActivate_System_Boolean_">ActorComponent.SetAutoActivate(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_SetComponentTickEnabled_System_Boolean_">ActorComponent.SetComponentTickEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_SetComponentTickInterval_System_Single_">ActorComponent.SetComponentTickInterval(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_SetIsReplicated_System_Boolean_">ActorComponent.SetIsReplicated(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_SetTickableWhenPaused_System_Boolean_">ActorComponent.SetTickableWhenPaused(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_SetTickGroup_System_Byte_">ActorComponent.SetTickGroup(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_ToggleActive">ActorComponent.ToggleActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_PrimaryComponentTick">ActorComponent.PrimaryComponentTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_AssetUserData">ActorComponent.AssetUserData</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bReplicates">ActorComponent.bReplicates</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bNetAddressable">ActorComponent.bNetAddressable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bAutoActivate">ActorComponent.bAutoActivate</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bIsActive">ActorComponent.bIsActive</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bEditableWhenInherited">ActorComponent.bEditableWhenInherited</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bCanEverAffectNavigation">ActorComponent.bCanEverAffectNavigation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bIsEditorOnly">ActorComponent.bIsEditorOnly</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.ActorComponent.html#UE4_Engine_ActorComponent_bIsVisualizationComponent">ActorComponent.bIsVisualizationComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_LightComponent_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LightComponent : LightComponentBase</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_bAffectDynamicIndirectLighting.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.bAffectDynamicIndirectLighting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L156">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_bAffectDynamicIndirectLighting_" data-uid="UE4.Engine.LightComponent.bAffectDynamicIndirectLighting*"></a>
+  <h4 id="UE4_Engine_LightComponent_bAffectDynamicIndirectLighting" data-uid="UE4.Engine.LightComponent.bAffectDynamicIndirectLighting">bAffectDynamicIndirectLighting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bAffectDynamicIndirectLighting { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_bCastShadowsFromCinematicObjectsOnly.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.bCastShadowsFromCinematicObjectsOnly%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L153">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_bCastShadowsFromCinematicObjectsOnly_" data-uid="UE4.Engine.LightComponent.bCastShadowsFromCinematicObjectsOnly*"></a>
+  <h4 id="UE4_Engine_LightComponent_bCastShadowsFromCinematicObjectsOnly" data-uid="UE4.Engine.LightComponent.bCastShadowsFromCinematicObjectsOnly">bCastShadowsFromCinematicObjectsOnly</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bCastShadowsFromCinematicObjectsOnly { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_bEnableLightShaftBloom.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.bEnableLightShaftBloom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L197">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_bEnableLightShaftBloom_" data-uid="UE4.Engine.LightComponent.bEnableLightShaftBloom*"></a>
+  <h4 id="UE4_Engine_LightComponent_bEnableLightShaftBloom" data-uid="UE4.Engine.LightComponent.bEnableLightShaftBloom">bEnableLightShaftBloom</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableLightShaftBloom { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_bForceCachedShadowsForMovablePrimitives.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.bForceCachedShadowsForMovablePrimitives%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L159">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_bForceCachedShadowsForMovablePrimitives_" data-uid="UE4.Engine.LightComponent.bForceCachedShadowsForMovablePrimitives*"></a>
+  <h4 id="UE4_Engine_LightComponent_bForceCachedShadowsForMovablePrimitives" data-uid="UE4.Engine.LightComponent.bForceCachedShadowsForMovablePrimitives">bForceCachedShadowsForMovablePrimitives</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bForceCachedShadowsForMovablePrimitives { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_BloomScale.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.BloomScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L201">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_BloomScale_" data-uid="UE4.Engine.LightComponent.BloomScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_BloomScale" data-uid="UE4.Engine.LightComponent.BloomScale">BloomScale</h4>
+  <div class="markdown level1 summary"><p>Scales the additive color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BloomScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_BloomThreshold.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.BloomThreshold%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L205">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_BloomThreshold_" data-uid="UE4.Engine.LightComponent.BloomThreshold*"></a>
+  <h4 id="UE4_Engine_LightComponent_BloomThreshold" data-uid="UE4.Engine.LightComponent.BloomThreshold">BloomThreshold</h4>
+  <div class="markdown level1 summary"><p>Scene color must be larger than this to create bloom in the light shafts.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BloomThreshold { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_BloomTint.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.BloomTint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L209">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_BloomTint_" data-uid="UE4.Engine.LightComponent.BloomTint*"></a>
+  <h4 id="UE4_Engine_LightComponent_BloomTint" data-uid="UE4.Engine.LightComponent.BloomTint">BloomTint</h4>
+  <div class="markdown level1 summary"><p>Multiplies against scene color to create the bloom color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color BloomTint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Color.html">Color</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_bUseIESBrightness.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.bUseIESBrightness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L180">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_bUseIESBrightness_" data-uid="UE4.Engine.LightComponent.bUseIESBrightness*"></a>
+  <h4 id="UE4_Engine_LightComponent_bUseIESBrightness" data-uid="UE4.Engine.LightComponent.bUseIESBrightness">bUseIESBrightness</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseIESBrightness { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_bUseRayTracedDistanceFieldShadows.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.bUseRayTracedDistanceFieldShadows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L212">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_bUseRayTracedDistanceFieldShadows_" data-uid="UE4.Engine.LightComponent.bUseRayTracedDistanceFieldShadows*"></a>
+  <h4 id="UE4_Engine_LightComponent_bUseRayTracedDistanceFieldShadows" data-uid="UE4.Engine.LightComponent.bUseRayTracedDistanceFieldShadows">bUseRayTracedDistanceFieldShadows</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseRayTracedDistanceFieldShadows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_bUseTemperature.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.bUseTemperature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L109">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_bUseTemperature_" data-uid="UE4.Engine.LightComponent.bUseTemperature*"></a>
+  <h4 id="UE4_Engine_LightComponent_bUseTemperature" data-uid="UE4.Engine.LightComponent.bUseTemperature">bUseTemperature</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseTemperature { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_CastTranslucentShadows.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.CastTranslucentShadows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L150">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_CastTranslucentShadows_" data-uid="UE4.Engine.LightComponent.CastTranslucentShadows*"></a>
+  <h4 id="UE4_Engine_LightComponent_CastTranslucentShadows" data-uid="UE4.Engine.LightComponent.CastTranslucentShadows">CastTranslucentShadows</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CastTranslucentShadows { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_ContactShadowLength.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.ContactShadowLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L142">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_ContactShadowLength_" data-uid="UE4.Engine.LightComponent.ContactShadowLength*"></a>
+  <h4 id="UE4_Engine_LightComponent_ContactShadowLength" data-uid="UE4.Engine.LightComponent.ContactShadowLength">ContactShadowLength</h4>
+  <div class="markdown level1 summary"><p>Length of screen space ray trace for sharp contact shadows. Zero is disabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ContactShadowLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_ContactShadowLengthInWS.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.ContactShadowLengthInWS%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L146">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_ContactShadowLengthInWS_" data-uid="UE4.Engine.LightComponent.ContactShadowLengthInWS*"></a>
+  <h4 id="UE4_Engine_LightComponent_ContactShadowLengthInWS" data-uid="UE4.Engine.LightComponent.ContactShadowLengthInWS">ContactShadowLengthInWS</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContactShadowLengthInWS { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L230">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_DefaultObject_" data-uid="UE4.Engine.LightComponent.DefaultObject*"></a>
+  <h4 id="UE4_Engine_LightComponent_DefaultObject" data-uid="UE4.Engine.LightComponent.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LightComponent DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.LightComponent.html">LightComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_DisabledBrightness.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.DisabledBrightness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L194">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_DisabledBrightness_" data-uid="UE4.Engine.LightComponent.DisabledBrightness*"></a>
+  <h4 id="UE4_Engine_LightComponent_DisabledBrightness" data-uid="UE4.Engine.LightComponent.DisabledBrightness">DisabledBrightness</h4>
+  <div class="markdown level1 summary"><p>Brightness factor applied to the light when the light function is specified but disabled, for example in scene captures that use SceneCapView_LitNoShadows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DisabledBrightness { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_DisabledBrightness_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This should be set to the average brightness of the light function material's emissive input, which should be between 0 and 1.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_IESBrightnessScale.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.IESBrightnessScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L184">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_IESBrightnessScale_" data-uid="UE4.Engine.LightComponent.IESBrightnessScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_IESBrightnessScale" data-uid="UE4.Engine.LightComponent.IESBrightnessScale">IESBrightnessScale</h4>
+  <div class="markdown level1 summary"><p>Global scale for IES brightness contribution. Only available when &quot;Use IES Brightness&quot; is selected, and a valid IES profile texture is set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float IESBrightnessScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_IESTexture.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.IESTexture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L177">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_IESTexture_" data-uid="UE4.Engine.LightComponent.IESTexture*"></a>
+  <h4 id="UE4_Engine_LightComponent_IESTexture" data-uid="UE4.Engine.LightComponent.IESTexture">IESTexture</h4>
+  <div class="markdown level1 summary"><p>IES texture (light profiles from real world measured data)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextureLightProfile IESTexture { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.TextureLightProfile.html">TextureLightProfile</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_LightFunctionFadeDistance.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.LightFunctionFadeDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L189">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_LightFunctionFadeDistance_" data-uid="UE4.Engine.LightComponent.LightFunctionFadeDistance*"></a>
+  <h4 id="UE4_Engine_LightComponent_LightFunctionFadeDistance" data-uid="UE4.Engine.LightComponent.LightFunctionFadeDistance">LightFunctionFadeDistance</h4>
+  <div class="markdown level1 summary"><p>Distance at which the light function should be completely faded to DisabledBrightness.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LightFunctionFadeDistance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_LightFunctionFadeDistance_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is useful for hiding aliasing from light functions applied in the distance.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_LightFunctionMaterial.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.LightFunctionMaterial%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L169">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_LightFunctionMaterial_" data-uid="UE4.Engine.LightComponent.LightFunctionMaterial*"></a>
+  <h4 id="UE4_Engine_LightComponent_LightFunctionMaterial" data-uid="UE4.Engine.LightComponent.LightFunctionMaterial">LightFunctionMaterial</h4>
+  <div class="markdown level1 summary"><p>The light function material to be applied to this light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MaterialInterface LightFunctionMaterial { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.MaterialInterface.html">MaterialInterface</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_LightFunctionMaterial_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Note that only non-lightmapped lights (UseDirectLightMap=False) can have a light function.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_LightFunctionScale.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.LightFunctionScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L173">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_LightFunctionScale_" data-uid="UE4.Engine.LightComponent.LightFunctionScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_LightFunctionScale" data-uid="UE4.Engine.LightComponent.LightFunctionScale">LightFunctionScale</h4>
+  <div class="markdown level1 summary"><p>Scales the light function projection.  X and Y scale in the directions perpendicular to the light's direction, Z scales along the light direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector LightFunctionScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_LightingChannels.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.LightingChannels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L164">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_LightingChannels_" data-uid="UE4.Engine.LightComponent.LightingChannels*"></a>
+  <h4 id="UE4_Engine_LightComponent_LightingChannels" data-uid="UE4.Engine.LightComponent.LightingChannels">LightingChannels</h4>
+  <div class="markdown level1 summary"><p>Channels that this light should affect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightingChannels LightingChannels { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.LightingChannels.html">LightingChannels</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_LightingChannels_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>These channels only apply to opaque materials, direct lighting, and dynamic lighting and shadowing.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_MaxDistanceFadeRange.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.MaxDistanceFadeRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L105">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_MaxDistanceFadeRange_" data-uid="UE4.Engine.LightComponent.MaxDistanceFadeRange*"></a>
+  <h4 id="UE4_Engine_LightComponent_MaxDistanceFadeRange" data-uid="UE4.Engine.LightComponent.MaxDistanceFadeRange">MaxDistanceFadeRange</h4>
+  <div class="markdown level1 summary"><p>Max Distance Fade Range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxDistanceFadeRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_MaxDrawDistance.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.MaxDrawDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L100">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_MaxDrawDistance_" data-uid="UE4.Engine.LightComponent.MaxDrawDistance*"></a>
+  <h4 id="UE4_Engine_LightComponent_MaxDrawDistance" data-uid="UE4.Engine.LightComponent.MaxDrawDistance">MaxDrawDistance</h4>
+  <div class="markdown level1 summary"><p>Max Draw Distance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxDrawDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_RayStartOffsetDepthScale.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.RayStartOffsetDepthScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L217">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_RayStartOffsetDepthScale_" data-uid="UE4.Engine.LightComponent.RayStartOffsetDepthScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_RayStartOffsetDepthScale" data-uid="UE4.Engine.LightComponent.RayStartOffsetDepthScale">RayStartOffsetDepthScale</h4>
+  <div class="markdown level1 summary"><p>Controls how large of an offset ray traced shadows have from the receiving surface as the camera gets further away.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RayStartOffsetDepthScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_RayStartOffsetDepthScale_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can be useful to hide self-shadowing artifacts from low resolution distance fields on huge static meshes.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_ShadowBias.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.ShadowBias%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L134">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_ShadowBias_" data-uid="UE4.Engine.LightComponent.ShadowBias*"></a>
+  <h4 id="UE4_Engine_LightComponent_ShadowBias" data-uid="UE4.Engine.LightComponent.ShadowBias">ShadowBias</h4>
+  <div class="markdown level1 summary"><p>Controls how accurate self shadowing of whole scene shadows from this light are.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShadowBias { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_ShadowBias_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>At 0, shadows will start at the their caster surface, but there will be many self shadowing artifacts.
+larger values, shadows will start further from their caster, and there won't be self shadowing artifacts but object might appear to fly.
+around 0.5 seems to be a good tradeoff. This also affects the soft transition of shadows</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_ShadowResolutionScale.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.ShadowResolutionScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L125">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_ShadowResolutionScale_" data-uid="UE4.Engine.LightComponent.ShadowResolutionScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_ShadowResolutionScale" data-uid="UE4.Engine.LightComponent.ShadowResolutionScale">ShadowResolutionScale</h4>
+  <div class="markdown level1 summary"><p>Scales the resolution of shadowmaps used to shadow this light.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShadowResolutionScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_ShadowResolutionScale_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>By default shadowmap resolution is chosen based on screen size of the caster.
+Note: shadowmap resolution is still clamped by 'r.Shadow.MaxResolution'</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_ShadowSharpen.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.ShadowSharpen%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L138">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_ShadowSharpen_" data-uid="UE4.Engine.LightComponent.ShadowSharpen*"></a>
+  <h4 id="UE4_Engine_LightComponent_ShadowSharpen" data-uid="UE4.Engine.LightComponent.ShadowSharpen">ShadowSharpen</h4>
+  <div class="markdown level1 summary"><p>Amount to sharpen shadow filtering</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ShadowSharpen { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SpecularScale.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SpecularScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L117">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SpecularScale_" data-uid="UE4.Engine.LightComponent.SpecularScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_SpecularScale" data-uid="UE4.Engine.LightComponent.SpecularScale">SpecularScale</h4>
+  <div class="markdown level1 summary"><p>Multiplier on specular highlights.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SpecularScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_SpecularScale_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Use only with great care! Any value besides 1 is not physical!
+Can be used to artistically remove highlights mimicking polarizing filters or photo touch up.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L228">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_StaticClass_" data-uid="UE4.Engine.LightComponent.StaticClass*"></a>
+  <h4 id="UE4_Engine_LightComponent_StaticClass" data-uid="UE4.Engine.LightComponent.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_Temperature.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.Temperature%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L96">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_Temperature_" data-uid="UE4.Engine.LightComponent.Temperature*"></a>
+  <h4 id="UE4_Engine_LightComponent_Temperature" data-uid="UE4.Engine.LightComponent.Temperature">Temperature</h4>
+  <div class="markdown level1 summary"><p>Color temperature in Kelvin of the blackbody illuminant.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float Temperature { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_LightComponent_Temperature_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>White (D65) is 6500K.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L232">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_New_" data-uid="UE4.Engine.LightComponent.New*"></a>
+  <h4 id="UE4_Engine_LightComponent_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.LightComponent.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static LightComponent New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.LightComponent.html">LightComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetAffectDynamicIndirectLighting_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetAffectDynamicIndirectLighting(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L20">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetAffectDynamicIndirectLighting_" data-uid="UE4.Engine.LightComponent.SetAffectDynamicIndirectLighting*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetAffectDynamicIndirectLighting_System_Boolean_" data-uid="UE4.Engine.LightComponent.SetAffectDynamicIndirectLighting(System.Boolean)">SetAffectDynamicIndirectLighting(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set Affect Dynamic Indirect Lighting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAffectDynamicIndirectLighting(bool bNewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bNewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetAffectTranslucentLighting_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetAffectTranslucentLighting(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L24">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetAffectTranslucentLighting_" data-uid="UE4.Engine.LightComponent.SetAffectTranslucentLighting*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetAffectTranslucentLighting_System_Boolean_" data-uid="UE4.Engine.LightComponent.SetAffectTranslucentLighting(System.Boolean)">SetAffectTranslucentLighting(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set Affect Translucent Lighting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAffectTranslucentLighting(bool bNewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bNewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetBloomScale_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetBloomScale(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L28">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetBloomScale_" data-uid="UE4.Engine.LightComponent.SetBloomScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetBloomScale_System_Single_" data-uid="UE4.Engine.LightComponent.SetBloomScale(System.Single)">SetBloomScale(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Bloom Scale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBloomScale(float NewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetBloomThreshold_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetBloomThreshold(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L32">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetBloomThreshold_" data-uid="UE4.Engine.LightComponent.SetBloomThreshold*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetBloomThreshold_System_Single_" data-uid="UE4.Engine.LightComponent.SetBloomThreshold(System.Single)">SetBloomThreshold(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Bloom Threshold</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBloomThreshold(float NewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetBloomTint_UE4_CoreUObject_Color_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetBloomTint(UE4.CoreUObject.Color)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L36">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetBloomTint_" data-uid="UE4.Engine.LightComponent.SetBloomTint*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetBloomTint_UE4_CoreUObject_Color_" data-uid="UE4.Engine.LightComponent.SetBloomTint(UE4.CoreUObject.Color)">SetBloomTint(Color)</h4>
+  <div class="markdown level1 summary"><p>Set Bloom Tint</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBloomTint(Color NewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Color.html">Color</a></td>
+        <td><span class="parametername">NewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetEnableLightShaftBloom_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetEnableLightShaftBloom(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetEnableLightShaftBloom_" data-uid="UE4.Engine.LightComponent.SetEnableLightShaftBloom*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetEnableLightShaftBloom_System_Boolean_" data-uid="UE4.Engine.LightComponent.SetEnableLightShaftBloom(System.Boolean)">SetEnableLightShaftBloom(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set Enable Light Shaft Bloom</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetEnableLightShaftBloom(bool bNewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bNewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetForceCachedShadowsForMovablePrimitives_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetForceCachedShadowsForMovablePrimitives(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetForceCachedShadowsForMovablePrimitives_" data-uid="UE4.Engine.LightComponent.SetForceCachedShadowsForMovablePrimitives*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetForceCachedShadowsForMovablePrimitives_System_Boolean_" data-uid="UE4.Engine.LightComponent.SetForceCachedShadowsForMovablePrimitives(System.Boolean)">SetForceCachedShadowsForMovablePrimitives(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set Force Cached Shadows for Movable Primitives</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetForceCachedShadowsForMovablePrimitives(bool bNewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bNewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetIESTexture_UE4_Engine_TextureLightProfile_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetIESTexture(UE4.Engine.TextureLightProfile)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L48">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetIESTexture_" data-uid="UE4.Engine.LightComponent.SetIESTexture*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetIESTexture_UE4_Engine_TextureLightProfile_" data-uid="UE4.Engine.LightComponent.SetIESTexture(UE4.Engine.TextureLightProfile)">SetIESTexture(TextureLightProfile)</h4>
+  <div class="markdown level1 summary"><p>Set IESTexture</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIESTexture(TextureLightProfile NewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.TextureLightProfile.html">TextureLightProfile</a></td>
+        <td><span class="parametername">NewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetIndirectLightingIntensity_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetIndirectLightingIntensity(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L52">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetIndirectLightingIntensity_" data-uid="UE4.Engine.LightComponent.SetIndirectLightingIntensity*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetIndirectLightingIntensity_System_Single_" data-uid="UE4.Engine.LightComponent.SetIndirectLightingIntensity(System.Single)">SetIndirectLightingIntensity(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Indirect Lighting Intensity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIndirectLightingIntensity(float NewIntensity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewIntensity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetIntensity_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetIntensity(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L56">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetIntensity_" data-uid="UE4.Engine.LightComponent.SetIntensity*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetIntensity_System_Single_" data-uid="UE4.Engine.LightComponent.SetIntensity(System.Single)">SetIntensity(Single)</h4>
+  <div class="markdown level1 summary"><p>Set intensity of the light</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIntensity(float NewIntensity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewIntensity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetLightColor_UE4_CoreUObject_LinearColor_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetLightColor(UE4.CoreUObject.LinearColor%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L60">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetLightColor_" data-uid="UE4.Engine.LightComponent.SetLightColor*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetLightColor_UE4_CoreUObject_LinearColor_System_Boolean_" data-uid="UE4.Engine.LightComponent.SetLightColor(UE4.CoreUObject.LinearColor,System.Boolean)">SetLightColor(LinearColor, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set color of the light</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLightColor(LinearColor NewLightColor, bool bSRGB)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td><span class="parametername">NewLightColor</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bSRGB</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetLightFunctionDisabledBrightness_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetLightFunctionDisabledBrightness(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L64">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetLightFunctionDisabledBrightness_" data-uid="UE4.Engine.LightComponent.SetLightFunctionDisabledBrightness*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetLightFunctionDisabledBrightness_System_Single_" data-uid="UE4.Engine.LightComponent.SetLightFunctionDisabledBrightness(System.Single)">SetLightFunctionDisabledBrightness(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Light Function Disabled Brightness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLightFunctionDisabledBrightness(float NewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetLightFunctionFadeDistance_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetLightFunctionFadeDistance(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L68">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetLightFunctionFadeDistance_" data-uid="UE4.Engine.LightComponent.SetLightFunctionFadeDistance*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetLightFunctionFadeDistance_System_Single_" data-uid="UE4.Engine.LightComponent.SetLightFunctionFadeDistance(System.Single)">SetLightFunctionFadeDistance(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Light Function Fade Distance</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLightFunctionFadeDistance(float NewLightFunctionFadeDistance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewLightFunctionFadeDistance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetLightFunctionMaterial_UE4_Engine_MaterialInterface_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetLightFunctionMaterial(UE4.Engine.MaterialInterface)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L72">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetLightFunctionMaterial_" data-uid="UE4.Engine.LightComponent.SetLightFunctionMaterial*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetLightFunctionMaterial_UE4_Engine_MaterialInterface_" data-uid="UE4.Engine.LightComponent.SetLightFunctionMaterial(UE4.Engine.MaterialInterface)">SetLightFunctionMaterial(MaterialInterface)</h4>
+  <div class="markdown level1 summary"><p>Set Light Function Material</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLightFunctionMaterial(MaterialInterface NewLightFunctionMaterial)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.MaterialInterface.html">MaterialInterface</a></td>
+        <td><span class="parametername">NewLightFunctionMaterial</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetLightFunctionScale_UE4_CoreUObject_Vector_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetLightFunctionScale(UE4.CoreUObject.Vector)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L76">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetLightFunctionScale_" data-uid="UE4.Engine.LightComponent.SetLightFunctionScale*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetLightFunctionScale_UE4_CoreUObject_Vector_" data-uid="UE4.Engine.LightComponent.SetLightFunctionScale(UE4.CoreUObject.Vector)">SetLightFunctionScale(Vector)</h4>
+  <div class="markdown level1 summary"><p>Set Light Function Scale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLightFunctionScale(Vector NewLightFunctionScale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td><span class="parametername">NewLightFunctionScale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetShadowBias_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetShadowBias(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L80">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetShadowBias_" data-uid="UE4.Engine.LightComponent.SetShadowBias*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetShadowBias_System_Single_" data-uid="UE4.Engine.LightComponent.SetShadowBias(System.Single)">SetShadowBias(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Shadow Bias</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetShadowBias(float NewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetTemperature_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetTemperature(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetTemperature_" data-uid="UE4.Engine.LightComponent.SetTemperature*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetTemperature_System_Single_" data-uid="UE4.Engine.LightComponent.SetTemperature(System.Single)">SetTemperature(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Temperature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTemperature(float NewTemperature)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewTemperature</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetTransmission_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetTransmission(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L88">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetTransmission_" data-uid="UE4.Engine.LightComponent.SetTransmission*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetTransmission_System_Boolean_" data-uid="UE4.Engine.LightComponent.SetTransmission(System.Boolean)">SetTransmission(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Set Transmission</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTransmission(bool bNewValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bNewValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_SetVolumetricScatteringIntensity_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.SetVolumetricScatteringIntensity(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L92">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_SetVolumetricScatteringIntensity_" data-uid="UE4.Engine.LightComponent.SetVolumetricScatteringIntensity*"></a>
+  <h4 id="UE4_Engine_LightComponent_SetVolumetricScatteringIntensity_System_Single_" data-uid="UE4.Engine.LightComponent.SetVolumetricScatteringIntensity(System.Single)">SetVolumetricScatteringIntensity(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Volumetric Scattering Intensity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVolumetricScatteringIntensity(float NewIntensity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewIntensity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent_op_Implicit_System_IntPtr__UE4_Engine_LightComponent.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent.op_Implicit(System.IntPtr)~UE4.Engine.LightComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L226">View Source</a>
+  </span>
+  <a id="UE4_Engine_LightComponent_op_Implicit_" data-uid="UE4.Engine.LightComponent.op_Implicit*"></a>
+  <h4 id="UE4_Engine_LightComponent_op_Implicit_System_IntPtr__UE4_Engine_LightComponent" data-uid="UE4.Engine.LightComponent.op_Implicit(System.IntPtr)~UE4.Engine.LightComponent">Implicit(IntPtr to LightComponent)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator LightComponent(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.LightComponent.html">LightComponent</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_LightComponent.md&amp;value=---%0Auid%3A%20UE4.Engine.LightComponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/LightComponent.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

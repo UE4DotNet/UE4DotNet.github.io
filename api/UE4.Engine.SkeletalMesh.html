@@ -1,0 +1,1836 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SkeletalMesh
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SkeletalMesh
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.SkeletalMesh">
+  
+  
+  <h1 id="UE4_Engine_SkeletalMesh" data-uid="UE4.Engine.SkeletalMesh" class="text-break">Class SkeletalMesh
+  </h1>
+  <div class="markdown level0 summary"><p>SkeletalMesh is geometry bound to a hierarchical skeleton of bones which can be animated for the purpose of deforming the mesh.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><span class="xref">SkeletalMesh</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_SkeletalMesh_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SkeletalMesh : UObject</code></pre>
+  </div>
+  <h5 id="UE4_Engine_SkeletalMesh_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Skeletal Meshes are built up of two parts; a set of polygons composed to make up the surface of the mesh, and a hierarchical skeleton which can be used to animate the polygons.
+The 3D models, rigging, and animations are created in an external modeling and animation application (3DSMax, Maya, Softimage, etc).</p>
+<p>@see <a href="https://docs.unrealengine.com/latest/INT/Engine/Content/Types/SkeletalMeshes/">https://docs.unrealengine.com/latest/INT/Engine/Content/Types/SkeletalMeshes/</a></p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_AssetImportData.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.AssetImportData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L175">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_AssetImportData_" data-uid="UE4.Engine.SkeletalMesh.AssetImportData*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_AssetImportData" data-uid="UE4.Engine.SkeletalMesh.AssetImportData">AssetImportData</h4>
+  <div class="markdown level1 summary"><p>Importing data and options used for this mesh</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AssetImportData AssetImportData { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.AssetImportData.html">AssetImportData</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_AssetUserData.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.AssetUserData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L252">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_AssetUserData_" data-uid="UE4.Engine.SkeletalMesh.AssetUserData*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_AssetUserData" data-uid="UE4.Engine.SkeletalMesh.AssetUserData">AssetUserData</h4>
+  <div class="markdown level1 summary"><p>Array of user data stored with the asset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;AssetUserData&gt; AssetUserData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.AssetUserData.html">AssetUserData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_bEnablePerPolyCollision.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.bEnablePerPolyCollision%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L143">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_bEnablePerPolyCollision_" data-uid="UE4.Engine.SkeletalMesh.bEnablePerPolyCollision*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_bEnablePerPolyCollision" data-uid="UE4.Engine.SkeletalMesh.bEnablePerPolyCollision">bEnablePerPolyCollision</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnablePerPolyCollision { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_bHasBeenSimplified.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.bHasBeenSimplified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L135">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_bHasBeenSimplified_" data-uid="UE4.Engine.SkeletalMesh.bHasBeenSimplified*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_bHasBeenSimplified" data-uid="UE4.Engine.SkeletalMesh.bHasBeenSimplified">bHasBeenSimplified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bHasBeenSimplified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_bHasCustomDefaultEditorCamera.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.bHasCustomDefaultEditorCamera%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L184">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_bHasCustomDefaultEditorCamera_" data-uid="UE4.Engine.SkeletalMesh.bHasCustomDefaultEditorCamera*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_bHasCustomDefaultEditorCamera" data-uid="UE4.Engine.SkeletalMesh.bHasCustomDefaultEditorCamera">bHasCustomDefaultEditorCamera</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bHasCustomDefaultEditorCamera { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_bHasVertexColors.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.bHasVertexColors%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L139">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_bHasVertexColors_" data-uid="UE4.Engine.SkeletalMesh.bHasVertexColors*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_bHasVertexColors" data-uid="UE4.Engine.SkeletalMesh.bHasVertexColors">bHasVertexColors</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bHasVertexColors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_BodySetup.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.BodySetup%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L153">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_BodySetup_" data-uid="UE4.Engine.SkeletalMesh.BodySetup*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_BodySetup" data-uid="UE4.Engine.SkeletalMesh.BodySetup">BodySetup</h4>
+  <div class="markdown level1 summary"><p>Physics data for the per poly collision case. In 99% of cases you will not need this and are better off using simple ragdoll collision (physics asset)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BodySetup BodySetup { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.BodySetup.html">BodySetup</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_bUseFullPrecisionUVs.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.bUseFullPrecisionUVs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L127">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_bUseFullPrecisionUVs_" data-uid="UE4.Engine.SkeletalMesh.bUseFullPrecisionUVs*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_bUseFullPrecisionUVs" data-uid="UE4.Engine.SkeletalMesh.bUseFullPrecisionUVs">bUseFullPrecisionUVs</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseFullPrecisionUVs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_bUseHighPrecisionTangentBasis.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.bUseHighPrecisionTangentBasis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L131">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_bUseHighPrecisionTangentBasis_" data-uid="UE4.Engine.SkeletalMesh.bUseHighPrecisionTangentBasis*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_bUseHighPrecisionTangentBasis" data-uid="UE4.Engine.SkeletalMesh.bUseHighPrecisionTangentBasis">bUseHighPrecisionTangentBasis</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseHighPrecisionTangentBasis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_DefaultEditorCameraLocation.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.DefaultEditorCameraLocation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L189">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_DefaultEditorCameraLocation_" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraLocation*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_DefaultEditorCameraLocation" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraLocation">DefaultEditorCameraLocation</h4>
+  <div class="markdown level1 summary"><p>Default camera location</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector DefaultEditorCameraLocation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_DefaultEditorCameraLookAt.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.DefaultEditorCameraLookAt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L199">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_DefaultEditorCameraLookAt_" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraLookAt*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_DefaultEditorCameraLookAt" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraLookAt">DefaultEditorCameraLookAt</h4>
+  <div class="markdown level1 summary"><p>Default camera look at</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector DefaultEditorCameraLookAt { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_DefaultEditorCameraOrthoZoom.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.DefaultEditorCameraOrthoZoom%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L204">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_DefaultEditorCameraOrthoZoom_" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraOrthoZoom*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_DefaultEditorCameraOrthoZoom" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraOrthoZoom">DefaultEditorCameraOrthoZoom</h4>
+  <div class="markdown level1 summary"><p>Default camera ortho zoom</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultEditorCameraOrthoZoom { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_DefaultEditorCameraRotation.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.DefaultEditorCameraRotation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L194">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_DefaultEditorCameraRotation_" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraRotation*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_DefaultEditorCameraRotation" data-uid="UE4.Engine.SkeletalMesh.DefaultEditorCameraRotation">DefaultEditorCameraRotation</h4>
+  <div class="markdown level1 summary"><p>Default camera rotation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Rotator DefaultEditorCameraRotation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Rotator.html">Rotator</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L278">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_DefaultObject_" data-uid="UE4.Engine.SkeletalMesh.DefaultObject*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_DefaultObject" data-uid="UE4.Engine.SkeletalMesh.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SkeletalMesh DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMesh.html">SkeletalMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_ExtendedBounds.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.ExtendedBounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_ExtendedBounds_" data-uid="UE4.Engine.SkeletalMesh.ExtendedBounds*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_ExtendedBounds" data-uid="UE4.Engine.SkeletalMesh.ExtendedBounds">ExtendedBounds</h4>
+  <div class="markdown level1 summary"><p>Bounds extended by user values below</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoxSphereBounds ExtendedBounds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.BoxSphereBounds.html">BoxSphereBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_FloorOffset.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.FloorOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L221">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_FloorOffset_" data-uid="UE4.Engine.SkeletalMesh.FloorOffset*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_FloorOffset" data-uid="UE4.Engine.SkeletalMesh.FloorOffset">FloorOffset</h4>
+  <div class="markdown level1 summary"><p>Height offset for the floor mesh in the editor</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FloorOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_ImportedBounds.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.ImportedBounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L79">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_ImportedBounds_" data-uid="UE4.Engine.SkeletalMesh.ImportedBounds*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_ImportedBounds" data-uid="UE4.Engine.SkeletalMesh.ImportedBounds">ImportedBounds</h4>
+  <div class="markdown level1 summary"><p>Original imported mesh bounds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoxSphereBounds ImportedBounds { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.BoxSphereBounds.html">BoxSphereBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_LODSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.LODSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L113">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_LODSettings_" data-uid="UE4.Engine.SkeletalMesh.LODSettings*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_LODSettings" data-uid="UE4.Engine.SkeletalMesh.LODSettings">LODSettings</h4>
+  <div class="markdown level1 summary"><p>LODSettings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletalMeshLODSettings LODSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMeshLODSettings.html">SkeletalMeshLODSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_MeshClothingAssets.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.MeshClothingAssets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L240">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_MeshClothingAssets_" data-uid="UE4.Engine.SkeletalMesh.MeshClothingAssets*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_MeshClothingAssets" data-uid="UE4.Engine.SkeletalMesh.MeshClothingAssets">MeshClothingAssets</h4>
+  <div class="markdown level1 summary"><p>Clothing assets imported to this mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;ClothingAssetBase&gt; MeshClothingAssets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.ClothingSystemRuntimeInterface.ClothingAssetBase.html">ClothingAssetBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_MeshClothingAssets_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>May or may not be in use currently on the mesh.
+Ordering not guaranteed, use the provided getters to access elements in this array
+whenever possible</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_MinLod.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.MinLod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L108">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_MinLod_" data-uid="UE4.Engine.SkeletalMesh.MinLod*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_MinLod" data-uid="UE4.Engine.SkeletalMesh.MinLod">MinLod</h4>
+  <div class="markdown level1 summary"><p>Minimum LOD to render. Can be overridden per component as well as set here for all mesh instances here</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PerPlatformInt MinLod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PerPlatformInt.html">PerPlatformInt</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_MorphTargets.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.MorphTargets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L214">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_MorphTargets_" data-uid="UE4.Engine.SkeletalMesh.MorphTargets*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_MorphTargets" data-uid="UE4.Engine.SkeletalMesh.MorphTargets">MorphTargets</h4>
+  <div class="markdown level1 summary"><p>Morph Targets</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;MorphTarget&gt; MorphTargets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.MorphTarget.html">MorphTarget</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_NegativeBoundsExtension.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.NegativeBoundsExtension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L101">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_NegativeBoundsExtension_" data-uid="UE4.Engine.SkeletalMesh.NegativeBoundsExtension*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_NegativeBoundsExtension" data-uid="UE4.Engine.SkeletalMesh.NegativeBoundsExtension">NegativeBoundsExtension</h4>
+  <div class="markdown level1 summary"><p>Bound extension values in addition to imported bound in the negative direction of XYZ,
+positive value increases bound size and negative value decreases bound size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector NegativeBoundsExtension { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_NegativeBoundsExtension_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The final bound would be from [Imported Bound - Negative Bound] to [Imported Bound + Positive Bound].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_NodeMappingData.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.NodeMappingData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L168">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_NodeMappingData_" data-uid="UE4.Engine.SkeletalMesh.NodeMappingData*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_NodeMappingData" data-uid="UE4.Engine.SkeletalMesh.NodeMappingData">NodeMappingData</h4>
+  <div class="markdown level1 summary"><p>Mapping data that is saved</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;NodeMappingContainer&gt; NodeMappingData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.NodeMappingContainer.html">NodeMappingContainer</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_PhysicsAsset.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.PhysicsAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L159">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_PhysicsAsset_" data-uid="UE4.Engine.SkeletalMesh.PhysicsAsset*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_PhysicsAsset" data-uid="UE4.Engine.SkeletalMesh.PhysicsAsset">PhysicsAsset</h4>
+  <div class="markdown level1 summary"><p>Physics and collision information used for this USkeletalMesh, set up in Physics Asset Editor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicsAsset PhysicsAsset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PhysicsAsset.html">PhysicsAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_PhysicsAsset_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This is used for per-bone hit detection, accurate bounding box calculation and ragdoll physics for example.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_PositiveBoundsExtension.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.PositiveBoundsExtension%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L93">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_PositiveBoundsExtension_" data-uid="UE4.Engine.SkeletalMesh.PositiveBoundsExtension*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_PositiveBoundsExtension" data-uid="UE4.Engine.SkeletalMesh.PositiveBoundsExtension">PositiveBoundsExtension</h4>
+  <div class="markdown level1 summary"><p>Bound extension values in addition to imported bound in the positive direction of XYZ,
+positive value increases bound size and negative value decreases bound size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector PositiveBoundsExtension { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_PositiveBoundsExtension_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The final bound would be from [Imported Bound - Negative Bound] to [Imported Bound + Positive Bound].</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_PostProcessAnimBlueprint.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.PostProcessAnimBlueprint%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L231">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_PostProcessAnimBlueprint_" data-uid="UE4.Engine.SkeletalMesh.PostProcessAnimBlueprint*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_PostProcessAnimBlueprint" data-uid="UE4.Engine.SkeletalMesh.PostProcessAnimBlueprint">PostProcessAnimBlueprint</h4>
+  <div class="markdown level1 summary"><p>Animation Blueprint class to run as a post process for this mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;AnimInstance&gt; PostProcessAnimBlueprint { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.AnimInstance.html">AnimInstance</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_PostProcessAnimBlueprint_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This blueprint will be ran before physics, but after the main
+anim instance for any skeletal mesh component using this mesh.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_PreviewAttachedAssetContainer.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.PreviewAttachedAssetContainer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L209">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_PreviewAttachedAssetContainer_" data-uid="UE4.Engine.SkeletalMesh.PreviewAttachedAssetContainer*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_PreviewAttachedAssetContainer" data-uid="UE4.Engine.SkeletalMesh.PreviewAttachedAssetContainer">PreviewAttachedAssetContainer</h4>
+  <div class="markdown level1 summary"><p>Attached assets component for this mesh</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PreviewAssetAttachContainer PreviewAttachedAssetContainer { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PreviewAssetAttachContainer.html">PreviewAssetAttachContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_SamplingInfo.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.SamplingInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L247">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_SamplingInfo_" data-uid="UE4.Engine.SkeletalMesh.SamplingInfo*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_SamplingInfo" data-uid="UE4.Engine.SkeletalMesh.SamplingInfo">SamplingInfo</h4>
+  <div class="markdown level1 summary"><p>Defines if and how to generate a set of precomputed data allowing targeted and fast sampling of this mesh on the CPU.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletalMeshSamplingInfo SamplingInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMeshSamplingInfo.html">SkeletalMeshSamplingInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_ShadowPhysicsAsset.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.ShadowPhysicsAsset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L164">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_ShadowPhysicsAsset_" data-uid="UE4.Engine.SkeletalMesh.ShadowPhysicsAsset*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_ShadowPhysicsAsset" data-uid="UE4.Engine.SkeletalMesh.ShadowPhysicsAsset">ShadowPhysicsAsset</h4>
+  <div class="markdown level1 summary"><p>Physics asset whose shapes will be used for shadowing when components have bCastCharacterCapsuleDirectShadow or bCastCharacterCapsuleIndirectShadow enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PhysicsAsset ShadowPhysicsAsset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PhysicsAsset.html">PhysicsAsset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_ShadowPhysicsAsset_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Only spheres and sphyl shapes in the physics asset can be supported.  The more shapes used, the higher the cost of the capsule shadows will be.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_Skeleton.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.Skeleton%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L75">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_Skeleton_" data-uid="UE4.Engine.SkeletalMesh.Skeleton*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_Skeleton" data-uid="UE4.Engine.SkeletalMesh.Skeleton">Skeleton</h4>
+  <div class="markdown level1 summary"><p>Skeleton of this skeletal mesh *</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Skeleton Skeleton { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.Skeleton.html">Skeleton</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_SkelMirrorAxis.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.SkelMirrorAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L118">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_SkelMirrorAxis_" data-uid="UE4.Engine.SkeletalMesh.SkelMirrorAxis*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_SkelMirrorAxis" data-uid="UE4.Engine.SkeletalMesh.SkelMirrorAxis">SkelMirrorAxis</h4>
+  <div class="markdown level1 summary"><p>Skel Mirror Axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte SkelMirrorAxis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_SkelMirrorFlipAxis.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.SkelMirrorFlipAxis%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L123">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_SkelMirrorFlipAxis_" data-uid="UE4.Engine.SkeletalMesh.SkelMirrorFlipAxis*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_SkelMirrorFlipAxis" data-uid="UE4.Engine.SkeletalMesh.SkelMirrorFlipAxis">SkelMirrorFlipAxis</h4>
+  <div class="markdown level1 summary"><p>Skel Mirror Flip Axis</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte SkelMirrorFlipAxis { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_Sockets.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.Sockets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L262">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_Sockets_" data-uid="UE4.Engine.SkeletalMesh.Sockets*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_Sockets" data-uid="UE4.Engine.SkeletalMesh.Sockets">Sockets</h4>
+  <div class="markdown level1 summary"><p>Array of named socket locations, set up in editor and used as a shortcut instead of specifying
+everything explicitly to AttachComponent in the SkeletalMeshComponent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;SkeletalMeshSocket&gt; Sockets { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.SkeletalMeshSocket.html">SkeletalMeshSocket</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L276">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_StaticClass_" data-uid="UE4.Engine.SkeletalMesh.StaticClass*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_StaticClass" data-uid="UE4.Engine.SkeletalMesh.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_ThumbnailInfo.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.ThumbnailInfo%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L180">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_ThumbnailInfo_" data-uid="UE4.Engine.SkeletalMesh.ThumbnailInfo*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_ThumbnailInfo" data-uid="UE4.Engine.SkeletalMesh.ThumbnailInfo">ThumbnailInfo</h4>
+  <div class="markdown level1 summary"><p>Information for thumbnail rendering</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThumbnailInfo ThumbnailInfo { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ThumbnailInfo.html">ThumbnailInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_VertexColorGuid.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.VertexColorGuid%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L148">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_VertexColorGuid_" data-uid="UE4.Engine.SkeletalMesh.VertexColorGuid*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_VertexColorGuid" data-uid="UE4.Engine.SkeletalMesh.VertexColorGuid">VertexColorGuid</h4>
+  <div class="markdown level1 summary"><p>The guid to compute the ddc key, it must be dirty when we change the vertex color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FGuid VertexColorGuid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.FGuid.html">FGuid</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_FindSocket_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.FindSocket(UE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L28">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_FindSocket_" data-uid="UE4.Engine.SkeletalMesh.FindSocket*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_FindSocket_UE4_Core_Name_" data-uid="UE4.Engine.SkeletalMesh.FindSocket(UE4.Core.Name)">FindSocket(Name)</h4>
+  <div class="markdown level1 summary"><p>Find a socket object in this SkeletalMesh by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletalMeshSocket FindSocket(Name InSocketName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">InSocketName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMeshSocket.html">SkeletalMeshSocket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_FindSocket_UE4_Core_Name__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Entering NAME_None will return NULL. If there are multiple sockets with the same name, will return the first one.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_FindSocketAndIndex_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.FindSocketAndIndex(UE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L36">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_FindSocketAndIndex_" data-uid="UE4.Engine.SkeletalMesh.FindSocketAndIndex*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_FindSocketAndIndex_UE4_Core_Name_" data-uid="UE4.Engine.SkeletalMesh.FindSocketAndIndex(UE4.Core.Name)">FindSocketAndIndex(Name)</h4>
+  <div class="markdown level1 summary"><p>Find a socket object in this SkeletalMesh by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (int, SkeletalMeshSocket) FindSocketAndIndex(Name InSocketName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">InSocketName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <a class="xref" href="UE4.Engine.SkeletalMeshSocket.html">SkeletalMeshSocket</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_FindSocketAndIndex_UE4_Core_Name__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Entering NAME_None will return NULL. If there are multiple sockets with the same name, will return the first one.
+Also returns the index for the socket allowing for future fast access via GetSocketByIndex()</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_GetBounds.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.GetBounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_GetBounds_" data-uid="UE4.Engine.SkeletalMesh.GetBounds*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_GetBounds" data-uid="UE4.Engine.SkeletalMesh.GetBounds">GetBounds()</h4>
+  <div class="markdown level1 summary"><p>Get the extended bounds of this mesh (imported bounds plus bounds extension)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoxSphereBounds GetBounds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.BoxSphereBounds.html">BoxSphereBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_GetImportedBounds.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.GetImportedBounds%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_GetImportedBounds_" data-uid="UE4.Engine.SkeletalMesh.GetImportedBounds*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_GetImportedBounds" data-uid="UE4.Engine.SkeletalMesh.GetImportedBounds">GetImportedBounds()</h4>
+  <div class="markdown level1 summary"><p>Get the original imported bounds of the skel mesh</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BoxSphereBounds GetImportedBounds()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.BoxSphereBounds.html">BoxSphereBounds</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_GetNodeMappingContainer_UE4_Engine_Blueprint_.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.GetNodeMappingContainer(UE4.Engine.Blueprint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L48">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_GetNodeMappingContainer_" data-uid="UE4.Engine.SkeletalMesh.GetNodeMappingContainer*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_GetNodeMappingContainer_UE4_Engine_Blueprint_" data-uid="UE4.Engine.SkeletalMesh.GetNodeMappingContainer(UE4.Engine.Blueprint)">GetNodeMappingContainer(Blueprint)</h4>
+  <div class="markdown level1 summary"><p>Get Node Mapping Container</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NodeMappingContainer GetNodeMappingContainer(Blueprint SourceAsset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.Blueprint.html">Blueprint</a></td>
+        <td><span class="parametername">SourceAsset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.NodeMappingContainer.html">NodeMappingContainer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_GetSocketByIndex_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.GetSocketByIndex(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L52">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_GetSocketByIndex_" data-uid="UE4.Engine.SkeletalMesh.GetSocketByIndex*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_GetSocketByIndex_System_Int32_" data-uid="UE4.Engine.SkeletalMesh.GetSocketByIndex(System.Int32)">GetSocketByIndex(Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns a socket by index. Max index is NumSockets(). The meshes sockets are accessed first, then the skeletons.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SkeletalMeshSocket GetSocketByIndex(int Index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMeshSocket.html">SkeletalMeshSocket</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_IsSectionUsingCloth_System_Int32_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.IsSectionUsingCloth(System.Int32%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L64">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_IsSectionUsingCloth_" data-uid="UE4.Engine.SkeletalMesh.IsSectionUsingCloth*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_IsSectionUsingCloth_System_Int32_System_Boolean_" data-uid="UE4.Engine.SkeletalMesh.IsSectionUsingCloth(System.Int32,System.Boolean)">IsSectionUsingCloth(Int32, Boolean)</h4>
+  <div class="markdown level1 summary"><p>Checks whether the provided section is using APEX cloth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsSectionUsingCloth(int InSectionIndex, bool bCheckCorrespondingSections)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">InSectionIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bCheckCorrespondingSections</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_SkeletalMesh_IsSectionUsingCloth_System_Int32_System_Boolean__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>if bCheckCorrespondingSections is true
+disabled sections will defer to correspond sections to see if they use cloth (non-cloth sections
+are disabled and another section added when cloth is enabled, using this flag allows for a check
+on the original section to succeed)
+@param InSectionIndex Index to check
+@param bCheckCorrespondingSections Whether to check corresponding sections for disabled sections</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L280">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_New_" data-uid="UE4.Engine.SkeletalMesh.New*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.SkeletalMesh.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SkeletalMesh New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMesh.html">SkeletalMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_NumSockets.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.NumSockets%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L68">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_NumSockets_" data-uid="UE4.Engine.SkeletalMesh.NumSockets*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_NumSockets" data-uid="UE4.Engine.SkeletalMesh.NumSockets">NumSockets()</h4>
+  <div class="markdown level1 summary"><p>Returns the number of sockets available. Both on this mesh and it's skeleton.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumSockets()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_SetLODSettings_UE4_Engine_SkeletalMeshLODSettings_.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.SetLODSettings(UE4.Engine.SkeletalMeshLODSettings)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L72">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_SetLODSettings_" data-uid="UE4.Engine.SkeletalMesh.SetLODSettings*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_SetLODSettings_UE4_Engine_SkeletalMeshLODSettings_" data-uid="UE4.Engine.SkeletalMesh.SetLODSettings(UE4.Engine.SkeletalMeshLODSettings)">SetLODSettings(SkeletalMeshLODSettings)</h4>
+  <div class="markdown level1 summary"><p>Set LODSettings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetLODSettings(SkeletalMeshLODSettings InLODSettings)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMeshLODSettings.html">SkeletalMeshLODSettings</a></td>
+        <td><span class="parametername">InLODSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh_op_Implicit_System_IntPtr__UE4_Engine_SkeletalMesh.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh.op_Implicit(System.IntPtr)~UE4.Engine.SkeletalMesh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L274">View Source</a>
+  </span>
+  <a id="UE4_Engine_SkeletalMesh_op_Implicit_" data-uid="UE4.Engine.SkeletalMesh.op_Implicit*"></a>
+  <h4 id="UE4_Engine_SkeletalMesh_op_Implicit_System_IntPtr__UE4_Engine_SkeletalMesh" data-uid="UE4.Engine.SkeletalMesh.op_Implicit(System.IntPtr)~UE4.Engine.SkeletalMesh">Implicit(IntPtr to SkeletalMesh)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator SkeletalMesh(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SkeletalMesh.html">SkeletalMesh</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_SkeletalMesh.md&amp;value=---%0Auid%3A%20UE4.Engine.SkeletalMesh%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/SkeletalMesh.cs/#L24" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

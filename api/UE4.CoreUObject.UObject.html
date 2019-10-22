@@ -1,0 +1,1644 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UObject
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UObject
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.CoreUObject.UObject">
+  
+  
+  <h1 id="UE4_CoreUObject_UObject" data-uid="UE4.CoreUObject.UObject" class="text-break">Class UObject
+  </h1>
+  <div class="markdown level0 summary"><p>A UObject is a holder for a UE4 UObject* to manage its
+lifetime in the CLR.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">UObject</span></div>
+      <div class="level2"><a class="xref" href="UE4.AdvancedPreviewScene.AssetViewerSettings.html">AssetViewerSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.AdvancedPreviewScene.LocalProfiles.html">LocalProfiles</a></div>
+      <div class="level2"><a class="xref" href="UE4.AdvancedPreviewScene.SharedProfiles.html">SharedProfiles</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.AIAsyncTaskBlueprintProxy.html">AIAsyncTaskBlueprintProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.AIDataProvider.html">AIDataProvider</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.AIHotSpotManager.html">AIHotSpotManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.AIPerceptionSystem.html">AIPerceptionSystem</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.AISense.html">AISense</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.AISenseConfig.html">AISenseConfig</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.AISenseEvent.html">AISenseEvent</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.BehaviorTree.html">BehaviorTree</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.BehaviorTreeManager.html">BehaviorTreeManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.BehaviorTreeTypes.html">BehaviorTreeTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.BlackboardKeyType.html">BlackboardKeyType</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.BTNode.html">BTNode</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryContext.html">EnvQueryContext</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryDebugHelpers.html">EnvQueryDebugHelpers</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryInstanceBlueprintWrapper.html">EnvQueryInstanceBlueprintWrapper</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryItemType.html">EnvQueryItemType</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryManager.html">EnvQueryManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryNode.html">EnvQueryNode</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryOption.html">EnvQueryOption</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.EnvQueryTypes.html">EnvQueryTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.NavLocalGridManager.html">NavLocalGridManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.PathFollowingManager.html">PathFollowingManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.PawnAction.html">PawnAction</a></div>
+      <div class="level2"><a class="xref" href="UE4.AIModule.VisualLoggerExtension.html">VisualLoggerExtension</a></div>
+      <div class="level2"><a class="xref" href="UE4.AlembicLibrary.AbcImportSettings.html">AbcImportSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.AndroidPermission.AndroidPermissionCallbackProxy.html">AndroidPermissionCallbackProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.AnimationModifiers.AnimationModifier.html">AnimationModifier</a></div>
+      <div class="level2"><a class="xref" href="UE4.AnimGraph.AnimBlueprintPostCompileValidation.html">AnimBlueprintPostCompileValidation</a></div>
+      <div class="level2"><a class="xref" href="UE4.AnimGraphRuntime.PlayMontageCallbackProxy.html">PlayMontageCallbackProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.AppleImageUtils.AppleImageUtilsBaseAsyncTaskBlueprintProxy.html">AppleImageUtilsBaseAsyncTaskBlueprintProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.AppleVision.AppleVisionDetectFacesAsyncTaskBlueprintProxy.html">AppleVisionDetectFacesAsyncTaskBlueprintProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.AssetRegistry.AssetRegistryHelpers.html">AssetRegistryHelpers</a></div>
+      <div class="level2"><a class="xref" href="UE4.AssetRegistry.AssetRegistryImpl.html">AssetRegistryImpl</a></div>
+      <div class="level2"><a class="xref" href="UE4.AssetTools.AssetToolsHelpers.html">AssetToolsHelpers</a></div>
+      <div class="level2"><a class="xref" href="UE4.AssetTools.AssetToolsImpl.html">AssetToolsImpl</a></div>
+      <div class="level2"><a class="xref" href="UE4.BehaviorTreeEditor.BehaviorTreeEditorTypes.html">BehaviorTreeEditorTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.BlueprintGraph.BlueprintEditorSettings.html">BlueprintEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.BlueprintGraph.BlueprintNodeSpawner.html">BlueprintNodeSpawner</a></div>
+      <div class="level2"><a class="xref" href="UE4.ClassViewer.ClassViewerProjectSettings.html">ClassViewerProjectSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.ClothingSystemEditorInterface.ClothingAssetFactoryBase.html">ClothingAssetFactoryBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.ClothingSystemRuntime.ClothingAssetCustomData.html">ClothingAssetCustomData</a></div>
+      <div class="level2"><a class="xref" href="UE4.ClothingSystemRuntimeInterface.ClothingAssetBase.html">ClothingAssetBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.ClothingSystemRuntimeInterface.ClothingSimulationFactory.html">ClothingSimulationFactory</a></div>
+      <div class="level2"><a class="xref" href="UE4.ClothingSystemRuntimeInterface.ClothingSimulationInteractor.html">ClothingSimulationInteractor</a></div>
+      <div class="level2"><a class="xref" href="UE4.ConfigEditor.ConfigHierarchyPropertyView.html">ConfigHierarchyPropertyView</a></div>
+      <div class="level2"><a class="xref" href="UE4.ConfigEditor.PropertyConfigFileDisplayRow.html">PropertyConfigFileDisplayRow</a></div>
+      <div class="level2"><a class="xref" href="UE4.ContentBrowser.ContentBrowserFrontEndFilterExtension.html">ContentBrowserFrontEndFilterExtension</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.Field.html">Field</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.GCObjectReferencer.html">GCObjectReferencer</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.Interface.html">Interface</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.LinkerPlaceholderExportObject.html">LinkerPlaceholderExportObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.MetaData.html">MetaData</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.ObjectRedirector.html">ObjectRedirector</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.Package.html">Package</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.PackageMap.html">PackageMap</a></div>
+      <div class="level2"><a class="xref" href="UE4.CoreUObject.TextBuffer.html">TextBuffer</a></div>
+      <div class="level2"><a class="xref" href="UE4.CryptoKeys.CryptoKeysSettings.html">CryptoKeysSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.CurveEditor.CurveEditorSettings.html">CurveEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.DatasmithContent.DatasmithImportOptions.html">DatasmithImportOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.DatasmithContent.DatasmithObjectTemplate.html">DatasmithObjectTemplate</a></div>
+      <div class="level2"><a class="xref" href="UE4.DatasmithContent.DatasmithScene.html">DatasmithScene</a></div>
+      <div class="level2"><a class="xref" href="UE4.DataValidation.DataValidationManager.html">DataValidationManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.DotNet.DotNetActionBinding.html">DotNetActionBinding</a></div>
+      <div class="level2"><a class="xref" href="UE4.DotNet.DotNetAxisBinding.html">DotNetAxisBinding</a></div>
+      <div class="level2"><a class="xref" href="UE4.DotNet.DotNetConfig.html">DotNetConfig</a></div>
+      <div class="level2"><a class="xref" href="UE4.DotNet.ObjectLifetimeManager.html">ObjectLifetimeManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.EditableMesh.EditableMesh.html">EditableMesh</a></div>
+      <div class="level2"><a class="xref" href="UE4.EditableMesh.EditableMeshAdapter.html">EditableMeshAdapter</a></div>
+      <div class="level2"><a class="xref" href="UE4.EditableMesh.EditableMeshFactory.html">EditableMeshFactory</a></div>
+      <div class="level2"><a class="xref" href="UE4.EditorStyle.EditorStyleSettings.html">EditorStyleSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Actor.html">Actor</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ActorComponent.html">ActorComponent</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AISystemBase.html">AISystemBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AmbisonicsSubmixSettingsBase.html">AmbisonicsSubmixSettingsBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimationAsset.html">AnimationAsset</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimClassData.html">AnimClassData</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimCompress.html">AnimCompress</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimInstance.html">AnimInstance</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimMetaData.html">AnimMetaData</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimNotify.html">AnimNotify</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimNotifyState.html">AnimNotifyState</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimSet.html">AnimSet</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AnimStateMachineTypes.html">AnimStateMachineTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AssetExportTask.html">AssetExportTask</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AssetImportData.html">AssetImportData</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AssetManager.html">AssetManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AssetMappingTable.html">AssetMappingTable</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AssetUserData.html">AssetUserData</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AutomationTestSettings.html">AutomationTestSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.AvoidanceManager.html">AvoidanceManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BlendProfile.html">BlendProfile</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BlueprintAsyncActionBase.html">BlueprintAsyncActionBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BlueprintCore.html">BlueprintCore</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BlueprintFunctionLibrary.html">BlueprintFunctionLibrary</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BodySetup.html">BodySetup</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BoneMaskFilter.html">BoneMaskFilter</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BookmarkBase.html">BookmarkBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Breakpoint.html">Breakpoint</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.BrushBuilder.html">BrushBuilder</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ButtonStyleAsset.html">ButtonStyleAsset</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CameraAnim.html">CameraAnim</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CameraAnimInst.html">CameraAnimInst</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CameraModifier.html">CameraModifier</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CameraShake.html">CameraShake</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Canvas.html">Canvas</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Channel.html">Channel</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CheatManager.html">CheatManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CheckBoxStyleAsset.html">CheckBoxStyleAsset</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Commandlet.html">Commandlet</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Console.html">Console</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CurveBase.html">CurveBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CurveEdPresetCurve.html">CurveEdPresetCurve</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.CurveTable.html">CurveTable</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DamageType.html">DamageType</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DataAsset.html">DataAsset</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DataTable.html">DataTable</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DeveloperSettings.html">DeveloperSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DeviceProfileManager.html">DeviceProfileManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DialogueVoice.html">DialogueVoice</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DialogueWave.html">DialogueWave</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Distribution.html">Distribution</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DPICustomScalingRule.html">DPICustomScalingRule</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.DynamicBlueprintBinding.html">DynamicBlueprintBinding</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.EdGraph.html">EdGraph</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.EdGraphNode.html">EdGraphNode</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.EdGraphSchema.html">EdGraphSchema</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Engine.html">Engine</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.EngineBaseTypes.html">EngineBaseTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.EngineCustomTimeStep.html">EngineCustomTimeStep</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.EngineTypes.html">EngineTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Exporter.html">Exporter</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Font.html">Font</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.FontFace.html">FontFace</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.FontImportOptions.html">FontImportOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ForceFeedbackAttenuation.html">ForceFeedbackAttenuation</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ForceFeedbackEffect.html">ForceFeedbackEffect</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.GameInstance.html">GameInstance</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.GameUserSettings.html">GameUserSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.HapticFeedbackEffect_Base.html">HapticFeedbackEffect_Base</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.HierarchicalLODSetup.html">HierarchicalLODSetup</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.HLODProxy.html">HLODProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InheritableComponentHandler.html">InheritableComponentHandler</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InputSettings.html">InputSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InterpCurveEdSetup.html">InterpCurveEdSetup</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InterpData.html">InterpData</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InterpFilter.html">InterpFilter</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InterpGroup.html">InterpGroup</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InterpGroupInst.html">InterpGroupInst</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InterpTrack.html">InterpTrack</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.InterpTrackInst.html">InterpTrackInst</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.IntSerialization.html">IntSerialization</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Layer.html">Layer</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Level.html">Level</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.LevelActorContainer.html">LevelActorContainer</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.LevelStreaming.html">LevelStreaming</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.LightmappedSurfaceCollection.html">LightmappedSurfaceCollection</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.LightmassPrimitiveSettingsObject.html">LightmassPrimitiveSettingsObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.LocalMessage.html">LocalMessage</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.MapBuildDataRegistry.html">MapBuildDataRegistry</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.MaterialExpression.html">MaterialExpression</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.MaterialFunctionInterface.html">MaterialFunctionInterface</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.MaterialInterface.html">MaterialInterface</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.MaterialParameterCollection.html">MaterialParameterCollection</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.MaterialParameterCollectionInstance.html">MaterialParameterCollectionInstance</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Model.html">Model</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.MorphTarget.html">MorphTarget</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NavAreaBase.html">NavAreaBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NavCollisionBase.html">NavCollisionBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NavigationDataChunk.html">NavigationDataChunk</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NavigationSystem.html">NavigationSystem</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NavigationSystemBase.html">NavigationSystemBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NavigationSystemConfig.html">NavigationSystemConfig</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NavLinkDefinition.html">NavLinkDefinition</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NetDriver.html">NetDriver</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.NodeMappingContainer.html">NodeMappingContainer</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ObjectLibrary.html">ObjectLibrary</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ObjectReferencer.html">ObjectReferencer</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.OcclusionPluginSourceSettingsBase.html">OcclusionPluginSourceSettingsBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.OnlineBlueprintCallProxyBase.html">OnlineBlueprintCallProxyBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.OnlineEngineInterface.html">OnlineEngineInterface</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.OnlineSession.html">OnlineSession</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ParticleEmitter.html">ParticleEmitter</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ParticleLODLevel.html">ParticleLODLevel</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ParticleModule.html">ParticleModule</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ParticleModuleEventSendToGame.html">ParticleModuleEventSendToGame</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ParticleSystem.html">ParticleSystem</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ParticleSystemReplay.html">ParticleSystemReplay</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PendingNetGame.html">PendingNetGame</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PhysicalMaterial.html">PhysicalMaterial</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PhysicalMaterialPropertyBase.html">PhysicalMaterialPropertyBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PhysicsAsset.html">PhysicsAsset</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PhysicsCollisionHandler.html">PhysicsCollisionHandler</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PhysicsConstraintTemplate.html">PhysicsConstraintTemplate</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PlatformInterfaceBase.html">PlatformInterfaceBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PlatformInterfaceWebResponse.html">PlatformInterfaceWebResponse</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Player.html">Player</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PlayerInput.html">PlayerInput</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Polys.html">Polys</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.PoseWatch.html">PoseWatch</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ReplicationConnectionDriver.html">ReplicationConnectionDriver</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ReplicationDriver.html">ReplicationDriver</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ReporterBase.html">ReporterBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ReverbEffect.html">ReverbEffect</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ReverbPluginSourceSettingsBase.html">ReverbPluginSourceSettingsBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Rig.html">Rig</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SaveGame.html">SaveGame</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Scene.html">Scene</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ScriptViewportClient.html">ScriptViewportClient</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SCS_Node.html">SCS_Node</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Selection.html">Selection</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SimpleConstructionScript.html">SimpleConstructionScript</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SkeletalMesh.html">SkeletalMesh</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SkeletalMeshSocket.html">SkeletalMeshSocket</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Skeleton.html">Skeleton</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SlateBrushAsset.html">SlateBrushAsset</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundAttenuation.html">SoundAttenuation</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundBase.html">SoundBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundClass.html">SoundClass</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundConcurrency.html">SoundConcurrency</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundEffectPreset.html">SoundEffectPreset</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundEffectSourcePresetChain.html">SoundEffectSourcePresetChain</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundGroups.html">SoundGroups</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundMix.html">SoundMix</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundNode.html">SoundNode</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SoundSubmix.html">SoundSubmix</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SpatializationPluginSourceSettingsBase.html">SpatializationPluginSourceSettingsBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.StaticMesh.html">StaticMesh</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.StaticMeshDescriptions.html">StaticMeshDescriptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.StaticMeshSocket.html">StaticMeshSocket</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.StringTable.html">StringTable</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SubsurfaceProfile.html">SubsurfaceProfile</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.SubUVAnimation.html">SubUVAnimation</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.TextPropertyTestObject.html">TextPropertyTestObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.Texture.html">Texture</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.TextureLODSettings.html">TextureLODSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.ThumbnailInfo.html">ThumbnailInfo</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.TimecodeProvider.html">TimecodeProvider</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.TimelineTemplate.html">TimelineTemplate</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.TouchInterface.html">TouchInterface</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.VectorField.html">VectorField</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.VirtualTexture.html">VirtualTexture</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.VirtualTextureSpace.html">VirtualTextureSpace</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.VisualLoggerAutomationTests.html">VisualLoggerAutomationTests</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.World.html">World</a></div>
+      <div class="level2"><a class="xref" href="UE4.Engine.WorldComposition.html">WorldComposition</a></div>
+      <div class="level2"><a class="xref" href="UE4.EngineSettings.ConsoleSettings.html">ConsoleSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.EngineSettings.GameMapsSettings.html">GameMapsSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.EngineSettings.GameNetworkManagerSettings.html">GameNetworkManagerSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.EngineSettings.GameSessionSettings.html">GameSessionSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.EngineSettings.GeneralEngineSettings.html">GeneralEngineSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.EngineSettings.GeneralProjectSettings.html">GeneralProjectSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.EngineSettings.HudSettings.html">HudSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.FacialAnimationEditor.FacialAnimationBulkImporterSettings.html">FacialAnimationBulkImporterSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Foliage.FoliageType.html">FoliageType</a></div>
+      <div class="level2"><a class="xref" href="UE4.Foliage.ProceduralFoliageSpawner.html">ProceduralFoliageSpawner</a></div>
+      <div class="level2"><a class="xref" href="UE4.Foliage.ProceduralFoliageTile.html">ProceduralFoliageTile</a></div>
+      <div class="level2"><a class="xref" href="UE4.FunctionalTesting.AutomationPerformaceHelper.html">AutomationPerformaceHelper</a></div>
+      <div class="level2"><a class="xref" href="UE4.FunctionalTesting.GroundTruthData.html">GroundTruthData</a></div>
+      <div class="level2"><a class="xref" href="UE4.FunctionalTesting.TraceQueryTestResults.html">TraceQueryTestResults</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayDebugger.GameplayDebuggerConfig.html">GameplayDebuggerConfig</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayDebugger.GameplayDebuggerLocalController.html">GameplayDebuggerLocalController</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTags.EditableGameplayTagQuery.html">EditableGameplayTagQuery</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTags.EditableGameplayTagQueryExpression.html">EditableGameplayTagQueryExpression</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTags.GameplayTagsDeveloperSettings.html">GameplayTagsDeveloperSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTags.GameplayTagsList.html">GameplayTagsList</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTags.GameplayTagsManager.html">GameplayTagsManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTags.RestrictedGameplayTagsList.html">RestrictedGameplayTagsList</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTasks.GameplayTask.html">GameplayTask</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameplayTasks.GameplayTaskResource.html">GameplayTaskResource</a></div>
+      <div class="level2"><a class="xref" href="UE4.GameProjectGeneration.TemplateProjectDefs.html">TemplateProjectDefs</a></div>
+      <div class="level2"><a class="xref" href="UE4.GeometryCache.GeometryCache.html">GeometryCache</a></div>
+      <div class="level2"><a class="xref" href="UE4.GeometryCache.GeometryCacheCodecBase.html">GeometryCacheCodecBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.GeometryCache.GeometryCacheTrack.html">GeometryCacheTrack</a></div>
+      <div class="level2"><a class="xref" href="UE4.GraphEditor.GraphEditorSettings.html">GraphEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.HardwareTargeting.HardwareTargetingSettings.html">HardwareTargetingSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.ImgMediaFactory.ImgMediaSettings.html">ImgMediaSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.InputCore.InputCoreTypes.html">InputCoreTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.InternationalizationSettings.InternationalizationSettingsModel.html">InternationalizationSettingsModel</a></div>
+      <div class="level2"><a class="xref" href="UE4.JsonUtilities.JsonUtilitiesDummyObject.html">JsonUtilitiesDummyObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.Kismet.BlueprintPaletteFavorites.html">BlueprintPaletteFavorites</a></div>
+      <div class="level2"><a class="xref" href="UE4.Landscape.LandscapeGrassType.html">LandscapeGrassType</a></div>
+      <div class="level2"><a class="xref" href="UE4.Landscape.LandscapeInfo.html">LandscapeInfo</a></div>
+      <div class="level2"><a class="xref" href="UE4.Landscape.LandscapeInfoMap.html">LandscapeInfoMap</a></div>
+      <div class="level2"><a class="xref" href="UE4.Landscape.LandscapeLayerInfoObject.html">LandscapeLayerInfoObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.Landscape.LandscapeSplineControlPoint.html">LandscapeSplineControlPoint</a></div>
+      <div class="level2"><a class="xref" href="UE4.Landscape.LandscapeSplineSegment.html">LandscapeSplineSegment</a></div>
+      <div class="level2"><a class="xref" href="UE4.LevelSequence.DefaultLevelSequenceInstanceData.html">DefaultLevelSequenceInstanceData</a></div>
+      <div class="level2"><a class="xref" href="UE4.LevelSequence.LevelSequenceBurnInInitSettings.html">LevelSequenceBurnInInitSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.LevelSequence.LevelSequenceBurnInOptions.html">LevelSequenceBurnInOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.LevelSequence.LevelSequenceDirector.html">LevelSequenceDirector</a></div>
+      <div class="level2"><a class="xref" href="UE4.LightPropagationVolumeRuntime.LightPropagationVolumeBlendable.html">LightPropagationVolumeBlendable</a></div>
+      <div class="level2"><a class="xref" href="UE4.LinuxTargetPlatform.LinuxTargetSettings.html">LinuxTargetSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.LiveLinkInterface.LiveLinkSourceFactory.html">LiveLinkSourceFactory</a></div>
+      <div class="level2"><a class="xref" href="UE4.LiveLinkInterface.LiveLinkSourceSettings.html">LiveLinkSourceSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Localization.LocalizationSettings.html">LocalizationSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Localization.LocalizationTarget.html">LocalizationTarget</a></div>
+      <div class="level2"><a class="xref" href="UE4.Localization.LocalizationTargetSet.html">LocalizationTargetSet</a></div>
+      <div class="level2"><a class="xref" href="UE4.LocationServicesBPLibrary.LocationServicesImpl.html">LocationServicesImpl</a></div>
+      <div class="level2"><a class="xref" href="UE4.MacTargetPlatform.MacTargetSettings.html">MacTargetSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MagicLeap.MagicLeapSettings.html">MagicLeapSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MagicLeapIdentity.MagicLeapIdentity.html">MagicLeapIdentity</a></div>
+      <div class="level2"><a class="xref" href="UE4.MaterialBaking.AssetBakeOptions.html">AssetBakeOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.MaterialBaking.MaterialMergeOptions.html">MaterialMergeOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.MaterialBaking.MaterialOptions.html">MaterialOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.MaterialEditor.MaterialEditorSettings.html">MaterialEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MaterialShaderQualitySettings.MaterialShaderQualitySettings.html">MaterialShaderQualitySettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MaterialShaderQualitySettings.ShaderPlatformQualitySettings.html">ShaderPlatformQualitySettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MediaAssets.MediaPlayer.html">MediaPlayer</a></div>
+      <div class="level2"><a class="xref" href="UE4.MediaAssets.MediaPlaylist.html">MediaPlaylist</a></div>
+      <div class="level2"><a class="xref" href="UE4.MediaAssets.MediaSource.html">MediaSource</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshDescription.MeshDescription.html">MeshDescription</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshEditor.MeshEditorCommand.html">MeshEditorCommand</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshEditor.MeshEditorCommandList.html">MeshEditorCommandList</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshEditor.MeshEditorModeProxyObject.html">MeshEditorModeProxyObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshEditor.MeshEditorSelectionModifier.html">MeshEditorSelectionModifier</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshEditor.MeshEditorSelectionModifiersList.html">MeshEditorSelectionModifiersList</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshEditor.MeshEditorSettings.html">MeshEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshEditor.WireframeMesh.html">WireframeMesh</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshPaint.MeshPaintSettings.html">MeshPaintSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshPaint.PaintBrushSettings.html">PaintBrushSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MeshPaint.VertexColorImportOptions.html">VertexColorImportOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.MobilePatchingUtils.MobileInstalledContent.html">MobileInstalledContent</a></div>
+      <div class="level2"><a class="xref" href="UE4.MoviePlayer.MoviePlayerSettings.html">MoviePlayerSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieScene.MovieSceneBindingOverrides.html">MovieSceneBindingOverrides</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieScene.MovieSceneBuiltInEasingFunction.html">MovieSceneBuiltInEasingFunction</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieScene.MovieSceneEasingExternalCurve.html">MovieSceneEasingExternalCurve</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieScene.MovieSceneFolder.html">MovieSceneFolder</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieScene.MovieSceneSequencePlayer.html">MovieSceneSequencePlayer</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieScene.MovieSceneSignedObject.html">MovieSceneSignedObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieSceneCapture.MovieSceneCapture.html">MovieSceneCapture</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieSceneCapture.MovieSceneCaptureEnvironment.html">MovieSceneCaptureEnvironment</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieSceneCapture.MovieSceneCaptureProtocolBase.html">MovieSceneCaptureProtocolBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieSceneTools.FloatChannelKeyProxy.html">FloatChannelKeyProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieSceneTools.MovieSceneToolsProjectSettings.html">MovieSceneToolsProjectSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieSceneTools.MovieSceneUserImportFBXSettings.html">MovieSceneUserImportFBXSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MovieSceneTools.MovieSceneUserThumbnailSettings.html">MovieSceneUserThumbnailSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.MRMesh.MeshReconstructorBase.html">MeshReconstructorBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.NavigationSystem.CrowdManagerBase.html">CrowdManagerBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.NavigationSystem.NavigationPath.html">NavigationPath</a></div>
+      <div class="level2"><a class="xref" href="UE4.NavigationSystem.NavigationQueryFilter.html">NavigationQueryFilter</a></div>
+      <div class="level2"><a class="xref" href="UE4.NetcodeUnitTest.MinimalClient.html">MinimalClient</a></div>
+      <div class="level2"><a class="xref" href="UE4.NetcodeUnitTest.NUTGlobals.html">NUTGlobals</a></div>
+      <div class="level2"><a class="xref" href="UE4.NetcodeUnitTest.UnitTask.html">UnitTask</a></div>
+      <div class="level2"><a class="xref" href="UE4.NetcodeUnitTest.UnitTestBase.html">UnitTestBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.NetcodeUnitTest.UnitTestManager.html">UnitTestManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.NetcodeUnitTest.VMTestClassA.html">VMTestClassA</a></div>
+      <div class="level2"><a class="xref" href="UE4.NetcodeUnitTest.VMTestClassB.html">VMTestClassB</a></div>
+      <div class="level2"><a class="xref" href="UE4.OculusEditor.OculusEditorSettings.html">OculusEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.OculusHMD.OculusHMDRuntimeSettings.html">OculusHMDRuntimeSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.OculusHMD.OculusSceneCaptureCubemap.html">OculusSceneCaptureCubemap</a></div>
+      <div class="level2"><a class="xref" href="UE4.OnlineSubsystem.NamedInterfaces.html">NamedInterfaces</a></div>
+      <div class="level2"><a class="xref" href="UE4.OnlineSubsystemUtils.InAppPurchaseCallbackProxy.html">InAppPurchaseCallbackProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.OnlineSubsystemUtils.InAppPurchaseQueryCallbackProxy.html">InAppPurchaseQueryCallbackProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.OnlineSubsystemUtils.InAppPurchaseRestoreCallbackProxy.html">InAppPurchaseRestoreCallbackProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.OnlineSubsystemUtils.LeaderboardFlushCallbackProxy.html">LeaderboardFlushCallbackProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.OnlineSubsystemUtils.LeaderboardQueryCallbackProxy.html">LeaderboardQueryCallbackProxy</a></div>
+      <div class="level2"><a class="xref" href="UE4.OnlineSubsystemUtils.PartyBeaconState.html">PartyBeaconState</a></div>
+      <div class="level2"><a class="xref" href="UE4.Overlay.Overlays.html">Overlays</a></div>
+      <div class="level2"><a class="xref" href="UE4.PacketHandler.HandlerComponentFactory.html">HandlerComponentFactory</a></div>
+      <div class="level2"><a class="xref" href="UE4.PacketHandler.NetAnalyticsAggregatorConfig.html">NetAnalyticsAggregatorConfig</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2D.PaperFlipbook.html">PaperFlipbook</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2D.PaperRuntimeSettings.html">PaperRuntimeSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2D.PaperSprite.html">PaperSprite</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2D.PaperSpriteAtlas.html">PaperSpriteAtlas</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2D.PaperTileLayer.html">PaperTileLayer</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2D.PaperTileMap.html">PaperTileMap</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2D.PaperTileSet.html">PaperTileSet</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2DEditor.FlipbookEditorSettings.html">FlipbookEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2DEditor.PaperExtractSpriteGridSettings.html">PaperExtractSpriteGridSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2DEditor.PaperExtractSpritesSettings.html">PaperExtractSpritesSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2DEditor.PaperImporterSettings.html">PaperImporterSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2DEditor.SpriteEditorSettings.html">SpriteEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2DEditor.TileMapEditorSettings.html">TileMapEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Paper2DEditor.TileSetEditorSettings.html">TileSetEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.PaperSpriteSheetImporter.PaperSpriteSheet.html">PaperSpriteSheet</a></div>
+      <div class="level2"><a class="xref" href="UE4.PhysXVehicles.VehicleWheel.html">VehicleWheel</a></div>
+      <div class="level2"><a class="xref" href="UE4.PIEPreviewDeviceProfileSelector.PIEPreviewSettings.html">PIEPreviewSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.PIEPreviewDeviceSpecification.PIEPreviewDeviceSpecification.html">PIEPreviewDeviceSpecification</a></div>
+      <div class="level2"><a class="xref" href="UE4.PixelInspectorModule.PixelInspectorView.html">PixelInspectorView</a></div>
+      <div class="level2"><a class="xref" href="UE4.PluginBrowser.NewPluginDescriptorData.html">NewPluginDescriptorData</a></div>
+      <div class="level2"><a class="xref" href="UE4.PluginBrowser.PluginMetadataObject.html">PluginMetadataObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.Sequencer.MovieSceneCopyableBinding.html">MovieSceneCopyableBinding</a></div>
+      <div class="level2"><a class="xref" href="UE4.Sequencer.SequencerSettings.html">SequencerSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.Sequencer.SequencerSettingsContainer.html">SequencerSettingsContainer</a></div>
+      <div class="level2"><a class="xref" href="UE4.Slate.SlateSettings.html">SlateSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.SlateCore.FontBulkData.html">FontBulkData</a></div>
+      <div class="level2"><a class="xref" href="UE4.SlateCore.SlateTypes.html">SlateTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.SlateCore.SlateWidgetStyleAsset.html">SlateWidgetStyleAsset</a></div>
+      <div class="level2"><a class="xref" href="UE4.SlateCore.SlateWidgetStyleContainerBase.html">SlateWidgetStyleContainerBase</a></div>
+      <div class="level2"><a class="xref" href="UE4.SourceCodeAccess.SourceCodeAccessSettings.html">SourceCodeAccessSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.SourceControl.SourceControlHelpers.html">SourceControlHelpers</a></div>
+      <div class="level2"><a class="xref" href="UE4.StatsViewer.CookerStats.html">CookerStats</a></div>
+      <div class="level2"><a class="xref" href="UE4.StatsViewer.LightingBuildInfo.html">LightingBuildInfo</a></div>
+      <div class="level2"><a class="xref" href="UE4.StatsViewer.PrimitiveStats.html">PrimitiveStats</a></div>
+      <div class="level2"><a class="xref" href="UE4.StatsViewer.StaticMeshLightingInfo.html">StaticMeshLightingInfo</a></div>
+      <div class="level2"><a class="xref" href="UE4.StatsViewer.TextureStats.html">TextureStats</a></div>
+      <div class="level2"><a class="xref" href="UE4.TcpMessaging.TcpMessagingSettings.html">TcpMessagingSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.TimeManagement.TimeSynchronizationSource.html">TimeSynchronizationSource</a></div>
+      <div class="level2"><a class="xref" href="UE4.TranslationEditor.InternationalizationExportSettings.html">InternationalizationExportSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.TranslationEditor.TranslationPickerSettings.html">TranslationPickerSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.TranslationEditor.TranslationUnit.html">TranslationUnit</a></div>
+      <div class="level2"><a class="xref" href="UE4.UdpMessaging.UdpMessagingSettings.html">UdpMessagingSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.DragDropOperation.html">DragDropOperation</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.ListViewDesignerPreviewItem.html">ListViewDesignerPreviewItem</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.PropertyBinding.html">PropertyBinding</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.RichTextBlockDecorator.html">RichTextBlockDecorator</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.SlateVectorArtData.html">SlateVectorArtData</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.UMGSequencePlayer.html">UMGSequencePlayer</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.Visual.html">Visual</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.WidgetNavigation.html">WidgetNavigation</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMG.WidgetTree.html">WidgetTree</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMGEditor.WidgetCompilerRule.html">WidgetCompilerRule</a></div>
+      <div class="level2"><a class="xref" href="UE4.UMGEditor.WidgetSlotPair.html">WidgetSlotPair</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ActorFactory.html">ActorFactory</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ActorGroupingUtils.html">ActorGroupingUtils</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.AnalyticsPrivacySettings.html">AnalyticsPrivacySettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.AssetImportTask.html">AssetImportTask</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.AutomatedAssetImportData.html">AutomatedAssetImportData</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.AutoReimportManager.html">AutoReimportManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.CascadeOptions.html">CascadeOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ChunkDependencyInfo.html">ChunkDependencyInfo</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ClassViewerSettings.html">ClassViewerSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.CompressionHolder.html">CompressionHolder</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ContentBrowserSettings.html">ContentBrowserSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.CookOnTheFlyServer.html">CookOnTheFlyServer</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.CrashReporterSettings.html">CrashReporterSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.CurveEdOptions.html">CurveEdOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.DEditorParameterValue.html">DEditorParameterValue</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorActorFolders.html">EditorActorFolders</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorAnimBaseObj.html">EditorAnimBaseObj</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorAnimCurveBoneLinks.html">EditorAnimCurveBoneLinks</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorExperimentalSettings.html">EditorExperimentalSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorLevelUtils.html">EditorLevelUtils</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorLoadingAndSavingUtils.html">EditorLoadingAndSavingUtils</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorLoadingSavingSettings.html">EditorLoadingSavingSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorMiscSettings.html">EditorMiscSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorParentPlayerListObj.html">EditorParentPlayerListObj</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorPerProjectUserSettings.html">EditorPerProjectUserSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorSettings.html">EditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorSkeletonNotifyObj.html">EditorSkeletonNotifyObj</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorWorldExtension.html">EditorWorldExtension</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorWorldExtensionCollection.html">EditorWorldExtensionCollection</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.EditorWorldExtensionManager.html">EditorWorldExtensionManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ExportTextContainer.html">ExportTextContainer</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.Factory.html">Factory</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.FbxExportOption.html">FbxExportOption</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.FbxImportUI.html">FbxImportUI</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.FbxSceneImportData.html">FbxSceneImportData</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.FbxSceneImportOptions.html">FbxSceneImportOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.FbxSceneImportOptionsSkeletalMesh.html">FbxSceneImportOptionsSkeletalMesh</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.FbxSceneImportOptionsStaticMesh.html">FbxSceneImportOptionsStaticMesh</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.FbxTestPlan.html">FbxTestPlan</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.LevelEditorPlaySettings.html">LevelEditorPlaySettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.LevelEditorViewportSettings.html">LevelEditorViewportSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.LightmassOptionsObject.html">LightmassOptionsObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.MaterialEditorInstanceConstant.html">MaterialEditorInstanceConstant</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.MaterialEditorOptions.html">MaterialEditorOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.MaterialEditorPreviewParameters.html">MaterialEditorPreviewParameters</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.MaterialImportHelpers.html">MaterialImportHelpers</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.MaterialStatsOptions.html">MaterialStatsOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.PackageTools.html">PackageTools</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.PersonaOptions.html">PersonaOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.PhysicsAssetEditorOptions.html">PhysicsAssetEditorOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.PhysicsAssetGenerationSettings.html">PhysicsAssetGenerationSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ProjectPackagingSettings.html">ProjectPackagingSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.PropertyEditorTestObject.html">PropertyEditorTestObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.SkeletalMeshEditorSettings.html">SkeletalMeshEditorSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.TemplateMapMetadata.html">TemplateMapMetadata</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.TexAligner.html">TexAligner</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ThumbnailManager.html">ThumbnailManager</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.ThumbnailRenderer.html">ThumbnailRenderer</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.Transactor.html">Transactor</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.UnrealEdKeyBindings.html">UnrealEdKeyBindings</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.UnrealEdOptions.html">UnrealEdOptions</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.UnrealEdTypes.html">UnrealEdTypes</a></div>
+      <div class="level2"><a class="xref" href="UE4.UnrealEd.UserDefinedStructEditorData.html">UserDefinedStructEditorData</a></div>
+      <div class="level2"><a class="xref" href="UE4.UObjectPlugin.MyPluginObject.html">MyPluginObject</a></div>
+      <div class="level2"><a class="xref" href="UE4.VariantManagerContent.LevelVariantSets.html">LevelVariantSets</a></div>
+      <div class="level2"><a class="xref" href="UE4.VariantManagerContent.PropertyValue.html">PropertyValue</a></div>
+      <div class="level2"><a class="xref" href="UE4.VariantManagerContent.Variant.html">Variant</a></div>
+      <div class="level2"><a class="xref" href="UE4.VariantManagerContent.VariantObjectBinding.html">VariantObjectBinding</a></div>
+      <div class="level2"><a class="xref" href="UE4.VariantManagerContent.VariantSet.html">VariantSet</a></div>
+      <div class="level2"><a class="xref" href="UE4.ViewportInteraction.ViewportDragOperation.html">ViewportDragOperation</a></div>
+      <div class="level2"><a class="xref" href="UE4.ViewportInteraction.ViewportInteractor.html">ViewportInteractor</a></div>
+      <div class="level2"><a class="xref" href="UE4.ViewportInteraction.ViewportTransformer.html">ViewportTransformer</a></div>
+      <div class="level2"><a class="xref" href="UE4.ViewportInteraction.VISettings.html">VISettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.VREditor.VREditorAutoScaler.html">VREditorAutoScaler</a></div>
+      <div class="level2"><a class="xref" href="UE4.VREditor.VREditorPlacement.html">VREditorPlacement</a></div>
+      <div class="level2"><a class="xref" href="UE4.VREditor.VREditorUISystem.html">VREditorUISystem</a></div>
+      <div class="level2"><a class="xref" href="UE4.VREditor.VRRadialMenuHandler.html">VRRadialMenuHandler</a></div>
+      <div class="level2"><a class="xref" href="UE4.WindowsTargetPlatform.WindowsTargetSettings.html">WindowsTargetSettings</a></div>
+      <div class="level2"><a class="xref" href="UE4.WmfMediaFactory.WmfMediaSettings.html">WmfMediaSettings</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.CoreUObject.html">UE4.CoreUObject</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_CoreUObject_UObject_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UObject</code></pre>
+  </div>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject__None.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject._None%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L224">View Source</a>
+  </span>
+  <h4 id="UE4_CoreUObject_UObject__None" data-uid="UE4.CoreUObject.UObject._None">_None</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static readonly Name _None</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/CoreUObject/UObject.cs/#L39">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_DefaultObject_" data-uid="UE4.CoreUObject.UObject.DefaultObject*"></a>
+  <h4 id="UE4_CoreUObject_UObject_DefaultObject" data-uid="UE4.CoreUObject.UObject.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UObject DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_Name.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L222">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_Name_" data-uid="UE4.CoreUObject.UObject.Name*"></a>
+  <h4 id="UE4_CoreUObject_UObject_Name" data-uid="UE4.CoreUObject.UObject.Name">Name</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_None.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.None%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L225">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_None_" data-uid="UE4.CoreUObject.UObject.None*"></a>
+  <h4 id="UE4_CoreUObject_UObject_None" data-uid="UE4.CoreUObject.UObject.None">None</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Name None { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_ObjPointer.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.ObjPointer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L231">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_ObjPointer_" data-uid="UE4.CoreUObject.UObject.ObjPointer*"></a>
+  <h4 id="UE4_CoreUObject_UObject_ObjPointer" data-uid="UE4.CoreUObject.UObject.ObjPointer">ObjPointer</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPtr ObjPointer { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_StaticClass.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/CoreUObject/UObject.cs/#L37">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_StaticClass_" data-uid="UE4.CoreUObject.UObject.StaticClass*"></a>
+  <h4 id="UE4_CoreUObject_UObject_StaticClass" data-uid="UE4.CoreUObject.UObject.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_TransientPackage.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.TransientPackage%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L16">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_TransientPackage_" data-uid="UE4.CoreUObject.UObject.TransientPackage*"></a>
+  <h4 id="UE4_CoreUObject_UObject_TransientPackage" data-uid="UE4.CoreUObject.UObject.TransientPackage">TransientPackage</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Package TransientPackage { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Package.html">Package</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.CastTo(UE4.CoreUObject.UObject%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_CastTo_" data-uid="UE4.CoreUObject.UObject.CastTo*"></a>
+  <h4 id="UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_" data-uid="UE4.CoreUObject.UObject.CastTo(UE4.CoreUObject.UObject,System.Type)">CastTo(UObject, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static UObject CastTo(UObject o, Type type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">o</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.CastTo%60%601(UE4.CoreUObject.UObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L24">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_CastTo_" data-uid="UE4.CoreUObject.UObject.CastTo*"></a>
+  <h4 id="UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_" data-uid="UE4.CoreUObject.UObject.CastTo``1(UE4.CoreUObject.UObject)">CastTo&lt;T&gt;(UObject)</h4>
+  <div class="markdown level1 summary"><p>Changes the C# type of a native object.  The old object should not be used after this call</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T CastTo&lt;T&gt;(UObject o)
+
+    where T : UObject, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">o</span></td>
+        <td><p>object to change</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>New type of object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_Construct.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.Construct%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L210">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_Construct_" data-uid="UE4.CoreUObject.UObject.Construct*"></a>
+  <h4 id="UE4_CoreUObject_UObject_Construct" data-uid="UE4.CoreUObject.UObject.Construct">Construct()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Construct()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_Finalize.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.Finalize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L227">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_Finalize_" data-uid="UE4.CoreUObject.UObject.Finalize*"></a>
+  <h4 id="UE4_CoreUObject_UObject_Finalize" data-uid="UE4.CoreUObject.UObject.Finalize">Finalize()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Finalize()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_GetHashCode.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L212">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_GetHashCode_" data-uid="UE4.CoreUObject.UObject.GetHashCode*"></a>
+  <h4 id="UE4_CoreUObject_UObject_GetHashCode" data-uid="UE4.CoreUObject.UObject.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_GetName.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.GetName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L214">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_GetName_" data-uid="UE4.CoreUObject.UObject.GetName*"></a>
+  <h4 id="UE4_CoreUObject_UObject_GetName" data-uid="UE4.CoreUObject.UObject.GetName">GetName()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected string GetName()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.GetPropertyFor%60%601(UE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObjectNative.cs/#L60">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_GetPropertyFor_" data-uid="UE4.CoreUObject.UObject.GetPropertyFor*"></a>
+  <h4 id="UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_" data-uid="UE4.CoreUObject.UObject.GetPropertyFor``1(UE4.Core.Name)">GetPropertyFor&lt;T&gt;(Name)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T GetPropertyFor&lt;T&gt;(Name name)
+
+    where T : Property, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.LoadClass(UE4.CoreUObject.Class%2CUE4.CoreUObject.UObject%2CSystem.String%2CSystem.String%2CUE4.CoreUObject.LoadFlags%2CUE4.CoreUObject.PackageMap)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObjectNative.cs/#L50">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_LoadClass_" data-uid="UE4.CoreUObject.UObject.LoadClass*"></a>
+  <h4 id="UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_" data-uid="UE4.CoreUObject.UObject.LoadClass(UE4.CoreUObject.Class,UE4.CoreUObject.UObject,System.String,System.String,UE4.CoreUObject.LoadFlags,UE4.CoreUObject.PackageMap)">LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class LoadClass(Class ofClass, UObject outer, string name, string fileName = null, LoadFlags flags = LoadFlags.LOAD_None, PackageMap sandbox = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td><span class="parametername">ofClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">outer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LoadFlags.html">LoadFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.PackageMap.html">PackageMap</a></td>
+        <td><span class="parametername">sandbox</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.LoadObjectFromClass(UE4.CoreUObject.Class%2CUE4.CoreUObject.UObject%2CSystem.String%2CSystem.String%2CUE4.CoreUObject.LoadFlags%2CUE4.CoreUObject.PackageMap%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObjectNative.cs/#L46">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_LoadObjectFromClass_" data-uid="UE4.CoreUObject.UObject.LoadObjectFromClass*"></a>
+  <h4 id="UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_" data-uid="UE4.CoreUObject.UObject.LoadObjectFromClass(UE4.CoreUObject.Class,UE4.CoreUObject.UObject,System.String,System.String,UE4.CoreUObject.LoadFlags,UE4.CoreUObject.PackageMap,System.Boolean)">LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UObject LoadObjectFromClass(Class objectClass, UObject outer, string name, string fileName = null, LoadFlags flags = LoadFlags.LOAD_None, PackageMap sandbox = null, bool bAllowObjectReconciliation = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td><span class="parametername">objectClass</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">outer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fileName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LoadFlags.html">LoadFlags</a></td>
+        <td><span class="parametername">flags</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.PackageMap.html">PackageMap</a></td>
+        <td><span class="parametername">sandbox</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bAllowObjectReconciliation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.MakeObjectArrayField%60%601(UE4.Core.NativeArray*)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L198">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_MakeObjectArrayField_" data-uid="UE4.CoreUObject.UObject.MakeObjectArrayField*"></a>
+  <h4 id="UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__" data-uid="UE4.CoreUObject.UObject.MakeObjectArrayField``1(UE4.Core.NativeArray*)">MakeObjectArrayField&lt;T&gt;(NativeArray*)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ObjectArrayField&lt;T&gt; MakeObjectArrayField&lt;T&gt;(NativeArray*array)
+
+    where T : UObject, new()</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.NativeArray.html">NativeArray</a>*</td>
+        <td><span class="parametername">array</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/CoreUObject/UObject.cs/#L41">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_New_" data-uid="UE4.CoreUObject.UObject.New*"></a>
+  <h4 id="UE4_CoreUObject_UObject_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.CoreUObject.UObject.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UObject New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_NotImplemented__1.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.NotImplemented%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L202">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_NotImplemented_" data-uid="UE4.CoreUObject.UObject.NotImplemented*"></a>
+  <h4 id="UE4_CoreUObject_UObject_NotImplemented__1" data-uid="UE4.CoreUObject.UObject.NotImplemented``1">NotImplemented&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T NotImplemented&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.RemoveObject(UE4.CoreUObject.UObject)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L51">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_RemoveObject_" data-uid="UE4.CoreUObject.UObject.RemoveObject*"></a>
+  <h4 id="UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_" data-uid="UE4.CoreUObject.UObject.RemoveObject(UE4.CoreUObject.UObject)">RemoveObject(UObject)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static void RemoveObject(UObject o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">o</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_ToString.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.ToString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L220">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_ToString_" data-uid="UE4.CoreUObject.UObject.ToString*"></a>
+  <h4 id="UE4_CoreUObject_UObject_ToString" data-uid="UE4.CoreUObject.UObject.ToString">ToString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.ToString()</span></div>
+  <h3 id="events">Events
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_ExecuteUbergraph.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.ExecuteUbergraph%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/CoreUObject/UObject.cs/#L23">View Source</a>
+  </span>
+  <h4 id="UE4_CoreUObject_UObject_ExecuteUbergraph" data-uid="UE4.CoreUObject.UObject.ExecuteUbergraph">ExecuteUbergraph</h4>
+  <div class="markdown level1 summary"><p>Executes some portion of the ubergraph.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event UObject.ExecuteUbergraph_delegate ExecuteUbergraph</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.ExecuteUbergraph_delegate.html">UObject.ExecuteUbergraph_delegate</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_CoreUObject_UObject_ExecuteUbergraph_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@param       EntryPoint      The entry point to start code execution at.</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_op_Implicit_System_IntPtr__UE4_CoreUObject_UObject.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.op_Implicit(System.IntPtr)~UE4.CoreUObject.UObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/CoreUObject/UObject.cs/#L35">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_op_Implicit_" data-uid="UE4.CoreUObject.UObject.op_Implicit*"></a>
+  <h4 id="UE4_CoreUObject_UObject_op_Implicit_System_IntPtr__UE4_CoreUObject_UObject" data-uid="UE4.CoreUObject.UObject.op_Implicit(System.IntPtr)~UE4.CoreUObject.UObject">Implicit(IntPtr to UObject)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator UObject(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject_op_Implicit_UE4_CoreUObject_UObject__System_IntPtr.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject.op_Implicit(UE4.CoreUObject.UObject)~System.IntPtr%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/CoreUObject/UObject.cs/#L77">View Source</a>
+  </span>
+  <a id="UE4_CoreUObject_UObject_op_Implicit_" data-uid="UE4.CoreUObject.UObject.op_Implicit*"></a>
+  <h4 id="UE4_CoreUObject_UObject_op_Implicit_UE4_CoreUObject_UObject__System_IntPtr" data-uid="UE4.CoreUObject.UObject.op_Implicit(UE4.CoreUObject.UObject)~System.IntPtr">Implicit(UObject to IntPtr)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator IntPtr(UObject o)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">o</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_CoreUObject_UObject.md&amp;value=---%0Auid%3A%20UE4.CoreUObject.UObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/CoreUObject/UObject.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

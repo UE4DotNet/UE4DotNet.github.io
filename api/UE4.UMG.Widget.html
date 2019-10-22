@@ -1,0 +1,2249 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Widget
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Widget
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.UMG.Widget">
+  
+  
+  <h1 id="UE4_UMG_Widget" data-uid="UE4.UMG.Widget" class="text-break">Class Widget
+  </h1>
+  <div class="markdown level0 summary"><p>This is the base class for all wrapped Slate controls that are exposed to UObjects.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.UMG.Visual.html">Visual</a></div>
+    <div class="level3"><span class="xref">Widget</span></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.CircularThrobber.html">CircularThrobber</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.ComboBox.html">ComboBox</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.ComboBoxString.html">ComboBoxString</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.DynamicEntryBox.html">DynamicEntryBox</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.EditableText.html">EditableText</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.EditableTextBox.html">EditableTextBox</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.ExpandableArea.html">ExpandableArea</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.Image.html">Image</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.InputKeySelector.html">InputKeySelector</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.ListViewBase.html">ListViewBase</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.NativeWidgetHost.html">NativeWidgetHost</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.PanelWidget.html">PanelWidget</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.ProgressBar.html">ProgressBar</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.ScrollBar.html">ScrollBar</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.Slider.html">Slider</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.Spacer.html">Spacer</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.SpinBox.html">SpinBox</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.TextLayoutWidget.html">TextLayoutWidget</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.Throbber.html">Throbber</a></div>
+      <div class="level4"><a class="xref" href="UE4.UMG.UserWidget.html">UserWidget</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.UMG.html">UE4.UMG</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_UMG_Widget_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Widget : Visual</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bCreatedByConstructionScript.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bCreatedByConstructionScript%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L264">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bCreatedByConstructionScript_" data-uid="UE4.UMG.Widget.bCreatedByConstructionScript*"></a>
+  <h4 id="UE4_UMG_Widget_bCreatedByConstructionScript" data-uid="UE4.UMG.Widget.bCreatedByConstructionScript">bCreatedByConstructionScript</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bCreatedByConstructionScript { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bExpandedInDesigner.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bExpandedInDesigner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L282">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bExpandedInDesigner_" data-uid="UE4.UMG.Widget.bExpandedInDesigner*"></a>
+  <h4 id="UE4_UMG_Widget_bExpandedInDesigner" data-uid="UE4.UMG.Widget.bExpandedInDesigner">bExpandedInDesigner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bExpandedInDesigner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bHiddenInDesigner.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bHiddenInDesigner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L278">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bHiddenInDesigner_" data-uid="UE4.UMG.Widget.bHiddenInDesigner*"></a>
+  <h4 id="UE4_UMG_Widget_bHiddenInDesigner" data-uid="UE4.UMG.Widget.bHiddenInDesigner">bHiddenInDesigner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bHiddenInDesigner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bIsEnabled.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bIsEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L268">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bIsEnabled_" data-uid="UE4.UMG.Widget.bIsEnabled*"></a>
+  <h4 id="UE4_UMG_Widget_bIsEnabled" data-uid="UE4.UMG.Widget.bIsEnabled">bIsEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bIsEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bIsVariable.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bIsVariable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L260">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bIsVariable_" data-uid="UE4.UMG.Widget.bIsVariable*"></a>
+  <h4 id="UE4_UMG_Widget_bIsVariable" data-uid="UE4.UMG.Widget.bIsVariable">bIsVariable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bIsVariable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bIsVolatile.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bIsVolatile%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L275">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bIsVolatile_" data-uid="UE4.UMG.Widget.bIsVolatile*"></a>
+  <h4 id="UE4_UMG_Widget_bIsVolatile" data-uid="UE4.UMG.Widget.bIsVolatile">bIsVolatile</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bIsVolatile { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bLockedInDesigner.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bLockedInDesigner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L286">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bLockedInDesigner_" data-uid="UE4.UMG.Widget.bLockedInDesigner*"></a>
+  <h4 id="UE4_UMG_Widget_bLockedInDesigner" data-uid="UE4.UMG.Widget.bLockedInDesigner">bLockedInDesigner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bLockedInDesigner { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_bOverride_Cursor.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.bOverride_Cursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L271">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_bOverride_Cursor_" data-uid="UE4.UMG.Widget.bOverride_Cursor*"></a>
+  <h4 id="UE4_UMG_Widget_bOverride_Cursor" data-uid="UE4.UMG.Widget.bOverride_Cursor">bOverride_Cursor</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverride_Cursor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_Cursor.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.Cursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L291">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_Cursor_" data-uid="UE4.UMG.Widget.Cursor*"></a>
+  <h4 id="UE4_UMG_Widget_Cursor" data-uid="UE4.UMG.Widget.Cursor">Cursor</h4>
+  <div class="markdown level1 summary"><p>The cursor to show when the mouse is over the widget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte Cursor { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L336">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_DefaultObject_" data-uid="UE4.UMG.Widget.DefaultObject*"></a>
+  <h4 id="UE4_UMG_Widget_DefaultObject" data-uid="UE4.UMG.Widget.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Widget DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.Widget.html">Widget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_DesignerFlags.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.DesignerFlags%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L320">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_DesignerFlags_" data-uid="UE4.UMG.Widget.DesignerFlags*"></a>
+  <h4 id="UE4_UMG_Widget_DesignerFlags" data-uid="UE4.UMG.Widget.DesignerFlags">DesignerFlags</h4>
+  <div class="markdown level1 summary"><p>Any flags used by the designer at edit time.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte DesignerFlags { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_NativeBindings.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.NativeBindings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L313">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_NativeBindings_" data-uid="UE4.UMG.Widget.NativeBindings*"></a>
+  <h4 id="UE4_UMG_Widget_NativeBindings" data-uid="UE4.UMG.Widget.NativeBindings">NativeBindings</h4>
+  <div class="markdown level1 summary"><p>Native property bindings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;PropertyBinding&gt; NativeBindings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.UMG.PropertyBinding.html">PropertyBinding</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_Navigation.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.Navigation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L309">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_Navigation_" data-uid="UE4.UMG.Widget.Navigation*"></a>
+  <h4 id="UE4_UMG_Widget_Navigation" data-uid="UE4.UMG.Widget.Navigation">Navigation</h4>
+  <div class="markdown level1 summary"><p>The navigation object for this widget is optionally created if the user has configured custom
+navigation rules for this widget in the widget designer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WidgetNavigation Navigation { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.WidgetNavigation.html">WidgetNavigation</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_Navigation_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Those rules determine how navigation transitions
+can occur between widgets.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_RenderOpacity.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.RenderOpacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L297">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_RenderOpacity_" data-uid="UE4.UMG.Widget.RenderOpacity*"></a>
+  <h4 id="UE4_UMG_Widget_RenderOpacity" data-uid="UE4.UMG.Widget.RenderOpacity">RenderOpacity</h4>
+  <div class="markdown level1 summary"><p>The opacity of the widget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float RenderOpacity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_RenderTransform.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.RenderTransform%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L252">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_RenderTransform_" data-uid="UE4.UMG.Widget.RenderTransform*"></a>
+  <h4 id="UE4_UMG_Widget_RenderTransform" data-uid="UE4.UMG.Widget.RenderTransform">RenderTransform</h4>
+  <div class="markdown level1 summary"><p>The render transform of the widget allows for arbitrary 2D transforms to be applied to the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WidgetTransform RenderTransform { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.WidgetTransform.html">WidgetTransform</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_RenderTransformPivot.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.RenderTransformPivot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L257">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_RenderTransformPivot_" data-uid="UE4.UMG.Widget.RenderTransformPivot*"></a>
+  <h4 id="UE4_UMG_Widget_RenderTransformPivot" data-uid="UE4.UMG.Widget.RenderTransformPivot">RenderTransformPivot</h4>
+  <div class="markdown level1 summary"><p>The render transform pivot controls the location about which transforms are applied.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2D RenderTransformPivot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_RenderTransformPivot_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This value is a normalized coordinate about which things like rotations will occur.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_Slot.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.Slot%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L239">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_Slot_" data-uid="UE4.UMG.Widget.Slot*"></a>
+  <h4 id="UE4_UMG_Widget_Slot" data-uid="UE4.UMG.Widget.Slot">Slot</h4>
+  <div class="markdown level1 summary"><p>The parent slot of the UWidget.  Allows us to easily inline edit the layout controlling this widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PanelSlot Slot { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.PanelSlot.html">PanelSlot</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_StaticClass.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L334">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_StaticClass_" data-uid="UE4.UMG.Widget.StaticClass*"></a>
+  <h4 id="UE4_UMG_Widget_StaticClass" data-uid="UE4.UMG.Widget.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_ToolTipWidget.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.ToolTipWidget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L246">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_ToolTipWidget_" data-uid="UE4.UMG.Widget.ToolTipWidget*"></a>
+  <h4 id="UE4_UMG_Widget_ToolTipWidget" data-uid="UE4.UMG.Widget.ToolTipWidget">ToolTipWidget</h4>
+  <div class="markdown level1 summary"><p>Tooltip widget to show when the user hovers over the widget with the mouse</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Widget ToolTipWidget { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.Widget.html">Widget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_ForceLayoutPrepass.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.ForceLayoutPrepass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L27">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_ForceLayoutPrepass_" data-uid="UE4.UMG.Widget.ForceLayoutPrepass*"></a>
+  <h4 id="UE4_UMG_Widget_ForceLayoutPrepass" data-uid="UE4.UMG.Widget.ForceLayoutPrepass">ForceLayoutPrepass()</h4>
+  <div class="markdown level1 summary"><p>Forces a pre-pass.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceLayoutPrepass()</code></pre>
+  </div>
+  <h5 id="UE4_UMG_Widget_ForceLayoutPrepass_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A pre-pass caches the desired size of the widget hierarchy owned by this widget.
+One pre-pass is already happens for every widget before Tick occurs.  You only need to perform another
+pre-pass if you are adding child widgets this frame and want them to immediately be visible this frame.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_ForceVolatile_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.ForceVolatile(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L31">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_ForceVolatile_" data-uid="UE4.UMG.Widget.ForceVolatile*"></a>
+  <h4 id="UE4_UMG_Widget_ForceVolatile_System_Boolean_" data-uid="UE4.UMG.Widget.ForceVolatile(System.Boolean)">ForceVolatile(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the forced volatility of the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceVolatile(bool bForce)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bForce</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetCachedGeometry_UE4_SlateCore_Geometry_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetCachedGeometry(UE4.SlateCore.Geometry)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetCachedGeometry_" data-uid="UE4.UMG.Widget.GetCachedGeometry*"></a>
+  <h4 id="UE4_UMG_Widget_GetCachedGeometry_UE4_SlateCore_Geometry_" data-uid="UE4.UMG.Widget.GetCachedGeometry(UE4.SlateCore.Geometry)">GetCachedGeometry(Geometry)</h4>
+  <div class="markdown level1 summary"><p>Gets the last geometry used to Tick the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetCachedGeometry(Geometry ReturnValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.SlateCore.Geometry.html">Geometry</a></td>
+        <td><span class="parametername">ReturnValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_GetCachedGeometry_UE4_SlateCore_Geometry__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This data may not exist yet if this call happens prior to
+the widget having been ticked/painted, or it may be out of date, or a frame behind.</p>
+<p>We recommend not to use this data unless there's no other way to solve your problem.  Normally in Slate we
+try and handle these issues by making a dependent widget part of the hierarchy, as to avoid frame behind
+or what are referred to as hysteresis problems, both caused by depending on geometry from the previous frame
+being used to advise how to layout a dependent object the current frame.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetClipping.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetClipping%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L48">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetClipping_" data-uid="UE4.UMG.Widget.GetClipping*"></a>
+  <h4 id="UE4_UMG_Widget_GetClipping" data-uid="UE4.UMG.Widget.GetClipping">GetClipping()</h4>
+  <div class="markdown level1 summary"><p>Gets the clipping state of this widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EWidgetClipping GetClipping()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.SlateCore.EWidgetClipping.html">EWidgetClipping</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetDesiredSize.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetDesiredSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L58">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetDesiredSize_" data-uid="UE4.UMG.Widget.GetDesiredSize*"></a>
+  <h4 id="UE4_UMG_Widget_GetDesiredSize" data-uid="UE4.UMG.Widget.GetDesiredSize">GetDesiredSize()</h4>
+  <div class="markdown level1 summary"><p>Gets the widgets desired size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2D GetDesiredSize()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_GetDesiredSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>NOTE: The underlying Slate widget must exist and be valid, also at least one pre-pass must
+have occurred before this value will be of any use.</p>
+<p>@return The widget's desired size</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetIsEnabled.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetIsEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L62">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetIsEnabled_" data-uid="UE4.UMG.Widget.GetIsEnabled*"></a>
+  <h4 id="UE4_UMG_Widget_GetIsEnabled" data-uid="UE4.UMG.Widget.GetIsEnabled">GetIsEnabled()</h4>
+  <div class="markdown level1 summary"><p>Gets the current enabled status of the widget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetIsEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetOwningLocalPlayer.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetOwningLocalPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L69">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetOwningLocalPlayer_" data-uid="UE4.UMG.Widget.GetOwningLocalPlayer*"></a>
+  <h4 id="UE4_UMG_Widget_GetOwningLocalPlayer" data-uid="UE4.UMG.Widget.GetOwningLocalPlayer">GetOwningLocalPlayer()</h4>
+  <div class="markdown level1 summary"><p>Gets the local player associated with this UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LocalPlayer GetOwningLocalPlayer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.LocalPlayer.html">LocalPlayer</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_GetOwningLocalPlayer_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@return The owning local player.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetOwningPlayer.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetOwningPlayer%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L76">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetOwningPlayer_" data-uid="UE4.UMG.Widget.GetOwningPlayer*"></a>
+  <h4 id="UE4_UMG_Widget_GetOwningPlayer" data-uid="UE4.UMG.Widget.GetOwningPlayer">GetOwningPlayer()</h4>
+  <div class="markdown level1 summary"><p>Gets the player controller associated with this UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerController GetOwningPlayer()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerController.html">PlayerController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_GetOwningPlayer_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>@return The player controller that owns the UI.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetParent.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L80">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetParent_" data-uid="UE4.UMG.Widget.GetParent*"></a>
+  <h4 id="UE4_UMG_Widget_GetParent" data-uid="UE4.UMG.Widget.GetParent">GetParent()</h4>
+  <div class="markdown level1 summary"><p>Gets the parent widget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PanelWidget GetParent()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.PanelWidget.html">PanelWidget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetRenderOpacity.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetRenderOpacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetRenderOpacity_" data-uid="UE4.UMG.Widget.GetRenderOpacity*"></a>
+  <h4 id="UE4_UMG_Widget_GetRenderOpacity" data-uid="UE4.UMG.Widget.GetRenderOpacity">GetRenderOpacity()</h4>
+  <div class="markdown level1 summary"><p>Gets the current visibility of the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetRenderOpacity()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_GetVisibility.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.GetVisibility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L88">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_GetVisibility_" data-uid="UE4.UMG.Widget.GetVisibility*"></a>
+  <h4 id="UE4_UMG_Widget_GetVisibility" data-uid="UE4.UMG.Widget.GetVisibility">GetVisibility()</h4>
+  <div class="markdown level1 summary"><p>Gets the current visibility of the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ESlateVisibility GetVisibility()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.ESlateVisibility.html">ESlateVisibility</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_HasAnyUserFocus.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.HasAnyUserFocus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L92">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_HasAnyUserFocus_" data-uid="UE4.UMG.Widget.HasAnyUserFocus*"></a>
+  <h4 id="UE4_UMG_Widget_HasAnyUserFocus" data-uid="UE4.UMG.Widget.HasAnyUserFocus">HasAnyUserFocus()</h4>
+  <div class="markdown level1 summary"><p>@return true if this widget is focused by any user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasAnyUserFocus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_HasFocusedDescendants.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.HasFocusedDescendants%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L96">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_HasFocusedDescendants_" data-uid="UE4.UMG.Widget.HasFocusedDescendants*"></a>
+  <h4 id="UE4_UMG_Widget_HasFocusedDescendants" data-uid="UE4.UMG.Widget.HasFocusedDescendants">HasFocusedDescendants()</h4>
+  <div class="markdown level1 summary"><p>@return true if any descendant widget is focused by any user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasFocusedDescendants()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_HasKeyboardFocus.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.HasKeyboardFocus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L104">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_HasKeyboardFocus_" data-uid="UE4.UMG.Widget.HasKeyboardFocus*"></a>
+  <h4 id="UE4_UMG_Widget_HasKeyboardFocus" data-uid="UE4.UMG.Widget.HasKeyboardFocus">HasKeyboardFocus()</h4>
+  <div class="markdown level1 summary"><p>Checks to see if this widget currently has the keyboard focus
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasKeyboardFocus()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_HasKeyboardFocus_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>return  True if this widget has keyboard focus</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_HasMouseCapture.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.HasMouseCapture%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L112">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_HasMouseCapture_" data-uid="UE4.UMG.Widget.HasMouseCapture*"></a>
+  <h4 id="UE4_UMG_Widget_HasMouseCapture" data-uid="UE4.UMG.Widget.HasMouseCapture">HasMouseCapture()</h4>
+  <div class="markdown level1 summary"><p>Checks to see if this widget is the current mouse captor
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMouseCapture()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_HasMouseCapture_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>return  True if this widget has captured the mouse</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_HasMouseCaptureByUser_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.HasMouseCaptureByUser(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L124">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_HasMouseCaptureByUser_" data-uid="UE4.UMG.Widget.HasMouseCaptureByUser*"></a>
+  <h4 id="UE4_UMG_Widget_HasMouseCaptureByUser_System_Int32_System_Int32_" data-uid="UE4.UMG.Widget.HasMouseCaptureByUser(System.Int32,System.Int32)">HasMouseCaptureByUser(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Checks to see if this widget is the current mouse captor
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasMouseCaptureByUser(int UserIndex, int PointerIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">UserIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">PointerIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_HasMouseCaptureByUser_System_Int32_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param User index to check for capture
+@param Optional pointer index to check for capture
+@return  True if this widget has captured the mouse with given user and pointer</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_HasUserFocus_UE4_Engine_PlayerController_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.HasUserFocus(UE4.Engine.PlayerController)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L128">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_HasUserFocus_" data-uid="UE4.UMG.Widget.HasUserFocus*"></a>
+  <h4 id="UE4_UMG_Widget_HasUserFocus_UE4_Engine_PlayerController_" data-uid="UE4.UMG.Widget.HasUserFocus(UE4.Engine.PlayerController)">HasUserFocus(PlayerController)</h4>
+  <div class="markdown level1 summary"><p>@return true if this widget is focused by a specific user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasUserFocus(PlayerController PlayerController)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerController.html">PlayerController</a></td>
+        <td><span class="parametername">PlayerController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_HasUserFocusedDescendants_UE4_Engine_PlayerController_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.HasUserFocusedDescendants(UE4.Engine.PlayerController)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L132">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_HasUserFocusedDescendants_" data-uid="UE4.UMG.Widget.HasUserFocusedDescendants*"></a>
+  <h4 id="UE4_UMG_Widget_HasUserFocusedDescendants_UE4_Engine_PlayerController_" data-uid="UE4.UMG.Widget.HasUserFocusedDescendants(UE4.Engine.PlayerController)">HasUserFocusedDescendants(PlayerController)</h4>
+  <div class="markdown level1 summary"><p>@return true if any descendant widget is focused by a specific user.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasUserFocusedDescendants(PlayerController PlayerController)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerController.html">PlayerController</a></td>
+        <td><span class="parametername">PlayerController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_InvalidateLayoutAndVolatility.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.InvalidateLayoutAndVolatility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L137">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_InvalidateLayoutAndVolatility_" data-uid="UE4.UMG.Widget.InvalidateLayoutAndVolatility*"></a>
+  <h4 id="UE4_UMG_Widget_InvalidateLayoutAndVolatility" data-uid="UE4.UMG.Widget.InvalidateLayoutAndVolatility">InvalidateLayoutAndVolatility()</h4>
+  <div class="markdown level1 summary"><p>Invalidates the widget from the view of a layout caching widget that may own this widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InvalidateLayoutAndVolatility()</code></pre>
+  </div>
+  <h5 id="UE4_UMG_Widget_InvalidateLayoutAndVolatility_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>will force the owning widget to redraw and cache children on the next paint pass.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_IsHovered.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.IsHovered%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L141">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_IsHovered_" data-uid="UE4.UMG.Widget.IsHovered*"></a>
+  <h4 id="UE4_UMG_Widget_IsHovered" data-uid="UE4.UMG.Widget.IsHovered">IsHovered()</h4>
+  <div class="markdown level1 summary"><p>@return true if the widget is currently being hovered by a pointer device</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHovered()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_IsVisible.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.IsVisible%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L145">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_IsVisible_" data-uid="UE4.UMG.Widget.IsVisible*"></a>
+  <h4 id="UE4_UMG_Widget_IsVisible" data-uid="UE4.UMG.Widget.IsVisible">IsVisible()</h4>
+  <div class="markdown level1 summary"><p>@return true if the widget is Visible, HitTestInvisible or SelfHitTestInvisible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVisible()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L338">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_New_" data-uid="UE4.UMG.Widget.New*"></a>
+  <h4 id="UE4_UMG_Widget_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.UMG.Widget.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Widget New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.Widget.html">Widget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_RemoveFromParent.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.RemoveFromParent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L153">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_RemoveFromParent_" data-uid="UE4.UMG.Widget.RemoveFromParent*"></a>
+  <h4 id="UE4_UMG_Widget_RemoveFromParent" data-uid="UE4.UMG.Widget.RemoveFromParent">RemoveFromParent()</h4>
+  <div class="markdown level1 summary"><p>Removes the widget from its parent widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveFromParent()</code></pre>
+  </div>
+  <h5 id="UE4_UMG_Widget_RemoveFromParent_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this widget was added to the player's screen or the viewport
+it will also be removed from those containers.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_ResetCursor.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.ResetCursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L157">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_ResetCursor_" data-uid="UE4.UMG.Widget.ResetCursor*"></a>
+  <h4 id="UE4_UMG_Widget_ResetCursor" data-uid="UE4.UMG.Widget.ResetCursor">ResetCursor()</h4>
+  <div class="markdown level1 summary"><p>Resets the cursor to use on the widget, removing any customization for it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetCursor()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetAllNavigationRules_UE4_SlateCore_EUINavigationRule_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetAllNavigationRules(UE4.SlateCore.EUINavigationRule%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L166">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetAllNavigationRules_" data-uid="UE4.UMG.Widget.SetAllNavigationRules*"></a>
+  <h4 id="UE4_UMG_Widget_SetAllNavigationRules_UE4_SlateCore_EUINavigationRule_UE4_Core_Name_" data-uid="UE4.UMG.Widget.SetAllNavigationRules(UE4.SlateCore.EUINavigationRule,UE4.Core.Name)">SetAllNavigationRules(EUINavigationRule, Name)</h4>
+  <div class="markdown level1 summary"><p>Sets the widget navigation rules for all directions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAllNavigationRules(EUINavigationRule Rule, Name WidgetToFocus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.SlateCore.EUINavigationRule.html">EUINavigationRule</a></td>
+        <td><span class="parametername">Rule</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">WidgetToFocus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_SetAllNavigationRules_UE4_SlateCore_EUINavigationRule_UE4_Core_Name__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can only be called on widgets that are in a widget tree.
+@param Rule The rule to use when navigation is taking place
+@param WidgetToFocus When using the Explicit rule, focus on this widget</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetClipping_UE4_SlateCore_EWidgetClipping_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetClipping(UE4.SlateCore.EWidgetClipping)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L170">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetClipping_" data-uid="UE4.UMG.Widget.SetClipping*"></a>
+  <h4 id="UE4_UMG_Widget_SetClipping_UE4_SlateCore_EWidgetClipping_" data-uid="UE4.UMG.Widget.SetClipping(UE4.SlateCore.EWidgetClipping)">SetClipping(EWidgetClipping)</h4>
+  <div class="markdown level1 summary"><p>Sets the clipping state of this widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetClipping(EWidgetClipping InClipping)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.SlateCore.EWidgetClipping.html">EWidgetClipping</a></td>
+        <td><span class="parametername">InClipping</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetCursor_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetCursor(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L174">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetCursor_" data-uid="UE4.UMG.Widget.SetCursor*"></a>
+  <h4 id="UE4_UMG_Widget_SetCursor_System_Byte_" data-uid="UE4.UMG.Widget.SetCursor(System.Byte)">SetCursor(Byte)</h4>
+  <div class="markdown level1 summary"><p>Sets the cursor to show over the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetCursor(byte InCursor)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">InCursor</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetIsEnabled_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetIsEnabled(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L178">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetIsEnabled_" data-uid="UE4.UMG.Widget.SetIsEnabled*"></a>
+  <h4 id="UE4_UMG_Widget_SetIsEnabled_System_Boolean_" data-uid="UE4.UMG.Widget.SetIsEnabled(System.Boolean)">SetIsEnabled(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the current enabled status of the widget</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsEnabled(bool bInIsEnabled)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bInIsEnabled</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetKeyboardFocus.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetKeyboardFocus%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L182">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetKeyboardFocus_" data-uid="UE4.UMG.Widget.SetKeyboardFocus*"></a>
+  <h4 id="UE4_UMG_Widget_SetKeyboardFocus" data-uid="UE4.UMG.Widget.SetKeyboardFocus">SetKeyboardFocus()</h4>
+  <div class="markdown level1 summary"><p>Sets the focus to this widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetKeyboardFocus()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetNavigationRule_UE4_SlateCore_EUINavigation_UE4_SlateCore_EUINavigationRule_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetNavigationRule(UE4.SlateCore.EUINavigation%2CUE4.SlateCore.EUINavigationRule%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L192">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetNavigationRule_" data-uid="UE4.UMG.Widget.SetNavigationRule*"></a>
+  <h4 id="UE4_UMG_Widget_SetNavigationRule_UE4_SlateCore_EUINavigation_UE4_SlateCore_EUINavigationRule_UE4_Core_Name_" data-uid="UE4.UMG.Widget.SetNavigationRule(UE4.SlateCore.EUINavigation,UE4.SlateCore.EUINavigationRule,UE4.Core.Name)">SetNavigationRule(EUINavigation, EUINavigationRule, Name)</h4>
+  <div class="markdown level1 summary"><p>Sets the widget navigation rules for a specific direction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetNavigationRule(EUINavigation Direction, EUINavigationRule Rule, Name WidgetToFocus)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.SlateCore.EUINavigation.html">EUINavigation</a></td>
+        <td><span class="parametername">Direction</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.SlateCore.EUINavigationRule.html">EUINavigationRule</a></td>
+        <td><span class="parametername">Rule</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">WidgetToFocus</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_UMG_Widget_SetNavigationRule_UE4_SlateCore_EUINavigation_UE4_SlateCore_EUINavigationRule_UE4_Core_Name__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This can only be called on widgets that are in a widget tree.
+@param Direction
+@param Rule The rule to use when navigation is taking place
+@param WidgetToFocus When using the Explicit rule, focus on this widget</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetRenderAngle_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetRenderAngle(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L196">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetRenderAngle_" data-uid="UE4.UMG.Widget.SetRenderAngle*"></a>
+  <h4 id="UE4_UMG_Widget_SetRenderAngle_System_Single_" data-uid="UE4.UMG.Widget.SetRenderAngle(System.Single)">SetRenderAngle(Single)</h4>
+  <div class="markdown level1 summary"><p>Set Render Angle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderAngle(float Angle)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">Angle</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetRenderOpacity_System_Single_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetRenderOpacity(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L200">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetRenderOpacity_" data-uid="UE4.UMG.Widget.SetRenderOpacity*"></a>
+  <h4 id="UE4_UMG_Widget_SetRenderOpacity_System_Single_" data-uid="UE4.UMG.Widget.SetRenderOpacity(System.Single)">SetRenderOpacity(Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the visibility of the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderOpacity(float InOpacity)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">InOpacity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetRenderScale_UE4_CoreUObject_Vector2D_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetRenderScale(UE4.CoreUObject.Vector2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L204">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetRenderScale_" data-uid="UE4.UMG.Widget.SetRenderScale*"></a>
+  <h4 id="UE4_UMG_Widget_SetRenderScale_UE4_CoreUObject_Vector2D_" data-uid="UE4.UMG.Widget.SetRenderScale(UE4.CoreUObject.Vector2D)">SetRenderScale(Vector2D)</h4>
+  <div class="markdown level1 summary"><p>Set Render Scale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderScale(Vector2D Scale)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">Scale</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetRenderShear_UE4_CoreUObject_Vector2D_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetRenderShear(UE4.CoreUObject.Vector2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L208">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetRenderShear_" data-uid="UE4.UMG.Widget.SetRenderShear*"></a>
+  <h4 id="UE4_UMG_Widget_SetRenderShear_UE4_CoreUObject_Vector2D_" data-uid="UE4.UMG.Widget.SetRenderShear(UE4.CoreUObject.Vector2D)">SetRenderShear(Vector2D)</h4>
+  <div class="markdown level1 summary"><p>Set Render Shear</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderShear(Vector2D Shear)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">Shear</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetRenderTransform_UE4_UMG_WidgetTransform_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetRenderTransform(UE4.UMG.WidgetTransform)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L212">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetRenderTransform_" data-uid="UE4.UMG.Widget.SetRenderTransform*"></a>
+  <h4 id="UE4_UMG_Widget_SetRenderTransform_UE4_UMG_WidgetTransform_" data-uid="UE4.UMG.Widget.SetRenderTransform(UE4.UMG.WidgetTransform)">SetRenderTransform(WidgetTransform)</h4>
+  <div class="markdown level1 summary"><p>Set Render Transform</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTransform(WidgetTransform InTransform)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.WidgetTransform.html">WidgetTransform</a></td>
+        <td><span class="parametername">InTransform</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetRenderTransformPivot_UE4_CoreUObject_Vector2D_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetRenderTransformPivot(UE4.CoreUObject.Vector2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L216">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetRenderTransformPivot_" data-uid="UE4.UMG.Widget.SetRenderTransformPivot*"></a>
+  <h4 id="UE4_UMG_Widget_SetRenderTransformPivot_UE4_CoreUObject_Vector2D_" data-uid="UE4.UMG.Widget.SetRenderTransformPivot(UE4.CoreUObject.Vector2D)">SetRenderTransformPivot(Vector2D)</h4>
+  <div class="markdown level1 summary"><p>Set Render Transform Pivot</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTransformPivot(Vector2D Pivot)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">Pivot</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetRenderTranslation_UE4_CoreUObject_Vector2D_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetRenderTranslation(UE4.CoreUObject.Vector2D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L220">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetRenderTranslation_" data-uid="UE4.UMG.Widget.SetRenderTranslation*"></a>
+  <h4 id="UE4_UMG_Widget_SetRenderTranslation_UE4_CoreUObject_Vector2D_" data-uid="UE4.UMG.Widget.SetRenderTranslation(UE4.CoreUObject.Vector2D)">SetRenderTranslation(Vector2D)</h4>
+  <div class="markdown level1 summary"><p>Set Render Translation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetRenderTranslation(Vector2D Translation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td><span class="parametername">Translation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetToolTip_UE4_UMG_Widget_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetToolTip(UE4.UMG.Widget)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L224">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetToolTip_" data-uid="UE4.UMG.Widget.SetToolTip*"></a>
+  <h4 id="UE4_UMG_Widget_SetToolTip_UE4_UMG_Widget_" data-uid="UE4.UMG.Widget.SetToolTip(UE4.UMG.Widget)">SetToolTip(Widget)</h4>
+  <div class="markdown level1 summary"><p>Sets a custom widget as the tooltip of the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToolTip(Widget Widget)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.Widget.html">Widget</a></td>
+        <td><span class="parametername">Widget</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetToolTipText_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetToolTipText(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L228">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetToolTipText_" data-uid="UE4.UMG.Widget.SetToolTipText*"></a>
+  <h4 id="UE4_UMG_Widget_SetToolTipText_System_Byte_" data-uid="UE4.UMG.Widget.SetToolTipText(System.Byte)">SetToolTipText(Byte)</h4>
+  <div class="markdown level1 summary"><p>Sets the tooltip text for the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToolTipText(byte InToolTipText)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">InToolTipText</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetUserFocus_UE4_Engine_PlayerController_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetUserFocus(UE4.Engine.PlayerController)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L232">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetUserFocus_" data-uid="UE4.UMG.Widget.SetUserFocus*"></a>
+  <h4 id="UE4_UMG_Widget_SetUserFocus_UE4_Engine_PlayerController_" data-uid="UE4.UMG.Widget.SetUserFocus(UE4.Engine.PlayerController)">SetUserFocus(PlayerController)</h4>
+  <div class="markdown level1 summary"><p>Sets the focus to this widget for a specific user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUserFocus(PlayerController PlayerController)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerController.html">PlayerController</a></td>
+        <td><span class="parametername">PlayerController</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_SetVisibility_UE4_UMG_ESlateVisibility_.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.SetVisibility(UE4.UMG.ESlateVisibility)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L236">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_SetVisibility_" data-uid="UE4.UMG.Widget.SetVisibility*"></a>
+  <h4 id="UE4_UMG_Widget_SetVisibility_UE4_UMG_ESlateVisibility_" data-uid="UE4.UMG.Widget.SetVisibility(UE4.UMG.ESlateVisibility)">SetVisibility(ESlateVisibility)</h4>
+  <div class="markdown level1 summary"><p>Sets the visibility of the widget.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisibility(ESlateVisibility InVisibility)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.ESlateVisibility.html">ESlateVisibility</a></td>
+        <td><span class="parametername">InVisibility</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget_op_Implicit_System_IntPtr__UE4_UMG_Widget.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget.op_Implicit(System.IntPtr)~UE4.UMG.Widget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L332">View Source</a>
+  </span>
+  <a id="UE4_UMG_Widget_op_Implicit_" data-uid="UE4.UMG.Widget.op_Implicit*"></a>
+  <h4 id="UE4_UMG_Widget_op_Implicit_System_IntPtr__UE4_UMG_Widget" data-uid="UE4.UMG.Widget.op_Implicit(System.IntPtr)~UE4.UMG.Widget">Implicit(IntPtr to Widget)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator Widget(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.UMG.Widget.html">Widget</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_UMG_Widget.md&amp;value=---%0Auid%3A%20UE4.UMG.Widget%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/UMG/Widget.cs/#L19" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

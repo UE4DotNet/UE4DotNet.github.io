@@ -1,0 +1,2325 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GraphEditorSettings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GraphEditorSettings
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.GraphEditor.GraphEditorSettings">
+  
+  
+  <h1 id="UE4_GraphEditor_GraphEditorSettings" data-uid="UE4.GraphEditor.GraphEditorSettings" class="text-break">Class GraphEditorSettings
+  </h1>
+  <div class="markdown level0 summary"><p>Implements settings for the graph editor.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><span class="xref">GraphEditorSettings</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.GraphEditor.html">UE4.GraphEditor</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_GraphEditor_GraphEditorSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GraphEditorSettings : UObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_BackwardSplineHorizontalDeltaRange.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.BackwardSplineHorizontalDeltaRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L79">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineHorizontalDeltaRange_" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineHorizontalDeltaRange*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineHorizontalDeltaRange" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineHorizontalDeltaRange">BackwardSplineHorizontalDeltaRange</h4>
+  <div class="markdown level1 summary"><p>The maximum value to clamp the absolute value of the horizontal distance between endpoints when calculating tangents (when the wire is moving backwards)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BackwardSplineHorizontalDeltaRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_BackwardSplineTangentFromHorizontalDelta.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.BackwardSplineTangentFromHorizontalDelta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L89">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineTangentFromHorizontalDelta_" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineTangentFromHorizontalDelta*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineTangentFromHorizontalDelta" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineTangentFromHorizontalDelta">BackwardSplineTangentFromHorizontalDelta</h4>
+  <div class="markdown level1 summary"><p>The amount that the horizontal delta affects the generated tangent handle of splines (when the wire is moving backwards)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2D BackwardSplineTangentFromHorizontalDelta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_BackwardSplineTangentFromVerticalDelta.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.BackwardSplineTangentFromVerticalDelta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L94">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineTangentFromVerticalDelta_" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineTangentFromVerticalDelta*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineTangentFromVerticalDelta" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineTangentFromVerticalDelta">BackwardSplineTangentFromVerticalDelta</h4>
+  <div class="markdown level1 summary"><p>The amount that the vertical delta affects the generated tangent handle of splines (when the wire is moving backwards)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2D BackwardSplineTangentFromVerticalDelta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_BackwardSplineVerticalDeltaRange.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.BackwardSplineVerticalDeltaRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineVerticalDeltaRange_" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineVerticalDeltaRange*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_BackwardSplineVerticalDeltaRange" data-uid="UE4.GraphEditor.GraphEditorSettings.BackwardSplineVerticalDeltaRange">BackwardSplineVerticalDeltaRange</h4>
+  <div class="markdown level1 summary"><p>The maximum value to clamp the absolute value of the vertical distance between endpoints when calculating tangents (when the wire is moving backwards)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float BackwardSplineVerticalDeltaRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_BooleanPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.BooleanPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L109">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_BooleanPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.BooleanPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_BooleanPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.BooleanPinTypeColor">BooleanPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Boolean pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor BooleanPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_bTreatSplinesLikePins.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.bTreatSplinesLikePins%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L49">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_bTreatSplinesLikePins_" data-uid="UE4.GraphEditor.GraphEditorSettings.bTreatSplinesLikePins*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_bTreatSplinesLikePins" data-uid="UE4.GraphEditor.GraphEditorSettings.bTreatSplinesLikePins">bTreatSplinesLikePins</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bTreatSplinesLikePins { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_BytePinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.BytePinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L114">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_BytePinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.BytePinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_BytePinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.BytePinTypeColor">BytePinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Byte pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor BytePinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ClassPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ClassPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L119">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ClassPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.ClassPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ClassPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.ClassPinTypeColor">ClassPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Class pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor ClassPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_DataPinStyle.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.DataPinStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L19">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_DataPinStyle_" data-uid="UE4.GraphEditor.GraphEditorSettings.DataPinStyle*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_DataPinStyle" data-uid="UE4.GraphEditor.GraphEditorSettings.DataPinStyle">DataPinStyle</h4>
+  <div class="markdown level1 summary"><p>The visual styling to use for graph editor pins (in Blueprints, materials, etc...)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte DataPinStyle { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_DefaultCommentNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.DefaultCommentNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L244">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_DefaultCommentNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultCommentNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_DefaultCommentNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultCommentNodeTitleColor">DefaultCommentNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Default Comment node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor DefaultCommentNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_DefaultDataWireThickness.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.DefaultDataWireThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L254">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_DefaultDataWireThickness_" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultDataWireThickness*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_DefaultDataWireThickness" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultDataWireThickness">DefaultDataWireThickness</h4>
+  <div class="markdown level1 summary"><p>The thickness of a data wire</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultDataWireThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_DefaultExecutionWireThickness.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.DefaultExecutionWireThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L259">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_DefaultExecutionWireThickness_" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultExecutionWireThickness*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_DefaultExecutionWireThickness" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultExecutionWireThickness">DefaultExecutionWireThickness</h4>
+  <div class="markdown level1 summary"><p>The thickness of an execution wire when not debugging</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultExecutionWireThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L343">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_DefaultObject_" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultObject*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_DefaultObject" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GraphEditorSettings DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.GraphEditor.GraphEditorSettings.html">GraphEditorSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_DefaultPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.DefaultPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L99">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_DefaultPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_DefaultPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.DefaultPinTypeColor">DefaultPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>The default color is used only for types not specifically defined below.  Generally if it's seen, it means another type needs to be defined so that the wire in question can have an appropriate color.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor DefaultPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_DelegatePinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.DelegatePinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L149">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_DelegatePinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.DelegatePinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_DelegatePinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.DelegatePinTypeColor">DelegatePinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Delegate pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor DelegatePinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_EventNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.EventNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L204">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_EventNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.EventNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_EventNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.EventNodeTitleColor">EventNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Event node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor EventNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ExecBranchNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ExecBranchNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L229">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ExecBranchNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.ExecBranchNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ExecBranchNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.ExecBranchNodeTitleColor">ExecBranchNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Exec Branch node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor ExecBranchNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ExecSequenceNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ExecSequenceNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L234">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ExecSequenceNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.ExecSequenceNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ExecSequenceNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.ExecSequenceNodeTitleColor">ExecSequenceNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Exec Sequence node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor ExecSequenceNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ExecutionPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ExecutionPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L104">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ExecutionPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.ExecutionPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ExecutionPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.ExecutionPinTypeColor">ExecutionPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Execution pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor ExecutionPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_FloatPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.FloatPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L129">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_FloatPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.FloatPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_FloatPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.FloatPinTypeColor">FloatPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Floating-point pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor FloatPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ForwardSplineHorizontalDeltaRange.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ForwardSplineHorizontalDeltaRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L59">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineHorizontalDeltaRange_" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineHorizontalDeltaRange*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineHorizontalDeltaRange" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineHorizontalDeltaRange">ForwardSplineHorizontalDeltaRange</h4>
+  <div class="markdown level1 summary"><p>The maximum value to clamp the absolute value of the horizontal distance between endpoints when calculating tangents (when the wire is moving forward)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ForwardSplineHorizontalDeltaRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ForwardSplineTangentFromHorizontalDelta.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ForwardSplineTangentFromHorizontalDelta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L69">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineTangentFromHorizontalDelta_" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineTangentFromHorizontalDelta*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineTangentFromHorizontalDelta" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineTangentFromHorizontalDelta">ForwardSplineTangentFromHorizontalDelta</h4>
+  <div class="markdown level1 summary"><p>The amount that the horizontal delta affects the generated tangent handle of splines (when the wire is moving forward)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2D ForwardSplineTangentFromHorizontalDelta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ForwardSplineTangentFromVerticalDelta.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ForwardSplineTangentFromVerticalDelta%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L74">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineTangentFromVerticalDelta_" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineTangentFromVerticalDelta*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineTangentFromVerticalDelta" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineTangentFromVerticalDelta">ForwardSplineTangentFromVerticalDelta</h4>
+  <div class="markdown level1 summary"><p>The amount that the vertical delta affects the generated tangent handle of splines (when the wire is moving forward)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2D ForwardSplineTangentFromVerticalDelta { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector2D.html">Vector2D</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ForwardSplineVerticalDeltaRange.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ForwardSplineVerticalDeltaRange%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L64">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineVerticalDeltaRange_" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineVerticalDeltaRange*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ForwardSplineVerticalDeltaRange" data-uid="UE4.GraphEditor.GraphEditorSettings.ForwardSplineVerticalDeltaRange">ForwardSplineVerticalDeltaRange</h4>
+  <div class="markdown level1 summary"><p>The maximum value to clamp the absolute value of the vertical distance between endpoints when calculating tangents (when the wire is moving forward)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float ForwardSplineVerticalDeltaRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_FunctionCallNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.FunctionCallNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L209">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_FunctionCallNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.FunctionCallNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_FunctionCallNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.FunctionCallNodeTitleColor">FunctionCallNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>CallFunction node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor FunctionCallNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_FunctionTerminatorNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.FunctionTerminatorNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L224">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_FunctionTerminatorNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.FunctionTerminatorNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_FunctionTerminatorNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.FunctionTerminatorNodeTitleColor">FunctionTerminatorNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Function Terminator node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor FunctionTerminatorNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_IndexPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.IndexPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L199">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_IndexPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.IndexPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_IndexPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.IndexPinTypeColor">IndexPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Index pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor IndexPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_InterfacePinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.InterfacePinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L159">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_InterfacePinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.InterfacePinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_InterfacePinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.InterfacePinTypeColor">InterfacePinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Interface pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor InterfacePinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_IntPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.IntPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L124">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_IntPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.IntPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_IntPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.IntPinTypeColor">IntPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Integer pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor IntPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_NamePinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.NamePinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L134">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_NamePinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.NamePinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_NamePinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.NamePinTypeColor">NamePinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Name pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor NamePinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ObjectPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ObjectPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L154">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ObjectPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.ObjectPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ObjectPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.ObjectPinTypeColor">ObjectPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Object pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor ObjectPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_PaddingAbovePin.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.PaddingAbovePin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L25">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_PaddingAbovePin_" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingAbovePin*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_PaddingAbovePin" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingAbovePin">PaddingAbovePin</h4>
+  <div class="markdown level1 summary"><p>The amount of padding above a pin (defaults to 4)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PaddingAbovePin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_PaddingBelowPin.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.PaddingBelowPin%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L30">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_PaddingBelowPin_" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingBelowPin*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_PaddingBelowPin" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingBelowPin">PaddingBelowPin</h4>
+  <div class="markdown level1 summary"><p>The amount of padding below a pin (defaults to 4)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PaddingBelowPin { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_PaddingLeftOfOutput.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.PaddingLeftOfOutput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_PaddingLeftOfOutput_" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingLeftOfOutput*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_PaddingLeftOfOutput" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingLeftOfOutput">PaddingLeftOfOutput</h4>
+  <div class="markdown level1 summary"><p>The amount of horizontal padding towards the center of a node on an output pin (defaults to 10)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PaddingLeftOfOutput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_PaddingRightOfInput.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.PaddingRightOfInput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L35">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_PaddingRightOfInput_" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingRightOfInput*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_PaddingRightOfInput" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingRightOfInput">PaddingRightOfInput</h4>
+  <div class="markdown level1 summary"><p>The amount of horizontal padding towards the center of a node on an input pin (defaults to 10)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PaddingRightOfInput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_PaddingTowardsNodeEdge.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.PaddingTowardsNodeEdge%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L45">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_PaddingTowardsNodeEdge_" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingTowardsNodeEdge*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_PaddingTowardsNodeEdge" data-uid="UE4.GraphEditor.GraphEditorSettings.PaddingTowardsNodeEdge">PaddingTowardsNodeEdge</h4>
+  <div class="markdown level1 summary"><p>The amount of padding towards the node edge (defaults to 10, can be negative to make pins overlap or stick out of a node</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float PaddingTowardsNodeEdge { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ParentFunctionCallNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ParentFunctionCallNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L219">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ParentFunctionCallNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.ParentFunctionCallNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ParentFunctionCallNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.ParentFunctionCallNodeTitleColor">ParentFunctionCallNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Parent class function call node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor ParentFunctionCallNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_PreviewNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.PreviewNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L249">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_PreviewNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.PreviewNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_PreviewNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.PreviewNodeTitleColor">PreviewNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Preview node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor PreviewNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_PureFunctionCallNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.PureFunctionCallNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L214">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_PureFunctionCallNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.PureFunctionCallNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_PureFunctionCallNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.PureFunctionCallNodeTitleColor">PureFunctionCallNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Pure function call node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor PureFunctionCallNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_ResultNodeTitleColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.ResultNodeTitleColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L239">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_ResultNodeTitleColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.ResultNodeTitleColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_ResultNodeTitleColor" data-uid="UE4.GraphEditor.GraphEditorSettings.ResultNodeTitleColor">ResultNodeTitleColor</h4>
+  <div class="markdown level1 summary"><p>Result node title color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor ResultNodeTitleColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_RotatorPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.RotatorPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L189">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_RotatorPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.RotatorPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_RotatorPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.RotatorPinTypeColor">RotatorPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Rotator pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor RotatorPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_SoftClassPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.SoftClassPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L144">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_SoftClassPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.SoftClassPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_SoftClassPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.SoftClassPinTypeColor">SoftClassPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Asset Class pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor SoftClassPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_SoftObjectPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.SoftObjectPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L139">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_SoftObjectPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.SoftObjectPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_SoftObjectPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.SoftObjectPinTypeColor">SoftObjectPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Asset pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor SoftObjectPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_SplineHoverTolerance.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.SplineHoverTolerance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L54">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_SplineHoverTolerance_" data-uid="UE4.GraphEditor.GraphEditorSettings.SplineHoverTolerance*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_SplineHoverTolerance" data-uid="UE4.GraphEditor.GraphEditorSettings.SplineHoverTolerance">SplineHoverTolerance</h4>
+  <div class="markdown level1 summary"><p>The distance threshold controlling how close the mouse has to be to the spline in order to trigger a hover response</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float SplineHoverTolerance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_StaticClass.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L341">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_StaticClass_" data-uid="UE4.GraphEditor.GraphEditorSettings.StaticClass*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_StaticClass" data-uid="UE4.GraphEditor.GraphEditorSettings.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_StringPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.StringPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L164">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_StringPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.StringPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_StringPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.StringPinTypeColor">StringPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>String pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor StringPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_StructPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.StructPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L174">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_StructPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.StructPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_StructPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.StructPinTypeColor">StructPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Struct pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor StructPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TextPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TextPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L169">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TextPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.TextPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TextPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.TextPinTypeColor">TextPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Text pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor TextPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceAttackColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceAttackColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L264">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceAttackColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceAttackColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceAttackColor" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceAttackColor">TraceAttackColor</h4>
+  <div class="markdown level1 summary"><p>The color to display execution wires that were just executed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor TraceAttackColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceAttackHoldPeriod.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceAttackHoldPeriod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L274">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceAttackHoldPeriod_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceAttackHoldPeriod*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceAttackHoldPeriod" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceAttackHoldPeriod">TraceAttackHoldPeriod</h4>
+  <div class="markdown level1 summary"><p>How long is the attack color fully visible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceAttackHoldPeriod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceAttackWireThickness.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceAttackWireThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L269">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceAttackWireThickness_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceAttackWireThickness*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceAttackWireThickness" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceAttackWireThickness">TraceAttackWireThickness</h4>
+  <div class="markdown level1 summary"><p>Trace Attack Wire Thickness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceAttackWireThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceDecayExponent.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceDecayExponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L284">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceDecayExponent_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceDecayExponent*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceDecayExponent" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceDecayExponent">TraceDecayExponent</h4>
+  <div class="markdown level1 summary"><p>Trace Decay Exponent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceDecayExponent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceDecayPeriod.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceDecayPeriod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L279">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceDecayPeriod_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceDecayPeriod*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceDecayPeriod" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceDecayPeriod">TraceDecayPeriod</h4>
+  <div class="markdown level1 summary"><p>How long does it take to fade from the attack to the sustain color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceDecayPeriod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TracePositionBonusPeriod.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TracePositionBonusPeriod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L324">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TracePositionBonusPeriod_" data-uid="UE4.GraphEditor.GraphEditorSettings.TracePositionBonusPeriod*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TracePositionBonusPeriod" data-uid="UE4.GraphEditor.GraphEditorSettings.TracePositionBonusPeriod">TracePositionBonusPeriod</h4>
+  <div class="markdown level1 summary"><p>How much of a bonus does an exec get for being near the top of the trace stack, and how does that fall off with position?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TracePositionBonusPeriod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TracePositionExponent.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TracePositionExponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L329">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TracePositionExponent_" data-uid="UE4.GraphEditor.GraphEditorSettings.TracePositionExponent*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TracePositionExponent" data-uid="UE4.GraphEditor.GraphEditorSettings.TracePositionExponent">TracePositionExponent</h4>
+  <div class="markdown level1 summary"><p>Trace Position Exponent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TracePositionExponent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceReleaseColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceReleaseColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L304">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceReleaseColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleaseColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceReleaseColor" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleaseColor">TraceReleaseColor</h4>
+  <div class="markdown level1 summary"><p>The color to fade to for execution wires on release</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor TraceReleaseColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceReleaseExponent.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceReleaseExponent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L319">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceReleaseExponent_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleaseExponent*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceReleaseExponent" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleaseExponent">TraceReleaseExponent</h4>
+  <div class="markdown level1 summary"><p>Trace Release Exponent</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceReleaseExponent { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceReleasePeriod.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceReleasePeriod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L314">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceReleasePeriod_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleasePeriod*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceReleasePeriod" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleasePeriod">TraceReleasePeriod</h4>
+  <div class="markdown level1 summary"><p>How long does it take to fade from the sustain to the release color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceReleasePeriod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceReleaseWireThickness.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceReleaseWireThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L309">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceReleaseWireThickness_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleaseWireThickness*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceReleaseWireThickness" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceReleaseWireThickness">TraceReleaseWireThickness</h4>
+  <div class="markdown level1 summary"><p>The thickness to drop down to during release / for unexecuted wires when debugging</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceReleaseWireThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceSustainColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceSustainColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L289">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceSustainColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceSustainColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceSustainColor" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceSustainColor">TraceSustainColor</h4>
+  <div class="markdown level1 summary"><p>Trace Sustain Color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor TraceSustainColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceSustainHoldPeriod.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceSustainHoldPeriod%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L299">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceSustainHoldPeriod_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceSustainHoldPeriod*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceSustainHoldPeriod" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceSustainHoldPeriod">TraceSustainHoldPeriod</h4>
+  <div class="markdown level1 summary"><p>How long is the sustain color fully visible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceSustainHoldPeriod { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TraceSustainWireThickness.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TraceSustainWireThickness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L294">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TraceSustainWireThickness_" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceSustainWireThickness*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TraceSustainWireThickness" data-uid="UE4.GraphEditor.GraphEditorSettings.TraceSustainWireThickness">TraceSustainWireThickness</h4>
+  <div class="markdown level1 summary"><p>Trace Sustain Wire Thickness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TraceSustainWireThickness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_TransformPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.TransformPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L194">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_TransformPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.TransformPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_TransformPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.TransformPinTypeColor">TransformPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Transform pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor TransformPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_VectorPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.VectorPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L184">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_VectorPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.VectorPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_VectorPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.VectorPinTypeColor">VectorPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Vector pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor VectorPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_WildcardPinTypeColor.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.WildcardPinTypeColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L179">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_WildcardPinTypeColor_" data-uid="UE4.GraphEditor.GraphEditorSettings.WildcardPinTypeColor*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_WildcardPinTypeColor" data-uid="UE4.GraphEditor.GraphEditorSettings.WildcardPinTypeColor">WildcardPinTypeColor</h4>
+  <div class="markdown level1 summary"><p>Wildcard pin type color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LinearColor WildcardPinTypeColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.LinearColor.html">LinearColor</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L345">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_New_" data-uid="UE4.GraphEditor.GraphEditorSettings.New*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.GraphEditor.GraphEditorSettings.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GraphEditorSettings New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.GraphEditor.GraphEditorSettings.html">GraphEditorSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings_op_Implicit_System_IntPtr__UE4_GraphEditor_GraphEditorSettings.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings.op_Implicit(System.IntPtr)~UE4.GraphEditor.GraphEditorSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L339">View Source</a>
+  </span>
+  <a id="UE4_GraphEditor_GraphEditorSettings_op_Implicit_" data-uid="UE4.GraphEditor.GraphEditorSettings.op_Implicit*"></a>
+  <h4 id="UE4_GraphEditor_GraphEditorSettings_op_Implicit_System_IntPtr__UE4_GraphEditor_GraphEditorSettings" data-uid="UE4.GraphEditor.GraphEditorSettings.op_Implicit(System.IntPtr)~UE4.GraphEditor.GraphEditorSettings">Implicit(IntPtr to GraphEditorSettings)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator GraphEditorSettings(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.GraphEditor.GraphEditorSettings.html">GraphEditorSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_GraphEditor_GraphEditorSettings.md&amp;value=---%0Auid%3A%20UE4.GraphEditor.GraphEditorSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/GraphEditor/GraphEditorSettings.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

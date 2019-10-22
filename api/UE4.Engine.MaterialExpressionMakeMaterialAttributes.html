@@ -1,0 +1,983 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MaterialExpressionMakeMaterialAttributes
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MaterialExpressionMakeMaterialAttributes
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes">
+  
+  
+  <h1 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes" class="text-break">Class MaterialExpressionMakeMaterialAttributes
+  </h1>
+  <div class="markdown level0 summary"><p>Material Expression Make Material Attributes</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.Engine.MaterialExpression.html">MaterialExpression</a></div>
+    <div class="level3"><span class="xref">MaterialExpressionMakeMaterialAttributes</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_MaterialExpressionEditorX">MaterialExpression.MaterialExpressionEditorX</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_MaterialExpressionEditorY">MaterialExpression.MaterialExpressionEditorY</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_GraphNode">MaterialExpression.GraphNode</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_MaterialExpressionGuid">MaterialExpression.MaterialExpressionGuid</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_Material">MaterialExpression.Material</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_Function">MaterialExpression.Function</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bRealtimePreview">MaterialExpression.bRealtimePreview</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bNeedToUpdatePreview">MaterialExpression.bNeedToUpdatePreview</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bIsParameterExpression">MaterialExpression.bIsParameterExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bCommentBubbleVisible">MaterialExpression.bCommentBubbleVisible</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bShowOutputNameOnPin">MaterialExpression.bShowOutputNameOnPin</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bShowMaskColorsOnPin">MaterialExpression.bShowMaskColorsOnPin</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bHidePreviewWindow">MaterialExpression.bHidePreviewWindow</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bCollapsed">MaterialExpression.bCollapsed</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bShaderInputData">MaterialExpression.bShaderInputData</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bShowInputs">MaterialExpression.bShowInputs</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.MaterialExpression.html#UE4_Engine_MaterialExpression_bShowOutputs">MaterialExpression.bShowOutputs</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MaterialExpressionMakeMaterialAttributes : MaterialExpression</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_AmbientOcclusion.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.AmbientOcclusion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L89">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_AmbientOcclusion_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.AmbientOcclusion*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_AmbientOcclusion" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.AmbientOcclusion">AmbientOcclusion</h4>
+  <div class="markdown level1 summary"><p>Ambient Occlusion</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput AmbientOcclusion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_BaseColor.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.BaseColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L19">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_BaseColor_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.BaseColor*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_BaseColor" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.BaseColor">BaseColor</h4>
+  <div class="markdown level1 summary"><p>Base Color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput BaseColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_ClearCoat.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.ClearCoat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L79">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_ClearCoat_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.ClearCoat*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_ClearCoat" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.ClearCoat">ClearCoat</h4>
+  <div class="markdown level1 summary"><p>Clear Coat</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput ClearCoat { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_ClearCoatRoughness.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.ClearCoatRoughness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_ClearCoatRoughness_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.ClearCoatRoughness*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_ClearCoatRoughness" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.ClearCoatRoughness">ClearCoatRoughness</h4>
+  <div class="markdown level1 summary"><p>Clear Coat Roughness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput ClearCoatRoughness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_CustomizedUVs.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.CustomizedUVs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L99">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_CustomizedUVs_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.CustomizedUVs*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_CustomizedUVs" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.CustomizedUVs">CustomizedUVs</h4>
+  <div class="markdown level1 summary"><p>Customized UVs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput CustomizedUVs { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L118">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_DefaultObject_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.DefaultObject*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_DefaultObject" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MaterialExpressionMakeMaterialAttributes DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.MaterialExpressionMakeMaterialAttributes.html">MaterialExpressionMakeMaterialAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_EmissiveColor.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.EmissiveColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L39">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_EmissiveColor_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.EmissiveColor*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_EmissiveColor" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.EmissiveColor">EmissiveColor</h4>
+  <div class="markdown level1 summary"><p>Emissive Color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput EmissiveColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_Metallic.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.Metallic%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L24">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Metallic_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Metallic*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Metallic" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Metallic">Metallic</h4>
+  <div class="markdown level1 summary"><p>Metallic</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput Metallic { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_Normal.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.Normal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L54">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Normal_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Normal*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Normal" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Normal">Normal</h4>
+  <div class="markdown level1 summary"><p>Normal</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput Normal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_Opacity.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.Opacity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Opacity_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Opacity*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Opacity" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Opacity">Opacity</h4>
+  <div class="markdown level1 summary"><p>Opacity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput Opacity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_OpacityMask.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.OpacityMask%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L49">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_OpacityMask_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.OpacityMask*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_OpacityMask" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.OpacityMask">OpacityMask</h4>
+  <div class="markdown level1 summary"><p>Opacity Mask</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput OpacityMask { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_PixelDepthOffset.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.PixelDepthOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L104">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_PixelDepthOffset_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.PixelDepthOffset*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_PixelDepthOffset" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.PixelDepthOffset">PixelDepthOffset</h4>
+  <div class="markdown level1 summary"><p>Pixel Depth Offset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput PixelDepthOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_Refraction.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.Refraction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L94">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Refraction_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Refraction*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Refraction" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Refraction">Refraction</h4>
+  <div class="markdown level1 summary"><p>Refraction</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput Refraction { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_Roughness.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.Roughness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L34">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Roughness_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Roughness*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Roughness" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Roughness">Roughness</h4>
+  <div class="markdown level1 summary"><p>Roughness</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput Roughness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_Specular.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.Specular%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L29">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Specular_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Specular*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_Specular" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.Specular">Specular</h4>
+  <div class="markdown level1 summary"><p>Specular</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput Specular { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L116">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_StaticClass_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.StaticClass*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_StaticClass" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_SubsurfaceColor.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.SubsurfaceColor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L74">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_SubsurfaceColor_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.SubsurfaceColor*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_SubsurfaceColor" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.SubsurfaceColor">SubsurfaceColor</h4>
+  <div class="markdown level1 summary"><p>Subsurface Color</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput SubsurfaceColor { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_TessellationMultiplier.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.TessellationMultiplier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L69">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_TessellationMultiplier_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.TessellationMultiplier*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_TessellationMultiplier" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.TessellationMultiplier">TessellationMultiplier</h4>
+  <div class="markdown level1 summary"><p>Tessellation Multiplier</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput TessellationMultiplier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_WorldDisplacement.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.WorldDisplacement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L64">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_WorldDisplacement_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.WorldDisplacement*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_WorldDisplacement" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.WorldDisplacement">WorldDisplacement</h4>
+  <div class="markdown level1 summary"><p>World Displacement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput WorldDisplacement { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_WorldPositionOffset.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.WorldPositionOffset%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L59">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_WorldPositionOffset_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.WorldPositionOffset*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_WorldPositionOffset" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.WorldPositionOffset">WorldPositionOffset</h4>
+  <div class="markdown level1 summary"><p>World Position Offset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionInput WorldPositionOffset { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ExpressionInput.html">ExpressionInput</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L120">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_New_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.New*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MaterialExpressionMakeMaterialAttributes New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.MaterialExpressionMakeMaterialAttributes.html">MaterialExpressionMakeMaterialAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes_op_Implicit_System_IntPtr__UE4_Engine_MaterialExpressionMakeMaterialAttributes.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes.op_Implicit(System.IntPtr)~UE4.Engine.MaterialExpressionMakeMaterialAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L114">View Source</a>
+  </span>
+  <a id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_op_Implicit_" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.op_Implicit*"></a>
+  <h4 id="UE4_Engine_MaterialExpressionMakeMaterialAttributes_op_Implicit_System_IntPtr__UE4_Engine_MaterialExpressionMakeMaterialAttributes" data-uid="UE4.Engine.MaterialExpressionMakeMaterialAttributes.op_Implicit(System.IntPtr)~UE4.Engine.MaterialExpressionMakeMaterialAttributes">Implicit(IntPtr to MaterialExpressionMakeMaterialAttributes)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator MaterialExpressionMakeMaterialAttributes(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.MaterialExpressionMakeMaterialAttributes.html">MaterialExpressionMakeMaterialAttributes</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_MaterialExpressionMakeMaterialAttributes.md&amp;value=---%0Auid%3A%20UE4.Engine.MaterialExpressionMakeMaterialAttributes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/MaterialExpressionMakeMaterialAttributes.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

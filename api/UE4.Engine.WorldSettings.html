@@ -1,0 +1,2713 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class WorldSettings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class WorldSettings
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.WorldSettings">
+  
+  
+  <h1 id="UE4_Engine_WorldSettings" data-uid="UE4.Engine.WorldSettings" class="text-break">Class WorldSettings
+  </h1>
+  <div class="markdown level0 summary"><p>Actor containing all script accessible world properties.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><a class="xref" href="UE4.Engine.Actor.html">Actor</a></div>
+    <div class="level3"><a class="xref" href="UE4.Engine.Info.html">Info</a></div>
+    <div class="level4"><span class="xref">WorldSettings</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.Engine.Info.html#UE4_Engine_Info_SpriteComponent">Info.SpriteComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnBecomeViewTarget">Actor.K2_OnBecomeViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnEndViewTarget">Actor.K2_OnEndViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_OnReset">Actor.K2_OnReset</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorBeginCursorOver">Actor.ReceiveActorBeginCursorOver</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorBeginOverlap">Actor.ReceiveActorBeginOverlap</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorEndCursorOver">Actor.ReceiveActorEndCursorOver</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorEndOverlap">Actor.ReceiveActorEndOverlap</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnClicked">Actor.ReceiveActorOnClicked</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchBegin">Actor.ReceiveActorOnInputTouchBegin</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchEnd">Actor.ReceiveActorOnInputTouchEnd</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchEnter">Actor.ReceiveActorOnInputTouchEnter</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnInputTouchLeave">Actor.ReceiveActorOnInputTouchLeave</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveActorOnReleased">Actor.ReceiveActorOnReleased</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveAnyDamage">Actor.ReceiveAnyDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveBeginPlay">Actor.ReceiveBeginPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveDestroyed">Actor.ReceiveDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveEndPlay">Actor.ReceiveEndPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveHit">Actor.ReceiveHit</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceivePointDamage">Actor.ReceivePointDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveRadialDamage">Actor.ReceiveRadialDamage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReceiveTick">Actor.ReceiveTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_UserConstructionScript">Actor.UserConstructionScript</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ActorHasTag_UE4_Core_Name_">Actor.ActorHasTag(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddComponent_UE4_Core_Name_System_Boolean_UE4_CoreUObject_Transform_UE4_CoreUObject_UObject_">Actor.AddComponent(Name, Boolean, Transform, UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddTickPrerequisiteActor_UE4_Engine_Actor_">Actor.AddTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AddTickPrerequisiteComponent_UE4_Engine_ActorComponent_">Actor.AddTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_DetachRootComponentFromParent_System_Boolean_">Actor.DetachRootComponentFromParent(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_DisableInput_UE4_Engine_PlayerController_">Actor.DisableInput(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_EnableInput_UE4_Engine_PlayerController_">Actor.EnableInput(PlayerController)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_FlushNetDormancy">Actor.FlushNetDormancy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ForceNetUpdate">Actor.ForceNetUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorBounds_System_Boolean_">Actor.GetActorBounds(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorEnableCollision">Actor.GetActorEnableCollision()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorEyesViewPoint">Actor.GetActorEyesViewPoint()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorForwardVector">Actor.GetActorForwardVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorLabel">Actor.GetActorLabel()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorRelativeScale3D">Actor.GetActorRelativeScale3D()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorRightVector">Actor.GetActorRightVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorScale3D">Actor.GetActorScale3D()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorTickInterval">Actor.GetActorTickInterval()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorTimeDilation">Actor.GetActorTimeDilation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetActorUpVector">Actor.GetActorUpVector()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAllChildActors_System_Boolean_">Actor.GetAllChildActors(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachedActors">Actor.GetAttachedActors()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachParentActor">Actor.GetAttachParentActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetAttachParentSocketName">Actor.GetAttachParentSocketName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__">Actor.GetComponentByClass(SubclassOf&lt;ActorComponent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentsByClass_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__">Actor.GetComponentsByClass(SubclassOf&lt;ActorComponent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetComponentsByTag_UE4_CoreUObject_SubclassOf_UE4_Engine_ActorComponent__UE4_Core_Name_">Actor.GetComponentsByTag(SubclassOf&lt;ActorComponent&gt;, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetDistanceTo_UE4_Engine_Actor_">Actor.GetDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetDotProductTo_UE4_Engine_Actor_">Actor.GetDotProductTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetFolderPath_UE4_Core_Name_">Actor.GetFolderPath(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetGameTimeSinceCreation">Actor.GetGameTimeSinceCreation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetHorizontalDistanceTo_UE4_Engine_Actor_">Actor.GetHorizontalDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetHorizontalDotProductTo_UE4_Engine_Actor_">Actor.GetHorizontalDotProductTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputAxisKeyValue_UE4_InputCore_Key_">Actor.GetInputAxisKeyValue(Key)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputAxisValue_UE4_Core_Name_">Actor.GetInputAxisValue(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInputVectorAxisValue_UE4_InputCore_Key_">Actor.GetInputVectorAxisValue(Key)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInstigator">Actor.GetInstigator()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetInstigatorController">Actor.GetInstigatorController()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetLifeSpan">Actor.GetLifeSpan()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetLocalRole">Actor.GetLocalRole()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOverlappingActors_UE4_CoreUObject_SubclassOf_UE4_Engine_Actor__">Actor.GetOverlappingActors(SubclassOf&lt;Actor&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOverlappingComponents">Actor.GetOverlappingComponents()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetOwner">Actor.GetOwner()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetParentActor">Actor.GetParentActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetParentComponent">Actor.GetParentComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetRemoteRole">Actor.GetRemoteRole()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetSquaredDistanceTo_UE4_Engine_Actor_">Actor.GetSquaredDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetTickableWhenPaused">Actor.GetTickableWhenPaused()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetTransform">Actor.GetTransform()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetVelocity">Actor.GetVelocity()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GetVerticalDistanceTo_UE4_Engine_Actor_">Actor.GetVerticalDistanceTo(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_HasAuthority">Actor.HasAuthority()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsActorBeingDestroyed">Actor.IsActorBeingDestroyed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsActorTickEnabled">Actor.IsActorTickEnabled()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsChildActor">Actor.IsChildActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsEditable">Actor.IsEditable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsHiddenEd">Actor.IsHiddenEd()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsHiddenEdAtStartup">Actor.IsHiddenEdAtStartup()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsOverlappingActor_UE4_Engine_Actor_">Actor.IsOverlappingActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsSelectable">Actor.IsSelectable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_IsTemporarilyHiddenInEditor_System_Boolean_">Actor.IsTemporarilyHiddenInEditor(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorLocalTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_AddActorLocalTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldOffset_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldOffset(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AddActorWorldTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_AddActorWorldTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachRootComponentTo_UE4_Engine_SceneComponent_UE4_Core_Name_System_Byte_System_Boolean_">Actor.K2_AttachRootComponentTo(SceneComponent, Name, Byte, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachRootComponentToActor_UE4_Engine_Actor_UE4_Core_Name_System_Byte_System_Boolean_">Actor.K2_AttachRootComponentToActor(Actor, Name, Byte, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachToActor_UE4_Engine_Actor_UE4_Core_Name_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_System_Boolean_">Actor.K2_AttachToActor(Actor, Name, EAttachmentRule, EAttachmentRule, EAttachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_AttachToComponent_UE4_Engine_SceneComponent_UE4_Core_Name_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_UE4_Engine_EAttachmentRule_System_Boolean_">Actor.K2_AttachToComponent(SceneComponent, Name, EAttachmentRule, EAttachmentRule, EAttachmentRule, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DestroyActor">Actor.K2_DestroyActor()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DestroyComponent_UE4_Engine_ActorComponent_">Actor.K2_DestroyComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_DetachFromActor_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_UE4_Engine_EDetachmentRule_">Actor.K2_DetachFromActor(EDetachmentRule, EDetachmentRule, EDetachmentRule)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetActorLocation">Actor.K2_GetActorLocation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetActorRotation">Actor.K2_GetActorRotation()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_GetRootComponent">Actor.K2_GetRootComponent()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_SetActorLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorLocationAndRotation_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_SetActorLocationAndRotation(Vector, Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeLocation_UE4_CoreUObject_Vector_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeLocation(Vector, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeRotation_UE4_CoreUObject_Rotator_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeRotation(Rotator, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRelativeTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_SetActorRelativeTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorRotation_UE4_CoreUObject_Rotator_System_Boolean_">Actor.K2_SetActorRotation(Rotator, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_SetActorTransform_UE4_CoreUObject_Transform_System_Boolean_System_Boolean_">Actor.K2_SetActorTransform(Transform, Boolean, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_K2_TeleportTo_UE4_CoreUObject_Vector_UE4_CoreUObject_Rotator_">Actor.K2_TeleportTo(Vector, Rotator)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MakeMIDForMaterial_UE4_Engine_MaterialInterface_">Actor.MakeMIDForMaterial(MaterialInterface)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MakeNoise_System_Single_UE4_Engine_Pawn_UE4_CoreUObject_Vector_System_Single_UE4_Core_Name_">Actor.MakeNoise(Single, Pawn, Vector, Single, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PrestreamTextures_System_Single_System_Boolean_System_Int32_">Actor.PrestreamTextures(Single, Boolean, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoveTickPrerequisiteActor_UE4_Engine_Actor_">Actor.RemoveTickPrerequisiteActor(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoveTickPrerequisiteComponent_UE4_Engine_ActorComponent_">Actor.RemoveTickPrerequisiteComponent(ActorComponent)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorEnableCollision_System_Boolean_">Actor.SetActorEnableCollision(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorHiddenInGame_System_Boolean_">Actor.SetActorHiddenInGame(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorLabel_System_String_System_Boolean_">Actor.SetActorLabel(String, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorRelativeScale3D_UE4_CoreUObject_Vector_">Actor.SetActorRelativeScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorScale3D_UE4_CoreUObject_Vector_">Actor.SetActorScale3D(Vector)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorTickEnabled_System_Boolean_">Actor.SetActorTickEnabled(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetActorTickInterval_System_Single_">Actor.SetActorTickInterval(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetFolderPath_UE4_Core_Name_">Actor.SetFolderPath(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetIsTemporarilyHiddenInEditor_System_Boolean_">Actor.SetIsTemporarilyHiddenInEditor(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetLifeSpan_System_Single_">Actor.SetLifeSpan(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetNetDormancy_System_Byte_">Actor.SetNetDormancy(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetOwner_UE4_Engine_Actor_">Actor.SetOwner(Actor)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetReplicateMovement_System_Boolean_">Actor.SetReplicateMovement(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetReplicates_System_Boolean_">Actor.SetReplicates(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetTickableWhenPaused_System_Boolean_">Actor.SetTickableWhenPaused(Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SetTickGroup_System_Byte_">Actor.SetTickGroup(Byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SnapRootComponentTo_UE4_Engine_Actor_UE4_Core_Name_">Actor.SnapRootComponentTo(Actor, Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_TearOff">Actor.TearOff()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_WasRecentlyRendered_System_Single_">Actor.WasRecentlyRendered(Single)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PrimaryActorTick">Actor.PrimaryActorTick</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHidden">Actor.bHidden</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetTemporary">Actor.bNetTemporary</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetStartup">Actor.bNetStartup</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bOnlyRelevantToOwner">Actor.bOnlyRelevantToOwner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAlwaysRelevant">Actor.bAlwaysRelevant</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplicateMovement">Actor.bReplicateMovement</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bTearOff">Actor.bTearOff</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bExchangedRoles">Actor.bExchangedRoles</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetLoadOnClient">Actor.bNetLoadOnClient</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bNetUseOwnerRelevancy">Actor.bNetUseOwnerRelevancy</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bRelevantForNetworkReplays">Actor.bRelevantForNetworkReplays</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplayRewindable">Actor.bReplayRewindable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAllowTickBeforeBeginPlay">Actor.bAllowTickBeforeBeginPlay</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAutoDestroyWhenFinished">Actor.bAutoDestroyWhenFinished</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bBlockInput">Actor.bBlockInput</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCanBeDamaged">Actor.bCanBeDamaged</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCollideWhenPlacing">Actor.bCollideWhenPlacing</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bFindCameraComponentWhenViewTarget">Actor.bFindCameraComponentWhenViewTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bGenerateOverlapEventsDuringLevelStreaming">Actor.bGenerateOverlapEventsDuringLevelStreaming</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIgnoresOriginShifting">Actor.bIgnoresOriginShifting</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bEnableAutoLODGeneration">Actor.bEnableAutoLODGeneration</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIsEditorOnlyActor">Actor.bIsEditorOnlyActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorSeamlessTraveled">Actor.bActorSeamlessTraveled</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bReplicates">Actor.bReplicates</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bCanBeInCluster">Actor.bCanBeInCluster</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bAllowReceiveTickEventOnDedicatedServer">Actor.bAllowReceiveTickEventOnDedicatedServer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorEnableCollision">Actor.bActorEnableCollision</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorIsBeingDestroyed">Actor.bActorIsBeingDestroyed</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RemoteRole">Actor.RemoteRole</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ReplicatedMovement">Actor.ReplicatedMovement</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InitialLifeSpan">Actor.InitialLifeSpan</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_CustomTimeDilation">Actor.CustomTimeDilation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AttachmentReplication">Actor.AttachmentReplication</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Owner">Actor.Owner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetDriverName">Actor.NetDriverName</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Role">Actor.Role</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetDormancy">Actor.NetDormancy</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_AutoReceiveInput">Actor.AutoReceiveInput</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InputPriority">Actor.InputPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InputComponent">Actor.InputComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetCullDistanceSquared">Actor.NetCullDistanceSquared</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetTag">Actor.NetTag</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetUpdateFrequency">Actor.NetUpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_MinNetUpdateFrequency">Actor.MinNetUpdateFrequency</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_NetPriority">Actor.NetPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Instigator">Actor.Instigator</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_Children">Actor.Children</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_RootComponent">Actor.RootComponent</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_PivotOffset">Actor.PivotOffset</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_ControllingMatineeActors">Actor.ControllingMatineeActors</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_GroupActor">Actor.GroupActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_SpriteScale">Actor.SpriteScale</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_FolderPath">Actor.FolderPath</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEd">Actor.bHiddenEd</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bIsEditorPreviewActor">Actor.bIsEditorPreviewActor</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdLayer">Actor.bHiddenEdLayer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdLevel">Actor.bHiddenEdLevel</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bLockLocation">Actor.bLockLocation</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bActorLabelEditable">Actor.bActorLabelEditable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bEditable">Actor.bEditable</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bListedInSceneOutliner">Actor.bListedInSceneOutliner</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_bHiddenEdTemporary">Actor.bHiddenEdTemporary</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_InstanceComponents">Actor.InstanceComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.Engine.Actor.html#UE4_Engine_Actor_BlueprintCreatedComponents">Actor.BlueprintCreatedComponents</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_WorldSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class WorldSettings : Info</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_AssetUserData.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.AssetUserData%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L257">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_AssetUserData_" data-uid="UE4.Engine.WorldSettings.AssetUserData*"></a>
+  <h4 id="UE4_Engine_WorldSettings_AssetUserData" data-uid="UE4.Engine.WorldSettings.AssetUserData">AssetUserData</h4>
+  <div class="markdown level1 summary"><p>Array of user data stored with the asset</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;AssetUserData&gt; AssetUserData { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.AssetUserData.html">AssetUserData</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bEnableAISystem.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bEnableAISystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L24">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bEnableAISystem_" data-uid="UE4.Engine.WorldSettings.bEnableAISystem*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bEnableAISystem" data-uid="UE4.Engine.WorldSettings.bEnableAISystem">bEnableAISystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableAISystem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bEnableHierarchicalLODSystem.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bEnableHierarchicalLODSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L164">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bEnableHierarchicalLODSystem_" data-uid="UE4.Engine.WorldSettings.bEnableHierarchicalLODSystem*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bEnableHierarchicalLODSystem" data-uid="UE4.Engine.WorldSettings.bEnableHierarchicalLODSystem">bEnableHierarchicalLODSystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableHierarchicalLODSystem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bEnableNavigationSystem.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bEnableNavigationSystem%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L21">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bEnableNavigationSystem_" data-uid="UE4.Engine.WorldSettings.bEnableNavigationSystem*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bEnableNavigationSystem" data-uid="UE4.Engine.WorldSettings.bEnableNavigationSystem">bEnableNavigationSystem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableNavigationSystem { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bEnableWorldBoundsChecks.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bEnableWorldBoundsChecks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L18">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bEnableWorldBoundsChecks_" data-uid="UE4.Engine.WorldSettings.bEnableWorldBoundsChecks*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bEnableWorldBoundsChecks" data-uid="UE4.Engine.WorldSettings.bEnableWorldBoundsChecks">bEnableWorldBoundsChecks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableWorldBoundsChecks { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bEnableWorldComposition.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bEnableWorldComposition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L27">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bEnableWorldComposition_" data-uid="UE4.Engine.WorldSettings.bEnableWorldComposition*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bEnableWorldComposition" data-uid="UE4.Engine.WorldSettings.bEnableWorldComposition">bEnableWorldComposition</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableWorldComposition { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bEnableWorldOriginRebasing.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bEnableWorldOriginRebasing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L33">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bEnableWorldOriginRebasing_" data-uid="UE4.Engine.WorldSettings.bEnableWorldOriginRebasing*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bEnableWorldOriginRebasing" data-uid="UE4.Engine.WorldSettings.bEnableWorldOriginRebasing">bEnableWorldOriginRebasing</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bEnableWorldOriginRebasing { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bForceNoPrecomputedLighting.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bForceNoPrecomputedLighting%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L140">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bForceNoPrecomputedLighting_" data-uid="UE4.Engine.WorldSettings.bForceNoPrecomputedLighting*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bForceNoPrecomputedLighting" data-uid="UE4.Engine.WorldSettings.bForceNoPrecomputedLighting">bForceNoPrecomputedLighting</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bForceNoPrecomputedLighting { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bGenerateSingleClusterForLevel.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bGenerateSingleClusterForLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L176">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bGenerateSingleClusterForLevel_" data-uid="UE4.Engine.WorldSettings.bGenerateSingleClusterForLevel*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bGenerateSingleClusterForLevel" data-uid="UE4.Engine.WorldSettings.bGenerateSingleClusterForLevel">bGenerateSingleClusterForLevel</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bGenerateSingleClusterForLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bGlobalGravitySet.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bGlobalGravitySet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bGlobalGravitySet_" data-uid="UE4.Engine.WorldSettings.bGlobalGravitySet*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bGlobalGravitySet" data-uid="UE4.Engine.WorldSettings.bGlobalGravitySet">bGlobalGravitySet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bGlobalGravitySet { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bHighPriorityLoading.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bHighPriorityLoading%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L238">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bHighPriorityLoading_" data-uid="UE4.Engine.WorldSettings.bHighPriorityLoading*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bHighPriorityLoading" data-uid="UE4.Engine.WorldSettings.bHighPriorityLoading">bHighPriorityLoading</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bHighPriorityLoading { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bHighPriorityLoadingLocal.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bHighPriorityLoadingLocal%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L242">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bHighPriorityLoadingLocal_" data-uid="UE4.Engine.WorldSettings.bHighPriorityLoadingLocal*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bHighPriorityLoadingLocal" data-uid="UE4.Engine.WorldSettings.bHighPriorityLoadingLocal">bHighPriorityLoadingLocal</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bHighPriorityLoadingLocal { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bMinimizeBSPSections.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bMinimizeBSPSections%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L96">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bMinimizeBSPSections_" data-uid="UE4.Engine.WorldSettings.bMinimizeBSPSections*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bMinimizeBSPSections" data-uid="UE4.Engine.WorldSettings.bMinimizeBSPSections">bMinimizeBSPSections</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bMinimizeBSPSections { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_BookmarkArray.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.BookmarkArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L279">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_BookmarkArray_" data-uid="UE4.Engine.WorldSettings.BookmarkArray*"></a>
+  <h4 id="UE4_Engine_WorldSettings_BookmarkArray" data-uid="UE4.Engine.WorldSettings.BookmarkArray">BookmarkArray</h4>
+  <div class="markdown level1 summary"><p>Bookmark Array</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectArrayField&lt;BookmarkBase&gt; BookmarkArray { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Core.ObjectArrayField-1.html">ObjectArrayField</a>&lt;<a class="xref" href="UE4.Engine.BookmarkBase.html">BookmarkBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_BookMarks.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.BookMarks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L189">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_BookMarks_" data-uid="UE4.Engine.WorldSettings.BookMarks*"></a>
+  <h4 id="UE4_Engine_WorldSettings_BookMarks" data-uid="UE4.Engine.WorldSettings.BookMarks">BookMarks</h4>
+  <div class="markdown level1 summary"><p>Book Marks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BookMark BookMarks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.BookMark.html">BookMark</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bOverrideDefaultBroadphaseSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bOverrideDefaultBroadphaseSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L247">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bOverrideDefaultBroadphaseSettings_" data-uid="UE4.Engine.WorldSettings.bOverrideDefaultBroadphaseSettings*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bOverrideDefaultBroadphaseSettings" data-uid="UE4.Engine.WorldSettings.bOverrideDefaultBroadphaseSettings">bOverrideDefaultBroadphaseSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bOverrideDefaultBroadphaseSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bPlaceCellsOnlyAlongCameraTracks.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bPlaceCellsOnlyAlongCameraTracks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L124">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bPlaceCellsOnlyAlongCameraTracks_" data-uid="UE4.Engine.WorldSettings.bPlaceCellsOnlyAlongCameraTracks*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bPlaceCellsOnlyAlongCameraTracks" data-uid="UE4.Engine.WorldSettings.bPlaceCellsOnlyAlongCameraTracks">bPlaceCellsOnlyAlongCameraTracks</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bPlaceCellsOnlyAlongCameraTracks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bPrecomputeVisibility.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bPrecomputeVisibility%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L120">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bPrecomputeVisibility_" data-uid="UE4.Engine.WorldSettings.bPrecomputeVisibility*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bPrecomputeVisibility" data-uid="UE4.Engine.WorldSettings.bPrecomputeVisibility">bPrecomputeVisibility</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bPrecomputeVisibility { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_BroadphaseSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.BroadphaseSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L252">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_BroadphaseSettings_" data-uid="UE4.Engine.WorldSettings.BroadphaseSettings*"></a>
+  <h4 id="UE4_Engine_WorldSettings_BroadphaseSettings" data-uid="UE4.Engine.WorldSettings.BroadphaseSettings">BroadphaseSettings</h4>
+  <div class="markdown level1 summary"><p>Broadphase Settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BroadphaseSettings BroadphaseSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.BroadphaseSettings.html">BroadphaseSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bUseClientSideLevelStreamingVolumes.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bUseClientSideLevelStreamingVolumes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L30">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bUseClientSideLevelStreamingVolumes_" data-uid="UE4.Engine.WorldSettings.bUseClientSideLevelStreamingVolumes*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bUseClientSideLevelStreamingVolumes" data-uid="UE4.Engine.WorldSettings.bUseClientSideLevelStreamingVolumes">bUseClientSideLevelStreamingVolumes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseClientSideLevelStreamingVolumes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_bWorldGravitySet.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.bWorldGravitySet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L36">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_bWorldGravitySet_" data-uid="UE4.Engine.WorldSettings.bWorldGravitySet*"></a>
+  <h4 id="UE4_Engine_WorldSettings_bWorldGravitySet" data-uid="UE4.Engine.WorldSettings.bWorldGravitySet">bWorldGravitySet</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bWorldGravitySet { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultAmbientZoneSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultAmbientZoneSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L155">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultAmbientZoneSettings_" data-uid="UE4.Engine.WorldSettings.DefaultAmbientZoneSettings*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultAmbientZoneSettings" data-uid="UE4.Engine.WorldSettings.DefaultAmbientZoneSettings">DefaultAmbientZoneSettings</h4>
+  <div class="markdown level1 summary"><p>Default interior settings used by audio volumes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InteriorSettings DefaultAmbientZoneSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.InteriorSettings.html">InteriorSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultBaseSoundMix.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultBaseSoundMix%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L160">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultBaseSoundMix_" data-uid="UE4.Engine.WorldSettings.DefaultBaseSoundMix*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultBaseSoundMix" data-uid="UE4.Engine.WorldSettings.DefaultBaseSoundMix">DefaultBaseSoundMix</h4>
+  <div class="markdown level1 summary"><p>Default Base SoundMix.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SoundMix DefaultBaseSoundMix { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.SoundMix.html">SoundMix</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultBookmarkClass.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultBookmarkClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L274">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultBookmarkClass_" data-uid="UE4.Engine.WorldSettings.DefaultBookmarkClass*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultBookmarkClass" data-uid="UE4.Engine.WorldSettings.DefaultBookmarkClass">DefaultBookmarkClass</h4>
+  <div class="markdown level1 summary"><p>Class that will be used when creating new bookmarks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;BookmarkBase&gt; DefaultBookmarkClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.BookmarkBase.html">BookmarkBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_DefaultBookmarkClass_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Old bookmarks may be recreated with the new class where possible.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultColorScale.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultColorScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L101">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultColorScale_" data-uid="UE4.Engine.WorldSettings.DefaultColorScale*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultColorScale" data-uid="UE4.Engine.WorldSettings.DefaultColorScale">DefaultColorScale</h4>
+  <div class="markdown level1 summary"><p>Default color scale for the level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector DefaultColorScale { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Vector.html">Vector</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultGameMode.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultGameMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L83">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultGameMode_" data-uid="UE4.Engine.WorldSettings.DefaultGameMode*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultGameMode" data-uid="UE4.Engine.WorldSettings.DefaultGameMode">DefaultGameMode</h4>
+  <div class="markdown level1 summary"><p>The default GameMode to use when starting this map in the game. If this value is NULL, the INI setting for default game type is used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;GameModeBase&gt; DefaultGameMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.GameModeBase.html">GameModeBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultMaxDistanceFieldOcclusionDistance.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultMaxDistanceFieldOcclusionDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L105">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultMaxDistanceFieldOcclusionDistance_" data-uid="UE4.Engine.WorldSettings.DefaultMaxDistanceFieldOcclusionDistance*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultMaxDistanceFieldOcclusionDistance" data-uid="UE4.Engine.WorldSettings.DefaultMaxDistanceFieldOcclusionDistance">DefaultMaxDistanceFieldOcclusionDistance</h4>
+  <div class="markdown level1 summary"><p>Max occlusion distance used by mesh distance fields, overridden if there is a movable skylight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DefaultMaxDistanceFieldOcclusionDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L300">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultObject_" data-uid="UE4.Engine.WorldSettings.DefaultObject*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultObject" data-uid="UE4.Engine.WorldSettings.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WorldSettings DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.WorldSettings.html">WorldSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultPhysicsVolumeClass.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultPhysicsVolumeClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L75">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultPhysicsVolumeClass_" data-uid="UE4.Engine.WorldSettings.DefaultPhysicsVolumeClass*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultPhysicsVolumeClass" data-uid="UE4.Engine.WorldSettings.DefaultPhysicsVolumeClass">DefaultPhysicsVolumeClass</h4>
+  <div class="markdown level1 summary"><p>level specific default physics volume</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;DefaultPhysicsVolume&gt; DefaultPhysicsVolumeClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.DefaultPhysicsVolume.html">DefaultPhysicsVolume</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DefaultReverbSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DefaultReverbSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L150">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DefaultReverbSettings_" data-uid="UE4.Engine.WorldSettings.DefaultReverbSettings*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DefaultReverbSettings" data-uid="UE4.Engine.WorldSettings.DefaultReverbSettings">DefaultReverbSettings</h4>
+  <div class="markdown level1 summary"><p>Default reverb settings used by audio volumes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReverbSettings DefaultReverbSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.ReverbSettings.html">ReverbSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DemoPlayTimeDilation.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DemoPlayTimeDilation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L209">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DemoPlayTimeDilation_" data-uid="UE4.Engine.WorldSettings.DemoPlayTimeDilation*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DemoPlayTimeDilation" data-uid="UE4.Engine.WorldSettings.DemoPlayTimeDilation">DemoPlayTimeDilation</h4>
+  <div class="markdown level1 summary"><p>Additional TimeDilation used to control demo playback speed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DemoPlayTimeDilation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_DynamicIndirectShadowsSelfShadowingIntensity.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.DynamicIndirectShadowsSelfShadowingIntensity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L116">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_DynamicIndirectShadowsSelfShadowingIntensity_" data-uid="UE4.Engine.WorldSettings.DynamicIndirectShadowsSelfShadowingIntensity*"></a>
+  <h4 id="UE4_Engine_WorldSettings_DynamicIndirectShadowsSelfShadowingIntensity" data-uid="UE4.Engine.WorldSettings.DynamicIndirectShadowsSelfShadowingIntensity">DynamicIndirectShadowsSelfShadowingIntensity</h4>
+  <div class="markdown level1 summary"><p>Controls the intensity of self-shadowing from capsule indirect shadows.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float DynamicIndirectShadowsSelfShadowingIntensity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_DynamicIndirectShadowsSelfShadowingIntensity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>These types of shadows use approximate occluder representations, so reducing self-shadowing intensity can hide those artifacts.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_GameNetworkManagerClass.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.GameNetworkManagerClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L87">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_GameNetworkManagerClass_" data-uid="UE4.Engine.WorldSettings.GameNetworkManagerClass*"></a>
+  <h4 id="UE4_Engine_WorldSettings_GameNetworkManagerClass" data-uid="UE4.Engine.WorldSettings.GameNetworkManagerClass">GameNetworkManagerClass</h4>
+  <div class="markdown level1 summary"><p>Class of GameNetworkManager to spawn for network games</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;GameNetworkManager&gt; GameNetworkManagerClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.GameNetworkManager.html">GameNetworkManager</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_GlobalDistanceFieldViewDistance.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.GlobalDistanceFieldViewDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L110">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_GlobalDistanceFieldViewDistance_" data-uid="UE4.Engine.WorldSettings.GlobalDistanceFieldViewDistance*"></a>
+  <h4 id="UE4_Engine_WorldSettings_GlobalDistanceFieldViewDistance" data-uid="UE4.Engine.WorldSettings.GlobalDistanceFieldViewDistance">GlobalDistanceFieldViewDistance</h4>
+  <div class="markdown level1 summary"><p>Distance from the camera that the global distance field should cover.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlobalDistanceFieldViewDistance { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_GlobalGravityZ.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.GlobalGravityZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L71">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_GlobalGravityZ_" data-uid="UE4.Engine.WorldSettings.GlobalGravityZ*"></a>
+  <h4 id="UE4_Engine_WorldSettings_GlobalGravityZ" data-uid="UE4.Engine.WorldSettings.GlobalGravityZ">GlobalGravityZ</h4>
+  <div class="markdown level1 summary"><p>optional level specific gravity override set by level designer</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GlobalGravityZ { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_KillZ.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.KillZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L58">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_KillZ_" data-uid="UE4.Engine.WorldSettings.KillZ*"></a>
+  <h4 id="UE4_Engine_WorldSettings_KillZ" data-uid="UE4.Engine.WorldSettings.KillZ">KillZ</h4>
+  <div class="markdown level1 summary"><p>any actor falling below this level gets destroyed</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float KillZ { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_KillZDamageType.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.KillZDamageType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L62">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_KillZDamageType_" data-uid="UE4.Engine.WorldSettings.KillZDamageType*"></a>
+  <h4 id="UE4_Engine_WorldSettings_KillZDamageType" data-uid="UE4.Engine.WorldSettings.KillZDamageType">KillZDamageType</h4>
+  <div class="markdown level1 summary"><p>The type of damage inflicted when a actor falls below KillZ</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;DamageType&gt; KillZDamageType { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.DamageType.html">DamageType</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_LastBookmarkClass.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.LastBookmarkClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L286">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_LastBookmarkClass_" data-uid="UE4.Engine.WorldSettings.LastBookmarkClass*"></a>
+  <h4 id="UE4_Engine_WorldSettings_LastBookmarkClass" data-uid="UE4.Engine.WorldSettings.LastBookmarkClass">LastBookmarkClass</h4>
+  <div class="markdown level1 summary"><p>Tracked so we can detect changes from Config</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;BookmarkBase&gt; LastBookmarkClass { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.BookmarkBase.html">BookmarkBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_LightmassSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.LightmassSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L145">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_LightmassSettings_" data-uid="UE4.Engine.WorldSettings.LightmassSettings*"></a>
+  <h4 id="UE4_Engine_WorldSettings_LightmassSettings" data-uid="UE4.Engine.WorldSettings.LightmassSettings">LightmassSettings</h4>
+  <div class="markdown level1 summary"><p>Lightmass Settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LightmassWorldInfoSettings LightmassSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.LightmassWorldInfoSettings.html">LightmassWorldInfoSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_MatineeTimeDilation.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.MatineeTimeDilation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L204">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_MatineeTimeDilation_" data-uid="UE4.Engine.WorldSettings.MatineeTimeDilation*"></a>
+  <h4 id="UE4_Engine_WorldSettings_MatineeTimeDilation" data-uid="UE4.Engine.WorldSettings.MatineeTimeDilation">MatineeTimeDilation</h4>
+  <div class="markdown level1 summary"><p>Additional time dilation used by Matinee (or Sequencer) slomo track.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MatineeTimeDilation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_MatineeTimeDilation_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Transient because this is often
+temporarily modified by the editor when previewing slow motion effects, yet we don't want it saved or loaded from level packages.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_MaxGlobalTimeDilation.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.MaxGlobalTimeDilation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L219">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_MaxGlobalTimeDilation_" data-uid="UE4.Engine.WorldSettings.MaxGlobalTimeDilation*"></a>
+  <h4 id="UE4_Engine_WorldSettings_MaxGlobalTimeDilation" data-uid="UE4.Engine.WorldSettings.MaxGlobalTimeDilation">MaxGlobalTimeDilation</h4>
+  <div class="markdown level1 summary"><p>Highest acceptable global time dilation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxGlobalTimeDilation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_MaxNumberOfBookmarks.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.MaxNumberOfBookmarks%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L268">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_MaxNumberOfBookmarks_" data-uid="UE4.Engine.WorldSettings.MaxNumberOfBookmarks*"></a>
+  <h4 id="UE4_Engine_WorldSettings_MaxNumberOfBookmarks" data-uid="UE4.Engine.WorldSettings.MaxNumberOfBookmarks">MaxNumberOfBookmarks</h4>
+  <div class="markdown level1 summary"><p>Maximum number of bookmarks allowed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int MaxNumberOfBookmarks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_MaxNumberOfBookmarks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Changing this will change the allocation of the bookmarks array, and when shrinking
+may cause some bookmarks to become eligible for GC.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_MaxUndilatedFrameTime.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.MaxUndilatedFrameTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L229">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_MaxUndilatedFrameTime_" data-uid="UE4.Engine.WorldSettings.MaxUndilatedFrameTime*"></a>
+  <h4 id="UE4_Engine_WorldSettings_MaxUndilatedFrameTime" data-uid="UE4.Engine.WorldSettings.MaxUndilatedFrameTime">MaxUndilatedFrameTime</h4>
+  <div class="markdown level1 summary"><p>Largest possible frametime, not considering dilation. Equiv to 1/SlowestFPS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MaxUndilatedFrameTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_MinGlobalTimeDilation.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.MinGlobalTimeDilation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L214">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_MinGlobalTimeDilation_" data-uid="UE4.Engine.WorldSettings.MinGlobalTimeDilation*"></a>
+  <h4 id="UE4_Engine_WorldSettings_MinGlobalTimeDilation" data-uid="UE4.Engine.WorldSettings.MinGlobalTimeDilation">MinGlobalTimeDilation</h4>
+  <div class="markdown level1 summary"><p>Lowest acceptable global time dilation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinGlobalTimeDilation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_MinUndilatedFrameTime.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.MinUndilatedFrameTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L224">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_MinUndilatedFrameTime_" data-uid="UE4.Engine.WorldSettings.MinUndilatedFrameTime*"></a>
+  <h4 id="UE4_Engine_WorldSettings_MinUndilatedFrameTime" data-uid="UE4.Engine.WorldSettings.MinUndilatedFrameTime">MinUndilatedFrameTime</h4>
+  <div class="markdown level1 summary"><p>Smallest possible frametime, not considering dilation. Equiv to 1/FastestFPS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MinUndilatedFrameTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_MonoCullingDistance.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.MonoCullingDistance%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L185">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_MonoCullingDistance_" data-uid="UE4.Engine.WorldSettings.MonoCullingDistance*"></a>
+  <h4 id="UE4_Engine_WorldSettings_MonoCullingDistance" data-uid="UE4.Engine.WorldSettings.MonoCullingDistance">MonoCullingDistance</h4>
+  <div class="markdown level1 summary"><p>Distance from the player after which content will be rendered in mono if monoscopic far field rendering is activated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float MonoCullingDistance { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_NavigationSystemConfig.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.NavigationSystemConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L49">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_NavigationSystemConfig_" data-uid="UE4.Engine.WorldSettings.NavigationSystemConfig*"></a>
+  <h4 id="UE4_Engine_WorldSettings_NavigationSystemConfig" data-uid="UE4.Engine.WorldSettings.NavigationSystemConfig">NavigationSystemConfig</h4>
+  <div class="markdown level1 summary"><p>Holds parameters for NavigationSystem's creation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigationSystemConfig NavigationSystemConfig { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.NavigationSystemConfig.html">NavigationSystemConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_NavigationSystemConfig_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Set to Null will result
+in NavigationSystem instance not being created for this world. Note that
+if set NavigationSystemConfigOverride will be used instead.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_NavigationSystemConfigOverride.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.NavigationSystemConfigOverride%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L53">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_NavigationSystemConfigOverride_" data-uid="UE4.Engine.WorldSettings.NavigationSystemConfigOverride*"></a>
+  <h4 id="UE4_Engine_WorldSettings_NavigationSystemConfigOverride" data-uid="UE4.Engine.WorldSettings.NavigationSystemConfigOverride">NavigationSystemConfigOverride</h4>
+  <div class="markdown level1 summary"><p>Overrides NavigationSystemConfig.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NavigationSystemConfig NavigationSystemConfigOverride { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.NavigationSystemConfig.html">NavigationSystemConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_NumHLODLevels.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.NumHLODLevels%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L172">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_NumHLODLevels_" data-uid="UE4.Engine.WorldSettings.NumHLODLevels*"></a>
+  <h4 id="UE4_Engine_WorldSettings_NumHLODLevels" data-uid="UE4.Engine.WorldSettings.NumHLODLevels">NumHLODLevels</h4>
+  <div class="markdown level1 summary"><p>Num HLODLevels</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int NumHLODLevels { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_PackedLightAndShadowMapTextureSize.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.PackedLightAndShadowMapTextureSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L92">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_PackedLightAndShadowMapTextureSize_" data-uid="UE4.Engine.WorldSettings.PackedLightAndShadowMapTextureSize*"></a>
+  <h4 id="UE4_Engine_WorldSettings_PackedLightAndShadowMapTextureSize" data-uid="UE4.Engine.WorldSettings.PackedLightAndShadowMapTextureSize">PackedLightAndShadowMapTextureSize</h4>
+  <div class="markdown level1 summary"><p>Maximum size of textures for packed light and shadow maps</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PackedLightAndShadowMapTextureSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_Pauser.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.Pauser%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L234">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_Pauser_" data-uid="UE4.Engine.WorldSettings.Pauser*"></a>
+  <h4 id="UE4_Engine_WorldSettings_Pauser" data-uid="UE4.Engine.WorldSettings.Pauser">Pauser</h4>
+  <div class="markdown level1 summary"><p>If paused, FName of person pausing the game.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerState Pauser { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.PlayerState.html">PlayerState</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_PhysicsCollisionHandlerClass.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.PhysicsCollisionHandlerClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L79">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_PhysicsCollisionHandlerClass_" data-uid="UE4.Engine.WorldSettings.PhysicsCollisionHandlerClass*"></a>
+  <h4 id="UE4_Engine_WorldSettings_PhysicsCollisionHandlerClass" data-uid="UE4.Engine.WorldSettings.PhysicsCollisionHandlerClass">PhysicsCollisionHandlerClass</h4>
+  <div class="markdown level1 summary"><p>optional level specific collision handler</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubclassOf&lt;PhysicsCollisionHandler&gt; PhysicsCollisionHandlerClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.SubclassOf-1.html">SubclassOf</a>&lt;<a class="xref" href="UE4.Engine.PhysicsCollisionHandler.html">PhysicsCollisionHandler</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L298">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_StaticClass_" data-uid="UE4.Engine.WorldSettings.StaticClass*"></a>
+  <h4 id="UE4_Engine_WorldSettings_StaticClass" data-uid="UE4.Engine.WorldSettings.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_TimeDilation.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.TimeDilation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L195">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_TimeDilation_" data-uid="UE4.Engine.WorldSettings.TimeDilation*"></a>
+  <h4 id="UE4_Engine_WorldSettings_TimeDilation" data-uid="UE4.Engine.WorldSettings.TimeDilation">TimeDilation</h4>
+  <div class="markdown level1 summary"><p>Normally 1 - scales real time passage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float TimeDilation { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_TimeDilation_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Warning - most use cases should use GetEffectiveTimeDilation() instead of reading from this directly</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_VisibilityAggressiveness.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.VisibilityAggressiveness%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L136">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_VisibilityAggressiveness_" data-uid="UE4.Engine.WorldSettings.VisibilityAggressiveness*"></a>
+  <h4 id="UE4_Engine_WorldSettings_VisibilityAggressiveness" data-uid="UE4.Engine.WorldSettings.VisibilityAggressiveness">VisibilityAggressiveness</h4>
+  <div class="markdown level1 summary"><p>Determines how aggressive precomputed visibility should be.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte VisibilityAggressiveness { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_VisibilityAggressiveness_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>More aggressive settings cull more objects but also cause more visibility errors like popping.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_VisibilityCellSize.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.VisibilityCellSize%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L130">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_VisibilityCellSize_" data-uid="UE4.Engine.WorldSettings.VisibilityCellSize*"></a>
+  <h4 id="UE4_Engine_WorldSettings_VisibilityCellSize" data-uid="UE4.Engine.WorldSettings.VisibilityCellSize">VisibilityCellSize</h4>
+  <div class="markdown level1 summary"><p>World space size of precomputed visibility cells in x and y.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int VisibilityCellSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_WorldSettings_VisibilityCellSize_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Smaller sizes produce more effective occlusion culling at the cost of increased runtime memory usage and lighting build times.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_WorldGravityZ.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.WorldGravityZ%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L66">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_WorldGravityZ_" data-uid="UE4.Engine.WorldSettings.WorldGravityZ*"></a>
+  <h4 id="UE4_Engine_WorldSettings_WorldGravityZ" data-uid="UE4.Engine.WorldSettings.WorldGravityZ">WorldGravityZ</h4>
+  <div class="markdown level1 summary"><p>current gravity actually being used</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WorldGravityZ { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_WorldToMeters.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.WorldToMeters%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L181">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_WorldToMeters_" data-uid="UE4.Engine.WorldSettings.WorldToMeters*"></a>
+  <h4 id="UE4_Engine_WorldSettings_WorldToMeters" data-uid="UE4.Engine.WorldSettings.WorldToMeters">WorldToMeters</h4>
+  <div class="markdown level1 summary"><p>scale of 1uu to 1m in real world measurements, for HMD and other physically tracked devices (e.g. 1uu = 1cm would be 100.0)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float WorldToMeters { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L302">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_New_" data-uid="UE4.Engine.WorldSettings.New*"></a>
+  <h4 id="UE4_Engine_WorldSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.WorldSettings.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static WorldSettings New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.WorldSettings.html">WorldSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings_op_Implicit_System_IntPtr__UE4_Engine_WorldSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings.op_Implicit(System.IntPtr)~UE4.Engine.WorldSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L296">View Source</a>
+  </span>
+  <a id="UE4_Engine_WorldSettings_op_Implicit_" data-uid="UE4.Engine.WorldSettings.op_Implicit*"></a>
+  <h4 id="UE4_Engine_WorldSettings_op_Implicit_System_IntPtr__UE4_Engine_WorldSettings" data-uid="UE4.Engine.WorldSettings.op_Implicit(System.IntPtr)~UE4.Engine.WorldSettings">Implicit(IntPtr to WorldSettings)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator WorldSettings(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.WorldSettings.html">WorldSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_WorldSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.WorldSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/WorldSettings.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

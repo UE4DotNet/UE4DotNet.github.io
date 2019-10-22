@@ -1,0 +1,3027 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GameUserSettings
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GameUserSettings
+   ">
+    <meta name="generator" content="docfx 2.46.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UE4.Engine.GameUserSettings">
+  
+  
+  <h1 id="UE4_Engine_GameUserSettings" data-uid="UE4.Engine.GameUserSettings" class="text-break">Class GameUserSettings
+  </h1>
+  <div class="markdown level0 summary"><p>Stores user settings for a game (for example graphics and sound settings), with the ability to save and load to and from a file.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></div>
+    <div class="level2"><span class="xref">GameUserSettings</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_TransientPackage">UObject.TransientPackage</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo__1_UE4_CoreUObject_UObject_">UObject.CastTo&lt;T&gt;(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_CastTo_UE4_CoreUObject_UObject_System_Type_">UObject.CastTo(UObject, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_RemoveObject_UE4_CoreUObject_UObject_">UObject.RemoveObject(UObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_MakeObjectArrayField__1_UE4_Core_NativeArray__">UObject.MakeObjectArrayField&lt;T&gt;(NativeArray*)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_NotImplemented__1">UObject.NotImplemented&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Construct">UObject.Construct()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetHashCode">UObject.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetName">UObject.GetName()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ToString">UObject.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_Name">UObject.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject__None">UObject._None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_None">UObject.None</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ObjPointer">UObject.ObjPointer</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadObjectFromClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_System_Boolean_">UObject.LoadObjectFromClass(Class, UObject, String, String, LoadFlags, PackageMap, Boolean)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_LoadClass_UE4_CoreUObject_Class_UE4_CoreUObject_UObject_System_String_System_String_UE4_CoreUObject_LoadFlags_UE4_CoreUObject_PackageMap_">UObject.LoadClass(Class, UObject, String, String, LoadFlags, PackageMap)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_GetPropertyFor__1_UE4_Core_Name_">UObject.GetPropertyFor&lt;T&gt;(Name)</a>
+    </div>
+    <div>
+      <a class="xref" href="UE4.CoreUObject.UObject.html#UE4_CoreUObject_UObject_ExecuteUbergraph">UObject.ExecuteUbergraph</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="UE4.Engine.html">UE4.Engine</a></h6>
+  <h6><strong>Assembly</strong>: UE4DotNet.dll</h6>
+  <h5 id="UE4_Engine_GameUserSettings_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameUserSettings : UObject</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_AudioQualityLevel.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.AudioQualityLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L354">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_AudioQualityLevel_" data-uid="UE4.Engine.GameUserSettings.AudioQualityLevel*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_AudioQualityLevel" data-uid="UE4.Engine.GameUserSettings.AudioQualityLevel">AudioQualityLevel</h4>
+  <div class="markdown level1 summary"><p>Audio Quality Level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int AudioQualityLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_bUseDesiredScreenHeight.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.bUseDesiredScreenHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L373">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_bUseDesiredScreenHeight_" data-uid="UE4.Engine.GameUserSettings.bUseDesiredScreenHeight*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_bUseDesiredScreenHeight" data-uid="UE4.Engine.GameUserSettings.bUseDesiredScreenHeight">bUseDesiredScreenHeight</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseDesiredScreenHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_bUseDynamicResolution.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.bUseDynamicResolution%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L314">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_bUseDynamicResolution_" data-uid="UE4.Engine.GameUserSettings.bUseDynamicResolution*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_bUseDynamicResolution" data-uid="UE4.Engine.GameUserSettings.bUseDynamicResolution">bUseDynamicResolution</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseDynamicResolution { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_bUseHDRDisplayOutput.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.bUseHDRDisplayOutput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L419">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_bUseHDRDisplayOutput_" data-uid="UE4.Engine.GameUserSettings.bUseHDRDisplayOutput*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_bUseHDRDisplayOutput" data-uid="UE4.Engine.GameUserSettings.bUseHDRDisplayOutput">bUseHDRDisplayOutput</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseHDRDisplayOutput { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_bUseVSync.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.bUseVSync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L310">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_bUseVSync_" data-uid="UE4.Engine.GameUserSettings.bUseVSync*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_bUseVSync" data-uid="UE4.Engine.GameUserSettings.bUseVSync">bUseVSync</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool bUseVSync { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_DefaultObject.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.DefaultObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L439">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_DefaultObject_" data-uid="UE4.Engine.GameUserSettings.DefaultObject*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_DefaultObject" data-uid="UE4.Engine.GameUserSettings.DefaultObject">DefaultObject</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Default Object for this Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameUserSettings DefaultObject { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.GameUserSettings.html">GameUserSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_DesiredScreenHeight.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.DesiredScreenHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L378">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_DesiredScreenHeight_" data-uid="UE4.Engine.GameUserSettings.DesiredScreenHeight*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_DesiredScreenHeight" data-uid="UE4.Engine.GameUserSettings.DesiredScreenHeight">DesiredScreenHeight</h4>
+  <div class="markdown level1 summary"><p>Desired screen height used to calculate the resolution scale when user changes display mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DesiredScreenHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_DesiredScreenWidth.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.DesiredScreenWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L369">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_DesiredScreenWidth_" data-uid="UE4.Engine.GameUserSettings.DesiredScreenWidth*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_DesiredScreenWidth" data-uid="UE4.Engine.GameUserSettings.DesiredScreenWidth">DesiredScreenWidth</h4>
+  <div class="markdown level1 summary"><p>Desired screen width used to calculate the resolution scale when user changes display mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int DesiredScreenWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_FrameRateLimit.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.FrameRateLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L364">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_FrameRateLimit_" data-uid="UE4.Engine.GameUserSettings.FrameRateLimit*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_FrameRateLimit" data-uid="UE4.Engine.GameUserSettings.FrameRateLimit">FrameRateLimit</h4>
+  <div class="markdown level1 summary"><p>Frame rate cap</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float FrameRateLimit { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_FullscreenMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.FullscreenMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L338">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_FullscreenMode_" data-uid="UE4.Engine.GameUserSettings.FullscreenMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_FullscreenMode" data-uid="UE4.Engine.GameUserSettings.FullscreenMode">FullscreenMode</h4>
+  <div class="markdown level1 summary"><p>Game window fullscreen mode
+0 = Fullscreen
+1 = Windowed fullscreen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int FullscreenMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_FullscreenMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>2 = Windowed</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_HDRDisplayOutputNits.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.HDRDisplayOutputNits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L424">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_HDRDisplayOutputNits_" data-uid="UE4.Engine.GameUserSettings.HDRDisplayOutputNits*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_HDRDisplayOutputNits" data-uid="UE4.Engine.GameUserSettings.HDRDisplayOutputNits">HDRDisplayOutputNits</h4>
+  <div class="markdown level1 summary"><p>HDR</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int HDRDisplayOutputNits { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastConfirmedAudioQualityLevel.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastConfirmedAudioQualityLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L359">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastConfirmedAudioQualityLevel_" data-uid="UE4.Engine.GameUserSettings.LastConfirmedAudioQualityLevel*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastConfirmedAudioQualityLevel" data-uid="UE4.Engine.GameUserSettings.LastConfirmedAudioQualityLevel">LastConfirmedAudioQualityLevel</h4>
+  <div class="markdown level1 summary"><p>Last Confirmed Audio Quality Level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastConfirmedAudioQualityLevel { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastConfirmedFullscreenMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastConfirmedFullscreenMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L343">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastConfirmedFullscreenMode_" data-uid="UE4.Engine.GameUserSettings.LastConfirmedFullscreenMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastConfirmedFullscreenMode" data-uid="UE4.Engine.GameUserSettings.LastConfirmedFullscreenMode">LastConfirmedFullscreenMode</h4>
+  <div class="markdown level1 summary"><p>Last user confirmed fullscreen mode setting.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastConfirmedFullscreenMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastCPUBenchmarkResult.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastCPUBenchmarkResult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L403">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastCPUBenchmarkResult_" data-uid="UE4.Engine.GameUserSettings.LastCPUBenchmarkResult*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastCPUBenchmarkResult" data-uid="UE4.Engine.GameUserSettings.LastCPUBenchmarkResult">LastCPUBenchmarkResult</h4>
+  <div class="markdown level1 summary"><p>Result of the last benchmark (CPU); -1 if there has not been a benchmark run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastCPUBenchmarkResult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastGPUBenchmarkMultiplier.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastGPUBenchmarkMultiplier%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L415">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastGPUBenchmarkMultiplier_" data-uid="UE4.Engine.GameUserSettings.LastGPUBenchmarkMultiplier*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastGPUBenchmarkMultiplier" data-uid="UE4.Engine.GameUserSettings.LastGPUBenchmarkMultiplier">LastGPUBenchmarkMultiplier</h4>
+  <div class="markdown level1 summary"><p>Multiplier used against the last GPU benchmark</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastGPUBenchmarkMultiplier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastGPUBenchmarkResult.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastGPUBenchmarkResult%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L408">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastGPUBenchmarkResult_" data-uid="UE4.Engine.GameUserSettings.LastGPUBenchmarkResult*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastGPUBenchmarkResult" data-uid="UE4.Engine.GameUserSettings.LastGPUBenchmarkResult">LastGPUBenchmarkResult</h4>
+  <div class="markdown level1 summary"><p>Result of the last benchmark (GPU); -1 if there has not been a benchmark run</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastGPUBenchmarkResult { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastRecommendedScreenHeight.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastRecommendedScreenHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L398">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastRecommendedScreenHeight_" data-uid="UE4.Engine.GameUserSettings.LastRecommendedScreenHeight*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastRecommendedScreenHeight" data-uid="UE4.Engine.GameUserSettings.LastRecommendedScreenHeight">LastRecommendedScreenHeight</h4>
+  <div class="markdown level1 summary"><p>Result of the last benchmark; calculated resolution to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastRecommendedScreenHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastRecommendedScreenWidth.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastRecommendedScreenWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L393">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastRecommendedScreenWidth_" data-uid="UE4.Engine.GameUserSettings.LastRecommendedScreenWidth*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastRecommendedScreenWidth" data-uid="UE4.Engine.GameUserSettings.LastRecommendedScreenWidth">LastRecommendedScreenWidth</h4>
+  <div class="markdown level1 summary"><p>Result of the last benchmark; calculated resolution to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float LastRecommendedScreenWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastUserConfirmedDesiredScreenHeight.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastUserConfirmedDesiredScreenHeight%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L388">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastUserConfirmedDesiredScreenHeight_" data-uid="UE4.Engine.GameUserSettings.LastUserConfirmedDesiredScreenHeight*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastUserConfirmedDesiredScreenHeight" data-uid="UE4.Engine.GameUserSettings.LastUserConfirmedDesiredScreenHeight">LastUserConfirmedDesiredScreenHeight</h4>
+  <div class="markdown level1 summary"><p>Desired screen height used to calculate the resolution scale when user changes display mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastUserConfirmedDesiredScreenHeight { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LastUserConfirmedDesiredScreenWidth.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LastUserConfirmedDesiredScreenWidth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L383">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LastUserConfirmedDesiredScreenWidth_" data-uid="UE4.Engine.GameUserSettings.LastUserConfirmedDesiredScreenWidth*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LastUserConfirmedDesiredScreenWidth" data-uid="UE4.Engine.GameUserSettings.LastUserConfirmedDesiredScreenWidth">LastUserConfirmedDesiredScreenWidth</h4>
+  <div class="markdown level1 summary"><p>Desired screen width used to calculate the resolution scale when user changes display mode</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LastUserConfirmedDesiredScreenWidth { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_PreferredFullscreenMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.PreferredFullscreenMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L348">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_PreferredFullscreenMode_" data-uid="UE4.Engine.GameUserSettings.PreferredFullscreenMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_PreferredFullscreenMode" data-uid="UE4.Engine.GameUserSettings.PreferredFullscreenMode">PreferredFullscreenMode</h4>
+  <div class="markdown level1 summary"><p>Fullscreen mode to use when toggling between windowed and fullscreen. Same values as r.FullScreenMode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PreferredFullscreenMode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_StaticClass.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.StaticClass%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L437">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_StaticClass_" data-uid="UE4.Engine.GameUserSettings.StaticClass*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_StaticClass" data-uid="UE4.Engine.GameUserSettings.StaticClass">StaticClass</h4>
+  <div class="markdown level1 summary"><p>Get UE4 Class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Class StaticClass { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.Class.html">Class</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_WindowPosX.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.WindowPosX%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L323">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_WindowPosX_" data-uid="UE4.Engine.GameUserSettings.WindowPosX*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_WindowPosX" data-uid="UE4.Engine.GameUserSettings.WindowPosX">WindowPosX</h4>
+  <div class="markdown level1 summary"><p>Window PosX</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WindowPosX { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_WindowPosY.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.WindowPosY%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L328">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_WindowPosY_" data-uid="UE4.Engine.GameUserSettings.WindowPosY*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_WindowPosY" data-uid="UE4.Engine.GameUserSettings.WindowPosY">WindowPosY</h4>
+  <div class="markdown level1 summary"><p>Window PosY</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int WindowPosY { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_ApplyHardwareBenchmarkResults.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.ApplyHardwareBenchmarkResults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L20">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_ApplyHardwareBenchmarkResults_" data-uid="UE4.Engine.GameUserSettings.ApplyHardwareBenchmarkResults*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_ApplyHardwareBenchmarkResults" data-uid="UE4.Engine.GameUserSettings.ApplyHardwareBenchmarkResults">ApplyHardwareBenchmarkResults()</h4>
+  <div class="markdown level1 summary"><p>Applies the settings stored in ScalabilityQuality and saves settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyHardwareBenchmarkResults()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_ApplyNonResolutionSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.ApplyNonResolutionSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L24">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_ApplyNonResolutionSettings_" data-uid="UE4.Engine.GameUserSettings.ApplyNonResolutionSettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_ApplyNonResolutionSettings" data-uid="UE4.Engine.GameUserSettings.ApplyNonResolutionSettings">ApplyNonResolutionSettings()</h4>
+  <div class="markdown level1 summary"><p>Apply Non Resolution Settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyNonResolutionSettings()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_ApplyResolutionSettings_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.ApplyResolutionSettings(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L28">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_ApplyResolutionSettings_" data-uid="UE4.Engine.GameUserSettings.ApplyResolutionSettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_ApplyResolutionSettings_System_Boolean_" data-uid="UE4.Engine.GameUserSettings.ApplyResolutionSettings(System.Boolean)">ApplyResolutionSettings(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Apply Resolution Settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplyResolutionSettings(bool bCheckForCommandLineOverrides)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bCheckForCommandLineOverrides</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_ApplySettings_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.ApplySettings(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L32">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_ApplySettings_" data-uid="UE4.Engine.GameUserSettings.ApplySettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_ApplySettings_System_Boolean_" data-uid="UE4.Engine.GameUserSettings.ApplySettings(System.Boolean)">ApplySettings(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Applies all current user settings to the game and saves to permanent storage (e.g. file), optionally checking for command line overrides.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ApplySettings(bool bCheckForCommandLineOverrides)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bCheckForCommandLineOverrides</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_ConfirmVideoMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.ConfirmVideoMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L36">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_ConfirmVideoMode_" data-uid="UE4.Engine.GameUserSettings.ConfirmVideoMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_ConfirmVideoMode" data-uid="UE4.Engine.GameUserSettings.ConfirmVideoMode">ConfirmVideoMode()</h4>
+  <div class="markdown level1 summary"><p>Mark current video mode settings (fullscreenmode/resolution) as being confirmed by the user</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ConfirmVideoMode()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_EnableHDRDisplayOutput_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.EnableHDRDisplayOutput(System.Boolean%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L40">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_EnableHDRDisplayOutput_" data-uid="UE4.Engine.GameUserSettings.EnableHDRDisplayOutput*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_EnableHDRDisplayOutput_System_Boolean_System_Int32_" data-uid="UE4.Engine.GameUserSettings.EnableHDRDisplayOutput(System.Boolean,System.Int32)">EnableHDRDisplayOutput(Boolean, Int32)</h4>
+  <div class="markdown level1 summary"><p>Enables or disables HDR display output. Can be called again to change the desired nit level</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void EnableHDRDisplayOutput(bool bEnable, int DisplayNits)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bEnable</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">DisplayNits</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetAntiAliasingQuality.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetAntiAliasingQuality%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L44">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetAntiAliasingQuality_" data-uid="UE4.Engine.GameUserSettings.GetAntiAliasingQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetAntiAliasingQuality" data-uid="UE4.Engine.GameUserSettings.GetAntiAliasingQuality">GetAntiAliasingQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the anti-aliasing quality (0..4, higher is better)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAntiAliasingQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetAudioQualityLevel.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetAudioQualityLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L48">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetAudioQualityLevel_" data-uid="UE4.Engine.GameUserSettings.GetAudioQualityLevel*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetAudioQualityLevel" data-uid="UE4.Engine.GameUserSettings.GetAudioQualityLevel">GetAudioQualityLevel()</h4>
+  <div class="markdown level1 summary"><p>Returns the user's audio quality level setting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetAudioQualityLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetCurrentHDRDisplayNits.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetCurrentHDRDisplayNits%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L52">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetCurrentHDRDisplayNits_" data-uid="UE4.Engine.GameUserSettings.GetCurrentHDRDisplayNits*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetCurrentHDRDisplayNits" data-uid="UE4.Engine.GameUserSettings.GetCurrentHDRDisplayNits">GetCurrentHDRDisplayNits()</h4>
+  <div class="markdown level1 summary"><p>Returns 0 if HDR isn't supported or is turned off</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetCurrentHDRDisplayNits()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetDefaultResolution.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetDefaultResolution%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L56">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetDefaultResolution_" data-uid="UE4.Engine.GameUserSettings.GetDefaultResolution*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetDefaultResolution" data-uid="UE4.Engine.GameUserSettings.GetDefaultResolution">GetDefaultResolution()</h4>
+  <div class="markdown level1 summary"><p>@return The default resolution when no resolution is set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPoint GetDefaultResolution()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntPoint.html">IntPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetDefaultResolutionScale.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetDefaultResolutionScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L60">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetDefaultResolutionScale_" data-uid="UE4.Engine.GameUserSettings.GetDefaultResolutionScale*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetDefaultResolutionScale" data-uid="UE4.Engine.GameUserSettings.GetDefaultResolutionScale">GetDefaultResolutionScale()</h4>
+  <div class="markdown level1 summary"><p>Gets the desired resolution quality based on DesiredScreenWidth/Height and the current screen resolution</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetDefaultResolutionScale()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetDefaultWindowMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetDefaultWindowMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L64">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetDefaultWindowMode_" data-uid="UE4.Engine.GameUserSettings.GetDefaultWindowMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetDefaultWindowMode" data-uid="UE4.Engine.GameUserSettings.GetDefaultWindowMode">GetDefaultWindowMode()</h4>
+  <div class="markdown level1 summary"><p>@return The default window mode when no mode is set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte GetDefaultWindowMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetDefaultWindowPosition.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetDefaultWindowPosition%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L68">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetDefaultWindowPosition_" data-uid="UE4.Engine.GameUserSettings.GetDefaultWindowPosition*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetDefaultWindowPosition" data-uid="UE4.Engine.GameUserSettings.GetDefaultWindowPosition">GetDefaultWindowPosition()</h4>
+  <div class="markdown level1 summary"><p>@return The default window position when no position is set</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IntPoint GetDefaultWindowPosition()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntPoint.html">IntPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetDesktopResolution.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetDesktopResolution%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L72">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetDesktopResolution_" data-uid="UE4.Engine.GameUserSettings.GetDesktopResolution*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetDesktopResolution" data-uid="UE4.Engine.GameUserSettings.GetDesktopResolution">GetDesktopResolution()</h4>
+  <div class="markdown level1 summary"><p>Returns user's desktop resolution, in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPoint GetDesktopResolution()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntPoint.html">IntPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetFoliageQuality.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetFoliageQuality%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L76">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetFoliageQuality_" data-uid="UE4.Engine.GameUserSettings.GetFoliageQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetFoliageQuality" data-uid="UE4.Engine.GameUserSettings.GetFoliageQuality">GetFoliageQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the foliage quality (0..4, higher is better)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetFoliageQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetFrameRateLimit.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetFrameRateLimit%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L80">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetFrameRateLimit_" data-uid="UE4.Engine.GameUserSettings.GetFrameRateLimit*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetFrameRateLimit" data-uid="UE4.Engine.GameUserSettings.GetFrameRateLimit">GetFrameRateLimit()</h4>
+  <div class="markdown level1 summary"><p>Gets the user's frame rate limit (0 indiciates the frame rate limit is disabled)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetFrameRateLimit()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetFullscreenMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetFullscreenMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L84">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetFullscreenMode_" data-uid="UE4.Engine.GameUserSettings.GetFullscreenMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetFullscreenMode" data-uid="UE4.Engine.GameUserSettings.GetFullscreenMode">GetFullscreenMode()</h4>
+  <div class="markdown level1 summary"><p>Returns the user setting for game window fullscreen mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetFullscreenMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetGameUserSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetGameUserSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L88">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetGameUserSettings_" data-uid="UE4.Engine.GameUserSettings.GetGameUserSettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetGameUserSettings" data-uid="UE4.Engine.GameUserSettings.GetGameUserSettings">GetGameUserSettings()</h4>
+  <div class="markdown level1 summary"><p>Returns the game local machine settings (resolution, windowing mode, scalability settings, etc...)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameUserSettings GetGameUserSettings()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.GameUserSettings.html">GameUserSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetLastConfirmedFullscreenMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetLastConfirmedFullscreenMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L92">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetLastConfirmedFullscreenMode_" data-uid="UE4.Engine.GameUserSettings.GetLastConfirmedFullscreenMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetLastConfirmedFullscreenMode" data-uid="UE4.Engine.GameUserSettings.GetLastConfirmedFullscreenMode">GetLastConfirmedFullscreenMode()</h4>
+  <div class="markdown level1 summary"><p>Returns the last confirmed user setting for game window fullscreen mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetLastConfirmedFullscreenMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetLastConfirmedScreenResolution.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetLastConfirmedScreenResolution%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L96">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetLastConfirmedScreenResolution_" data-uid="UE4.Engine.GameUserSettings.GetLastConfirmedScreenResolution*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetLastConfirmedScreenResolution" data-uid="UE4.Engine.GameUserSettings.GetLastConfirmedScreenResolution">GetLastConfirmedScreenResolution()</h4>
+  <div class="markdown level1 summary"><p>Returns the last confirmed user setting for game screen resolution, in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPoint GetLastConfirmedScreenResolution()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntPoint.html">IntPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetOverallScalabilityLevel.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetOverallScalabilityLevel%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L100">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetOverallScalabilityLevel_" data-uid="UE4.Engine.GameUserSettings.GetOverallScalabilityLevel*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetOverallScalabilityLevel" data-uid="UE4.Engine.GameUserSettings.GetOverallScalabilityLevel">GetOverallScalabilityLevel()</h4>
+  <div class="markdown level1 summary"><p>Returns the overall scalability level (can return -1 if the settings are custom)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetOverallScalabilityLevel()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetPostProcessingQuality.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetPostProcessingQuality%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L104">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetPostProcessingQuality_" data-uid="UE4.Engine.GameUserSettings.GetPostProcessingQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetPostProcessingQuality" data-uid="UE4.Engine.GameUserSettings.GetPostProcessingQuality">GetPostProcessingQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the post-processing quality (0..4, higher is better)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetPostProcessingQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetPreferredFullscreenMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetPreferredFullscreenMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L108">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetPreferredFullscreenMode_" data-uid="UE4.Engine.GameUserSettings.GetPreferredFullscreenMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetPreferredFullscreenMode" data-uid="UE4.Engine.GameUserSettings.GetPreferredFullscreenMode">GetPreferredFullscreenMode()</h4>
+  <div class="markdown level1 summary"><p>Returns the user setting for game window fullscreen mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte GetPreferredFullscreenMode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetRecommendedResolutionScale.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetRecommendedResolutionScale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L112">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetRecommendedResolutionScale_" data-uid="UE4.Engine.GameUserSettings.GetRecommendedResolutionScale*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetRecommendedResolutionScale" data-uid="UE4.Engine.GameUserSettings.GetRecommendedResolutionScale">GetRecommendedResolutionScale()</h4>
+  <div class="markdown level1 summary"><p>Gets the recommended resolution quality based on LastRecommendedScreenWidth/Height and the current screen resolution</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float GetRecommendedResolutionScale()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetResolutionScaleInformation.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetResolutionScaleInformation%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L116">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetResolutionScaleInformation_" data-uid="UE4.Engine.GameUserSettings.GetResolutionScaleInformation*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetResolutionScaleInformation" data-uid="UE4.Engine.GameUserSettings.GetResolutionScaleInformation">GetResolutionScaleInformation()</h4>
+  <div class="markdown level1 summary"><p>Get Resolution Scale Information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (float, int, int, int) GetResolutionScaleInformation()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetResolutionScaleInformationEx.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetResolutionScaleInformationEx%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L120">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetResolutionScaleInformationEx_" data-uid="UE4.Engine.GameUserSettings.GetResolutionScaleInformationEx*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetResolutionScaleInformationEx" data-uid="UE4.Engine.GameUserSettings.GetResolutionScaleInformationEx">GetResolutionScaleInformationEx()</h4>
+  <div class="markdown level1 summary"><p>Returns the current resolution scale and the range</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public (float, float, float, float) GetResolutionScaleInformationEx()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>, <span class="xref">System.Single</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetScreenResolution.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetScreenResolution%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L124">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetScreenResolution_" data-uid="UE4.Engine.GameUserSettings.GetScreenResolution*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetScreenResolution" data-uid="UE4.Engine.GameUserSettings.GetScreenResolution">GetScreenResolution()</h4>
+  <div class="markdown level1 summary"><p>Returns the user setting for game screen resolution, in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IntPoint GetScreenResolution()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntPoint.html">IntPoint</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetShadowQuality.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetShadowQuality%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L128">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetShadowQuality_" data-uid="UE4.Engine.GameUserSettings.GetShadowQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetShadowQuality" data-uid="UE4.Engine.GameUserSettings.GetShadowQuality">GetShadowQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the shadow quality (0..4, higher is better)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetShadowQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetTextureQuality.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetTextureQuality%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L132">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetTextureQuality_" data-uid="UE4.Engine.GameUserSettings.GetTextureQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetTextureQuality" data-uid="UE4.Engine.GameUserSettings.GetTextureQuality">GetTextureQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the texture quality (0..4, higher is better)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetTextureQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetViewDistanceQuality.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetViewDistanceQuality%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L136">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetViewDistanceQuality_" data-uid="UE4.Engine.GameUserSettings.GetViewDistanceQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetViewDistanceQuality" data-uid="UE4.Engine.GameUserSettings.GetViewDistanceQuality">GetViewDistanceQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the view distance quality (0..4, higher is better)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetViewDistanceQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_GetVisualEffectQuality.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.GetVisualEffectQuality%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L140">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_GetVisualEffectQuality_" data-uid="UE4.Engine.GameUserSettings.GetVisualEffectQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_GetVisualEffectQuality" data-uid="UE4.Engine.GameUserSettings.GetVisualEffectQuality">GetVisualEffectQuality()</h4>
+  <div class="markdown level1 summary"><p>Returns the visual effects quality (0..4, higher is better)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetVisualEffectQuality()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsDirty.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsDirty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L144">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsDirty_" data-uid="UE4.Engine.GameUserSettings.IsDirty*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsDirty" data-uid="UE4.Engine.GameUserSettings.IsDirty">IsDirty()</h4>
+  <div class="markdown level1 summary"><p>Checks if any user settings is different from current</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsDynamicResolutionDirty.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsDynamicResolutionDirty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L148">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsDynamicResolutionDirty_" data-uid="UE4.Engine.GameUserSettings.IsDynamicResolutionDirty*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsDynamicResolutionDirty" data-uid="UE4.Engine.GameUserSettings.IsDynamicResolutionDirty">IsDynamicResolutionDirty()</h4>
+  <div class="markdown level1 summary"><p>Checks if the dynamic resolution user setting is different from current system setting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDynamicResolutionDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsDynamicResolutionEnabled.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsDynamicResolutionEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L152">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsDynamicResolutionEnabled_" data-uid="UE4.Engine.GameUserSettings.IsDynamicResolutionEnabled*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsDynamicResolutionEnabled" data-uid="UE4.Engine.GameUserSettings.IsDynamicResolutionEnabled">IsDynamicResolutionEnabled()</h4>
+  <div class="markdown level1 summary"><p>Returns the user setting for dynamic resolution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsDynamicResolutionEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsFullscreenModeDirty.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsFullscreenModeDirty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L156">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsFullscreenModeDirty_" data-uid="UE4.Engine.GameUserSettings.IsFullscreenModeDirty*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsFullscreenModeDirty" data-uid="UE4.Engine.GameUserSettings.IsFullscreenModeDirty">IsFullscreenModeDirty()</h4>
+  <div class="markdown level1 summary"><p>Checks if the FullscreenMode user setting is different from current</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFullscreenModeDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsHDREnabled.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsHDREnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L160">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsHDREnabled_" data-uid="UE4.Engine.GameUserSettings.IsHDREnabled*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsHDREnabled" data-uid="UE4.Engine.GameUserSettings.IsHDREnabled">IsHDREnabled()</h4>
+  <div class="markdown level1 summary"><p>Is HDREnabled</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsHDREnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsScreenResolutionDirty.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsScreenResolutionDirty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L164">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsScreenResolutionDirty_" data-uid="UE4.Engine.GameUserSettings.IsScreenResolutionDirty*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsScreenResolutionDirty" data-uid="UE4.Engine.GameUserSettings.IsScreenResolutionDirty">IsScreenResolutionDirty()</h4>
+  <div class="markdown level1 summary"><p>Checks if the Screen Resolution user setting is different from current</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsScreenResolutionDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsVSyncDirty.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsVSyncDirty%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L168">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsVSyncDirty_" data-uid="UE4.Engine.GameUserSettings.IsVSyncDirty*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsVSyncDirty" data-uid="UE4.Engine.GameUserSettings.IsVSyncDirty">IsVSyncDirty()</h4>
+  <div class="markdown level1 summary"><p>Checks if the vsync user setting is different from current system setting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVSyncDirty()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_IsVSyncEnabled.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.IsVSyncEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L172">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_IsVSyncEnabled_" data-uid="UE4.Engine.GameUserSettings.IsVSyncEnabled*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_IsVSyncEnabled" data-uid="UE4.Engine.GameUserSettings.IsVSyncEnabled">IsVSyncEnabled()</h4>
+  <div class="markdown level1 summary"><p>Returns the user setting for vsync.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVSyncEnabled()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_LoadSettings_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.LoadSettings(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L176">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_LoadSettings_" data-uid="UE4.Engine.GameUserSettings.LoadSettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_LoadSettings_System_Boolean_" data-uid="UE4.Engine.GameUserSettings.LoadSettings(System.Boolean)">LoadSettings(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Loads the user settings from persistent storage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadSettings(bool bForceReload)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bForceReload</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.New(UE4.CoreUObject.UObject%2CUE4.Core.Name)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L441">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_New_" data-uid="UE4.Engine.GameUserSettings.New*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_New_UE4_CoreUObject_UObject_UE4_Core_Name_" data-uid="UE4.Engine.GameUserSettings.New(UE4.CoreUObject.UObject,UE4.Core.Name)">New(UObject, Name)</h4>
+  <div class="markdown level1 summary"><p>Spawn an object of this class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameUserSettings New(UObject obj = null, Name name = default(Name))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.UObject.html">UObject</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="UE4.Core.Name.html">Name</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.GameUserSettings.html">GameUserSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_ResetToCurrentSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.ResetToCurrentSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L180">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_ResetToCurrentSettings_" data-uid="UE4.Engine.GameUserSettings.ResetToCurrentSettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_ResetToCurrentSettings" data-uid="UE4.Engine.GameUserSettings.ResetToCurrentSettings">ResetToCurrentSettings()</h4>
+  <div class="markdown level1 summary"><p>This function resets all settings to the current system settings</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ResetToCurrentSettings()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_RevertVideoMode.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.RevertVideoMode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L184">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_RevertVideoMode_" data-uid="UE4.Engine.GameUserSettings.RevertVideoMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_RevertVideoMode" data-uid="UE4.Engine.GameUserSettings.RevertVideoMode">RevertVideoMode()</h4>
+  <div class="markdown level1 summary"><p>Revert video mode (fullscreenmode/resolution) back to the last user confirmed values</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RevertVideoMode()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_RunHardwareBenchmark_System_Int32_System_Single_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.RunHardwareBenchmark(System.Int32%2CSystem.Single%2CSystem.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L188">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_RunHardwareBenchmark_" data-uid="UE4.Engine.GameUserSettings.RunHardwareBenchmark*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_RunHardwareBenchmark_System_Int32_System_Single_System_Single_" data-uid="UE4.Engine.GameUserSettings.RunHardwareBenchmark(System.Int32,System.Single,System.Single)">RunHardwareBenchmark(Int32, Single, Single)</h4>
+  <div class="markdown level1 summary"><p>Runs the hardware benchmark and populates ScalabilityQuality as well as the last benchmark results config members, but does not apply the settings it determines. Designed to be called in conjunction with ApplyHardwareBenchmarkResults</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RunHardwareBenchmark(int WorkScale, float CPUMultiplier, float GPUMultiplier)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">WorkScale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">CPUMultiplier</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">GPUMultiplier</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SaveSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SaveSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L192">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SaveSettings_" data-uid="UE4.Engine.GameUserSettings.SaveSettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SaveSettings" data-uid="UE4.Engine.GameUserSettings.SaveSettings">SaveSettings()</h4>
+  <div class="markdown level1 summary"><p>Save the user settings to persistent storage (automatically happens as part of ApplySettings)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveSettings()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetAntiAliasingQuality_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetAntiAliasingQuality(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L200">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetAntiAliasingQuality_" data-uid="UE4.Engine.GameUserSettings.SetAntiAliasingQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetAntiAliasingQuality_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetAntiAliasingQuality(System.Int32)">SetAntiAliasingQuality(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the anti-aliasing quality (0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAntiAliasingQuality(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetAntiAliasingQuality_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>.4, higher is better)
+@param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic (gets clamped if needed)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetAudioQualityLevel_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetAudioQualityLevel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L204">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetAudioQualityLevel_" data-uid="UE4.Engine.GameUserSettings.SetAudioQualityLevel*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetAudioQualityLevel_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetAudioQualityLevel(System.Int32)">SetAudioQualityLevel(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the user's audio quality level setting</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetAudioQualityLevel(int QualityLevel)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">QualityLevel</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetBenchmarkFallbackValues.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetBenchmarkFallbackValues%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L208">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetBenchmarkFallbackValues_" data-uid="UE4.Engine.GameUserSettings.SetBenchmarkFallbackValues*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetBenchmarkFallbackValues" data-uid="UE4.Engine.GameUserSettings.SetBenchmarkFallbackValues">SetBenchmarkFallbackValues()</h4>
+  <div class="markdown level1 summary"><p>Set scalability settings to sensible fallback values, for use when the benchmark fails or potentially causes a crash</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetBenchmarkFallbackValues()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetDynamicResolutionEnabled_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetDynamicResolutionEnabled(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L212">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetDynamicResolutionEnabled_" data-uid="UE4.Engine.GameUserSettings.SetDynamicResolutionEnabled*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetDynamicResolutionEnabled_System_Boolean_" data-uid="UE4.Engine.GameUserSettings.SetDynamicResolutionEnabled(System.Boolean)">SetDynamicResolutionEnabled(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the user setting for dynamic resolution. See UGameUserSettings::bUseDynamicResolution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDynamicResolutionEnabled(bool bEnable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bEnable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetFoliageQuality_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetFoliageQuality(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L220">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetFoliageQuality_" data-uid="UE4.Engine.GameUserSettings.SetFoliageQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetFoliageQuality_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetFoliageQuality(System.Int32)">SetFoliageQuality(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the foliage quality (0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFoliageQuality(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetFoliageQuality_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>.4, higher is better)
+@param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic (gets clamped if needed)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetFrameRateLimit_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetFrameRateLimit(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L224">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetFrameRateLimit_" data-uid="UE4.Engine.GameUserSettings.SetFrameRateLimit*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetFrameRateLimit_System_Single_" data-uid="UE4.Engine.GameUserSettings.SetFrameRateLimit(System.Single)">SetFrameRateLimit(Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the user's frame rate limit (0 will disable frame rate limiting)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFrameRateLimit(float NewLimit)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewLimit</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetFullscreenMode_System_Byte_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetFullscreenMode(System.Byte)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L228">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetFullscreenMode_" data-uid="UE4.Engine.GameUserSettings.SetFullscreenMode*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetFullscreenMode_System_Byte_" data-uid="UE4.Engine.GameUserSettings.SetFullscreenMode(System.Byte)">SetFullscreenMode(Byte)</h4>
+  <div class="markdown level1 summary"><p>Sets the user setting for the game window fullscreen mode. See UGameUserSettings::FullscreenMode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetFullscreenMode(byte InFullscreenMode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span></td>
+        <td><span class="parametername">InFullscreenMode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetOverallScalabilityLevel_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetOverallScalabilityLevel(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L236">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetOverallScalabilityLevel_" data-uid="UE4.Engine.GameUserSettings.SetOverallScalabilityLevel*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetOverallScalabilityLevel_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetOverallScalabilityLevel(System.Int32)">SetOverallScalabilityLevel(Int32)</h4>
+  <div class="markdown level1 summary"><p>Changes all scalability settings at once based on a single overall quality level
+@</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetOverallScalabilityLevel(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetOverallScalabilityLevel_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetPostProcessingQuality_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetPostProcessingQuality(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L244">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetPostProcessingQuality_" data-uid="UE4.Engine.GameUserSettings.SetPostProcessingQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetPostProcessingQuality_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetPostProcessingQuality(System.Int32)">SetPostProcessingQuality(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the post-processing quality (0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetPostProcessingQuality(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetPostProcessingQuality_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>.4, higher is better)
+@param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic (gets clamped if needed)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetResolutionScaleNormalized_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetResolutionScaleNormalized(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L248">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetResolutionScaleNormalized_" data-uid="UE4.Engine.GameUserSettings.SetResolutionScaleNormalized*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetResolutionScaleNormalized_System_Single_" data-uid="UE4.Engine.GameUserSettings.SetResolutionScaleNormalized(System.Single)">SetResolutionScaleNormalized(Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the current resolution scale as a normalized 0..1 value between MinScaleValue and MaxScaleValue</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResolutionScaleNormalized(float NewScaleNormalized)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewScaleNormalized</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetResolutionScaleValue_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetResolutionScaleValue(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L252">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetResolutionScaleValue_" data-uid="UE4.Engine.GameUserSettings.SetResolutionScaleValue*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetResolutionScaleValue_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetResolutionScaleValue(System.Int32)">SetResolutionScaleValue(Int32)</h4>
+  <div class="markdown level1 summary"><p>Set Resolution Scale Value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResolutionScaleValue(int NewScaleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">NewScaleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetResolutionScaleValueEx_System_Single_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetResolutionScaleValueEx(System.Single)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L256">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetResolutionScaleValueEx_" data-uid="UE4.Engine.GameUserSettings.SetResolutionScaleValueEx*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetResolutionScaleValueEx_System_Single_" data-uid="UE4.Engine.GameUserSettings.SetResolutionScaleValueEx(System.Single)">SetResolutionScaleValueEx(Single)</h4>
+  <div class="markdown level1 summary"><p>Sets the current resolution scale</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetResolutionScaleValueEx(float NewScaleValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><span class="parametername">NewScaleValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetScreenResolution_UE4_CoreUObject_IntPoint_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetScreenResolution(UE4.CoreUObject.IntPoint)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L260">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetScreenResolution_" data-uid="UE4.Engine.GameUserSettings.SetScreenResolution*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetScreenResolution_UE4_CoreUObject_IntPoint_" data-uid="UE4.Engine.GameUserSettings.SetScreenResolution(UE4.CoreUObject.IntPoint)">SetScreenResolution(IntPoint)</h4>
+  <div class="markdown level1 summary"><p>Sets the user setting for game screen resolution, in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetScreenResolution(IntPoint Resolution)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.CoreUObject.IntPoint.html">IntPoint</a></td>
+        <td><span class="parametername">Resolution</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetShadowQuality_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetShadowQuality(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L268">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetShadowQuality_" data-uid="UE4.Engine.GameUserSettings.SetShadowQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetShadowQuality_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetShadowQuality(System.Int32)">SetShadowQuality(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the shadow quality (0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetShadowQuality(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetShadowQuality_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>.4, higher is better)
+@param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic (gets clamped if needed)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetTextureQuality_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetTextureQuality(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L276">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetTextureQuality_" data-uid="UE4.Engine.GameUserSettings.SetTextureQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetTextureQuality_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetTextureQuality(System.Int32)">SetTextureQuality(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the texture quality (0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextureQuality(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetTextureQuality_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>.4, higher is better)
+@param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic  (gets clamped if needed)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetToDefaults.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetToDefaults%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L280">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetToDefaults_" data-uid="UE4.Engine.GameUserSettings.SetToDefaults*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetToDefaults" data-uid="UE4.Engine.GameUserSettings.SetToDefaults">SetToDefaults()</h4>
+  <div class="markdown level1 summary"><p>Set to Defaults</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetToDefaults()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetViewDistanceQuality_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetViewDistanceQuality(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L288">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetViewDistanceQuality_" data-uid="UE4.Engine.GameUserSettings.SetViewDistanceQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetViewDistanceQuality_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetViewDistanceQuality(System.Int32)">SetViewDistanceQuality(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the view distance quality (0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetViewDistanceQuality(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetViewDistanceQuality_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>.4, higher is better)
+@param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic (gets clamped if needed)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetVisualEffectQuality_System_Int32_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetVisualEffectQuality(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L296">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetVisualEffectQuality_" data-uid="UE4.Engine.GameUserSettings.SetVisualEffectQuality*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetVisualEffectQuality_System_Int32_" data-uid="UE4.Engine.GameUserSettings.SetVisualEffectQuality(System.Int32)">SetVisualEffectQuality(Int32)</h4>
+  <div class="markdown level1 summary"><p>Sets the visual effects quality (0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVisualEffectQuality(int Value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">Value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="UE4_Engine_GameUserSettings_SetVisualEffectQuality_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>.4, higher is better)
+@param Value 0:low, 1:medium, 2:high, 3:epic, 4:cinematic (gets clamped if needed)</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SetVSyncEnabled_System_Boolean_.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SetVSyncEnabled(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L300">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SetVSyncEnabled_" data-uid="UE4.Engine.GameUserSettings.SetVSyncEnabled*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SetVSyncEnabled_System_Boolean_" data-uid="UE4.Engine.GameUserSettings.SetVSyncEnabled(System.Boolean)">SetVSyncEnabled(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Sets the user setting for vsync. See UGameUserSettings::bUseVSync.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetVSyncEnabled(bool bEnable)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">bEnable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_SupportsHDRDisplayOutput.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.SupportsHDRDisplayOutput%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L304">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_SupportsHDRDisplayOutput_" data-uid="UE4.Engine.GameUserSettings.SupportsHDRDisplayOutput*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_SupportsHDRDisplayOutput" data-uid="UE4.Engine.GameUserSettings.SupportsHDRDisplayOutput">SupportsHDRDisplayOutput()</h4>
+  <div class="markdown level1 summary"><p>Whether the curently running system supports HDR display output</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SupportsHDRDisplayOutput()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_ValidateSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.ValidateSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L308">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_ValidateSettings_" data-uid="UE4.Engine.GameUserSettings.ValidateSettings*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_ValidateSettings" data-uid="UE4.Engine.GameUserSettings.ValidateSettings">ValidateSettings()</h4>
+  <div class="markdown level1 summary"><p>Validates and resets bad user settings to default. Deletes stale user settings file if necessary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ValidateSettings()</code></pre>
+  </div>
+  <h3 id="operators">Operators
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings_op_Implicit_System_IntPtr__UE4_Engine_GameUserSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings.op_Implicit(System.IntPtr)~UE4.Engine.GameUserSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L435">View Source</a>
+  </span>
+  <a id="UE4_Engine_GameUserSettings_op_Implicit_" data-uid="UE4.Engine.GameUserSettings.op_Implicit*"></a>
+  <h4 id="UE4_Engine_GameUserSettings_op_Implicit_System_IntPtr__UE4_Engine_GameUserSettings" data-uid="UE4.Engine.GameUserSettings.op_Implicit(System.IntPtr)~UE4.Engine.GameUserSettings">Implicit(IntPtr to GameUserSettings)</h4>
+  <div class="markdown level1 summary"><p>Convert from IntPtr to UObject</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static implicit operator GameUserSettings(IntPtr p)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.IntPtr</span></td>
+        <td><span class="parametername">p</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UE4.Engine.GameUserSettings.html">GameUserSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/new/d7d563ef6984e3e4c53baa7c172daec91119e310/apiSpec/new?filename=UE4_Engine_GameUserSettings.md&amp;value=---%0Auid%3A%20UE4.Engine.GameUserSettings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/UE4DotNet/Plugins/blob/d7d563ef6984e3e4c53baa7c172daec91119e310/DotNet/DotNet/UE4/Generated/Engine/GameUserSettings.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
